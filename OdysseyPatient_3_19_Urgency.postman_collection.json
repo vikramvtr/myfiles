@@ -1,0 +1,1939 @@
+{
+	"info": {
+		"_postman_id": "1e613c6c-118a-460f-8fc0-eb4e324a0ba6",
+		"name": "OdysseyPatient_3_19_Urgency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetSearchProtocol",
+			"item": [
+				{
+					"name": "getsignsearchprotocol",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "6694098f-11f2-45d6-8d6a-d625d6c03a77",
+								"exec": [
+									"console.log(request.name+\" is running\")\r",
+									"\r",
+									"// load questions and answers in environment variable\r",
+									"var v1 = data.ref.toString();\r",
+									"var v2 = data.testRef.toString();\r",
+									"var v3 = data.complaint.toString();\r",
+									"var v4 = data.urgencyExpected.toString();\r",
+									"var v5 = data.bannerText.toString();\r",
+									"var v6 = data.considerText.toString();\r",
+									"var v7 = data.ref1.toString();\r",
+									"var v8 = data.testRef1.toString();\r",
+									"\r",
+									"var arr = [v1, v2, v3, v4, v5, v6, v7, v8];\r",
+									"pm.environment.set(\"anslist\", JSON.stringify(arr));\r",
+									"\r",
+									"console.log(\"Data loaded\")\r",
+									"var agein = data.ageIn.toString();\r",
+									"var agein = data.ageIn;\r",
+									"var agemin = Number(data.ageMin);\r",
+									"var agemax = Number(data.ageMax);\r",
+									"var randomNumber = _.random(agemin, agemax);\r",
+									"var age;\r",
+									"if(agein === \"Years\") {\r",
+									"    var age = Math.floor(randomNumber*52.14);\r",
+									"}\r",
+									"else if(agein === \"Weeks\") {\r",
+									"    age = randomNumber + 1;\r",
+									"}\r",
+									"else if(agein === \"Months\") {\r",
+									"    age = Math.floor(randomNumber*4.34);\r",
+									"}\r",
+									"\r",
+									"var gender = data.gender.toString();\r",
+									"if(gender === \"Male\") {\r",
+									"    gender = \"M\";\r",
+									"}\r",
+									"else if(gender === \"Female\") {\r",
+									"    gender = \"F\";\r",
+									"}\r",
+									"else {\r",
+									"   var randomNumber1 = _.random(0, 3);\r",
+									"   if(randomNumber1 === 1) {\r",
+									"       gender = \"M\"\r",
+									"   }\r",
+									"   else {\r",
+									"       gender = \"F\";\r",
+									"   }\r",
+									"}\r",
+									"var demographic = gender.concat(age.toString());\r",
+									"var demographic = gender.concat(age);\r",
+									"console.log(\"Demographics for assessment is :: \"+demographic)\r",
+									"var uuid = require('uuid');\r",
+									"var myUUID = uuid.v4();\r",
+									"postman.setEnvironmentVariable(\"previd\", myUUID);\r",
+									"postman.setEnvironmentVariable(\"demographics\",demographic)\r",
+									"postman.setEnvironmentVariable(\"searchcomplaint\",v3)\r",
+									"var demographics=pm.environment.get(\"demographics\")\r",
+									"\r",
+									"var res = \"non-seq-assess/v2/searchpresentingcomplaint?client=BetaSelf&searchCriteria=\"+v3+\"&searchType=StartsWith&demographics=\"+demographics+\"&clinical=\"+pm.environment.get(\"clinical\")+\"&format=json&token=\"+myUUID;\r",
+									"\r",
+									"console.log(\"encoded :: \"+res);\r",
+									"var encoded = encodeURIComponent(res);\r",
+									"\r",
+									"postman.setEnvironmentVariable(\"encoded\", encoded);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "240b9dbe-0312-4bb8-8d2b-72c58eb7129b",
+								"exec": [
+									"// Placing signature in environment variable\r",
+									"var str = responseBody.replace(\"\\\"\",\"\");\r",
+									"var str1 = str.replace(\"\\\"\",\"\");\r",
+									"pm.environment.set(\"signature\", str1);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}seq-assess/v2/sign?client=BetaSelf&url=/{{encoded}}&format=json&token={{$guid}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"sign"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "url",
+									"value": "/{{encoded}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{$guid}}"
+								},
+								{
+									"key": "age",
+									"value": "23",
+									"disabled": true
+								},
+								{
+									"key": "gender",
+									"value": "f",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getsearchprotocol",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "42d94be7-1170-475e-a417-1dfc81536ff7",
+								"exec": [
+									"var presentingComplaint = data.complaint.toString();\r",
+									"var match = false;\r",
+									"jsonData = JSON.parse(responseBody)\r",
+									"\r",
+									"for(var i=0; i<jsonData.Complaints.length; i++) {\r",
+									"    var currentProtocol = jsonData.Complaints[i].Description;\r",
+									"    console.log(\"Current protocol :: \"+currentProtocol);\r",
+									"    if(currentProtocol.toUpperCase() === presentingComplaint.toUpperCase()) {\r",
+									"        var protocolsCodes = jsonData.Complaints[i].Protocols;\r",
+									"        pm.environment.set(\"protocols\", protocolsCodes);\r",
+									"        console.log(\"protocolCodes matched :: \"+jsonData.Complaints[i].Protocols)\r",
+									"        pm.test(\"Validation: \"+presentingComplaint+\" :: Presenting complaint Found in search result and selected\", function () {\r",
+									"            pm.expect(true).is.to.equal(true);\r",
+									"        });\r",
+									"        break;\r",
+									"    }\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "331bfbc3-1c5a-4b59-9519-5b6dd0deb77d",
+								"exec": [
+									"console.log(request.name+\" is running\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}non-seq-assess/v2/searchpresentingcomplaint?client=BetaSelf&searchCriteria={{searchcomplaint}}&searchType=StartsWith&demographics={{demographics}}&clinical={{clinical}}&format=json&token={{previd}}&signature={{signature}}",
+							"host": [
+								"{{base}}non-seq-assess"
+							],
+							"path": [
+								"v2",
+								"searchpresentingcomplaint"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "searchCriteria",
+									"value": "{{searchcomplaint}}"
+								},
+								{
+									"key": "searchType",
+									"value": "StartsWith"
+								},
+								{
+									"key": "demographics",
+									"value": "{{demographics}}"
+								},
+								{
+									"key": "clinical",
+									"value": "{{clinical}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{previd}}"
+								},
+								{
+									"key": "signature",
+									"value": "{{signature}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GetNew",
+			"item": [
+				{
+					"name": "getsignnew",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "ead8186c-5ffe-43d4-80ad-251d06471444",
+								"exec": [
+									"console.log(request.name+\" is running\")\r",
+									"\r",
+									"// creating encoded url\r",
+									"var uuid = require('uuid');\r",
+									"var myUUID = uuid.v4();\r",
+									"postman.setEnvironmentVariable(\"previd\", myUUID);\r",
+									"\r",
+									"var assessment_Type = pm.environment.get(\"assessmenttype\");\r",
+									"var assessmentType_URL;\r",
+									"if(assessment_Type.toUpperCase() === \"FIRST\") {\r",
+									"    assessmentType_URL = \"new\";\r",
+									"}\r",
+									"else {\r",
+									"    assessmentType_URL = \"newthirdperson\";\r",
+									"}\r",
+									"pm.environment.set(\"assessmentTypeURL\", assessmentType_URL);\r",
+									"\r",
+									"var res = \"seq-assess/v2/\"+assessmentType_URL+\"?client=BetaSelf&demographics=\"+pm.environment.get(\"demographics\")+\"&codes=\"+pm.environment.get(\"protocols\")+\"&thirdParty=~~Chrome 83.0.4103.97~Windows NT 10.0~&rot=false&clinical=\"+pm.environment.get(\"clinical\")+\"&format=json&token=\"+myUUID;\r",
+									"var encoded = encodeURIComponent(res);\r",
+									"postman.setEnvironmentVariable(\"encoded\", encoded);\r",
+									"\r",
+									"//placing expected urgency code in environment variable\r",
+									"var urgency = data.urgencyExpected.toString().toUpperCase();\r",
+									"pm.environment.set(\"urgencycode\", urgency);\r",
+									"\r",
+									"// load questions and answers in environment variable\r",
+									"var v1 = data.question1.toString();\r",
+									"var v2 = data.answerList1.toString();\r",
+									"var v3 = data.question2.toString();\r",
+									"var v4 = data.answerList2.toString();\r",
+									"var v5 = data.question3.toString();\r",
+									"var v6 = data.answerList3.toString();\r",
+									"\r",
+									"var arr = [v1, v2, v3, v4, v5, v6];\r",
+									"\r",
+									"pm.environment.set(\"qnalist\", JSON.stringify(arr));\r",
+									"console.log(\"QNA fetched :: \"+JSON.stringify(arr))\r",
+									"\r",
+									"var counter = 0;\r",
+									"for(var i=0;i<arr.length;i++) {\r",
+									"    if(arr[i] === \"\") {\r",
+									"        break;\r",
+									"    }\r",
+									"    else {\r",
+									"        counter = counter + 1;\r",
+									"    }\r",
+									"    i++;\r",
+									"}\r",
+									"console.log(\"Number of questions to be answered :: \"+counter)\r",
+									"pm.environment.set(\"numofquestoanswer\", counter);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "66724ed4-617a-4a3d-873e-abc4721b8fec",
+								"exec": [
+									"// Placing signature in environment variable\r",
+									"var str = responseBody.replace(\"\\\"\",\"\");\r",
+									"var str1 = str.replace(\"\\\"\",\"\");\r",
+									"pm.environment.set(\"signature\", str1);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/sign?client=BetaSelf&url=/{{encoded}}&format=json&token={{$guid}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"sign"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "url",
+									"value": "/{{encoded}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{$guid}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getnew",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5a8451ab-ed11-48fd-869f-be48102ce2ff",
+								"exec": [
+									"let responseData=pm.response.json();\r",
+									"pm.environment.set(\"SessionID\", responseData.SessionId);\r",
+									"jsonData = JSON.parse(responseBody)\r",
+									"\r",
+									"ar = JSON.parse(pm.environment.get(\"qnalist\"));\r",
+									"\r",
+									"// fetching answerid for the next question and place it in environment variable\r",
+									"var status = 0;\r",
+									"for(var j=0; j<ar.length; j++) {\r",
+									"    if(ar[j] === \"\") {\r",
+									"        break;\r",
+									"    }\r",
+									"    else {\r",
+									"        var curr_ques = ar[j].toString().replace(/\\\",\\\"/g, \",\").toUpperCase();\r",
+									"        if(jsonData.Current.Text.toUpperCase() === curr_ques) {\r",
+									"            var exp_ans = ar[j+1].toString().toUpperCase();\r",
+									"            for(var i=0; i<jsonData.Current.Answers.length; i++) {\r",
+									"                if(jsonData.Current.Answers[i].Text.toUpperCase() === exp_ans) {\r",
+									"                    status = 1;\r",
+									"                    console.log(exp_ans);\r",
+									"                    pm.environment.set(\"Ansid\",jsonData.Current.Answers[i].Id);\r",
+									"                    pm.test(\"Validation: \"+jsonData.Current.Answers[i].Text+\" :: is selected for question :: \"+jsonData.Current.Text, function () {\r",
+									"                        pm.expect(true).is.to.equal(true);\r",
+									"                    });\r",
+									"\r",
+									"                    var counter = Number(pm.environment.get(\"numofquestoanswer\"));\r",
+									"                    counter = counter - 1;\r",
+									"                    pm.environment.set(\"numofquestoanswer\", counter);\r",
+									"                    break;                \r",
+									"                }                \r",
+									"            }\r",
+									"        }\r",
+									"        if(status === 1) {\r",
+									"            break;\r",
+									"        }\r",
+									"    }\r",
+									"    j++;\r",
+									"}\r",
+									"\r",
+									"if(status === 0) {\r",
+									"    pm.environment.set(\"Ansid\",jsonData.Current.Answers[0].Id);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "a6b7ced0-357a-420a-af1f-fca936b35f83",
+								"exec": [
+									"console.log(request.name+\" is running\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/{{assessmentTypeURL}}?client=BetaSelf&demographics={{demographics}}&codes={{protocols}}&thirdParty=~~Chrome 83.0.4103.97~Windows NT 10.0~&rot=false&clinical={{clinical}}&format=json&token={{previd}}&signature={{signature}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"{{assessmentTypeURL}}"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "demographics",
+									"value": "{{demographics}}"
+								},
+								{
+									"key": "codes",
+									"value": "{{protocols}}"
+								},
+								{
+									"key": "thirdParty",
+									"value": "~~Chrome 83.0.4103.97~Windows NT 10.0~"
+								},
+								{
+									"key": "rot",
+									"value": "false"
+								},
+								{
+									"key": "clinical",
+									"value": "{{clinical}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{previd}}"
+								},
+								{
+									"key": "signature",
+									"value": "{{signature}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GetAnswer",
+			"item": [
+				{
+					"name": "getsignanswer",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "57220e36-1d5b-40c6-b119-ffb8a7187d5a",
+								"exec": [
+									"console.log(request.name+\" is running\")\r",
+									"\r",
+									"// creating encoded url\r",
+									"var id = pm.environment.get(\"SessionID\");\r",
+									"var uuid = require('uuid');\r",
+									"var myUUID = uuid.v4();\r",
+									"postman.setEnvironmentVariable(\"previd\", myUUID);\r",
+									"var Ansid=pm.environment.get(\"Ansid\");\r",
+									"var res = \"seq-assess/v2/answer?client=BetaSelf&answerid=\"+Ansid+\"&rot=false&clinical=\"+pm.environment.get(\"clinical\")+\"&format=json&token=\"+myUUID+\"&sessionid=\"+id;\r",
+									"var encoded = encodeURIComponent(res);\r",
+									"postman.setEnvironmentVariable(\"encoded\", encoded);\r",
+									"\r",
+									"postman.setNextRequest(\"postanswer\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "e1a5c36b-e9a2-432f-9eb3-8489c0ba6f3a",
+								"exec": [
+									"// Placing signature in environment variable\r",
+									"var str = responseBody.replace(\"\\\"\",\"\");\r",
+									"var str1 = str.replace(\"\\\"\",\"\");\r",
+									"pm.environment.set(\"signature\", str1);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/sign?client=BetaSelf&url=/{{encoded}}&format=json&token={{$guid}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"sign"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "url",
+									"value": "/{{encoded}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{$guid}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postanswer",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6e094179-9908-4509-a416-02c832641ef9",
+								"exec": [
+									"let responseData=pm.response.json();\r",
+									"pm.environment.set(\"SessionID\", responseData.SessionId);\r",
+									"jsonData = JSON.parse(responseBody)\r",
+									"\r",
+									"var total_ques = 0;\r",
+									"for(var k=0; k<jsonData.QuestionSets.length; k++) {\r",
+									"    total_ques = total_ques + Number(jsonData.QuestionSets[k].Total);\r",
+									"}\r",
+									"\r",
+									"ar = JSON.parse(pm.environment.get(\"qnalist\"));\r",
+									"// fetching answerid for the next question and place it in environment variable\r",
+									"var status = 0;\r",
+									"for(var j=0; j<ar.length; j++) {\r",
+									"    if(ar[j] === \"\") {\r",
+									"        break;\r",
+									"    }\r",
+									"    else {\r",
+									"        var curr_ques = ar[j].toString().replace(/\\\",\\\"/g, \",\").toUpperCase();\r",
+									"        if(jsonData.Current.Text.toUpperCase() === curr_ques) {\r",
+									"            var exp_ans = ar[j+1].toString().toUpperCase();\r",
+									"            for(var i=0; i<jsonData.Current.Answers.length; i++) {\r",
+									"                if(jsonData.Current.Answers[i].Text.toUpperCase() === exp_ans) {\r",
+									"                    status = 1;\r",
+									"                    console.log(exp_ans+\" is found for question :: \"+curr_ques);\r",
+									"                    pm.environment.set(\"Ansid\",jsonData.Current.Answers[i].Id);\r",
+									"                    pm.test(\"Validation: \"+jsonData.Current.Answers[i].Text+\" :: is selected for question :: \"+jsonData.Current.Text, function () {\r",
+									"                        pm.expect(true).is.to.equal(true);\r",
+									"                    });\r",
+									"\r",
+									"                    if(total_ques === Number(jsonData.NumberAnswersProvided)) {\r",
+									"                        console.log(\"Last question answered\");\r",
+									"                    }\r",
+									"                    else {\r",
+									"                        var counter = Number(pm.environment.get(\"numofquestoanswer\"));\r",
+									"                        counter = counter - 1;\r",
+									"                        pm.environment.set(\"numofquestoanswer\", counter);\r",
+									"                    }\r",
+									"                    break;\r",
+									"                }                \r",
+									"            }\r",
+									"        }\r",
+									"        if(status === 1) {\r",
+									"            break;\r",
+									"        }\r",
+									"    }\r",
+									"    j++;\r",
+									"}\r",
+									"\r",
+									"if(status === 0) {\r",
+									"    pm.environment.set(\"Ansid\",jsonData.Current.Answers[0].Id);\r",
+									"    console.log(\"setting negative answerid\")\r",
+									"}\r",
+									"\r",
+									"// calling next request based on type of next question as single or multy choice\r",
+									"var reqtofollow;\r",
+									"if(jsonData.Current.AllowsMultipleAnswers === false) {\r",
+									"  reqtofollow = \"getsignanswer\";\r",
+									"}\r",
+									"else {\r",
+									"  reqtofollow = \"getsignanswers\";\r",
+									"}\r",
+									"\r",
+									"// coming out of Q&A Loop\r",
+									"if(total_ques === Number(jsonData.NumberAnswersProvided)) {\r",
+									"    reqtofollow = \"getsignQ&A\";\r",
+									"    pm.environment.set(\"totalnumberofques\", total_ques);\r",
+									"    var expUrgencyCode = pm.environment.get(\"urgencycode\");\r",
+									"    var actUrgencyCode = jsonData.Urgency;\r",
+									"    pm.test(\"=====*****=====Validation of assessment urgency=====*****=====ExpectedUrgency :: \"+expUrgencyCode+\" & ActualUrgency :: \"+actUrgencyCode, function () {\r",
+									"            pm.expect(expUrgencyCode).is.to.equal(actUrgencyCode);\r",
+									"    });\r",
+									"}\r",
+									"\r",
+									"postman.setNextRequest(reqtofollow);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "817f1424-b4d4-4634-a612-abac07ea56d9",
+								"exec": [
+									"console.log(request.name+\" is running\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}seq-assess/v2/answer?client=BetaSelf&answerid={{Ansid}}&rot=false&clinical={{clinical}}&format=json&token={{previd}}&sessionid={{SessionID}}&signature={{signature}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"answer"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "answerid",
+									"value": "{{Ansid}}"
+								},
+								{
+									"key": "rot",
+									"value": "false"
+								},
+								{
+									"key": "clinical",
+									"value": "{{clinical}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{previd}}"
+								},
+								{
+									"key": "sessionid",
+									"value": "{{SessionID}}"
+								},
+								{
+									"key": "signature",
+									"value": "{{signature}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getsignanswers",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4e13e4e2-04f9-477f-aa7a-04731be70a82",
+								"exec": [
+									"console.log(request.name+\" is running\")\r",
+									"\r",
+									"// creating encoded url\r",
+									"var id = pm.environment.get(\"SessionID\");\r",
+									"var uuid = require('uuid');\r",
+									"var myUUID = uuid.v4();\r",
+									"postman.setEnvironmentVariable(\"previd\", myUUID);\r",
+									"var Ansid=pm.environment.get(\"Ansid\");\r",
+									"var res = \"seq-assess/v2/answers?client=BetaSelf&answers=\"+Ansid+\"&rot=false&clinical=\"+pm.environment.get(\"clinical\")+\"&format=json&token=\"+myUUID+\"&sessionid=\"+id;\r",
+									"var encoded = encodeURIComponent(res);\r",
+									"postman.setEnvironmentVariable(\"encoded\", encoded);\r",
+									"\r",
+									"postman.setNextRequest(\"postanswers\");\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "39491f9f-7244-4b2f-a8f1-03fe9e36ad2e",
+								"exec": [
+									"// Placing signature in environment variable\r",
+									"var str = responseBody.replace(\"\\\"\",\"\");\r",
+									"var str1 = str.replace(\"\\\"\",\"\");\r",
+									"pm.environment.set(\"signature\", str1);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/sign?client=BetaSelf&url=/{{encoded}}&format=json&token={{$guid}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"sign"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "url",
+									"value": "/{{encoded}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{$guid}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postanswers",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a09dc4c7-8b73-41d9-9b72-013268e82111",
+								"exec": [
+									"let responseData=pm.response.json();\r",
+									"pm.environment.set(\"SessionID\", responseData.SessionId);\r",
+									"jsonData = JSON.parse(responseBody)\r",
+									"\r",
+									"var total_ques = 0;\r",
+									"for(var k=0; k<jsonData.QuestionSets.length; k++) {\r",
+									"    total_ques = total_ques + Number(jsonData.QuestionSets[k].Total);\r",
+									"}\r",
+									"\r",
+									"ar = JSON.parse(pm.environment.get(\"qnalist\"));\r",
+									"\r",
+									"// fetching answerid for the next question and place it in environment variable\r",
+									"var status = 0;\r",
+									"for(var j=0; j<ar.length; j++) {\r",
+									"    if(ar[j] === \"\") {\r",
+									"        break;\r",
+									"    }\r",
+									"    else {\r",
+									"        var curr_ques = ar[j].toString().replace(/\\\",\\\"/g, \",\").toUpperCase();\r",
+									"        if(jsonData.Current.Text.toUpperCase() === curr_ques) {\r",
+									"            \r",
+									"            var exp_ans = ar[j+1].toString().toUpperCase();\r",
+									"            for(var i=0; i<jsonData.Current.Answers.length; i++) {\r",
+									"                if(jsonData.Current.Answers[i].Text.toUpperCase() === exp_ans) {\r",
+									"                    status = 1;\r",
+									"                    console.log(exp_ans+\" is found for question :: \"+curr_ques);\r",
+									"                    pm.environment.set(\"Ansid\",jsonData.Current.Answers[i].Id);\r",
+									"                    pm.test(\"Validation: \"+jsonData.Current.Answers[i].Text+\" :: is selected for question :: \"+jsonData.Current.Text, function () {\r",
+									"                        pm.expect(true).is.to.equal(true);\r",
+									"                    });\r",
+									"\r",
+									"                    if(total_ques === Number(jsonData.NumberAnswersProvided)) {\r",
+									"                        console.log(\"Last question answered\");\r",
+									"                    }\r",
+									"                    else {\r",
+									"                        var counter = Number(pm.environment.get(\"numofquestoanswer\"));\r",
+									"                        counter = counter - 1;\r",
+									"                        pm.environment.set(\"numofquestoanswer\", counter);\r",
+									"                    }\r",
+									"                    break;\r",
+									"                }                \r",
+									"            }\r",
+									"        }\r",
+									"        if(status === 1) {\r",
+									"            break;\r",
+									"        }\r",
+									"    }\r",
+									"    j++;\r",
+									"}\r",
+									"\r",
+									"if(status === 0) {\r",
+									"    pm.environment.set(\"Ansid\",jsonData.Current.Answers[0].Id);\r",
+									"}\r",
+									"\r",
+									"// calling next request based on type of next question as single or multy choice\r",
+									"var reqtofollow;\r",
+									"if(jsonData.Current.AllowsMultipleAnswers === false) {\r",
+									"  reqtofollow = \"getsignanswer\";\r",
+									"}\r",
+									"else {\r",
+									"  reqtofollow = \"getsignanswers\";\r",
+									"}\r",
+									"\r",
+									"// coming out of Q&A Loop\r",
+									"if(total_ques === Number(jsonData.NumberAnswersProvided)) {\r",
+									"    reqtofollow = \"getsignQ&A\";\r",
+									"    pm.environment.set(\"totalnumberofques\", total_ques);\r",
+									"    var expUrgencyCode = pm.environment.get(\"urgencycode\");\r",
+									"    var actUrgencyCode = jsonData.Urgency;\r",
+									"    pm.test(\"=====*****=====Validation of assessment urgency=====*****=====ExpectedUrgency :: \"+expUrgencyCode+\" & ActualUrgency :: \"+actUrgencyCode, function () {\r",
+									"            pm.expect(expUrgencyCode).is.to.equal(actUrgencyCode);\r",
+									"    });\r",
+									"}\r",
+									"\r",
+									"postman.setNextRequest(reqtofollow);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "bfae781c-6660-46ae-a5fd-533c30f08db1",
+								"exec": [
+									"console.log(request.name+\" is running\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}seq-assess/v2/answers?client=BetaSelf&answers={{Ansid}}&rot=false&clinical={{clinical}}&format=json&token={{previd}}&sessionid={{SessionID}}&signature={{signature}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"answers"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "answers",
+									"value": "{{Ansid}}"
+								},
+								{
+									"key": "rot",
+									"value": "false"
+								},
+								{
+									"key": "clinical",
+									"value": "{{clinical}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{previd}}"
+								},
+								{
+									"key": "sessionid",
+									"value": "{{SessionID}}"
+								},
+								{
+									"key": "signature",
+									"value": "{{signature}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GetQ&A",
+			"item": [
+				{
+					"name": "getsignQ&A",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "35c0679c-580f-4a3f-b13e-2c3c8122d9eb",
+								"exec": [
+									"console.log(request.name+\" is running\")\r",
+									"\r",
+									"// creating encoded url\r",
+									"var id = pm.environment.get(\"SessionID\");\r",
+									"var uuid = require('uuid');\r",
+									"var myUUID = uuid.v4();\r",
+									"postman.setEnvironmentVariable(\"previd\", myUUID);\r",
+									"var res = \"seq-assess/v2/sessionresponse?client=BetaSelf&clinical=\"+pm.environment.get(\"clinical\")+\"&format=json&token=\"+myUUID+\"&sessionid=\"+id;\r",
+									"var encoded = encodeURIComponent(res);\r",
+									"postman.setEnvironmentVariable(\"encoded\", encoded);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "6877532d-9386-4910-9d32-0af5e04993b3",
+								"exec": [
+									"// Placing signature in environment variable\r",
+									"var str = responseBody.replace(\"\\\"\",\"\");\r",
+									"var str1 = str.replace(\"\\\"\",\"\");\r",
+									"pm.environment.set(\"signature\", str1);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/sign?client=BetaSelf&url=/{{encoded}}&format=json&token={{$guid}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"sign"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "url",
+									"value": "/{{encoded}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{$guid}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getQ&A",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f015d7fa-b659-4061-8c82-a4fe28cdee9f",
+								"exec": [
+									"pm.test(\"====***====Validation of all questions found and answered for the scenario====***====\",function() {\r",
+									"   pm.expect(0).to.eql(Number(pm.environment.get(\"numofquestoanswer\")));\r",
+									"});\r",
+									"\r",
+									"var numOfAns = Number(pm.environment.get(\"totalnumberofques\"));\r",
+									"pm.test(\"Validation of the number of responses in Summary :: \"+numOfAns,function() {\r",
+									"   var response = JSON.parse(responseBody); \r",
+									"   pm.expect(Object.keys(response.Responses).length).to.eql(numOfAns);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "63eb46ae-2d62-45f4-a1fa-cef7cf2f333b",
+								"exec": [
+									"console.log(request.name+\" is running\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/sessionresponse?client=BetaSelf&clinical={{clinical}}&format=json&token={{previd}}&sessionid={{SessionID}}&signature={{signature}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"sessionresponse"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "clinical",
+									"value": "{{clinical}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{previd}}"
+								},
+								{
+									"key": "sessionid",
+									"value": "{{SessionID}}"
+								},
+								{
+									"key": "signature",
+									"value": "{{signature}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GetWorseningstatements",
+			"item": [
+				{
+					"name": "getsignworseningstatements",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "875e880b-c2e8-49a5-b7f0-584b149bd88f",
+								"exec": [
+									"console.log(request.name+\" is running\")\r",
+									"\r",
+									"// creating encoded url\r",
+									"var id = pm.environment.get(\"SessionID\");\r",
+									"var uuid = require('uuid');\r",
+									"var myUUID = uuid.v4();\r",
+									"console.log(myUUID);\r",
+									"postman.setEnvironmentVariable(\"previd\", myUUID);\r",
+									"var res = \"seq-assess/v2/worseningstatements?client=BetaSelf&clinical=\"+pm.environment.get(\"clinical\")+\"&format=json&token=\"+myUUID+\"&sessionid=\"+id;\r",
+									"var encoded = encodeURIComponent(res);\r",
+									"postman.setEnvironmentVariable(\"encoded\", encoded);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "2034311f-0d29-49b7-84e9-4a90a2c1dac4",
+								"exec": [
+									"// Placing signature in environment variable\r",
+									"var str = responseBody.replace(\"\\\"\",\"\");\r",
+									"var str1 = str.replace(\"\\\"\",\"\");\r",
+									"pm.environment.set(\"signature\", str1);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/sign?client=BetaSelf&url=/{{encoded}}&format=json&token={{$guid}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"sign"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "url",
+									"value": "/{{encoded}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{$guid}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getworseningstatements",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1cd6a662-267b-4dd3-a676-c745ce64484e",
+								"exec": [
+									" var  schema =  {\r",
+									"    \"type\": \"object\",\r",
+									"    \"properties\": {\r",
+									"      \"worseningstatement\": {\r",
+									"        \"type\": \"array\",\r",
+									"       \"items\": {\r",
+									"         \"type\": \"object\",\r",
+									"         \"required\": [\r",
+									"             \"ProtCode\",\r",
+									"             \"Protocol\",\r",
+									"             \"Text\"\r",
+									"         ],\r",
+									"         \"properties\": {\r",
+									"           \"ProtCode\": {\r",
+									"             \"type\": \"string\"\r",
+									"           },\r",
+									"           \"Protocol\": {\r",
+									"             \"type\": \"string\"\r",
+									"           },\r",
+									"             \"Text\": {\r",
+									"             \"type\": \"string\"\r",
+									"           },\r",
+									"          \r",
+									"               \r",
+									"             }\r",
+									"           }\r",
+									"         }\r",
+									"       }\r",
+									"     }\r",
+									"   \r",
+									"\r",
+									"\r",
+									"pm.test('Schema is valid', function() {\r",
+									"    var data=pm.response.json();\r",
+									"  pm.expect(tv4.validate(data, schema)).to.be.true;\r",
+									" \r",
+									"});\r",
+									"\r",
+									"\r",
+									"// pm.test(\"Text message validation\", function () {\r",
+									"//     var jsonData = pm.response.json();    \r",
+									"//     pm.expect(jsonData.worseningstatements.Text).to.eql(\"CONTACT GP SERVICE IF:.\\r\\nStill concerned about symptoms after 3 days.\");\r",
+									"// });\r",
+									"\r",
+									"//ar jsonData = pm.response.json(); \r",
+									"// jsonData = JSON.parse(responseBody)\r",
+									"//  for (var i = 0; i < jsonData.WorseningStatements.length; i++){\r",
+									"   \r",
+									"// pm.test(\"Verify ProtCode\", function () { \r",
+									"//         pm.expect(jsonData.WorseningStatements[i].ProtCode).is.to.equal(\"HEDL\"); \r",
+									"//     });\r",
+									"// pm.test(\"Verify Protocol\", function () { \r",
+									"//         pm.expect(jsonData.WorseningStatements[i].Protocol).is.to.equal(\"Head Lice\"); \r",
+									"//     });\r",
+									"// pm.test(\"Verify Text\", function () { \r",
+									"//         pm.expect(jsonData.WorseningStatements[i].Text).is.to.equal(\"CONTACT GP SERVICE OR PHARMACIST IF:.\\u000d\\u000aAfter using self-care treatment from the Pharmacist you are still concerned about symptoms.\"); \r",
+									"//     });\r",
+									"//  }"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b166c588-77a9-4528-911c-e85d273185c1",
+								"exec": [
+									"console.log(request.name+\" is running\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/worseningstatements?client=BetaSelf&clinical={{clinical}}&format=json&token={{previd}}&sessionid={{SessionID}}&signature={{signature}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"worseningstatements"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "clinical",
+									"value": "{{clinical}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{previd}}"
+								},
+								{
+									"key": "sessionid",
+									"value": "{{SessionID}}"
+								},
+								{
+									"key": "signature",
+									"value": "{{signature}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GetSignpost",
+			"item": [
+				{
+					"name": "getsignsignpost",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "1d3088a8-c340-4bb3-b9b5-766ac17c6736",
+								"exec": [
+									"console.log(request.name+\" is running\")\r",
+									"\r",
+									"// creating encoded url\r",
+									"var id = pm.environment.get(\"SessionID\");\r",
+									"var uuid = require('uuid');\r",
+									"var myUUID = uuid.v4();\r",
+									"console.log(myUUID);\r",
+									"postman.setEnvironmentVariable(\"previd\", myUUID);\r",
+									"var res = \"seq-assess/v2/signposts?client=BetaSelf&clinical=\"+pm.environment.get(\"clinical\")+\"&format=json&token=\"+myUUID+\"&sessionid=\"+id;\r",
+									"var encoded = encodeURIComponent(res);\r",
+									"postman.setEnvironmentVariable(\"encoded\", encoded);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "5abfdf17-11eb-4806-8161-934941c894d4",
+								"exec": [
+									"// Placing signature in environment variable\r",
+									"var str = responseBody.replace(\"\\\"\",\"\");\r",
+									"var str1 = str.replace(\"\\\"\",\"\");\r",
+									"pm.environment.set(\"signature\", str1);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/sign?client=BetaSelf&url=/{{encoded}}&format=json&token={{$guid}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"sign"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "url",
+									"value": "/{{encoded}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{$guid}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getsignpost",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2e8e74c4-7ed4-474d-821d-b7ee1a11e17c",
+								"exec": [
+									"jsonData = JSON.parse(responseBody)\r",
+									"tests[\"Signposts node is Present\"] = responseBody.has(\"Text\");\r",
+									"//tests[\"Get Signposts name\"] = responseBody.has(\"Self Care\");\r",
+									"tests[\"PreferenceLevel node is Present\"]=responseBody.has(\"PreferenceLevel\");\r",
+									"//tests[\"Get Signposts PreferenceLevel\"] = responseBody.has(\"false\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "6e6133b5-8792-4d6f-962f-cca95e947719",
+								"exec": [
+									"console.log(request.name+\" is running\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/signposts?client=BetaSelf&clinical={{clinical}}&format=json&token={{previd}}&sessionid={{SessionID}}&signature={{signature}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"signposts"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "clinical",
+									"value": "{{clinical}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{previd}}"
+								},
+								{
+									"key": "sessionid",
+									"value": "{{SessionID}}"
+								},
+								{
+									"key": "signature",
+									"value": "{{signature}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GetCareadvice",
+			"item": [
+				{
+					"name": "getsigncareadvice",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "37602fc0-2a3d-4d4d-bf6c-e34ea119c265",
+								"exec": [
+									"console.log(request.name+\" is running\")\r",
+									"\r",
+									"// creating encoded url\r",
+									"var id = pm.environment.get(\"SessionID\");\r",
+									"var uuid = require('uuid');\r",
+									"var myUUID = uuid.v4();\r",
+									"postman.setEnvironmentVariable(\"previd\", myUUID);\r",
+									"var res = \"seq-assess/v2/careadvice?client=BetaSelf&clinical=\"+pm.environment.get(\"clinical\")+\"&format=json&token=\"+myUUID+\"&sessionid=\"+id;\r",
+									"var encoded = encodeURIComponent(res);\r",
+									"postman.setEnvironmentVariable(\"encoded\", encoded);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "94f6961a-315b-4c5d-ac05-f71b0bcaf407",
+								"exec": [
+									"// Placing signature in environment variable\r",
+									"var str = responseBody.replace(\"\\\"\",\"\");\r",
+									"var str1 = str.replace(\"\\\"\",\"\");\r",
+									"pm.environment.set(\"signature\", str1);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/sign?client=BetaSelf&url=/{{encoded}}&format=json&token={{$guid}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"sign"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "url",
+									"value": "/{{encoded}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{$guid}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getcareadvice",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "957eb01c-0b6e-4c26-82ed-331b71886927",
+								"exec": [
+									"console.log(request.name+\" is running\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/careadvice?client=BetaSelf&clinical={{clinical}}&format=json&token={{previd}}&sessionid={{SessionID}}&signature={{signature}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"careadvice"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "clinical",
+									"value": "{{clinical}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{previd}}"
+								},
+								{
+									"key": "sessionid",
+									"value": "{{SessionID}}"
+								},
+								{
+									"key": "signature",
+									"value": "{{signature}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GetDemographicDetails",
+			"item": [
+				{
+					"name": "getsignsessiondemographics",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "7ea66ab5-1b30-45e9-8ed9-b8c4ebd57c5e",
+								"exec": [
+									"console.log(request.name+\" is running\")\r",
+									"\r",
+									"// creating encoded url\r",
+									"var id = pm.environment.get(\"SessionID\");\r",
+									"var uuid = require('uuid');\r",
+									"var myUUID = uuid.v4();\r",
+									"postman.setEnvironmentVariable(\"previd\", myUUID);\r",
+									"var res = \"seq-assess/v2/sessiondemographics?client=BetaSelf&clinical=\"+pm.environment.get(\"clinical\")+\"&format=json&token=\"+myUUID+\"&sessionid=\"+id;\r",
+									"var encoded = encodeURIComponent(res);\r",
+									"postman.setEnvironmentVariable(\"encoded\", encoded);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "71dd3518-2997-473a-96d5-fc0a400880a1",
+								"exec": [
+									"// Placing signature in environment variable\r",
+									"var str = responseBody.replace(\"\\\"\",\"\");\r",
+									"var str1 = str.replace(\"\\\"\",\"\");\r",
+									"pm.environment.set(\"signature\", str1);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/sign?client=BetaSelf&url=/{{encoded}}&format=json&token={{$guid}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"sign"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "url",
+									"value": "/{{encoded}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{$guid}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getsessiondemographics",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "fbf49e09-2b2a-42bc-bd76-5abbb27118cf",
+								"exec": [
+									"console.log(request.name+\" is running\")"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "70cac133-8f12-49e4-9e38-ddb7b29caac0",
+								"exec": [
+									"jsonData = JSON.parse(responseBody)\r",
+									"\r",
+									"var demographic = pm.environment.get(\"demographics\");\r",
+									"var expAgeInWeek = Number(demographic.slice(1));\r",
+									"var expGender = demographic.substr(0,1);\r",
+									"var complaint = pm.environment.get(\"searchcomplaint\");\r",
+									"\r",
+									"pm.test(\"====***====Validation of selected Complaint :: \"+complaint+\" ====***====\", function () { \r",
+									"    pm.expect(true).is.to.equal(true); \r",
+									"});\r",
+									"pm.test(\"====***====Validation of selected Age in weeks :: \"+expAgeInWeek+\" ====***====\", function () { \r",
+									"    pm.expect(Number(jsonData.Age)).is.to.equal(expAgeInWeek); \r",
+									"});\r",
+									"pm.test(\"====***====Validation of selected Gender :: \"+expGender+\" ====***====\", function () { \r",
+									"    pm.expect(jsonData.Gender).is.to.equal(expGender); \r",
+									"});\r",
+									" \r",
+									"// var  schema =  {\r",
+									"//             \"Age\": \"string\",\r",
+									"//             \"Complaint\": \"number\",\r",
+									"//             \"Gender\":\"string\"\r",
+									"           \r",
+									"// }\r",
+									"\r",
+									"// pm.test('Schema is valid', function() {\r",
+									"//     var data=pm.response.json();\r",
+									"//   pm.expect(tv4.validate(data, schema)).to.be.true;\r",
+									" \r",
+									"// });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/sessiondemographics?client=BetaSelf&clinical={{clinical}}&format=json&token={{previd}}&sessionid={{SessionID}}&signature={{signature}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"sessiondemographics"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "clinical",
+									"value": "{{clinical}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{previd}}"
+								},
+								{
+									"key": "sessionid",
+									"value": "{{SessionID}}"
+								},
+								{
+									"key": "signature",
+									"value": "{{signature}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GetUrgency",
+			"item": [
+				{
+					"name": "geturgencytextsignature",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d9d14b41-b2a8-4e96-8386-8706d32c8cd3",
+								"exec": [
+									"console.log(request.name+\" is running\")\r",
+									"\r",
+									"// creating encoded url\r",
+									"var urgency = pm.environment.get(\"urgencycode\");\r",
+									"var uuid = require('uuid');\r",
+									"var myUUID = uuid.v4();\r",
+									"postman.setEnvironmentVariable(\"previd\", myUUID);\r",
+									"\r",
+									"var res = \"seq-assess/v2/urgency?client=BetaSelf&clinical=\"+pm.environment.get(\"clinical\")+\"&format=json&token=\"+myUUID+\"&urgencycode=\"+urgency;\r",
+									"var encoded = encodeURIComponent(res);\r",
+									"\r",
+									"postman.setEnvironmentVariable(\"encoded\", encoded)"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "2e4a69b7-f128-4ae4-b933-23a193643f02",
+								"exec": [
+									"// Placing signature in environment variable\r",
+									"var str = responseBody.replace(\"\\\"\",\"\");\r",
+									"var str1 = str.replace(\"\\\"\",\"\");\r",
+									"pm.environment.set(\"signature\", str1);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/sign?client=BetaSelf&url=/{{encoded}}&format=json&token={{$guid}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"sign"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "url",
+									"value": "/{{encoded}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{$guid}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "geturgencytext",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "6e64f38e-356a-469b-abec-ae71dbba9a1b",
+								"exec": [
+									"console.log(request.name+\" is running\")"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "11c966b2-2ad6-492f-a39f-04d7e1c83dd2",
+								"exec": [
+									"// tests[\"Request menthod validation\"] = request.method === \"GET\"\r",
+									"var UrgencyCode = pm.environment.get(\"urgencycode\");\r",
+									"var jsonData = JSON.parse(responseBody)\r",
+									"var messg = jsonData.UrgencyText;\r",
+									"if (UrgencyCode === \"EMER\") {\r",
+									"      pm.test(\"Validation of urgencyText for \"+UrgencyCode+\" is \"+messg, function () {\r",
+									"        pm.expect(jsonData.UrgencyText).is.to.equal(\"Emergency Ambulance\");\r",
+									"    });\r",
+									"}\r",
+									"else if (UrgencyCode === \"IMM1\") {\r",
+									"      pm.test(\"Validation of urgencyText for \"+UrgencyCode+\" is \"+messg, function () {\r",
+									"      pm.expect(jsonData.UrgencyText).is.to.equal(\"face to face assessment Now\");\r",
+									"    });\r",
+									"  }\r",
+									"else if (UrgencyCode === \"IMM2\") {\r",
+									"      pm.test(\"Validation of urgencyText for \"+UrgencyCode+\" is \"+messg, function () {\r",
+									"        pm.expect(jsonData.UrgencyText).is.to.equal(\"face to face assessment within 2 hours\");\r",
+									"      });\r",
+									"  }\r",
+									"  else if (UrgencyCode === \"URG1\") {\r",
+									"      pm.test(\"Validation of urgencyText for \"+UrgencyCode+\" is \"+messg, function () {\r",
+									"        pm.expect(jsonData.UrgencyText).is.to.equal(\"face to face assessment within 6 hours\");\r",
+									"      });\r",
+									"  }\r",
+									"  else if (UrgencyCode === \"URG2\") {\r",
+									"      pm.test(\"Validation of urgencyText for \"+UrgencyCode+\" is \"+messg, function () {\r",
+									"      pm.expect(jsonData.UrgencyText).is.to.equal(\"face to face assessment within 12 hours\");\r",
+									"    });\r",
+									"  }\r",
+									"  else if (UrgencyCode === \"MODE\") {\r",
+									"      pm.test(\"Validation of urgencyText for \"+UrgencyCode+\" is \"+messg, function () {\r",
+									"      pm.expect(jsonData.UrgencyText).is.to.equal(\"face to face assessment within 24 hours\");\r",
+									"    });\r",
+									"  }\r",
+									"  else if (UrgencyCode === \"ROUT\") {\r",
+									"      pm.test(\"Validation of urgencyText for \"+UrgencyCode+\" is \"+messg, function () {\r",
+									"      pm.expect(jsonData.UrgencyText).is.to.equal(\"face to face assessment within routine timeframe\");\r",
+									"    });\r",
+									"  }\r",
+									"  else{\r",
+									"    pm.test(\"Validation of urgencyText for \"+UrgencyCode+\" is \"+messg, function () {\r",
+									"      pm.expect(jsonData.UrgencyText).is.to.equal(\"self care\");\r",
+									"    });\r",
+									"  }"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}seq-assess/v2/urgency?client=BetaSelf&clinical={{clinical}}&format=json&token={{previd}}&urgencycode={{urgencycode}}&signature={{signature}}",
+							"host": [
+								"{{base}}seq-assess"
+							],
+							"path": [
+								"v2",
+								"urgency"
+							],
+							"query": [
+								{
+									"key": "client",
+									"value": "BetaSelf"
+								},
+								{
+									"key": "clinical",
+									"value": "{{clinical}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "token",
+									"value": "{{previd}}"
+								},
+								{
+									"key": "urgencycode",
+									"value": "{{urgencycode}}"
+								},
+								{
+									"key": "signature",
+									"value": "{{signature}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
