@@ -1,0 +1,2340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 59">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="92"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.755782581"/>
+			<Prp name="message" type="S" value="selectGender(&quot;Female&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 129">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="203"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7567579977"/>
+			<Prp name="message" type="S" value="clickItem(btn_TeleAssessContinueBtn,&quot;Continue&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 91">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="144"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="363"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7561996991"/>
+			<Prp name="message" type="S" value="Recent operation Label is present in the screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 57">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="88"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7557643634"/>
+			<Prp name="message" type="S" value="clickItem(btn_UseAnonymousPatient,&quot;Use anonymous patient&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 18">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="27"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7547816667"/>
+			<Prp name="message" type="S" value="clickItem(btn_PresentComplaint,&quot;Leg / Foot Injury&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 81">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="130"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7560804745"/>
+			<Prp name="message" type="S" value="Login(Project.Variables.ClinicianUsername,Project.Variables.ClinicianPassword)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 109">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="170"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7564533449"/>
+			<Prp name="message" type="S" value="Assessment has been completed on clicking complete button"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 96">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="150"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7562378009"/>
+			<Prp name="message" type="S" value="clickItem(btn_QuestionSetOnLHS,&quot;Cold/flu&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 63">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="99"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7558318981"/>
+			<Prp name="message" type="S" value="SetTextinPresentingComplaintSearchBox(&quot;recent operation&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 24">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="37"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7549781019"/>
+			<Prp name="message" type="S" value="Clinician is able to select presenting complaint as Knee Injury from list and come to Assessment screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 50">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="77"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="1134"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7556466435"/>
+			<Prp name="message" type="S" value="Odyssey.eCover.App Process is found.....Exiting waitForProcessToStart"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7545160069"/>
+			<Prp name="message" type="S" value="Login(Project.Variables.ClinicianUsername,Project.Variables.ClinicianPassword)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 60">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="95"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7557983333"/>
+			<Prp name="message" type="S" value="clickItem(btn_Continue,&quot;Continue&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 64">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="103"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7558717824"/>
+			<Prp name="message" type="S" value="SelctPresComplFrmSrchRes()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 82">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="134"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7561200347"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 28">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="47"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7552138194"/>
+			<Prp name="message" type="S" value="clickItem(btn_Continue,&quot;Continue&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 89">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="142"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7561897338"/>
+			<Prp name="message" type="S" value="Return to queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 84">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="136"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7561388426"/>
+			<Prp name="message" type="S" value="waitfordefaultScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="13"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="368"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7546543982"/>
+			<Prp name="message" type="S" value="Loading... Label is not present in the screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 69">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="110"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7559314699"/>
+			<Prp name="message" type="S" value="Add Question Set popup is showing on clicking Add Questionset Link"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 21">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="33"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7548353588"/>
+			<Prp name="message" type="S" value="clickItem(btn_TeleAssessContinueBtn,&quot;Continue&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 54">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="85"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="368"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7557614699"/>
+			<Prp name="message" type="S" value="Loading... Label is not present in the screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 139">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="217"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7568792245"/>
+			<Prp name="message" type="S" value="clickItem(btn_Complete,&quot;Complete&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 61">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="97"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7558192477"/>
+			<Prp name="message" type="S" value="waitforPresentingScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 126">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="197"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7567235764"/>
+			<Prp name="message" type="S" value="clickItem(btn_PresentComplaint,&quot;Leg / Foot Injury&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 13">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="18"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7546783912"/>
+			<Prp name="message" type="S" value="setText(&quot;15&quot;,txt_ApproximateAge,&quot;ApproximateAge&quot;,&quot;&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 140">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="219"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7569001968"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 106">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="165"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.756406875"/>
+			<Prp name="message" type="S" value="SelectPatientOutcome(&quot;Test Outcome&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 98">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="155"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7563027431"/>
+			<Prp name="message" type="S" value="clickItem(btn_Continue,&quot;Continue&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 37">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="59"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7553388194"/>
+			<Prp name="message" type="S" value="EnterNotesText(&quot;Note added for additional details of assessment&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 51">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="78"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="206"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7556682639"/>
+			<Prp name="message" type="S" value="Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 38">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="62"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7553873264"/>
+			<Prp name="message" type="S" value="clickItem(btn_SaveNotes,&quot;Save&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 103">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="161"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7563759606"/>
+			<Prp name="message" type="S" value="clickItem(btn_Continuetosummaryscreen,&quot;Continue to summary screen&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 115">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="1134"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7565453935"/>
+			<Prp name="message" type="S" value="Odyssey.eCover.App Process is found.....Exiting waitForProcessToStart"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 108">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="169"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7564533102"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 32">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="53"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7552918287"/>
+			<Prp name="message" type="S" value="waitforSummaryScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 132">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="207"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7568149884"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Close Assessment&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 130">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="205"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7567809143"/>
+			<Prp name="message" type="S" value="waitforAssessmentScreen3_11()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 83">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="135"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="368"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7561387963"/>
+			<Prp name="message" type="S" value="Loading... Label is not present in the screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 128">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="201"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7567473843"/>
+			<Prp name="message" type="S" value="setText(&quot;7566576&quot;,txt_ContactInfo,&quot;ContactInfoTextBox&quot;,&quot;&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 74">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="119"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7560000694"/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Post op bleed now&quot;,&quot;Yes: Dark/old blood&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 110">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="171"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7564537384"/>
+			<Prp name="message" type="S" value="closeApplication()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 135">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="212"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7568455787"/>
+			<Prp name="message" type="S" value="clickItem(btn_CloseAssessment,&quot;Close Assessment&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="163"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7544148727"/>
+			<Prp name="message" type="S" value="ODY_892--Standalone-Clinician-To check the functionalities of Patient outcome and Notes section in the Summary screen and complete assessment."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 87">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="139"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="368"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7561562269"/>
+			<Prp name="message" type="S" value="Loading... Label is not present in the screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 33">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="54"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7553001505"/>
+			<Prp name="message" type="S" value="Clinical Summary Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 92">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="145"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7561997338"/>
+			<Prp name="message" type="S" value="Presenting complaint Abdominal injury is displaying on the screen on pickup the patient from the queue"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 53">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="84"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7557330787"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 120">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="186"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.756654919"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Use anonymous patient&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 112">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="174"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="163"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.756489213"/>
+			<Prp name="message" type="S" value="ODY_877--Standalone-Clinician-To Check close Assessment option available on the LHS of the Assessment screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 19">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="29"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7548026968"/>
+			<Prp name="message" type="S" value="clickItem(btn_PresentComplaint,&quot;Knee injury&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 71">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="115"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7559736227"/>
+			<Prp name="message" type="S" value="SelctPresComplFrmSrchRes()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 42">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="68"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7554606019"/>
+			<Prp name="message" type="S" value="Assessment has been completed on clicking complete button"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 143">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="222"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="238"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7569087384"/>
+			<Prp name="message" type="S" value="The close command was sent to the process &quot;Odyssey.eCover.App&quot;. Failed to wait for the process to close due to an unexpected window."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="The close command was send to the window with the 'Odyssey' caption. The process displayed a dialog with the 'Warning!' caption.&#xA;&#xA;Tested object:&#xA;Aliases.Odyssey_eCover_App&#xA;(Sys.Process(&quot;Odyssey.eCover.App&quot;))"/>
+		</Node>
+		<Node name="message 43">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="69"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7554621412"/>
+			<Prp name="message" type="S" value="closeApplication()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 141">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="220"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7569002315"/>
+			<Prp name="message" type="S" value="Default screen displayed upon premature closure of assessment"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 14">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="20"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7546944792"/>
+			<Prp name="message" type="S" value="selectGender(&quot;Male&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 75">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="122"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7560498264"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Pause Assessment&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 72">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="116"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="152"/>
+			<Prp name="unit id" type="I" value="7"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7559780324"/>
+			<Prp name="message" type="S" value="Added presenting complaint :: Head and chest cold"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 142">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="221"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7569007639"/>
+			<Prp name="message" type="S" value="closeApplication()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 104">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="163"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.756401794"/>
+			<Prp name="message" type="S" value="waitforSummaryScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 12">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="16"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7546629051"/>
+			<Prp name="message" type="S" value="clickItem(btn_UseAnonymousPatient,&quot;Use anonymous patient&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 39">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="64"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7554152083"/>
+			<Prp name="message" type="S" value="Notes entered in the notes section has been saved and displaying"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 22">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="35"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.754914375"/>
+			<Prp name="message" type="S" value="waitforAssessmentScreen3_11()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 10">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="14"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7546618403"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 73">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="118"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.755999456"/>
+			<Prp name="message" type="S" value="Cold/flu protocol is added for the assessment"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 127">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="199"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7567352083"/>
+			<Prp name="message" type="S" value="clickItem(btn_PresentComplaint,&quot;Knee injury&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 15">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="23"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7547170602"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Continue&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 46">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="73"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7555175231"/>
+			<Prp name="message" type="S" value="DeletePatientsFromTheQueue()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 66">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="106"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7558987847"/>
+			<Prp name="message" type="S" value="waitforAssessmentScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 52">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="80"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7556710532"/>
+			<Prp name="message" type="S" value="Login(Project.Variables.ClinicianUsername,Project.Variables.ClinicianPassword)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 137">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="215"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7568709838"/>
+			<Prp name="message" type="S" value="Summary screen is displaying on clicking Close assessment Button"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 95">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="149"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7562377546"/>
+			<Prp name="message" type="S" value="Switch View Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 101">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="159"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7563588194"/>
+			<Prp name="message" type="S" value="Yes: Dark/old blood displaying for Post op bleed now in the right side of the screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="268"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7544507176"/>
+			<Prp name="message" type="S" value="The application &quot;C:\Users\Vikram.Thippeswamy\Desktop\Odyssey 3.28.appref-ms&quot; started."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="The process ID is 432."/>
+		</Node>
+		<Node name="message 25">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="38"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7549790394"/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Current State&quot;,&quot;Confused (new/acute)&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 85">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="137"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.756144213"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 41">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="67"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7554604745"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="1134"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7545004051"/>
+			<Prp name="message" type="S" value="Odyssey.eCover.App Process is found.....Exiting waitForProcessToStart"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 100">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="158"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7563535995"/>
+			<Prp name="message" type="S" value="Continue to summary screen Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 76">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="124"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7560672917"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 125">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="196"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7567235417"/>
+			<Prp name="message" type="S" value="Search for a presenting complaint using the search window, or select an item from the list Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 58">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="90"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7557737963"/>
+			<Prp name="message" type="S" value="setText(&quot;34&quot;,txt_ApproximateAge,&quot;ApproximateAge&quot;,&quot;&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 16">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="25"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7547617245"/>
+			<Prp name="message" type="S" value="waitforPresentingScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 3" type="S" value="{5792F3CE-85C4-4C67-9BDE-BA34914E3961}"/>
+			<Prp name="unit 6" type="S" value="{82D32211-C050-4168-9120-B88783F13D71}"/>
+			<Prp name="unit 4" type="S" value="{40100E68-8D42-4C0D-9D8E-F1B15EADEAB2}"/>
+			<Prp name="unit 2" type="S" value="{2CBB81FE-F552-450F-830E-0B36AAC8CE4A}"/>
+			<Prp name="unit 0" type="S" value="{6B545B1C-4993-41B3-B55C-0A8F2F20504E}"/>
+			<Prp name="unit 5" type="S" value="{248FD78C-6EF5-4431-B357-3A62B7B877A8}"/>
+			<Prp name="unit 1" type="S" value="{54BFC739-356C-4151-8A2D-049306DA3D0D}"/>
+			<Prp name="unit 7" type="S" value="{CD6B0E81-E186-486B-906D-1F1B0D7DD6C9}"/>
+		</Node>
+		<Node name="message 62">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="98"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7558318518"/>
+			<Prp name="message" type="S" value="Search for a presenting complaint using the search window, or select an item from the list Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 99">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="157"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7563320486"/>
+			<Prp name="message" type="S" value="waitforTriageScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 107">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="167"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7564266204"/>
+			<Prp name="message" type="S" value="clickItem(btn_Complete,&quot;Complete&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 35">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="57"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="943"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7553377199"/>
+			<Prp name="message" type="S" value="NotesTextBox object is enable"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 94">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="148"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7562241782"/>
+			<Prp name="message" type="S" value="waitforAssessmentScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 123">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="193"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7566951736"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Continue&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="206"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7545100116"/>
+			<Prp name="message" type="S" value="Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 86">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="138"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7561442593"/>
+			<Prp name="message" type="S" value="LoadingDone()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 118">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="184"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7566262384"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="81"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7544125694"/>
+			<Prp name="message" type="S" value="Module : SmokeTest"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 90">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="143"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7561897569"/>
+			<Prp name="message" type="S" value="Accept patient screen is displaying on clicking pick up patient from default screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 23">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="36"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7549660764"/>
+			<Prp name="message" type="S" value="Change Presenting Complaint Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 102">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="160"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7563753819"/>
+			<Prp name="message" type="S" value="Mild displaying for Neck Stiffness in the right side of the screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 48">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="75"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7555969097"/>
+			<Prp name="message" type="S" value="LaunchApplication()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 88">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="140"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7561562732"/>
+			<Prp name="message" type="S" value="clickItem(btn_PickUp,&quot;Pick Up&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 116">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="178"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="206"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7565567014"/>
+			<Prp name="message" type="S" value="Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 121">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="188"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7566679977"/>
+			<Prp name="message" type="S" value="setText(54,txt_ApproximateAge,&quot;ApproximateAge&quot;,&quot;&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 114">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="176"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="268"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7564934954"/>
+			<Prp name="message" type="S" value="The application &quot;C:\Users\Vikram.Thippeswamy\Desktop\Odyssey 3.28.appref-ms&quot; started."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="The process ID is 18972."/>
+		</Node>
+		<Node name="message 40">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="65"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7554166898"/>
+			<Prp name="message" type="S" value="clickItem(btn_Complete,&quot;Complete&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 80">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="129"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7560804398"/>
+			<Prp name="message" type="S" value="Login ID: Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 30">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="50"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7552616319"/>
+			<Prp name="message" type="S" value="Continue to summary screen Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 56">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="87"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7557643634"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 31">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="51"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7552617477"/>
+			<Prp name="message" type="S" value="clickItem(btn_Continuetosummaryscreen,&quot;Continue to summary screen&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 65">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="104"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="152"/>
+			<Prp name="unit id" type="I" value="7"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7558786111"/>
+			<Prp name="message" type="S" value="Added presenting complaint :: Recent operation"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 20">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="31"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7548187037"/>
+			<Prp name="message" type="S" value="setText(&quot;7566576&quot;,txt_ContactInfo,&quot;ContactInfoTextBox&quot;,&quot;&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 55">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="86"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7557614699"/>
+			<Prp name="message" type="S" value="waitfordefaultScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 67">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="107"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7559149653"/>
+			<Prp name="message" type="S" value="Switch View Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 17">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="26"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7547815046"/>
+			<Prp name="message" type="S" value="Search for a presenting complaint using the search window, or select an item from the list Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 93">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="146"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7562001505"/>
+			<Prp name="message" type="S" value="clickItem(btn_AccpetPatient,&quot;Accept patient&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 11">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="15"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.754661956"/>
+			<Prp name="message" type="S" value="Clinician is able to login and default screen is displayed"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 77">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="125"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7560673148"/>
+			<Prp name="message" type="S" value="default screen is displaying on clicking Pause assessment link in Assessment screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 133">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="209"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7568284375"/>
+			<Prp name="message" type="S" value="Close assessment layout is displaying on clicking the close assessment link on assessment screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 136">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="214"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7568709606"/>
+			<Prp name="message" type="S" value="Clinical Summary Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 34">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="55"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7553003588"/>
+			<Prp name="message" type="S" value="SelectPatientOutcome(&quot;Test Outcome&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 113">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="175"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7564894907"/>
+			<Prp name="message" type="S" value="LaunchApplication()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 68">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="108"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.755915"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Add Question Set&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 131">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="206"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7568149537"/>
+			<Prp name="message" type="S" value="Change Presenting Complaint Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 119">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="185"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="368"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7566548843"/>
+			<Prp name="message" type="S" value="Loading... Label is not present in the screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 138">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="216"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7568788194"/>
+			<Prp name="message" type="S" value="Closed: Hoxed is displaying in the patient OutCome"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 97">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="152"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7562509607"/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Neck Stiffness&quot;,&quot;Mild&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 78">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="126"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7560676736"/>
+			<Prp name="message" type="S" value="LogoutApp()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 45">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="72"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="163"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7555169792"/>
+			<Prp name="message" type="S" value="ODY_1004A--Standalone-Clinician-To check that add question set and pause functionality is working for any assessment"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="245"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7544092477"/>
+			<Prp name="message" type="S" value="Project Variables are assigned successfully"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 49">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="76"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="268"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.755599919"/>
+			<Prp name="message" type="S" value="The application &quot;C:\Users\Vikram.Thippeswamy\Desktop\Odyssey 3.28.appref-ms&quot; started."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="The process ID is 23592."/>
+		</Node>
+		<Node name="message 122">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="190"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7566772338"/>
+			<Prp name="message" type="S" value="selectGender(&quot;Female&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 26">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="41"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.755052037"/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Swelling&quot;,&quot;Whole area&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 117">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="180"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7565602083"/>
+			<Prp name="message" type="S" value="Login(Project.Variables.ClinicianUsername,Project.Variables.ClinicianPassword)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 79">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="128"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7560768287"/>
+			<Prp name="message" type="S" value="waitForLoginScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 44">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="70"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="238"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7554818171"/>
+			<Prp name="message" type="S" value="The close command was sent to the process &quot;Odyssey.eCover.App&quot;. Failed to wait for the process to close due to an unexpected window."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="The close command was send to the window with the 'Odyssey' caption. The process displayed a dialog with the 'Warning!' caption.&#xA;&#xA;Tested object:&#xA;Aliases.Odyssey_eCover_App&#xA;(Sys.Process(&quot;Odyssey.eCover.App&quot;))"/>
+		</Node>
+		<Node name="message 27">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="44"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7551427083"/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Pain severity&quot;,&quot;7-8: Severe&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 105">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="164"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7564068056"/>
+			<Prp name="message" type="S" value="Clinical Summary Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 134">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="211"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7568452315"/>
+			<Prp name="message" type="S" value="Other option in available in Reason for close assessment Combobox"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 111">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="172"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="238"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7564621644"/>
+			<Prp name="message" type="S" value="The close command was sent to the process &quot;Odyssey.eCover.App&quot;. Failed to wait for the process to close due to an unexpected window."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="The close command was send to the window with the 'Odyssey' caption. The process displayed a dialog with the 'Warning!' caption.&#xA;&#xA;Tested object:&#xA;Aliases.Odyssey_eCover_App&#xA;(Sys.Process(&quot;Odyssey.eCover.App&quot;))"/>
+		</Node>
+		<Node name="message 124">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="174"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="195"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7567127894"/>
+			<Prp name="message" type="S" value="waitforPresentingScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 36">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="id" type="I" value="58"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7553377894"/>
+			<Prp name="message" type="S" value="Notes section is displaying in the summary screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7546122685"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 47">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="74"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="unit id" type="I" value="6"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.755519294"/>
+			<Prp name="message" type="S" value="DECLARE @DomainId uniqueidentifier&#xA;DECLARE @ClosedStatus uniqueidentifier&#xA;&#xA;SET @DomainId = (select id from dbo.Domain where Description = 'EnglishStandaloneENAU')&#xA;SET @ClosedStatus = (SELECT id FROM Status where Description = 'Closed')&#xA;&#xA;(SELECT * FROM Session &#xA;INNER JOIN SessionStatus on Session.Id = SessionStatus.SessionId &#xA;WHERE Session.DomainId = @DomainId &#xA;AND StatusId in (SELECT id FROM Status where Description IN ('Open', 'Interrupted', 'Suspended', 'Waiting', 'Reception','Paused')))&#xA;&#xA;UPDATE SessionStatus SET StatusId = @ClosedStatus WHERE SessionStatus.SessionId in &#xA;(SELECT id FROM Session &#xA;INNER JOIN SessionStatus on Session.Id = SessionStatus.SessionId &#xA;WHERE Session.DomainId = @DomainId &#xA;AND StatusId in (SELECT id FROM Status where Description IN ('Open', 'Interrupted', 'Suspended', 'Waiting', 'Reception','Paused')))"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7544152083"/>
+			<Prp name="message" type="S" value="LaunchApplication()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 29">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="49"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7552358912"/>
+			<Prp name="message" type="S" value="waitforTriageScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 70">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="72"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="111"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45062.7559318866"/>
+			<Prp name="message" type="S" value="SetTextinPresentingComplaintSearchBox(&quot;Head&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

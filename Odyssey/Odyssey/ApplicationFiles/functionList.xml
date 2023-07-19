@@ -1,0 +1,1715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <functions>
+    <function Name="waitforAcceptPatientScreen" Desc="Description: This function is wait for the Accept screen" />
+    <function Name="ToCheckSavedNotes" Desc="Description: This function is to validate saved notes" />
+    <function Name="ToCheckSavedNoteText" Desc="Description: This function is to validate saved note text">
+      <Parameters Desc="">noteText</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="clickSignInButtonForAdminUser" Desc="Description: This function is click sign in button and to wait for loading default screen" />
+    <function Name="LoginAdmin" Desc="Description: This function to login the application">
+      <Parameters Desc="  UserName: username ">UserName</Parameters>
+      <Parameters Desc="  Password: Password">Password</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="waitforAdminSummaryScreen" Desc="Description: This function is wait for the Admin Summary screen" />
+    <function Name="ToVerifyLabels" Desc="Description: This function is to verify the labels">
+      <Parameters Desc="">labelName</Parameters>
+    </function>
+    <function Name="ClickBtnsInAdminSummaryScreen" Desc="Description: This function is to click the buttons in summary screen">
+      <Parameters Desc="">BtnNm</Parameters>
+    </function>
+    <function Name="ClickBtnsInAdminSummaryScreenForInProcess" Desc="Description: This function is to click the buttons in summary screen for InProcess">
+      <Parameters Desc="">BtnNm</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="waitforAssessmentScreen" Desc="Description: This function is wait for the Assessment screen" />
+    <function Name="ClickOnQuestionType" Desc="Description: This function to click on Question type">
+      <Parameters Desc="          Type:Question Type Needs to be selected">Type</Parameters>
+    </function>
+    <function Name="AnsweringQues" Desc="Description: This function to select Questions">
+      <Parameters Desc="          Ques:Question ">Ques</Parameters>
+      <Parameters Desc="          Ans:Answer to select">Ans</Parameters>
+    </function>
+    <function Name="ToChckButtonsOnLHS" Desc="Description: This function check buttons present on LHS of the screen">
+      <Parameters Desc="          BtnName:Button Name">BtnName</Parameters>
+    </function>
+    <function Name="TochkValueOfCheckableCombBox" Desc="Description: This function is to check the selected items from the checkable combobox">
+      <Parameters Desc="          Content:Multiple/None/Empty">Content</Parameters>
+    </function>
+    <function Name="ToValidatePopUpMsg" Desc="Description: This function is to check the pop up messages">
+      <Parameters Desc="          Name:Name property value of pop up">Name</Parameters>
+      <Parameters Desc="          Message:Message">Message</Parameters>
+    </function>
+    <function Name="ToValidateRationale" Desc="Description: This function is to check the rationale exists">
+      <Parameters Desc="          question:short question">question</Parameters>
+    </function>
+    <function Name="ToChkNotesSaved" Desc="Description: This function is to validate Notes saved" />
+    <function Name="SetNotes" Desc="Description: This function to set text in Notes ">
+      <Parameters Desc="          notestext:notes text">notestext</Parameters>
+    </function>
+    <function Name="ToChckAddQuestionSetPopUp" Desc="Description: This function check Add Questionset popup" />
+    <function Name="ToChkCloseAssessmentlayout" Desc="Description: This function to check the layout of Close Assessment" />
+    <function Name="ToValidateReasonsForClosingAssessment" Desc="Description: This function to Select reason to closing assessment ">
+      <Parameters Desc="">reason</Parameters>
+    </function>
+    <function Name="ToChckDuplicationOfProtocols" Desc="Description: This function check duplication of protocols present on LHS of the assessment screen">
+      <Parameters Desc="          BtnName:Button Name">BtnName</Parameters>
+    </function>
+    <function Name="ToCheckSelectedAnswer" Desc="Description: This function is to check the selected item from the single select combobox in assessment screen">
+      <Parameters Desc="          shortQues:Short question text">shortQues</Parameters>
+      <Parameters Desc="          selectedAnswer:SelectedItem/Blank">selectedAnswer</Parameters>
+    </function>
+    <function Name="ToCheckMultiSelectQuestion" Desc="Description: This function is to check the selected items from the checkable combobox">
+      <Parameters Desc="          shortQues:Short question text">shortQues</Parameters>
+      <Parameters Desc="          selectedAnswer:Last Selected Responses / Blank">selectedAnswers</Parameters>
+    </function>
+    <function Name="ToChkNotesSavedGeneric" Desc="Description: This function is to validate Notes saved">
+      <Parameters Desc="          noteText : text of saved note">noteText</Parameters>
+    </function>
+    <function Name="AnsCallHandlerQues1" Desc="Description: This function is to check warning message enable and displaying">
+      <Parameters Desc="            ques1: Question">ques1</Parameters>
+      <Parameters Desc="            Ans1: Answer">Ans1</Parameters>
+    </function>
+    <function Name="ToChckOrderOfQuestionSet" Desc="Description: This function To Check Order Of Question Set buttons in assessment screen(Clinician/CallHandler)">
+      <Parameters Desc="          BtnName:Button Name">btnName</Parameters>
+      <Parameters Desc="          Position:Position of question set 1 or 2 or 3.....">position</Parameters>
+    </function>
+    <function Name="AnsRemainingQuesClinician" Desc="Description: This function is to Answer remaining questions in TeleAssess assessment screen and navigate to triage screen" />
+    <function Name="ToCheckAnswerPresence" Desc="Description: This function is to check for availability of an Answer for a single select question in TeleAssess assessment screen">
+      <Parameters Desc="            shortQues: ShortQuestion">shortQues</Parameters>
+      <Parameters Desc="            ans: Answer">ans</Parameters>
+    </function>
+    <function Name="AnsQuesByUrgencyClinician" Desc="Description: This function is to Answer remaining questions by urgency in TeleAssess assessment screen">
+      <Parameters Desc="        urgencyType:EMERGENCYQUESTIONS/CRITICALQUESTIONS/URGENTQUESTIONS/ALLQUESTIONS">urgencyType</Parameters>
+    </function>
+    <function Name="AnsRemQuesByQuesSetClinician" Desc="Description: This function is to Answer all the remaining questions of a question set in TeleAssess assessment screen">
+      <Parameters Desc="          questionSet:Question Set">questionSet</Parameters>
+    </function>
+    <function Name="AnsweringBMIQues" Desc="Description: This function to answer BMI question">
+      <Parameters Desc="          Weight:Question">Weight</Parameters>
+      <Parameters Desc="          Height:Question">Height</Parameters>
+      <Parameters Desc="          BMICalcValueExp:Compare">BMICalcValueExp</Parameters>
+      <Parameters Desc="          Answer:Answer to select">Answer</Parameters>
+    </function>
+    <function Name="ToChkBMINotesSaved" Desc="Description: This function is to validate BMI Notes saved">
+      <Parameters Desc="          height: height value">height</Parameters>
+      <Parameters Desc="          weight: weight value"> weight</Parameters>
+      <Parameters Desc="          BMI: BMI value"> BMI</Parameters>
+    </function>
+    <function Name="AnsweringPregencyQues" Desc="Description: This function to answer Pregnency calculator">
+      <Parameters Desc="          Type:EDD/LMD">Type</Parameters>
+      <Parameters Desc="          Val: Answer/&quot;&quot;">Val</Parameters>
+    </function>
+    <function Name="ToCheckAddQuesSearchResult" Desc="Description: This function is to validate/compare the search result for add question set">
+      <Parameters Desc="             searchString:Search string entered/&quot;&quot;(blank)">searchString</Parameters>
+      <Parameters Desc="             expSearchResultCount:expected number of records in search result/&quot;&quot;(blank)">expSearchResultCount</Parameters>
+    </function>
+    <function Name="ToValAllergyDetails" Desc="Description: This function is validate allergies details in the patient details popup of Assessment screen">
+      <Parameters Desc="          allergyList:">allergyList</Parameters>
+      <Parameters Desc="          dateList:">dateList</Parameters>
+    </function>
+    <function Name="ToValMedicationDetails" Desc="Description: This function is validate allergies details in the patient details popup of Assessment screen">
+      <Parameters Desc="          medicationsList:">medicationsList</Parameters>
+      <Parameters Desc="          dateList:">dateList</Parameters>
+    </function>
+    <function Name="ToValPatientDetailsBlank" Desc="Description: This function is validatethat allergy or medication details is blank in the patient details popup of Assessment screen">
+      <Parameters Desc="          patientDetType:allergy/medication">patientDetType</Parameters>
+    </function>
+    <function Name="waitforPatientDetWindow" Desc="Description: This function is wait for the Patient Details window for Allergy and Medication in InProcess" />
+    <function Name="ToCheckforClinWarnOverlay" Desc="Description: This function is check for Clinical Warning overlay displayed in assessment screen for Clinician" />
+    <function Name="ToCheckforClinWarnIcon" Desc="Description: This function is check for Clinical Warning icon and its tooltip displayed in assessment screen for Clinician" />
+    <function Name="ClickClinicalWarningIcon" Desc="Description: This function to click on Clinical Warning icon in assessment screen and open Clinical Warning overlay for Clinician" />
+    <function Name="ToCheckShortQuesColour" Desc="Description: This function is validate the color of short questions for clinician role in assessment screen">
+      <Parameters Desc="          shortques:short question text">shortques</Parameters>
+      <Parameters Desc="          expColour:INDIGO/RED/YELLOW/BLUE/BLACK">expColour</Parameters>
+    </function>
+    <function Name="ToCheckSelectedConvAnswer" Desc="Description: This function is to check the selected items from the single select combobox in assessment screen">
+      <Parameters Desc="          shortQues:Short question text">shortQues</Parameters>
+      <Parameters Desc="          selectedAnswer:SelectedItem/Blank">selectedAnswer</Parameters>
+      <Parameters Desc="          value:Temperature/Weight">value</Parameters>
+    </function>
+    <function Name="waitforAssessScrUrgPopup" Desc="Description: This function is wait for the Assessment screen and urgency popup is displayed" />
+    <function Name="ToChckCloseQuestionSetPopUp" Desc="Description: This function to check the layout of Close Question Set" />
+    <function Name="ToChckCloseQuesSetMessg" Desc="Description: This function to check the message displayed on close of question set">
+      <Parameters Desc="          messg:">messg</Parameters>
+    </function>
+    <function Name="SelCloseQuesSet" Desc="Description: This function to check question set checkbox in close question set overlay">
+      <Parameters Desc="          qSetList:">qSetList</Parameters>
+    </function>
+    <function Name="SelCloseQuesSetReason" Desc="Description: This function to check question set checkbox in close question set overlay">
+      <Parameters Desc="          reason:">reason</Parameters>
+    </function>
+    <function Name="SelCloseQuesSetAndReason" Desc="Description: This function to Select question set and reason to close">
+      <Parameters Desc="          qSetList:">qSetList</Parameters>
+      <Parameters Desc="          closureReason:"> closureReason</Parameters>
+    </function>
+    <function Name="ToValCloseQuesSetList" Desc="Description: This function to validate list of available question set for closure">
+      <Parameters Desc="          qSetList:">qSetList</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="LogoutApp" Desc="Description: This function to logout app" />
+    <function Name="LockApp" Desc="Description: This function to Lock app" />
+    <function Name="selectGender" Desc="Description: This function to select patient gender">
+      <Parameters Desc="            gender:Male or female">gender</Parameters>
+    </function>
+    <function Name="clickUndoCHangesInAddress" Desc="Description: This function to click Undo changes button in addresses" />
+    <function Name="chkAllergies" Desc="Description: This function to check the allergies in the list box">
+      <Parameters Desc="          BoxName:Available or Selected">BoxName</Parameters>
+    </function>
+    <function Name="enterNewPatientDet" Desc="Description: This function to enter details for a new patient in demographic screen.">
+      <Parameters Desc="          age:age of patient">age</Parameters>
+      <Parameters Desc="          gender:gender of patient">gender</Parameters>
+    </function>
+    <function Name="enterNewPatDetPerfModule" Desc="Description: This function to enter details for a new patient in demographic screen.">
+      <Parameters Desc="          age:age of patient">age</Parameters>
+      <Parameters Desc="          gender:gender of patient">gender</Parameters>
+      <Parameters Desc="          firstname:firstname">firstname</Parameters>
+      <Parameters Desc="          lastname:lastname">lastname</Parameters>
+    </function>
+    <function Name="ToChkRuleofThree" Desc="Description: This function is to check the rule of three warning icon and its tooltip" />
+    <function Name="resetIISViaShellCommand" Desc="Description: This function to reset IIS pause for few seconds" />
+  </functions>
+  <functions>
+    <function Name="waitforReceptionscreen" Desc="Description: This function is wait for the reception screen" />
+    <function Name="AddPatientsInTheQueue" Desc="Description: This function to launch and login and add patients in the queue" />
+    <function Name="AddPatientsInReception" Desc="Description: This function to Add Patients in the queue" />
+    <function Name="ToFindQuesListObject" Desc="Description: This function to find the Ques List object">
+      <Parameters Desc="           ListNo: 1 or 2 or 3 or 4">ListNo</Parameters>
+    </function>
+    <function Name="ToSelectAnsForQuesListInAssesmtnScreen" Desc="Description: Function to select Answers from question list">
+      <Parameters Desc="           ListNo: ListNumber">ListNo</Parameters>
+      <Parameters Desc="           ItemName : Item Name">ItemName</Parameters>
+    </function>
+    <function Name="ToSelectSelectedUrgency" Desc="Description: Function to select Selected Urgency Combo box">
+      <Parameters Desc="          ItemName: ItemName to select">ItemName</Parameters>
+    </function>
+    <function Name="ToChcNotesSavedItemCountRecp" Desc="Description: This function is to check whether notes has been saved" />
+    <function Name="waitforRecpAssessmentScreen" Desc="Description: This function is to wait for Reception assessment screen" />
+    <function Name="ToValidateCloseAssessmentBtn" Desc="Description: This function is to validate Close Assessment button" />
+    <function Name="SelectedUrgency" Desc="Description: This function is to validate Selected Urgency" />
+    <function Name="ToCheckSelectedAnswerReception" Desc="Description: This function is to check the selected items from the single select combobox in assessment screen">
+      <Parameters Desc="          quesNum: 1 or 2 or 3 .....">quesNum</Parameters>
+      <Parameters Desc="          selectedAnswer:SelectedItem/Blank">selectedAnswer</Parameters>
+    </function>
+    <function Name="SelectAnsForMutiSelQuesReception" Desc="Description: Function to select Answers from Muti Select Question">
+      <Parameters Desc="           1istNo: List Number">ListNo</Parameters>
+      <Parameters Desc="           answer : answer to be selected">answer</Parameters>
+    </function>
+    <function Name="ToCheckAdditionalQues" Desc="Description: This function to count number of questions in reception">
+      <Parameters Desc="          Count: Count no.of question present in assessment screen">Count</Parameters>
+    </function>
+    <function Name="SelectPatOutcomeRecep" Desc="Description: This function is to select Patient Outcome in reception assessment screen">
+      <Parameters Desc="          patientOutcome:patientOutcome value">patientOutcome</Parameters>
+    </function>
+    <function Name="waitforSummaryReportScreen" Desc="Description: This function is to wait for Summry Report screen for Recepton/Clinician user" />
+    <function Name="ToValOldContentWarning" Desc="Description: This function is to check for warning message displayed for old clinical content file being used">
+      <Parameters Desc="          latestversion:latest content version">latestversion</Parameters>
+    </function>
+    <function Name="EnterNotesText" Desc="Description: This function is to check enter notes text">
+      <Parameters Desc="          note:note text">note</Parameters>
+    </function>
+    <function Name="ToChckPatOutSelectedRecep" Desc="Description: This function is to check the selected Patient Outcome in reception assessment screen">
+      <Parameters Desc="          patientOutcome:patientOutcome value">patientOutcome</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="GetProcess" Desc="Description: This function is to get the process" />
+    <function Name="waitForInformationMessage" Desc="Description: This function is to wait for the object">
+      <Parameters Desc="             proArr:Property name in the array">proArr</Parameters>
+      <Parameters Desc="             propValueArr:property value in the array"> propValueArr</Parameters>
+    </function>
+    <function Name="setText" Desc="Description: This function is to set text">
+      <Parameters Desc="             txt:text to set in the text box         ">txt</Parameters>
+      <Parameters Desc="             name:name property value">name</Parameters>
+      <Parameters Desc="             wpfControlName:wpfControlName property value OR">wpfControlName</Parameters>
+      <Parameters Desc="             obj:Object">obj</Parameters>
+    </function>
+    <function Name="waitForItemWithTime" Desc="Description: This function is to wait for the object with the defined time" />
+    <function Name="ToFindObj" Desc="Description: This function is to find the object">
+      <Parameters Desc="             proArr: Property name in the array">proArr</Parameters>
+      <Parameters Desc="             propValueArr: property value in the array"> propValueArr</Parameters>
+    </function>
+    <function Name="waitForInformationMessageTrueOrFalse" Desc="Description: This function is to wait for the object returns true or false">
+      <Parameters Desc="             proArr: Property name in the array">proArr</Parameters>
+      <Parameters Desc="             propValueArr: property value in the array"> propValueArr</Parameters>
+    </function>
+    <function Name="closeApplication" Desc="Description: This function to close the application" />
+    <function Name="LaunchApplication" Desc="Description: This function is to launch the application" />
+    <function Name="ToCheckButtonEnaborDisab" Desc="Description: This function is to check button enable or disable">
+      <Parameters Desc="             wpfControlText: property value of wpfControlText ">wpfControlText</Parameters>
+    </function>
+    <function Name="ToCheckLablePresent" Desc="Description: This function is to check lable present in the page">
+      <Parameters Desc="             wpfControlText: property value of wpfControlText ">wpfControlText</Parameters>
+    </function>
+    <function Name="ToCheckSearchBoxPresent" Desc="Description: This function is to check the text box presenting on screen">
+      <Parameters Desc="             name: value of Name property       ">name</Parameters>
+      <Parameters Desc="             wpfControlText: property value of wpfControlText ">wpfControlText</Parameters>
+    </function>
+    <function Name="selectComboBoxItem" Desc="Description: This function is to select Combo box with item name">
+      <Parameters Desc="             comboBoxName: property value of name ">comboBoxName</Parameters>
+      <Parameters Desc="             itemName: Name of the item to select">itemName</Parameters>
+    </function>
+    <function Name="selectComboBoxByIndex" Desc="Description: This function is to select Combo box with index value">
+      <Parameters Desc="             comboBoxName: property value of name ">comboBoxName</Parameters>
+      <Parameters Desc="             itemName: Name of the item to select">itemName</Parameters>
+      <Parameters Desc="             obj:object to pass">obj</Parameters>
+    </function>
+    <function Name="getTextFromTextBox" Desc="Description: This function is to get text from text box">
+      <Parameters Desc="             name: property value of name ">name</Parameters>
+      <Parameters Desc="             wpfControlName: property value of wpfControlName ">wpfControlName</Parameters>
+    </function>
+    <function Name="TochkComboboxSelected" Desc="Description: This function is to check combo box has been selected">
+      <Parameters Desc="             name: property value of name ">name</Parameters>
+      <Parameters Desc="             wpfControlText: property value of wpfControlText ">wpfControlText</Parameters>
+    </function>
+    <function Name="clickItem" Desc="Description: This function is to click the item">
+      <Parameters Desc="             name:name property value">name</Parameters>
+      <Parameters Desc="             wpfControlText:wpfControlText property value">wpfControlText</Parameters>
+    </function>
+    <function Name="ToFindObjToValidate" Desc="Description: This function is to find the object to validate">
+      <Parameters Desc="             proArr: Property name in the array">proArr</Parameters>
+      <Parameters Desc="             propValueArr: property value in the array"> propValueArr</Parameters>
+    </function>
+    <function Name="ToCheckAndUncheck" Desc="Description: This function to check and uncheck the checkbox">
+      <Parameters Desc="          Name:Name property of the object">Name</Parameters>
+      <Parameters Desc="          Action:Check or Uncheck">Action</Parameters>
+    </function>
+    <function Name="ToValidateTipTool" Desc="Description: This function to validate ToolTip">
+      <Parameters Desc="          obj1:Object">obj1</Parameters>
+      <Parameters Desc="          ToolTip:ToolTip content">ToolTip</Parameters>
+    </function>
+    <function Name="Drag" Desc="Description: This function to do drag operation">
+      <Parameters Desc="          Name:">Name</Parameters>
+      <Parameters Desc="          wpfControlName:">wpfControlName</Parameters>
+      <Parameters Desc="          wpfControlText:">wpfControlText</Parameters>
+      <Parameters Desc="          X1:">X1</Parameters>
+      <Parameters Desc="          X2:">X2</Parameters>
+      <Parameters Desc="          Y1:">Y1</Parameters>
+      <Parameters Desc="          Y2:">Y2</Parameters>
+    </function>
+    <function Name="RightClick" Desc="Description: This function to do right click on object for the specific coordinates">
+      <Parameters Desc="          Name:">Name</Parameters>
+      <Parameters Desc="          wpfControlName:">wpfControlName</Parameters>
+      <Parameters Desc="          wpfControlText:">wpfControlText</Parameters>
+      <Parameters Desc="          x:">x</Parameters>
+      <Parameters Desc="          y:">y</Parameters>
+    </function>
+    <function Name="getSystemDateTime" Desc="Description: This function is used to get system date and time in the required format">
+      <Parameters Desc="   format:  format specifier">format</Parameters>
+    </function>
+    <function Name="ToEnterBackSpace" Desc="Description: This function is used to enter backspace">
+      <Parameters Desc="           obj:  ">obj</Parameters>
+      <Parameters Desc="           num:">num</Parameters>
+    </function>
+    <function Name="DblclickItem" Desc="Description: This function is to double the item">
+      <Parameters Desc="             name:name property value">name</Parameters>
+      <Parameters Desc="             wpfControlText:wpfControlText property value">wpfControlText</Parameters>
+    </function>
+    <function Name="getEnvVariable" Desc="Description: This function is to get environment variable">
+      <Parameters Desc="             item: item to get value">item</Parameters>
+    </function>
+    <function Name="chkComboBoxItem" Desc="Description: This function to validate the items in the Combo Box of address details">
+      <Parameters Desc="           comboBoxName:value of name property">comboBoxName</Parameters>
+      <Parameters Desc="           itemName:item name needs to validate">itemName</Parameters>
+    </function>
+    <function Name="ToValItemSelected" Desc="Description: This function to validate item selected">
+      <Parameters Desc="            Item: Item">Name</Parameters>
+      <Parameters Desc="            WPFControlText: WPFControlText">WPFControlText</Parameters>
+    </function>
+    <function Name="ExpandItem" Desc="Description: This function is to expand the item">
+      <Parameters Desc="             name:name property value">name</Parameters>
+      <Parameters Desc="             wpfControlText:wpfControlText property value">wpfControlText</Parameters>
+    </function>
+    <function Name="CollapseItem" Desc="Description: This function is to Collapse the item">
+      <Parameters Desc="             name: name property value">name</Parameters>
+      <Parameters Desc="             wpfControlText: wpfControlText property value">wpfControlText</Parameters>
+    </function>
+    <function Name="delayExecution" Desc="Description: This function is to delay execution" />
+    <function Name="ToCheckObjEnableorDisable" Desc="Description: This function is to check object enabled or disabled">
+      <Parameters Desc="             name:name property value">name</Parameters>
+      <Parameters Desc="             WPFControlName:WPFControlName property value">WPFControlName</Parameters>
+      <Parameters Desc="             WPFControlText:WPFControlText property value">WPFControlText</Parameters>
+    </function>
+    <function Name="delay2Sec" Desc="Description: This function is to check object enabled or disabled" />
+    <function Name="ToEnterLeftKey" Desc="Description: This function is to use left key">
+      <Parameters Desc="          obj:">obj</Parameters>
+      <Parameters Desc="          num:">num</Parameters>
+    </function>
+    <function Name="ClearText" Desc="Description: This function is to clear the text">
+      <Parameters Desc="          name:">name</Parameters>
+      <Parameters Desc="          wpfControlText:">wpfControlText</Parameters>
+      <Parameters Desc="          wpfControlName:">wpfControlName</Parameters>
+    </function>
+    <function Name="delay" Desc="Description: This function is to delay execution" />
+    <function Name="ToEnterCopyandPaste" Desc="Description: This function is used to enter backspace">
+      <Parameters Desc="           obj1:  ">obj1</Parameters>
+      <Parameters Desc="           obj2:">obj2</Parameters>
+    </function>
+    <function Name="ShiftandleftKey" Desc="Description: This function is to use left key">
+      <Parameters Desc="          obj:">obj</Parameters>
+      <Parameters Desc="          num:">num</Parameters>
+    </function>
+    <function Name="closeApplication1" Desc="Description: This function to close/terminate the application for error handling" />
+    <function Name="delayInMinutes" Desc="Description: This function is to delay execution to let application change status of assessment">
+      <Parameters Desc="        delayTime: pass delay time in minutes">delayInMin</Parameters>
+    </function>
+    <function Name="ToEnterCopy" Desc="Description: This function is used to copy text of the object">
+      <Parameters Desc="           Name:Name property value of object ">Name</Parameters>
+    </function>
+    <function Name="ToEnterPaste" Desc="Description: This function is used to paste copeid text to the object">
+      <Parameters Desc="           Name:Name property value of object   ">Name</Parameters>
+    </function>
+    <function Name="waitForProcessToStart" Desc="Description: This function is to wait for the process to start and returns true or false">
+      <Parameters Desc="             processName: Process name">processName</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="CreateTempFile" Desc="Description: This function to create Temp file">
+      <Parameters Desc="            fileName1:">fileName1</Parameters>
+      <Parameters Desc="            fileName2:">fileName2</Parameters>
+    </function>
+    <function Name="CompareFiles" Desc="Description: This function to compare files">
+      <Parameters Desc="            fileName1:">fileName1</Parameters>
+      <Parameters Desc="            fileName2:">fileName2</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="SetContactTypeText" Desc="Description: This function enter contact type" />
+    <function Name="SetAddressTypeText" Desc="Description: This function enter Address type" />
+    <function Name="SetEthnicityText" Desc="Description: This function enter Ethnicity text" />
+    <function Name="SetTextInConfigurationEditors" Desc="Description: This function to enter text in the configuration editors options">
+      <Parameters Desc="">Type</Parameters>
+    </function>
+    <function Name="SetCallBackNumber" Desc="Description: This function to set text for SetCallBackNumber">
+      <Parameters Desc="          value :">value</Parameters>
+    </function>
+    <function Name="SetCallType" Desc="Description: This function to Set call type">
+      <Parameters Desc="          value:">value</Parameters>
+    </function>
+    <function Name="SettingDefaultvaluesInAdmin" Desc="Description: This function to Set call type" />
+    <function Name="AddContactTypeForInitialSetup" Desc="Description: This function to add contact type for default values in Configuration Editor screen">
+      <Parameters Desc="">contactTypeList</Parameters>
+    </function>
+    <function Name="AddAddressTypeForInitialSetup" Desc="Description: This function to add contact type for default values in Configuration Editor screen">
+      <Parameters Desc="">AddressTypeList</Parameters>
+    </function>
+    <function Name="Add111Message" Desc="Description: This function to add 111 message in Configuration Editor screen">
+      <Parameters Desc="          message:111 message text">message</Parameters>
+      <Parameters Desc="          urgency:urgency for 111 message">urgency</Parameters>
+    </function>
+    <function Name="ChangeStatus111Message" Desc="Description: This function to change status of 111 message in Configuration Editor screen">
+      <Parameters Desc="          message:111 message text">message</Parameters>
+    </function>
+    <function Name="OutcomeUrgencyColour" Desc="Description: This function to check the colour of outcome urgencies displayed ">
+      <Parameters Desc="          outcomeObj:outcome object">outcomeObj</Parameters>
+      <Parameters Desc="          expColour:expected colour of action">expColour</Parameters>
+    </function>
+    <function Name="ToCheckOutcomeColour" Desc="Description: This function to check the colour of outcome urgencies displayed ">
+      <Parameters Desc="          outcomeUrgency:outcome Urgency">outcomeUrgency</Parameters>
+      <Parameters Desc="          expColour:expected colour of action">expColour</Parameters>
+      <Parameters Desc="          role:&quot;&quot;/Reception/CallHandler/FaceToFace(Blank for teleassess)">role</Parameters>
+    </function>
+    <function Name="AddPatientOutcome" Desc="Description: This function to add outcome in Configuration Editor screen">
+      <Parameters Desc="          message:patient outcome text">message</Parameters>
+      <Parameters Desc="          detOutcome:detailed outcome">detOutcome</Parameters>
+      <Parameters Desc="          urgencyList:list of urgencies for outcome">urgencyList</Parameters>
+    </function>
+    <function Name="AddRelationTypeForInitialSetup" Desc="Description: This function to add relation type for default values in Configuration Editor screen">
+      <Parameters Desc="          relationTypeList:">relationTypeList</Parameters>
+    </function>
+    <function Name="AddAllergiesForInitialSetup" Desc="Description: This function to add manage allergies for default values in Configuration Editor screen">
+      <Parameters Desc="            AddAllergiesList:Allergies to be added">AddAllergiesList</Parameters>
+    </function>
+    <function Name="AddSessionTypesForInitialSetup" Desc="Description: This function to add edit session types for default values in Configuration Editor screen">
+      <Parameters Desc="          EditSessionTypesList:Session Types to be added">EditSessionTypesList</Parameters>
+    </function>
+    <function Name="AddQuestionSetClosureReasonsForInitialSetup" Desc="Description: This function to add question set closure reason for default values in Configuration Editor screen">
+      <Parameters Desc="          QuestionSetClosureReasonsList:QuestionSet Closure Reasons to be added">QuestionSetClosureReasonsList</Parameters>
+    </function>
+    <function Name="SelectOutcomeType" Desc="Description: This function to add question set closure reason for default values in Configuration Editor screen">
+      <Parameters Desc="          outcomeType:Outcome Type(TeleAssess/Reception/FaceToFace/CallHandler)">outcomeType</Parameters>
+    </function>
+    <function Name="ToCheckFeatureToggle" Desc="Description: This function to check/uncheck feature toggles under Third Party Integration Configuration">
+      <Parameters Desc="          featureType:PMH/MCS/SNOMED">featureType</Parameters>
+      <Parameters Desc="          action:CHECK/UNCHECK">action</Parameters>
+    </function>
+    <function Name="SetClinicalContentVersion" Desc="Description: This function to select Clinical Content Version">
+      <Parameters Desc="          Version : Clinical Content version">value</Parameters>
+    </function>
+    <function Name="SetClinicalWarning" Desc="Description: This function to set text for SetCallBackNumber">
+      <Parameters Desc="          value :Check/Uncheck">value</Parameters>
+    </function>
+    <function Name="SetOrganisationName" Desc="Description: This function to set name for Organisation Name under Site Settings of Cofiguration Editors">
+      <Parameters Desc="          name :Organisation Name">name</Parameters>
+    </function>
+    <function Name="GetOrganisationName" Desc="Description: This function to get/fetch Organisation name under Site Settings of Cofiguration Editors" />
+    <function Name="SetPauseAssessment" Desc="Description: This function to check/uncheck for PauseAssessment setting under configuration editor">
+      <Parameters Desc="          value :Check/Uncheck">value</Parameters>
+    </function>
+    <function Name="CheckOverRidAliasSignpost" Desc="Description: This function to validate overridden and aliased signpost functionality in Configuration screen">
+      <Parameters Desc="          signpost:signpost text">signpost</Parameters>
+      <Parameters Desc="          newSignpostText:overridden/aliased signpost text"> newSignpostText</Parameters>
+    </function>
+    <function Name="ToCheckEmailServerSett" Desc="Description: This function to validate Email Server Settings in Configuration screen">
+      <Parameters Desc="          SMTPStatus:Check/Uncheck">SMTPStatus</Parameters>
+    </function>
+    <function Name="waitforConfigEditScreen" Desc="Description: This function is wait for the Configuration Editor screen" />
+    <function Name="CheckOutcomeSnomed" Desc="Description: This function to check for SNOMED field for any outcome in Configuration Editor screen" />
+    <function Name="SetColouredShortQues" Desc="Description: This function to check/uncheck for Coloured Short Question setting under configuration editor">
+      <Parameters Desc="          value :Check/Uncheck">value</Parameters>
+    </function>
+    <function Name="SetTemperatureQues" Desc="Description: This function to check/uncheck for Temperature answer in centigrade and fahrenheit should  setting under configuration editor">
+      <Parameters Desc="          value :Check/Uncheck">value</Parameters>
+    </function>
+    <function Name="SetWeightQues" Desc="Description: This function to check/uncheck for Temperature answer in centigrade and fahernheit should  setting under configuration editor">
+      <Parameters Desc="          value :Check/Uncheck">value</Parameters>
+    </function>
+    <function Name="CheckUncheckSignpost" Desc="Description: This function to check/uncheck for signpost option for any module under configuration editor">
+      <Parameters Desc="          module :TeleAssess/FirstCall">module</Parameters>
+      <Parameters Desc="          value :Check/Uncheck">value</Parameters>
+    </function>
+    <function Name="CheckEnabledModule" Desc="Description: This function to check for enabled modules for a domain under Site Settings of configuration editor">
+      <Parameters Desc="          enabledModuleList :FaceToFace/FirstCall/Reception/TeleAssess">moduleList</Parameters>
+    </function>
+    <function Name="CheckUncheckPurpQues" Desc="Description: This function to check/uncheck for PQ(Purple Question) option for FirstCall under configuration editor">
+      <Parameters Desc="          value :Check/Uncheck">value</Parameters>
+    </function>
+    <function Name="CheckUncheckAmbTransTxt" Desc="Description: This function to check/uncheck for Ambulance Transport Text option for FirstCall under configuration editor">
+      <Parameters Desc="          value :Check/Uncheck">value</Parameters>
+    </function>
+    <function Name="EnterAmbuTransTxt" Desc="Description: This function to Enter Ambulance Transport Text option for FirstCall">
+      <Parameters Desc="              ambulanceTxt:Ambulance Text">ambulanceTxt</Parameters>
+    </function>
+    <function Name="EnterUrgencyTxt" Desc="Description: This function to Enter Urgency Text for FirstCall">
+      <Parameters Desc="              urgencyTxtType:IMLT/EMER/IMM1">urgencyTxtType</Parameters>
+      <Parameters Desc="              messgTxt:message txt to be entered">messgTxt</Parameters>
+    </function>
+    <function Name="EnterEmailServerSett" Desc="Description: This function to validate Email Server Settings in Configuration screen">
+      <Parameters Desc="          host:host details">host</Parameters>
+      <Parameters Desc="          account:account details"> account</Parameters>
+      <Parameters Desc="          password:password"> password</Parameters>
+      <Parameters Desc="          admin:admin email"> admin</Parameters>
+      <Parameters Desc="          from:from email"> from</Parameters>
+    </function>
+    <function Name="AddContentDetails" Desc="Description: This function to add clinical content in database">
+      <Parameters Desc="          fileNames:content file names         ">fileNames</Parameters>
+    </function>
+    <function Name="SetClinicalContentAndSave" Desc="Description: This function to select Clinical Content Version and save">
+      <Parameters Desc="          Version : Clinical Content version">Version</Parameters>
+    </function>
+    <function Name="InitialSetupConfigScreen" Desc="Description: This function need to be run on a new domain to configure it for auto regression">
+      <Parameters Desc="          location:GB / IE / NZ / AUS">location</Parameters>
+    </function>
+    <function Name="SaveAdminConfig" Desc="Description: This function to click Save Changes in the Admin Configuration screen" />
+    <function Name="UpdateContactTypeList" Desc="Description: This function to click Save Changes in the Admin Configuration screen">
+      <Parameters Desc="          contactTypeList:">contactTypeList</Parameters>
+      <Parameters Desc="          flagList:"> flagList</Parameters>
+    </function>
+    <function Name="CheckAdminContentVersion" Desc="Description: This function to check the selected content version in Current Selected Clinical Content version combobox">
+      <Parameters Desc="          version:Clinical Content version">version</Parameters>
+    </function>
+    <function Name="CheckNewContentVersion" Desc="Description: This function to check the new content version available under Manage Clinical Content">
+      <Parameters Desc="          version:New Content version">version</Parameters>
+      <Parameters Desc="          duration:number of days to auto-update">duration</Parameters>
+    </function>
+    <function Name="CheckContentUpdateHis" Desc="Description: This function to check the first entry of Content Version Update History grid">
+      <Parameters Desc="          version:New Content version">version</Parameters>
+      <Parameters Desc="          note:decline reason note">note</Parameters>
+    </function>
+    <function Name="CheckContentUpdateAudit" Desc="Description: This function to check the first entry of Content Version Update History grid">
+      <Parameters Desc="          version:New Content version">version</Parameters>
+      <Parameters Desc="          note:decline reason note/blank for accept ">note</Parameters>
+    </function>
+    <function Name="DelContentDetails" Desc="Description: This function to del content details from DB after completing AUTO-UPDATE script testing">
+      <Parameters Desc="          version:content version">version</Parameters>
+      <Parameters Desc="          location:GB/IE/NZ/AU">location</Parameters>
+      <Parameters Desc="          typelist:Clinical/Lay">typelist</Parameters>
+    </function>
+    <function Name="AddContentTypeVersion" Desc="Description: This function to add all clinical content type versions in the ClinicalContentType table of Odyssey Database">
+      <Parameters Desc="          versionlist:content version list">versionlist</Parameters>
+    </function>
+    <function Name="ChangeCallLength" Desc="Description: This function to change call length for FirstCall user under Manage Call Length dropdown">
+      <Parameters Desc="          callLength :All Questions/Purple and Red Questions">callLength</Parameters>
+    </function>
+    <function Name="ExpCollSiteSetting" Desc="Description: This function to expand or collapse Site Settings section in Admin Configuration screen">
+      <Parameters Desc="        action:expand/collapse">action</Parameters>
+    </function>
+    <function Name="ExpCollAddressType" Desc="Description: This function to expand or collapse Address Type section in Admin Configuration screen">
+      <Parameters Desc="        action:expand/collapse">action</Parameters>
+    </function>
+    <function Name="ExpCollContactType" Desc="Description: This function to expand or collapse Contact Type section in Admin Configuration screen">
+      <Parameters Desc="        action:expand/collapse">action</Parameters>
+    </function>
+    <function Name="ExpCollSignposting" Desc="Description: This function to expand or collapse Signposting section in Admin Configuration screen">
+      <Parameters Desc="        action:expand/collapse">action</Parameters>
+    </function>
+    <function Name="ExpCollUrgVariation" Desc="Description: This function to expand or collapse Urgency Variation Text section in Admin Configuration screen">
+      <Parameters Desc="        action:expand/collapse">action</Parameters>
+    </function>
+    <function Name="SelectUrgVarType" Desc="Description: This function to select Urgency Variation Text type from dropdown">
+      <Parameters Desc="          variationType:Outcome Type(TeleAssess/CallHandler)">variationType</Parameters>
+    </function>
+    <function Name="UpdateUrgencyVariation" Desc="Description: This function to update Urgency Variation Reason message text/status under Urgency Variation Text">
+      <Parameters Desc="          status :Check/Uncheck/Blank">status</Parameters>
+      <Parameters Desc="          existingMssg:">existingMssg</Parameters>
+      <Parameters Desc="          newMssg:">newMssg</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="setDBConnection" Desc="Description: Function to establish a database connection" />
+    <function Name="ExecSQLQueryFile" Desc="Description: Function to execute th SQL query file">
+      <Parameters Desc="Author: Sachin">FileNameWithPath</Parameters>
+    </function>
+    <function Name="ExecSQLQuery" Desc="Description: This function to execute SQL query ">
+      <Parameters Desc="            queryString: sql query to execute">queryString</Parameters>
+    </function>
+    <function Name="ExecSQLQueryToReturnVal" Desc="Description: This function to execute SQL query to return value">
+      <Parameters Desc="            queryString: sql query to execute">queryString</Parameters>
+    </function>
+    <function Name="getDatafromDB" Desc="Description: This function to fetch data from DB">
+      <Parameters Desc="            Item : data to be fetched">Item</Parameters>
+    </function>
+    <function Name="DeletePatientsFromTheQueue" Desc="Description: This function to delete patient details from DB" />
+    <function Name="DeletePersonDetailFromDB" Desc="Description: This function to delete person details from DB" />
+    <function Name="DeleteGPDetailFromDB" Desc="Description: This function to delete GP details" />
+    <function Name="AddGPDetailFromDB" Desc="Description: This function to add patient details to DB" />
+    <function Name="DeleteUsersFromAdmin" Desc="Description: This function to delete users from admin" />
+    <function Name="DeleteContactTypeAddedfromAdmin" Desc="Description: This function to delete Contact Type added" />
+    <function Name="DeleteAddressTypeAddedfromAdmin" Desc="Description: This function to delete Address Type added" />
+    <function Name="DeleteEthnicityAddedfromAdmin" Desc="Description: This function to delete Ethnicity " />
+    <function Name="DeleteAllegiesAddedfromAdmin" Desc="Description: This function to delete Allergies " />
+    <function Name="DeleteSessionTypefromAdmin" Desc="Description: This function to delete SessionType " />
+    <function Name="DeleteQuesSetClosureReasonAddedfromAdmin" Desc="Description: This function to delete QuestionSetClosure reason" />
+    <function Name="DeleteCloseAssessmentReasonAddedfromAdmin" Desc="Description: This function to delete Close Assessment Reason" />
+    <function Name="DeleteContactTypeForInitialSetup" Desc="Description: This function to delete contact types from admin" />
+    <function Name="DeleteAddressTypeForInitialSetup" Desc="Description: This function to delete address types from admin" />
+    <function Name="setSessionTimeoutInMinutes" Desc="Description: This function to change the SessionTimeOutInMinutes value in ConfigSetting table">
+      <Parameters Desc="            min: number of minutes 1 or 10 or ...">min</Parameters>
+    </function>
+    <function Name="Delete111Messages" Desc="Description: This function to delete 111 messages from admin" />
+    <function Name="DeleteAllContactTypeFromAdmin" Desc="Description: This function to delete contact types from admin" />
+    <function Name="DeleteAllAddressTypefromAdmin" Desc="Description: This function to delete Contact Type added" />
+    <function Name="GetLastEntryFromSessionHistory" Desc="Description: This function to get the last entry in session history table ---- Need to be updated" />
+    <function Name="GetLastEntryFromSession" Desc="Description: This function to get the last entry in session history table" />
+    <function Name="GetLastEntryFromAudit" Desc="Description: This function to get the last entry in audit table for a session">
+      <Parameters Desc="">sessionId</Parameters>
+    </function>
+    <function Name="GetLastAuditEntryWithoutSession" Desc="Description: This function to get the last entry in audit table" />
+    <function Name="GetClinicalKeyFromResponse" Desc="Description: This function to get the clinical key in response table">
+      <Parameters Desc="          sessionID: Session ID">sessionID</Parameters>
+    </function>
+    <function Name="GetLastNote" Desc="Description: This function to get the note from db" />
+    <function Name="GetAllNotesofSession" Desc="Description: This function to get all the notes of any session from db">
+      <Parameters Desc="          sessionID: Session ID">sessionID</Parameters>
+    </function>
+    <function Name="GetLastSessionAdviceAcceptance" Desc="Description: This function to get the last entry of SessionAdviceAcceptance from db" />
+    <function Name="GetCHOutcomeIDSession" Desc="Description: This function to get all the Outcome ID of any session from db" />
+    <function Name="GetOutcomeFromResponse" Desc="Description: This function to get the Id from Outcome" />
+    <function Name="DeleteAllRelationshipTypeFromAdmin" Desc="Description: This function to delete contact types from admin" />
+    <function Name="DeletePatientTestDataByNHS" Desc="Description: This function to delete person details from DB through NHS" />
+    <function Name="DeletePatientOutcome" Desc="Description: This function to get the last entry of SessionAdviceAcceptance from db(incomplete)" />
+    <function Name="GetLastEntryFromSessionInProcess" Desc="Description: This function to get the last entry in session history table" />
+    <function Name="GetSignpostsBySeesionID" Desc="Description: This function to get all signpost list of any session from db">
+      <Parameters Desc="">SessionId</Parameters>
+    </function>
+    <function Name="UpdateEmailConfigModule" Desc="Description: This function to feature setting value in EmailConfiguration table of db">
+      <Parameters Desc="            featureSetting:featureSetting value">featureSetting</Parameters>
+    </function>
+    <function Name="DeletePersDetForPerformanceModule" Desc="Description: This function to delete person details from DB for permarmance module" />
+    <function Name="ExecSQLQueryNoRecords" Desc="Description: This function to execute SQL query and check if no records found(Negative scenario)">
+      <Parameters Desc="            queryString: sql query to execute">queryString</Parameters>
+    </function>
+    <function Name="GetSignpostsNegScenario" Desc="Description: This function to get all signpost list of any session from db">
+      <Parameters Desc="">SessionId</Parameters>
+    </function>
+    <function Name="DeleteUrgencySnomedCode" Desc="Description: This function to delete all the admin defined snomed code(having 123456 matching value) for any urgency from db" />
+    <function Name="SetConfigSettings" Desc="Description: This DB function to enable/disable PostCode validation in ConfigSettings table of DB">
+      <Parameters Desc="            configKey:PostcodeValidation/SessionTimeoutInMinutes">configKey</Parameters>
+      <Parameters Desc="            configValue:True/False">configValue</Parameters>
+    </function>
+    <function Name="SetOutcomeType" Desc="Description: This DB function to enable/disable Signpost in OutcomeTypeConfiguration table of DB">
+      <Parameters Desc="            module:FirstCall/Clinical/SelfAssess/Reception/FaceToFace">module</Parameters>
+      <Parameters Desc="            outcomeType:Signpost/PatientOutcome">outcomeType</Parameters>
+    </function>
+    <function Name="setConnectionRepDB" Desc="Description: Function to establish a connection to reporting database" />
+    <function Name="ExecSQLQueryRetValRepDB" Desc="Description: This function to execute SQL query to return value">
+      <Parameters Desc="            queryString: sql query to execute">queryString</Parameters>
+    </function>
+    <function Name="GetResponseRepDB" Desc="Description: This function to get all response provided for any session from reporting db">
+      <Parameters Desc="">SessionId</Parameters>
+    </function>
+    <function Name="GetDemographicDetRepDB" Desc="Description: This function to get demographic details of patient for any session from reporting db">
+      <Parameters Desc="">SessionId</Parameters>
+    </function>
+    <function Name="GetContactDetRepDB" Desc="Description: This function to get contact details of patient for any session from reporting db">
+      <Parameters Desc="">SessionId</Parameters>
+    </function>
+    <function Name="GetContentDetRepDB" Desc="Description: This function to get content details used for any session from reporting db">
+      <Parameters Desc="">SessionId</Parameters>
+    </function>
+    <function Name="GetClinicianDetRepDB" Desc="Description: This function to get clinician details and presenting complaint available for any session from reporting db">
+      <Parameters Desc="">SessionId</Parameters>
+    </function>
+    <function Name="GetReceptionDetRepDB" Desc="Description: This function to get Reception details and presenting complaint available for any session from reporting db">
+      <Parameters Desc="">SessionId</Parameters>
+    </function>
+    <function Name="GetFirstCallDetRepDB" Desc="Description: This function to get FirstCall details and presenting complaint available for any session from reporting db">
+      <Parameters Desc="">SessionId</Parameters>
+    </function>
+    <function Name="GetSignpostDetRepDB" Desc="Description: This function to get Signpost details available for any session from reporting db">
+      <Parameters Desc="">SessionId</Parameters>
+    </function>
+    <function Name="GetAdviceDetRepDB" Desc="Description: This function to get FirstCall advice details available for any session in reporting db">
+      <Parameters Desc="">SessionId</Parameters>
+    </function>
+    <function Name="SetDomainSettings" Desc="Description: This DB function to update value of any clumn(key) in Domain table of DB">
+      <Parameters Desc="            Key:FeatureSetting">Key</Parameters>
+      <Parameters Desc="            Value:value to be updated with">Value</Parameters>
+    </function>
+    <function Name="AddGPDetails" Desc="Description: This function to add GP details for automation testing while initial database configuration" />
+    <function Name="AddOverrideSignpost" Desc="Description: This function to add Overridden Signpost details for automation testing while initial database configuration" />
+    <function Name="AddAliasedSignpost" Desc="Description: This function to add Aliased Signpost details for automation testing while initial database configuration" />
+    <function Name="AddClinicalContent" Desc="Description: This function to add content file details in IterationDataConfig table for automation testing while initial database configuration">
+      <Parameters Desc="          contentDet: content details">contentDet</Parameters>
+    </function>
+    <function Name="GetQuesTxtTypeRepDB" Desc="Description: This function to get FirstCall advice details available for any session in reporting db">
+      <Parameters Desc="          SessionId:">SessionId</Parameters>
+    </function>
+    <function Name="UpdateContactType" Desc="Description: This function to get FirstCall advice details available for any session in reporting db">
+      <Parameters Desc="          contactType:contact type">contactType</Parameters>
+      <Parameters Desc="          flag:corresponding flag"> flag</Parameters>
+    </function>
+    <function Name="AddClinicalContentType" Desc="Description: This function to add content type version in the ClinicalContentType table of Odyssey Database">
+      <Parameters Desc="          version:content version">version</Parameters>
+    </function>
+    <function Name="DelClinicalContentType" Desc="Description: This function to del content type version in the ClinicalContentType table of Odyssey Database for auto update validations">
+      <Parameters Desc="          version:content version">version</Parameters>
+    </function>
+    <function Name="DelClinicalContent" Desc="Description: This function to delete content file details in IterationDataConfig table for auto update validations">
+      <Parameters Desc="          version:">version</Parameters>
+      <Parameters Desc="          location:"> location</Parameters>
+      <Parameters Desc="          type:"> type</Parameters>
+    </function>
+    <function Name="DelContentUpdateHis" Desc="Description: This function to delete clinical content update history details in ClinicalContentUpdateHistory table for auto update validations">
+      <Parameters Desc="          version:">version</Parameters>
+    </function>
+    <function Name="UpdateContentVersion" Desc="Description: This DB function to update clinical content type ID in Domain table of DB">
+      <Parameters Desc="            version:content version to set">version</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="waitfordefaultScreen" Desc="Description: This function is wait for the defualt screen" />
+    <function Name="WaitforDefualtScreenForNgtvTst" Desc="Description: This function is wait for the defualt screen for Negative test" />
+    <function Name="LoadingDone" Desc="Description: This function to wait to load the patients in the queue " />
+    <function Name="ToValidateTipToolForPatientsInQ" Desc="Description: This function to validate the tooltip of patients in the queue" />
+    <function Name="ToCheckAddressLablePresent" Desc="Description: This function to fetch the Address details from the search" />
+    <function Name="ToDeleteAllthePatients" Desc="Description: This function to change the patient age for multiple times" />
+    <function Name="ToScrollPatientQueue" Desc="Description: This function to scroll patient queue and select assessment">
+      <Parameters Desc="            expToolTip:Tool tip of assessment">expToolTip</Parameters>
+    </function>
+    <function Name="ToPerformActionOnQueue" Desc="Description: This function to select patient assessment from queue">
+      <Parameters Desc="            expToolTip:Tool tip of assessment">expToolTip</Parameters>
+      <Parameters Desc="            type:Action type(URGENCY/STATUS/PRESENTINGCOMPLAINT/PICKUP/LASTMODIFIED)">type</Parameters>
+      <Parameters Desc="            expValue:expected value blank for pickup">expValue</Parameters>
+    </function>
+    <function Name="ToCheckAddrDetHomeScreen" Desc="Description: This function to check address details displayed in Home screen.">
+      <Parameters Desc="            addressType:Type of address">addressType</Parameters>
+      <Parameters Desc="            addressLine1:Address Line 1">addressLine1</Parameters>
+      <Parameters Desc="            town:Town Name">town</Parameters>
+      <Parameters Desc="            postCode:PostCode">postCode</Parameters>
+    </function>
+    <function Name="ToCheckContactDetHomeScreen" Desc="Description: This function to check address details displayed in Home screen.">
+      <Parameters Desc="            contDet:Contact Details">contDet</Parameters>
+    </function>
+    <function Name="ToPickAssessQueuePerfModule" Desc="Description: This function to select patient assessment from queue">
+      <Parameters Desc="            firstname:firstname">firstname</Parameters>
+      <Parameters Desc="            lastname:lastname">lastname</Parameters>
+      <Parameters Desc="            type:Action type(URGENCY/STATUS/PRESENTINGCOMPLAINT/PICKUP)">type</Parameters>
+      <Parameters Desc="            expValue:expected value blank for pickup">expValue</Parameters>
+    </function>
+    <function Name="SearchPatientPerfModule" Desc="Description: This function to search patient for Perf Module">
+      <Parameters Desc="            lastname:lastname">lastname</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="SetGPName" Desc="Description: This function is to set text in GP Name">
+      <Parameters Desc="          name:GP name">name</Parameters>
+    </function>
+    <function Name="ToChkCurrentGP" Desc="Description: This function is to validate Current GP">
+      <Parameters Desc="          name:current GP name">name</Parameters>
+    </function>
+    <function Name="ToValidatePatientAge" Desc="Description: This function to validate the patient age ">
+      <Parameters Desc="">Value</Parameters>
+    </function>
+    <function Name="EnterNoteEmerProtocolSCreen" Desc="Description: This function to enter note under emergency protocol screen">
+      <Parameters Desc="            noteText:text to be entered">noteText</Parameters>
+    </function>
+    <function Name="ToCheckErrorBorder" Desc="Description: This function to check for any field with 'Validation_HasError' set to True for invalid/missing value">
+      <Parameters Desc="            fieldName:Postcode/Firstname/patientNumber">fieldName</Parameters>
+    </function>
+    <function Name="waitforDemogInfoScreen" Desc="Description: This function is wait for the Demographic screen to appear" />
+    <function Name="ToChangePatientAge" Desc="Description: This function to change the aptient age for multiple times" />
+    <function Name="SelectGP" Desc="Description: This function is to select GP from search result" />
+  </functions>
+  <functions>
+    <function Name="LaunchDomainCreation" Desc="Description: This function is to launch the domain creation application" />
+    <function Name="waitforDomainCreation" Desc="Description: This function is wait for the Domain Creation default screen" />
+    <function Name="SelectDomainType" Desc="Description: This function is to connect to Database for new domain creation">
+      <Parameters Desc="  installationtype: Standalone or Inprocess or Integration">installationtype</Parameters>
+    </function>
+    <function Name="EnterDBName" Desc="Description: This function is to enter Database Name for new domain creation" />
+    <function Name="EnterServerAddress" Desc="Description: This function is to enter Sever Address for new domain creation" />
+    <function Name="EnterUserLogin" Desc="Description: This function is to enter User Login for new domain creation" />
+    <function Name="EnterUserPassword" Desc="Description: This function is to enter User Password for new domain creation" />
+    <function Name="ConnectDatabase" Desc="Description: This function is to connect to database for new domain creation">
+      <Parameters Desc="          installationtype: Standalone or Inprocess or Integration            ">installationtype</Parameters>
+    </function>
+    <function Name="waitforDomainEditScreen" Desc="Description: This function is wait for the Domain Editor screen" />
+    <function Name="SelectLocation" Desc="Description: This function is to select location for new domain">
+      <Parameters Desc="  location: English (United Kingdom) / English (Australia) / English (New Zealand) / English (Ireland)">location</Parameters>
+    </function>
+    <function Name="SelectProductType" Desc="Description: This function is to select product type for new domain">
+      <Parameters Desc="  productType: TeleAssess / SelfAssess etc.">productType</Parameters>
+    </function>
+    <function Name="EnterDomainName" Desc="Description: This function is to enter Domain Name for new domain creation">
+      <Parameters Desc="          domainName:domain name          ">domainName</Parameters>
+    </function>
+    <function Name="EnterAdminEmail" Desc="Description: This function is to enter admin email for new domain creation">
+      <Parameters Desc="          email:admin email       ">email</Parameters>
+    </function>
+    <function Name="EnterUnknownGPEmail" Desc="Description: This function is to enter UnknownGP email for new domain creation">
+      <Parameters Desc="          email:UnknownGP email       ">email</Parameters>
+    </function>
+    <function Name="EnterNotFoundGPEmail" Desc="Description: This function is to enter NotFoundGP email for new domain creation">
+      <Parameters Desc="          email:NotFoundGP email       ">email</Parameters>
+    </function>
+    <function Name="EnterRequestEmail" Desc="Description: This function is to enter license request email for new domain creation">
+      <Parameters Desc="          email:request email       ">email</Parameters>
+    </function>
+    <function Name="EnterEmail" Desc="Description: This function is to enter admin email details for new domain creation">
+      <Parameters Desc="          email:admin email       ">email</Parameters>
+    </function>
+    <function Name="EnterLicenseCount" Desc="Description: This function is to enter license count for new domain creation">
+      <Parameters Desc="          count:license count      ">count</Parameters>
+    </function>
+    <function Name="EnterDomainSetting" Desc="Description: This function is to enter Domain Setting details for new domain in Domain Editor screen">
+      <Parameters Desc="           location:">location</Parameters>
+      <Parameters Desc="           productType:"> productType</Parameters>
+      <Parameters Desc="           domainName:"> domainName</Parameters>
+      <Parameters Desc="           email:"> email</Parameters>
+    </function>
+    <function Name="SelectModule" Desc="Description: This function select modules for new domain in domain editor screen">
+      <Parameters Desc="          modulelist:list of module to be selected">modulelist</Parameters>
+    </function>
+    <function Name="EnterReportingDBName" Desc="Description: This function is to enter Reporting Database Name in Reporting Settings section" />
+    <function Name="EnterUsername" Desc="Description: This function is to enter username for new domain creation">
+      <Parameters Desc="          email:admin email       ">email</Parameters>
+    </function>
+    <function Name="EnterDomainPassword" Desc="Description: This function is to enter username for new domain creation" />
+    <function Name="EnterForename" Desc="Description: This function is to enter forename for new domain creation">
+      <Parameters Desc="          forename:admin forename       ">forename</Parameters>
+    </function>
+    <function Name="EnterSurname" Desc="Description: This function is to enter surname for new domain creation">
+      <Parameters Desc="          surname:admin surname       ">surname</Parameters>
+    </function>
+    <function Name="waitforSuccessMssg" Desc="Description: This function is wait for the Success Message" />
+    <function Name="EnterAdminSetting" Desc="Description: This function is to enter Admin User Setting details for new domain in Domain Editor screen">
+      <Parameters Desc="           username:">username</Parameters>
+      <Parameters Desc="           forename:"> forename</Parameters>
+      <Parameters Desc="           surname:"> surname</Parameters>
+    </function>
+    <function Name="closeDomainCreation" Desc="Description: This function to close the DomainCreation application" />
+  </functions>
+  <functions>
+    <function Name="HTMLLog2" Desc="Description : This script unit holds all the functions required to create the HTML ">
+      <Parameters Desc="    VariableVal     : This holds the Actual result">VariableVal</Parameters>
+      <Parameters Desc="    ConditionalVal  : This holds the Expected result"> ConditionalVal</Parameters>
+      <Parameters Desc="    PassMesg        : This holds the message to write if verification passes"> PassMesg</Parameters>
+      <Parameters Desc="    FailMesg        : This holds the message to write if verification fails"> FailMesg</Parameters>
+      <Parameters Desc="    FlagtoLog       : This holds the value for type of comparison (0"> FlagtoLog</Parameters>
+    </function>
+    <function Name="writelog" Desc="Description: This function is used to verify the results and write to the log file">
+      <Parameters Desc="    strStatus       : This holds the status of the verification for the step">strStatus</Parameters>
+      <Parameters Desc="    strDescription  : This holds the message based on verification result"> strDescription</Parameters>
+    </function>
+    <function Name="CreateXML" Desc="Description: This function is used to write the status and message based on the verification result" />
+    <function Name="DeleteXML" Desc="Description: This function is used to create the XML Report" />
+    <function Name="CreateBackupResults" Desc="Description: This function is used to create the XML Report">
+      <Parameters Desc="  source : The path to the Results folder (Ex : &quot;E:\\AdvanceLearning\\Project\\Progresso\\&quot;)">source</Parameters>
+      <Parameters Desc="  destination : The path to backup the results folder (Ex : &quot;E:\\AdvanceLearning\\Results_BCK&quot;)">destination</Parameters>
+      <Parameters Desc="  copyFolder : The folder of which we need to take the backup (Ex : &quot;Results&quot;)">copyFolder</Parameters>
+    </function>
+    <function Name="StartTestcase" Desc="Description: This function is used to backup the existing results">
+      <Parameters Desc="    strTestCaseName : This holds the name of the test case currently being executed">strTestCaseName</Parameters>
+    </function>
+    <function Name="EndTestcase" Desc="Description: This function is used to create the XML body for the test case in which we write all the details">
+      <Parameters Desc="    strStatus      : This holds the status of the test case (PASS">strStatus</Parameters>
+      <Parameters Desc="FAIL)"> strDescription</Parameters>
+    </function>
+    <function Name="CreateReport" Desc="Description: This function is used to close the XML body for the test case in which we write all the details">
+      <Parameters Desc="    strStatus      : This holds the status of the step executed (PASS">strStatus</Parameters>
+      <Parameters Desc="FAIL)"> strDescription</Parameters>
+    </function>
+    <function Name="EndExecution" Desc="Description: This function is used to input the child nodes in the XML report based on the results" />
+    <function Name="StartModuleExecution" Desc="Description: This function is used to input the child node for the the time of end of execution of the complete test set i.e., the complete input sheet" />
+    <function Name="EndModuleExecution" Desc="Description: This function is used to create and insert nodes for the consolidated report with reference to the individual module report" />
+    <function Name="HTMLLog" Desc="Description: This function is used to create and insert end nodes for the consolidated report with reference to the individual module report">
+      <Parameters Desc="    func1  : This holds the Actual result">func1</Parameters>
+      <Parameters Desc="    func2  : This holds the Expected result">func2</Parameters>
+      <Parameters Desc="    type   : This holds the message to write if verification passes">type</Parameters>
+      <Parameters Desc="    expVal : This holds the message to write if verification fails">expVal</Parameters>
+      <Parameters Desc="    PassMesg: This holds the value for type of comparison (0">PassMesg</Parameters>
+      <Parameters Desc="1">FailMesg</Parameters>
+    </function>
+    <function Name="ResultLog" Desc="Description: This function is used to verify the results and write to the log file">
+      <Parameters Desc="    func1  : This holds the Actual result">func1</Parameters>
+      <Parameters Desc="    func2  : This holds the Expected result">func2</Parameters>
+      <Parameters Desc="    type   : EVALUATE/COMPARE">type</Parameters>
+      <Parameters Desc="    expVal : expected value">expVal</Parameters>
+      <Parameters Desc="    PassMesg: Pass message">PassMesg</Parameters>
+      <Parameters Desc="    FailMesg: Fail Message">FailMesg</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="waitForLoginScreen" Desc="Description: This function is wait for the login screen" />
+    <function Name="EnterLogInID" Desc="Description: This function to Enter LoginID">
+      <Parameters Desc="              username:UserName">username</Parameters>
+    </function>
+    <function Name="EnterPassword" Desc="Description: This function to Enter Password">
+      <Parameters Desc="              password:Password">password</Parameters>
+    </function>
+    <function Name="Login" Desc="Description: This function to login the application">
+      <Parameters Desc="  UserName: username ">UserName</Parameters>
+      <Parameters Desc="            Password: Password">Password</Parameters>
+    </function>
+    <function Name="clickSignInButton" Desc="Description: This function is click sign in button and to wait for loading default screen" />
+    <function Name="CheckEmailContainsCurrentUN" Desc="Description: This function check the email contains current username">
+      <Parameters Desc="             user:Current User Name">User</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="ProcessCommandLineArgument" Desc="Description: This function to conver any external script to .tcx file.  ">
+      <Parameters Desc="">arg</Parameters>
+    </function>
+    <function Name="getVarValues" Desc="Description: This function to extract command line argument" />
+  </functions>
+  <functions>
+    <function Name="waitforPresentingScreen" Desc="Description: This function is wait for the presenting screen" />
+    <function Name="waitforPresentingScreenForNagtvTst" Desc="Description: This function is wait for the presenting screen" />
+    <function Name="TocheckDetailAddressLbl" Desc="Description: This function to click check the detail address present " />
+    <function Name="ToChkAddedAddressFrmBannerDet" Desc="Description: This function to click check the detail address present ">
+      <Parameters Desc="">Address</Parameters>
+    </function>
+    <function Name="ToValidatePresCompl" Desc="Description: This function to validate the presenting complaint search result">
+      <Parameters Desc="          Option:Startswith or Contains">Option</Parameters>
+      <Parameters Desc="          data:data to search">data</Parameters>
+    </function>
+    <function Name="waitforSearchButtonToEnable" Desc="Description: This function to wait for the search button to enable" />
+    <function Name="SetTextinPresentingComplaintSearchBox" Desc="Description: This function to check the allergies in the list box">
+      <Parameters Desc="          BoxName:Available or Selected">data</Parameters>
+    </function>
+    <function Name="SelctPresComplFrmSrchRes" Desc="Description: This function to Select presenting complaint from the search list" />
+    <function Name="ToChkPresComplCurrentlySeleted" Desc="Description: This function to Find the presenting complaint which is selected">
+      <Parameters Desc="">PreComplaint</Parameters>
+    </function>
+    <function Name="CheckBannerDetails" Desc="Description: This function to check the banner details">
+      <Parameters Desc="             detail: detail need to check">detail</Parameters>
+    </function>
+    <function Name="ToCheckToolTipForBannerDet" Desc="Description: This function to check the tool tip for banner details">
+      <Parameters Desc="             detail: detail need to check">Det</Parameters>
+    </function>
+    <function Name="ToValMandatoryColor" Desc="Description: This function to validate CallType is mandatory">
+      <Parameters Desc="          obj:">fieldName</Parameters>
+    </function>
+    <function Name="ToValMandatoryBorderVisible" Desc="Description: This function to validate border turns for call type object">
+      <Parameters Desc="          obj:">obj</Parameters>
+    </function>
+    <function Name="HighlightPresComplFrmSrchRes" Desc="Description: This function to Select presenting complaint from the search list" />
+    <function Name="ToCheckMandatoryFieldsPresent" Desc="Description: This function is to check lable present in the page">
+      <Parameters Desc="             wpfControlText: property value of wpfControlText ">wpfControlText</Parameters>
+    </function>
+    <function Name="ToCheckPresCompSearchResult" Desc="Description: This function is to validate/compare the search result for presenting complaint">
+      <Parameters Desc="             searchString: Search string entered ">searchString</Parameters>
+    </function>
+    <function Name="TOCheckSearchResOrder" Desc="Description: This function is to validate sorting of the search result of presenting complaint screen">
+      <Parameters Desc="             searchString: Search string entered ">searchString</Parameters>
+    </function>
+    <function Name="ToCheckFirstThird" Desc="Description: This function to check/uncheck First and Third checkbox in Presenting Compliant Screen">
+      <Parameters Desc="          action:CHECK/UNCHECK">action</Parameters>
+    </function>
+    <function Name="ToCheckPresCompSelected" Desc="Description: This function to check the currently selected Presenting Compliant">
+      <Parameters Desc="          presentingComplaint:Selected Presenting Complaint">presentingComplaint</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="ToCheckResponseRepDB" Desc="Description: This function is to validate question and their respective answer saved in reporting DB for the last session">
+      <Parameters Desc="    ques: shortQues">ques</Parameters>
+      <Parameters Desc="    answer: selected answer">answer</Parameters>
+      <Parameters Desc="    longQues: longQues text">longQues</Parameters>
+      <Parameters Desc="    protocolName: protocolName of ques    ">protocolName</Parameters>
+    </function>
+    <function Name="ToCheckPatDetRepDB" Desc="Description: This function is to validate patient details for a session saved in reporting DB">
+      <Parameters Desc="    PatientName: PatientName">PatientName</Parameters>
+      <Parameters Desc="    DateOfBirth: DateOfBirth">DateOfBirth</Parameters>
+      <Parameters Desc="    PatientAgeYears: PatientAgeYears">PatientAgeYears</Parameters>
+      <Parameters Desc="    Gender: Gender ">Gender</Parameters>
+      <Parameters Desc="    NhsNumber: NHS Number   ">NhsNumber</Parameters>
+    </function>
+    <function Name="ToCheckContactDetRepDB" Desc="Description: This function is to validate patient's contact details for a session saved in reporting DB">
+      <Parameters Desc="    Address: Address">Address</Parameters>
+      <Parameters Desc="    PhoneNumber: PhoneNumber">PhoneNumber</Parameters>
+      <Parameters Desc="    GpPractice: GpPractice">GpPractice</Parameters>
+      <Parameters Desc="    GpName: GpName ">GpName</Parameters>
+    </function>
+    <function Name="ToCheckContentDetRepDB" Desc="Description: This function is to validate content details for a session saved in reporting DB">
+      <Parameters Desc="    Culture: Culture">Culture</Parameters>
+      <Parameters Desc="    Location: Location">Location</Parameters>
+      <Parameters Desc="    IterationType: IterationType">IterationType</Parameters>
+      <Parameters Desc="    Product: Product ">Product</Parameters>
+      <Parameters Desc="    IterationVersion: IterationVersion">IterationVersion</Parameters>
+    </function>
+    <function Name="ToCheckClinDetRepDB" Desc="Description: This function is to validate clinician details for a session saved in reporting DB">
+      <Parameters Desc="    Clinician: Clinician email ID">Clinician</Parameters>
+      <Parameters Desc="    PresComplaint: Presenting Complaint">PresComplaint</Parameters>
+      <Parameters Desc="    RecommUrgency: Recommended Urgency">RecommUrgency</Parameters>
+      <Parameters Desc="    SelUrgency: Selected Urgency">SelUrgency</Parameters>
+      <Parameters Desc="    Outcome: Outcome">Outcome</Parameters>
+    </function>
+    <function Name="ToCheckRecpDetRepDB" Desc="Description: This function is to validate reception details for a session saved in reporting DB">
+      <Parameters Desc="    Receptionist: Receptionist email ID">Receptionist</Parameters>
+      <Parameters Desc="    PresComplaint: Presenting Complaint">PresComplaint</Parameters>
+      <Parameters Desc="    RecommUrgency: Recommended Urgency">RecommUrgency</Parameters>
+      <Parameters Desc="    SelUrgency: Selected Urgency ">SelUrgency</Parameters>
+      <Parameters Desc="    Outcome: Outcome">Outcome</Parameters>
+    </function>
+    <function Name="ToCheckCalHandDetRepDB" Desc="Description: This function is to validate call handler details for a session saved in reporting DB">
+      <Parameters Desc="    CallHandler: CallHandler email ID">CallHandler</Parameters>
+      <Parameters Desc="    PresComplaint: Presenting Complaint">PresComplaint</Parameters>
+      <Parameters Desc="    RecommUrgency: Recommended Urgency">RecommUrgency</Parameters>
+      <Parameters Desc="    SelUrgency: Selected Urgency ">SelUrgency</Parameters>
+      <Parameters Desc="    Outcome: Outcome">Outcome</Parameters>
+    </function>
+    <function Name="ToCheckSignpostDetRepDB" Desc="Description: This function is to validate signpost details for a session saved in reporting DB">
+      <Parameters Desc="    Module: Module Name">Module</Parameters>
+      <Parameters Desc="    SelSignpost: SelectedSignpost">SelSignpost</Parameters>
+      <Parameters Desc="    SugSignpost: SuggestedSignpost list">SugSignpost</Parameters>
+    </function>
+    <function Name="ToCheckAdviceDetRepDB" Desc="Description: This function is to validate advice details for a session saved in reporting DB">
+      <Parameters Desc="    AdviceType: CareAdvice/WorseningAdvice/WorseningStatement/FirstAidAdvice">AdviceType</Parameters>
+      <Parameters Desc="    DeliveredStatus: 1/0"> DeliveredStatus</Parameters>
+    </function>
+    <function Name="ToCheckQuesTxtTypeRepDB" Desc="Description: This function is to validate QuestionTextType details for a session saved in reporting DB">
+      <Parameters Desc="    QuestionTextType: F/T/C">QuestionTextType</Parameters>
+    </function>
+    <function Name="ToCheckFCCallLength" Desc="Description: This function is to validate CallLength details for a session saved in reporting DB">
+      <Parameters Desc="    CallLength: PurpleAndRed/All">CallLength</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="ToSelectClaims" Desc="Description: This function is to select claim for a user ">
+      <Parameters Desc="">ClaimToBeSelected</Parameters>
+    </function>
+    <function Name="waitforUserAdminscreen" Desc="Description: This function is wait for the User Admin screen" />
+    <function Name="InitialSetupUsersScreen" Desc="Description: This function need to be run on a new domain to configure it for auto regression">
+      <Parameters Desc="          location:GB / IE / NZ / AUS">location</Parameters>
+    </function>
+    <function Name="AddMultipleUser" Desc="Description: This function is to add multiple odyssey user(designed to validate of pagination)">
+      <Parameters Desc="          numofuser:number of user to be created">numofuser</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="ToChkWarnPopUpVisible" Desc="Description: This function is to validate warning pop up" />
+    <function Name="ToChkReturnToCallBtnInWarnPopup" Desc="Description: This function is to validate warning pop up" />
+    <function Name="ToChkPassToClinBtnInWarnPopup" Desc="Description: This function is to validate warning pop up" />
+    <function Name="AnsCHbasicQues" Desc="Description: This function is for to answer Call handler basic ques" />
+    <function Name="ToChcNotAnsweredAnsInTheDropDown" Desc="Description: This function is for to answer Call handler basic ques" />
+    <function Name="AnsRemainingQues" Desc="Description: This function is to Answer remaining questions" />
+    <function Name="CheckNextButton" Desc="Description: This function is to Click continue button" />
+    <function Name="SelectAction" Desc="Description: This function is to select action from drop down">
+      <Parameters Desc="">action</Parameters>
+    </function>
+    <function Name="SummaryScreenWarningPopupMsg" Desc="Description: This function is to check warning message enable and displaying" />
+    <function Name="AnsCallHandlerQues" Desc="Description: This function is to check warning message enable and displaying">
+      <Parameters Desc="            ques1: Question">ques1</Parameters>
+      <Parameters Desc="            Ans1: Answer">Ans1</Parameters>
+    </function>
+    <function Name="ValActionReqInAssScrn" Desc="Description: This function is to validate Action Required in Assessment screen" />
+    <function Name="ValQuesAvailInAssesmentScrn" Desc="Description: This function is to validate question available count in the assessment screen" />
+    <function Name="waitForCallHandlerAssmntScreen" Desc="Description: This function is to check assessment screen" />
+    <function Name="valGeneralConditionTab" Desc="Description: This function is to validate general condition question set tab" />
+    <function Name="toValdropdownEnable" Desc="Description: This function is to validate general condition questions are enabled" />
+    <function Name="waitforSummaryScreen3_11" Desc="Description: This function is wait for the Assessment screen" />
+    <function Name="waitforAssessmentScreen3_11" Desc="Description: This function is wait for the Assessment screen" />
+    <function Name="ToValWaterMark" Desc="Description: This function is written to validate water mark object">
+      <Parameters Desc="          watermarktext:text displayed as watermark">watermarktext</Parameters>
+    </function>
+    <function Name="ValSearchResult" Desc="Description: This function is to validate water mark object" />
+    <function Name="ClearSearchPresentingTextBox" Desc="Description: This function is to clear text from the search box">
+      <Parameters Desc="          number : number of times back space required">number</Parameters>
+    </function>
+    <function Name="ValSearchResultTexts" Desc="Description: This function is to clear text from the search box">
+      <Parameters Desc="">text</Parameters>
+    </function>
+    <function Name="ClearFirstCharFrmSearchPresentingTextBox" Desc="Description: This function is to delete first char from complaint text in the search box" />
+    <function Name="ToValNHSHighlightingBorder" Desc="Description: This function is to validate the NHS red highlighted border" />
+    <function Name="ValFirstName" Desc="Description: This function is to validate the first name in the demographic screen" />
+    <function Name="ValSurName" Desc="Description: This function is to validate the sur name in the demographic screen" />
+    <function Name="copyFirstName" Desc="Description: This function is to copy and paste text in Frist name field" />
+    <function Name="copySurName" Desc="Description: This function is to copy and paste text in Sur name field" />
+    <function Name="selectAllchars" Desc="Description: This function is to copy and paste text in Frist name field">
+      <Parameters Desc="          name:">name</Parameters>
+      <Parameters Desc="          wpfcontrolText:">wpfcontrolText</Parameters>
+      <Parameters Desc="          wpfControlName:">wpfControlName</Parameters>
+    </function>
+    <function Name="ToCheckMandatoryFields" Desc="Description: This function is to check lable present in the page">
+      <Parameters Desc="             parentName :  name value of parent         ">parent</Parameters>
+      <Parameters Desc="             wpfControlTextOfLabel : property value of wpfControlText ">wpfControlTextOfLabel</Parameters>
+    </function>
+    <function Name="ToChcNotesSavedItemCount_311" Desc="Description: This function is to check whether notes has been saved" />
+    <function Name="ToFetchSavedNotesText_311" Desc="Description: This function is to fetch saved notes text" />
+    <function Name="checkEmergencyProtType" Desc="Description: This function is click / check for the emergency protocol type ">
+      <Parameters Desc="          protocolType : protocol type Emergency Protocols / First Aid">protocolType</Parameters>
+      <Parameters Desc="          propertyType : ISENABLED / ISSELECTED">propertyType</Parameters>
+      <Parameters Desc="          value : true/false">value</Parameters>
+    </function>
+    <function Name="waitforEmergencyProtScreen" Desc="Description: This function is wait for the Emergency Protocol screen" />
+    <function Name="validateComplainsOfText" Desc="Description: This function is validate Complains of text in 1st assessment screen">
+      <Parameters Desc="            presentingComplaint:selected presenting complaint">presentingComplaint</Parameters>
+    </function>
+    <function Name="ToTabOut" Desc="Description: This function is used to hit tab out">
+      <Parameters Desc="           objName:objectName">objName</Parameters>
+    </function>
+    <function Name="ToCheckAnswerInAllTheDropDown" Desc="Description: This function is for to answer Call handler basic ques">
+      <Parameters Desc="">answerToFind</Parameters>
+    </function>
+    <function Name="performActionOn111Message" Desc="Description: This function check for 111 messages is displayed or click on it">
+      <Parameters Desc="            messageText:111 message text">messageText</Parameters>
+      <Parameters Desc="            action:Check or &quot;&quot;(blank)">action</Parameters>
+    </function>
+    <function Name="ToValRationaleForCallHandler" Desc="Description: This function is to check the rationale exists">
+      <Parameters Desc="           rationaleText:Rationale Text for question ">rationaleText</Parameters>
+    </function>
+    <function Name="waitforCHand1stAssessScrInProcess" Desc="Description: This function is wait for the Assessment screen" />
+    <function Name="waitForCallHandler2ndAssmntScreen" Desc="Description: This function is to check assessment screen" />
+    <function Name="ToCheckCallHandSelectedAns" Desc="Description: This function is to check the selected items from the single/multi select combobox in call handler assessment screen">
+      <Parameters Desc="          ques:question text">ques</Parameters>
+      <Parameters Desc="          selectedAnswer:SelectedAnswers/Blank">selectedAnswer</Parameters>
+    </function>
+    <function Name="ToCheckCloseAssessmentlayout" Desc="Description: This function to check the layout of Close Assessment for callhandler and reception" />
+  </functions>
+  <functions>
+    <function Name="waitforFTFHistoryScreen" Desc="Description: This function is wait for the FTF History screen" />
+    <function Name="AnsweringFTFQues" Desc="Description: This function to select answer of Questions">
+      <Parameters Desc="          Ques:Question ">Ques</Parameters>
+      <Parameters Desc="          Ans:Answer to select">Ans</Parameters>
+    </function>
+    <function Name="selectExamination" Desc="Description: This function to select examination">
+      <Parameters Desc="          examination:examination name to select">examination</Parameters>
+    </function>
+    <function Name="selectExaminationType" Desc="Description: This function to select examination">
+      <Parameters Desc="          examinationType:examination name to select">examinationType</Parameters>
+    </function>
+    <function Name="selectAdditionalExamination" Desc="Description: This function to select examination">
+      <Parameters Desc="          examinationName:examination to select">examinationName</Parameters>
+    </function>
+    <function Name="addFTFNote" Desc="Description: This function to add FTF note under History or Examination or Tretment notes grid ">
+      <Parameters Desc="          noteType: History or Examination or Treatment">noteType</Parameters>
+      <Parameters Desc="          noteText: note text to be entered">noteText</Parameters>
+    </function>
+    <function Name="ToPressEnterKey" Desc="Description: This function is used to press [Enter] key of keyboard">
+      <Parameters Desc="           name:nameProperty">name</Parameters>
+    </function>
+    <function Name="EnterRangeExamDetails" Desc="Description: This function is used to enter range exam value">
+      <Parameters Desc="           value:range Exam Value">value</Parameters>
+    </function>
+    <function Name="EnterRangeExamTypeAndDetails" Desc="Description: This function is used to select Exam Type and Details ">
+      <Parameters Desc="           examinationType:examination name to select">examinationType</Parameters>
+      <Parameters Desc="           examination:examination name to select">examination</Parameters>
+      <Parameters Desc="           value:range Exam Value">value</Parameters>
+    </function>
+    <function Name="selectExaminationOption" Desc="Description: This function to select examination option">
+      <Parameters Desc="         exam:exam option to select">exam</Parameters>
+    </function>
+    <function Name="selectExaminationTypeAndName" Desc="Description: This function to select examination and name to select">
+      <Parameters Desc="          examinationType:examination name to select">examinationType</Parameters>
+      <Parameters Desc="          examination:examination name to select">examination</Parameters>
+      <Parameters Desc="          exam:exam option to select">exam</Parameters>
+      <Parameters Desc="          wpfControlText:wpfControlText property value">wpfControlText</Parameters>
+    </function>
+    <function Name="ToValidateMultipleShowFindings" Desc="Description: This function to check multiple values added for an exam under Show Findings">
+      <Parameters Desc="          examType:Type of exam">examType</Parameters>
+      <Parameters Desc="          examName:Name of exam(blank for range)">examName</Parameters>
+      <Parameters Desc="          valueList:List of value entered/selected">valueList</Parameters>
+    </function>
+    <function Name="ToCheckExamTickMark" Desc="Description: This function to check tickmark against an examination">
+      <Parameters Desc="          examination:examination name to select">examination</Parameters>
+    </function>
+    <function Name="ToCheckRangeExamErrMssg" Desc="Description: This function to validate the range Examination message for invalid value">
+      <Parameters Desc="         examinationType:examination name to select">examinationType</Parameters>
+      <Parameters Desc="         messgText:messg text to be validated/&quot;&quot;">examination</Parameters>
+      <Parameters Desc="         value:range Exam Value">value</Parameters>
+      <Parameters Desc="         name:nameProperty">messgText</Parameters>
+    </function>
+    <function Name="SelectExamTypeWithDualLaterality" Desc="Description: This function to select choice examination having dual laterality(Left &amp; Right)">
+      <Parameters Desc="          examinationType:examination name to select">examinationType</Parameters>
+      <Parameters Desc="          examination:examination name to select">examination</Parameters>
+      <Parameters Desc="          exam:exam option to select">exam</Parameters>
+      <Parameters Desc="          laterality:Left/Right">laterality</Parameters>
+      <Parameters Desc="          answer:wpfControlText property value of answer">answer</Parameters>
+    </function>
+    <function Name="ToCheckRangeExamValue" Desc="Description: This function to validate range exam value">
+      <Parameters Desc="         expVal:range Exam Value">expValue</Parameters>
+    </function>
+    <function Name="ToValFindingsWithLaterality" Desc="Description: This function to check details added for an exam having dual laterality under Findings grid">
+      <Parameters Desc="          examType:Type of exam">examType</Parameters>
+      <Parameters Desc="          examName:Name of exam(blank for range)">examName</Parameters>
+      <Parameters Desc="          laterality:Left/Right">laterality</Parameters>
+      <Parameters Desc="          expValue:value to be checked for">expValue</Parameters>
+    </function>
+    <function Name="ToCheckFTFNote" Desc="Description: This function to check FTF note under History or Examination or Tretment notes grid ">
+      <Parameters Desc="          noteType: History or Examination or Treatment">noteType</Parameters>
+      <Parameters Desc="          noteText: note text to be entered">noteText</Parameters>
+    </function>
+    <function Name="GetNoteType" Desc="Description: This function to return correct note type - History or Examination or Tretment note">
+      <Parameters Desc="          noteType: History or Examination or Treatment">noteType</Parameters>
+    </function>
+    <function Name="ToCheckDetailsPresentInNoteSection" Desc="Description: This function to check whether history section display in left side of the assessment screen.">
+      <Parameters Desc="         Section: Section which can be examination/History/Treatment plan ">Section</Parameters>
+      <Parameters Desc="         Ques: Assessment questions">Ques</Parameters>
+      <Parameters Desc="         Ans: Assessment answers">Ans</Parameters>
+    </function>
+    <function Name="ToValidUrgency" Desc="Description: This function to validate the show findings">
+      <Parameters Desc="          type:HISTORY/EXAMINATION">type</Parameters>
+      <Parameters Desc="          message:Urgency message/&quot;&quot;(blank)     ">message</Parameters>
+    </function>
+    <function Name="ToChckButtons" Desc="Description: This function to check button present on examination/History/Treatment plan ">
+      <Parameters Desc="          noteType:examination/History/Treatment plan  ">noteType</Parameters>
+      <Parameters Desc="          BtnName:Button Name">BtnName</Parameters>
+    </function>
+    <function Name="ToCheckAppVersion" Desc="Description: This function to check application version on Login or any other screen">
+      <Parameters Desc="          expAppVer: expected application version">expAppVer</Parameters>
+      <Parameters Desc="          screen: Login/Lock/Inprocess/&quot;&quot;(blank for any screens of Standalone)">screen</Parameters>
+    </function>
+    <function Name="ToCheckContentVersion" Desc="Description: This function to check content version used for the application.">
+      <Parameters Desc="          expContentVer : expected content version">expContentVer</Parameters>
+      <Parameters Desc="          expCulture : expected Culture(en)">expCulture</Parameters>
+      <Parameters Desc="          expLocation : expected Location(GB/NZ/AU...)">expLocation</Parameters>
+    </function>
+    <function Name="ToCompareAppVersion" Desc="Description: This function to compare application version of Login screen with any other screen" />
+    <function Name="ToCheckConsentToExamNote" Desc="Description: This function to check note added under examination notes grid for Consent To Examination check box" />
+    <function Name="ToCheckDetailsAddedInExamNoteSection" Desc="Description: This function to check whether examination section display key exam details in left side of the assessment screen.">
+      <Parameters Desc="          group:STANDRAD OBS/CLINCIAN GEN OBS ...">group</Parameters>
+      <Parameters Desc="          examType:Type of exam">examType</Parameters>
+      <Parameters Desc="          examName:Name of exam(blank for range)">examName</Parameters>
+      <Parameters Desc="          valueList:List of value entered/selected">valueList</Parameters>
+    </function>
+    <function Name="ToPressKeyboardKeys" Desc="Description: This function is used to press keyboard keys">
+      <Parameters Desc="             proArr: Property name in the array">proArr</Parameters>
+      <Parameters Desc="             propValueArr: property value in the array">propValueArr</Parameters>
+      <Parameters Desc="             keyToPress:keyboard to be pressed">keyToPress</Parameters>
+    </function>
+    <function Name="ToChckRemoveQuestionSetPopUp" Desc="Description: This function check Remove Question set popup" />
+    <function Name="ToValCheckBoxStatus" Desc="Description: This function checks the current status(checked/unchecked) of any checkbox">
+      <Parameters Desc="          name:Name property of the object">name</Parameters>
+      <Parameters Desc="          status:Checked or Unchecked">status</Parameters>
+    </function>
+    <function Name="ToCheckExaminationBannerColor" Desc="Description: This function to validate the color of show findings">
+      <Parameters Desc="          type:HISTORY/EXAMINATION">type</Parameters>
+      <Parameters Desc="          message:Urgency message/&quot;&quot;(blank)">message</Parameters>
+      <Parameters Desc="          expColor:font colour of action note or Blank(Red/Yellow/Black/&quot;&quot;)">expColor</Parameters>
+    </function>
+    <function Name="ToCheckDetailsPresentInExaminationNoteSection" Desc="Description: This function to check whether examination section display in left side of the assessment screen.">
+      <Parameters Desc="          group:STANDRAD OBS/CLINCIAN GEN OBS ">group</Parameters>
+      <Parameters Desc="          examType:Type of exam">examType</Parameters>
+      <Parameters Desc="          examName:Name of exam(blank for range)">examName</Parameters>
+      <Parameters Desc="          valueList:List of value entered/selected">valueList</Parameters>
+    </function>
+    <function Name="CheckUrgencyDetails" Desc="Description: This function to check the banner details(History  and Examination Suggests) of FTF">
+      <Parameters Desc="             detail: detail need to check">detail</Parameters>
+      <Parameters Desc="              expColor:font colour of action note or Blank(Blue)">expColor</Parameters>
+    </function>
+    <function Name="waitforFTFExaminationScreen" Desc="Description: This function is wait for the FTF History screen" />
+    <function Name="ToCheckSelectedAnsFTF" Desc="Description: This function is to check for selected Answer for a single select question in FTF history screen">
+      <Parameters Desc="            shortQues: ShortQuestion">shortQues</Parameters>
+      <Parameters Desc="            ans: Answer">ans</Parameters>
+    </function>
+    <function Name="ToScrollNewTestHarness" Desc="Description: This function is to scroll NewTestHarness application">
+      <Parameters Desc="          scroll:UP/DOWN">scroll</Parameters>
+    </function>
+    <function Name="ToScrollApplication" Desc="Description: This function is to scroll main application grid">
+      <Parameters Desc="          scroll:UP/DOWN">scroll</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="waitforFTFExaminationScreen" Desc="Description: This function is wait for the FTF History screen" />
+    <function Name="ToValidateExamwFindingColor" Desc="Description: This function to check for font color of exam under Show Findings">
+      <Parameters Desc="          examType:Type of exam">examType</Parameters>
+      <Parameters Desc="          examName:Name of exam(blank for range)">examName</Parameters>
+      <Parameters Desc="          finding:examination value">finding</Parameters>
+      <Parameters Desc="          expColor:color of exam">expColor</Parameters>
+    </function>
+    <function Name="ToValHamburgerBtn" Desc="Description: This function is written to check for the hamburger button shown under Examination tab" />
+  </functions>
+  <functions>
+    <function Name="ToCheckRecommUrgencyMessgFTF" Desc="Description: This function to validate recommended urgency message under Outcome tab of FTF">
+      <Parameters Desc="         expMessg:expected recommended urgency message">expMessg</Parameters>
+      <Parameters Desc="          expColor:font colour of action note or Blank(Red/Yellow/Black/&quot;&quot;)">expColor</Parameters>
+    </function>
+    <function Name="closeApplication3" Desc="Description: This function to attempt to close the application and select option in the close app popup">
+      <Parameters Desc="          action:Yes/No/&quot;&quot;(blank)">action</Parameters>
+    </function>
+    <function Name="ToCheckAppAvailability" Desc="Description: This function to check application availability" />
+    <function Name="GetSavedNoteCountFTF" Desc="Description: This function is to return the number of saved notes in Summary" />
+    <function Name="ToAccessCompNoteDetailsFTF" Desc="Description: This function is to click/doubleClick and compare the details of notes has been saved">
+      <Parameters Desc="          noteText:Saved note text">noteText</Parameters>
+      <Parameters Desc="          Action:Click/DoubleClick/&quot;&quot;(blank for validating note presence)">Action</Parameters>
+    </function>
+    <function Name="ToFetchSavedNoteTextFTF" Desc="Description: This function is to fetch saved notes text of firstnote in the grid" />
+    <function Name="SetTextPILSSearch" Desc="Description: This function to search the PILS in the list box ">
+      <Parameters Desc="          data:Available or Selected">data</Parameters>
+    </function>
+    <function Name="ToCheckPILsSearchResult" Desc="Description: This function is to validate/compare the search result for PILS in the list box ">
+      <Parameters Desc="             searchString:Search string entered/&quot;&quot;(blank)">searchString</Parameters>
+      <Parameters Desc="             expSearchResultCount:expected number of records in search result/&quot;&quot;(blank)">expSearchResultCount</Parameters>
+    </function>
+    <function Name="ClearPILsSearchActionTextBox" Desc="Description: This function is to clear text from the search box of PILs.">
+      <Parameters Desc="          number:number of times back space required">number</Parameters>
+    </function>
+    <function Name="ToCheckNoteDetails" Desc="Description: This function to validate details of note added in DB">
+      <Parameters Desc="            columnToBeFetched:column detail to be fetched from DB(TEXT/USERNAME)">columnToBeFetched</Parameters>
+      <Parameters Desc="            expValue:expected value for note">expValue</Parameters>
+    </function>
+    <function Name="SelectPatientOutcomeFTF" Desc="Description: This function to select patient outcome for FTF">
+      <Parameters Desc="            outcome:patient outcome to be selected">outcome</Parameters>
+    </function>
+    <function Name="AddDiagnosisNoteFTF" Desc="Description: This function is to add diagnosis note for assessment">
+      <Parameters Desc="            noteText:diagnosis note text         ">noteText</Parameters>
+    </function>
+    <function Name="ToCheckDiagnosisNote" Desc="Description: This function is to check diagnosis note saved in DB against session">
+      <Parameters Desc="            expNoteText:expected diagnosis note text         ">expNoteText</Parameters>
+    </function>
+    <function Name="ToCheckUrgencyColour" Desc="Description: This function to check the colour actions displayed ">
+      <Parameters Desc="          actionObj:action object">actionObj</Parameters>
+      <Parameters Desc="          expColour:expected colour of action(INDIGO/RED/LIGHTRED/YELLOW/LIGHTYELLOW/GREEN/BLUE/BLACK)">expColour</Parameters>
+    </function>
+    <function Name="copyAndPasteNoteFTF" Desc="Description: This function is to copy and paste text in Frist name field" />
+    <function Name="ToCheckSelectedOutcomeFTF" Desc="Description: This function to validate selected patient outcome under Outcome tab of FTF">
+      <Parameters Desc="         expOutcome:expected Outcome selected">expOutcome</Parameters>
+    </function>
+    <function Name="ToValUniquePIL" Desc="Description: This function to validate the unique PIL search result">
+      <Parameters Desc="          PILName: Name of the PIL">PILName</Parameters>
+    </function>
+    <function Name="waitforFTFOutcomeScreen" Desc="Description: This function is wait for the FTF Outcome screen" />
+  </functions>
+  <functions>
+    <function Name="ToCheckSuggestedActions" Desc="Description: This function to validate actions displayed under Treatment Plan tab with its related groupName and Colour">
+      <Parameters Desc="          action:action text">action</Parameters>
+      <Parameters Desc="          groupName:group name of action">groupName</Parameters>
+      <Parameters Desc="          colourType:font colour of action or Blank(Red/Yellow/Blue/&quot;&quot;)">colourType</Parameters>
+    </function>
+    <function Name="ToCheckActionColour" Desc="Description: This function to check the colour actions displayed ">
+      <Parameters Desc="          actionObj:action object">actionObj</Parameters>
+      <Parameters Desc="          expColour:expected colour of action">expColour</Parameters>
+    </function>
+    <function Name="ToCheckActionNotes" Desc="Description: This function to validate actions logged as a note and its colour ">
+      <Parameters Desc="          actionText:action text">actionText</Parameters>
+      <Parameters Desc="          expColour:font colour of action note or Blank(Red/Yellow/Black/&quot;&quot;)">expColour</Parameters>
+    </function>
+    <function Name="ToSelectActions" Desc="Description: This function to check and uncheck Suggested Actions under Treatment Plan tab ">
+      <Parameters Desc="          actionText:action text">actionText</Parameters>
+    </function>
+    <function Name="ToCheckOrderEmergencyActions" Desc="Description: This function to check order of Suggested Actions for emergency under Treatment Plan tab " />
+    <function Name="ClearSearchActionTextBox" Desc="Description: This function is to clear text from the search box of Add Treatment dialog.">
+      <Parameters Desc="          number:number of times back space required">number</Parameters>
+    </function>
+    <function Name="ToCheckAddTreatSearchResult" Desc="Description: This function is to validate/compare the search result for presenting complaint and result count">
+      <Parameters Desc="             searchString:Search string entered/&quot;&quot;(blank)">searchString</Parameters>
+      <Parameters Desc="             expSearchResultCount:expected number of records in search result/&quot;&quot;(blank)">expSearchResultCount</Parameters>
+    </function>
+    <function Name="CopyTreatmentPlanNote" Desc="Description: This function is to add a note under treatment plan using Copy to Treatment Plan button" />
+  </functions>
+  <functions>
+    <function Name="checkforCareAdviceOverlay" Desc="Description: This function is check for Care Advice Overlay in 1st Assessment / 2nd Assessment / Summary screen for Call Handler" />
+    <function Name="SelectPatientOutcomeCallHandler" Desc="Description: This function is to select Patient Outcome for Call Handler">
+      <Parameters Desc="          patientOutcome:patientOutcome value">patientOutcome</Parameters>
+    </function>
+    <function Name="PerformActionInCareAdvice" Desc="Description: This function is to click button in Care Advice Overlay for Call Handler">
+      <Parameters Desc="          btnName:Pass to Clinician/End Call/Complete/Return to call">btnName</Parameters>
+      <Parameters Desc="          status:">status</Parameters>
+    </function>
+    <function Name="AcceptDeclineAdviceCallHandler" Desc="Description: This function is to accept/decline advice in Care Advice Overlay and Complete/Pass To Clinician" />
+    <function Name="PerformActionInCareAdviceSummary" Desc="Description: This function is to check status or click button in Care Advice Overlay of Summary screen for Call Handler">
+      <Parameters Desc="          adviceType:First Aid Advice/Care Advice/Worsening Advice/Worsening Statement ">adviceType</Parameters>
+      <Parameters Desc="          btnName:Advice Given/Not Given">btnName</Parameters>
+      <Parameters Desc="          status:enabled/disabled">status</Parameters>
+    </function>
+    <function Name="GetCareAdviceType" Desc="Description: This function return correct care advice type in Care Advice Overlay of Summary screen for Call Handler">
+      <Parameters Desc="          adviceType:">adviceType</Parameters>
+    </function>
+    <function Name="GetCareAdviceBtnName" Desc="Description: This function return correct care advice button in Care Advice Overlay of Summary screen for Call Handler">
+      <Parameters Desc="          adviceType:">adviceType</Parameters>
+      <Parameters Desc="          btnName:">btnName</Parameters>
+    </function>
+    <function Name="ToCheckFirstAidAdvice" Desc="Description: This function is to check FirstAidAdvice/AmbulancePreparation text in Advice Overlay for Call Handler">
+      <Parameters Desc="          advice:FirstAidAdvice/AmbulancePreparation">advice</Parameters>
+    </function>
+    <function Name="ToCheckAdviceAcceptanceDB" Desc="Description: This function is to check clinicalkey details in DB">
+      <Parameters Desc="          adviceTypes:Care Advice">adviceTypes</Parameters>
+      <Parameters Desc="Worsening Advice">adviceValues</Parameters>
+    </function>
+    <function Name="ToCheckPatientOutcome" Desc="Description: This function is to validate patient outcome in DB">
+      <Parameters Desc="    columnToBeFetched: column detail to be fetched from DB">columnToBeFetched</Parameters>
+      <Parameters Desc="    Value: Expected Outcome name"> Value</Parameters>
+    </function>
+    <function Name="CheckRelationType" Desc="Description: This function to Check relation type " />
+    <function Name="SelectRelationshipType" Desc="Description: This function is select relationship type">
+      <Parameters Desc="          relationshipType:">relationshipType</Parameters>
+    </function>
+    <function Name="ToValSelectedRelationshipType" Desc="Description: This function is to validate select relationship type">
+      <Parameters Desc="          relationshipType:">relationshipType</Parameters>
+    </function>
+    <function Name="ValPatientOutcomeEnableDisable" Desc="Description: This function is to check Patient Outcome/SignPost is enable or disabled for Call Handler" />
+    <function Name="ValSelectedPatientOutcome" Desc="Description: This function is to check Patient Outcome/SignPost is enable or disabled for Call Handler">
+      <Parameters Desc="          outcome:">outcome</Parameters>
+    </function>
+    <function Name="AddNumOfPatientsInTheQueue" Desc="Description: This function to Add number of Patients in the queue">
+      <Parameters Desc="           NumOfPatients:NumOfPatients">NumOfPatients</Parameters>
+    </function>
+    <function Name="EnterCallerName" Desc="Description: This function to enter Name when caller is not patient ">
+      <Parameters Desc="          name:">name</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="ToCheckCHSumShortTxt" Desc="Description: This function to launch summary screen and check FirstCall selected response in the Summary screen with Short text">
+      <Parameters Desc="          questionSet:Question Set">questionSet</Parameters>
+      <Parameters Desc="          questionText:Question Text">questionText</Parameters>
+      <Parameters Desc="          answersSelected:Answers Selected">answersSelected</Parameters>
+    </function>
+    <function Name="ToCompareTwoArrays" Desc="Description: This function to check two arrays values and return result">
+      <Parameters Desc="          firstArr:Question Set">firstArr</Parameters>
+      <Parameters Desc="          SecondArr:Question Text">secondArr</Parameters>
+    </function>
+    <function Name="ToCheckCHSummActionAdv" Desc="Description: This function to compare Suggested Urgency of Summary Screen and Overlay as same. Also validate Action Advise colour.">
+      <Parameters Desc="          suggestedUrgency:Suggested Urgency">suggestedUrgency</Parameters>
+      <Parameters Desc="          backgroundColor:expected background colour(INDIGO/RED/LIGHTRED/YELLOW/LIGHTYELLOW/GREEN/BLUE)">backgroundColor</Parameters>
+    </function>
+    <function Name="ToCheckCHSumLayTxt" Desc="Description: This function to check Laytext of 1st question in FirstCall Summary screen with selected response">
+      <Parameters Desc="          questionSet:Question Set">questionSet</Parameters>
+      <Parameters Desc="          questionText:Question Text">questionText</Parameters>
+      <Parameters Desc="          answersSelected:Answers Selected">answersSelected</Parameters>
+    </function>
+    <function Name="AcceptDeclineAdvCHSummScr" Desc="Description: This function is to accept/decline all the three Care/Worsening/Call Back Advice Overlay" />
+    <function Name="AcceptDeclineAdvCHSummByType" Desc="Description: This function is to check status or click button in Care Advice Overlay of Summary screen for Call Handler">
+      <Parameters Desc="          adviceType:Care Advice/Worsening Advice/Follow Up Advice/First Aid Advice">adviceType</Parameters>
+      <Parameters Desc="          btnName:Advice Given/Not Given">btnName</Parameters>
+      <Parameters Desc="          status:enabled/disabled">status</Parameters>
+    </function>
+    <function Name="ToCheckActionSelectedColour" Desc="Description: This function to check the colour of Action Selected in Summary Screen." />
+    <function Name="ToFetchCHAdviceTxt" Desc="Description: This function to return the Advice(Only 1st line) under Care/Worsening/Call Back Advice tabs of Call Handler SUmmary screen.">
+      <Parameters Desc="          adviceType:Care Advice/Worsening Advice/FOLLOW UP Advice/First Aid Advice">adviceType</Parameters>
+    </function>
+    <function Name="ToValClinWarnConfigAudit" Desc="Description: This function to validate the audit record created for Clinical Warning Configuration change made in Admin screen">
+      <Parameters Desc="            status:Enabled/Disabled/SNOMEDDetails">status</Parameters>
+    </function>
+    <function Name="ToValClinWarnViewAudit" Desc="Description: This function to validate the audit record created after viewing Clinical Warning messages by clinician">
+      <Parameters Desc="            messages:clinical warning messages">messages</Parameters>
+    </function>
+    <function Name="ToCheckPILSUrlCallHandler" Desc="Description: This function is to click on PILs tab and check PILs url in Summary Screen of Call Handler" />
+    <function Name="CheckUncheckEmailModule" Desc="Description: This function is to check/uncheck modules under Email configuration of Admin Configuration">
+      <Parameters Desc="          module:list of module(FaceToFace/FirstCall/Reception/TeleAssess)">module</Parameters>
+      <Parameters Desc="          status:Check/Uncheck">status</Parameters>
+    </function>
+    <function Name="SetDetEmailModule" Desc="Description: This function is to set Subject and Message body under Email configuration of Admin Configuration">
+      <Parameters Desc="          subject:subject text">subject</Parameters>
+      <Parameters Desc="          messageBody:message body text">messageBody</Parameters>
+    </function>
+    <function Name="ToValEmailConfigAudit" Desc="Description: This function to validate the audit record created for change made for Email Subject/Message in Admin screen">
+      <Parameters Desc="            changeType:Subject/Message">changeType</Parameters>
+      <Parameters Desc="            text:new text entered">text</Parameters>
+    </function>
+    <function Name="ToCheckEmailAdviceAudit" Desc="Description: This function to validate the audit record created after clickin on Send Email for Care Advice by call handler">
+      <Parameters Desc="            mailId:email id of recipient">mailId</Parameters>
+      <Parameters Desc="            protocols:protocols list">protocols</Parameters>
+      <Parameters Desc="            pils:pils list">pils</Parameters>
+    </function>
+    <function Name="waitforEmailAdviceOverlay" Desc="Description: This function is wait for the Email Advice overlay" />
+    <function Name="SelectProtocolforEmail" Desc="Description: This function to select the protocol in Email Advice overlay">
+      <Parameters Desc="            protocol:protocolName/All">protocol</Parameters>
+    </function>
+    <function Name="SelectPilsforEmail" Desc="Description: This function to select the pils in Email Advice overlay">
+      <Parameters Desc="            pils:pilsName/All">pils</Parameters>
+    </function>
+    <function Name="ToComparePilsCountCH" Desc="Description: This function to launch summary screen and check FirstCall selected response in the Summary screen with Short text" />
+    <function Name="ClearPatientEmailTextBox" Desc="Description: This function is to clear text from the Patient Email TextBox">
+      <Parameters Desc="          number : number of times back space required">number</Parameters>
+    </function>
+    <function Name="GetTitleOfOverlay" Desc="Description: This function is to return the title of Overlay displayed ">
+      <Parameters Desc="          name: name property value">name</Parameters>
+    </function>
+    <function Name="ToCheckSelectedConvAnswerCallhandler" Desc="Description: This function is to check the selected items from the single select combobox in assessment screen">
+      <Parameters Desc="          Ques:Short question text">Ques</Parameters>
+      <Parameters Desc="          selectedAnswer:SelectedItem/Blank">selectedAnswer</Parameters>
+      <Parameters Desc="          value:Temperature/Weight">value</Parameters>
+    </function>
+    <function Name="ToValClinicalContentAudit" Desc="Description: This function to validate the audit record created for change in clinical content version in Admin screen">
+      <Parameters Desc="            oldversion:">oldversion</Parameters>
+      <Parameters Desc="            newversion:"> newversion</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="CheckPurpleQues1stScr" Desc="Description: This function is to chech the colour and order of question based on urgency with multiple question sets in 1st assessment screen." />
+    <function Name="AnsRemainQuesInScrFC" Desc="Description: This function is to Answer remaining questions in the current screen for CallHandler" />
+    <function Name="CheckPurpleQues2ndScr" Desc="Description: This function is to chech the colour and order of question based on urgency with multiple question sets in 2nd assessment screen.">
+      <Parameters Desc="          questionSet:question set to check">questionSet</Parameters>
+    </function>
+    <function Name="AnsRemainPurpQuesFirstScr" Desc="Description: This function is to select negative answer to remaining purple questions in the current screen for CallHandler" />
+    <function Name="AnsRemainPurpQuesSecondScr" Desc="Description: This function is to select negative answer to remaining purple questions in the current screen for CallHandler" />
+    <function Name="CheckAdviceOverlayTitle" Desc="Description: This function is to check the Title of Advice in the First Aid Advice overlay for CallHandler" />
+    <function Name="CheckNoPurpleQues1stScr" Desc="Description: This function is to chech that EMER and IMLT question are not in Purple colour and order of question based on urgency with multiple question sets in 1st assessment screen." />
+    <function Name="CheckNoPurpleQues2ndScr" Desc="Description: This function is to chech that EMER and IMLT question are not in purple colour and order of question based on urgency with multiple question sets in 2nd assessment screen.">
+      <Parameters Desc="          questionSet:question set to check">questionSet</Parameters>
+    </function>
+    <function Name="ToValPurpQuesConfigAudit" Desc="Description: This function to validate the audit record created for Purple Question configuration change on/off made in Admin screen">
+      <Parameters Desc="            status:on/off">status</Parameters>
+    </function>
+    <function Name="ToValAmbuTransTxtAudit" Desc="Description: This function to validate the audit record created for toggleing of Ambulance Transport Text configuration change on/off made in Admin screen">
+      <Parameters Desc="            status:enabled/disabled">status</Parameters>
+    </function>
+    <function Name="ValFirstCalMessgChangAudit" Desc="Description: This function to validate the audit record created for changing of Message Text under FirstCall Configuration in Admin screen">
+      <Parameters Desc="          messgType:AMBULANCETEXT/IMLT/EMER/IMM1">messgType</Parameters>
+    </function>
+    <function Name="SelUrgChangeReasonFC" Desc="Description: This function to Select reason to change in urgency for FirstCall">
+      <Parameters Desc="          reason:urgency change reason">reason</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="waitforSummaryScreen" Desc="Description: This function is wait for the Assessment screen" />
+    <function Name="SelectPatientOutcome" Desc="Description: This function is to select Patient Outcome or the 1st Signost">
+      <Parameters Desc="          patientOutcome:patientOutcome value">patientOutcome</Parameters>
+    </function>
+    <function Name="TochkPatientOutCome" Desc="Description: This function is to check for selected Patient Outcome(Only for close assessment)">
+      <Parameters Desc="          patientOutcome:patientOutcome value">wText</Parameters>
+    </function>
+    <function Name="ToChcNotesSavedItemCount" Desc="Description: This function is to check whether notes has been saved" />
+    <function Name="ToCmpSavedNotesDetails" Desc="Description: This function is to click and compare the details of notes has been saved">
+      <Parameters Desc="           Action:Click/DblClick">Action</Parameters>
+    </function>
+    <function Name="ToChckCromeDoc" Desc="Description: This function is to validate chrome browser opens PILs">
+      <Parameters Desc="          pil:pil text">pil</Parameters>
+    </function>
+    <function Name="ToFetchSavedNotesText" Desc="Description: This function is to fetch saved notes text of first note" />
+    <function Name="ToChkNotesTextBox" Desc="Description: This function is to validate notes text box" />
+    <function Name="ToStrikeTheText" Desc="Description: This function is to strike the text" />
+    <function Name="SelectContent" Desc="Description: This function is to strike the text" />
+    <function Name="SetTextUrgencyVariation" Desc="Description: This function is to set text in UrgencyVariationOverlay">
+      <Parameters Desc="            text:">text</Parameters>
+    </function>
+    <function Name="ValActionAdviced" Desc="Description: This function is to validate action adviced">
+      <Parameters Desc="          text:">text</Parameters>
+    </function>
+    <function Name="ValActSelectedCmbItems" Desc="Description: This function is wait for the Emergency Protocol screen">
+      <Parameters Desc="          itemName:">itemName</Parameters>
+    </function>
+    <function Name="ValActSelected" Desc="Description: This function is to validate currently selected action selected" />
+    <function Name="ValCareAdviceSelected" Desc="Description: This function is to validate currently selected action selected" />
+    <function Name="ToCheckSessionHistoryDet" Desc="Description: This function is to check session status in DB">
+      <Parameters Desc="">columnToBeFetched</Parameters>
+    </function>
+    <function Name="ToCheckSessionDet" Desc="Description: This function is to check session details in DB">
+      <Parameters Desc="            columnToBeFetched:column detail to be fetched from DB(ITERATIONTYPE/ITERATIONVERSION/ID/CLINICIANURGENCY/CHURGENCY/RECEPTIONURGENCY/FTFURGENCY/APPVERSION)">columnToBeFetched</Parameters>
+      <Parameters Desc="            expValue:expected value for session(blank for ID/APPVERSION)">expValue</Parameters>
+    </function>
+    <function Name="ToCheckDBDetails" Desc="Description: This function is to DB details of any column">
+      <Parameters Desc="            dbRecord:">dbRecord</Parameters>
+      <Parameters Desc="            columnToBeFetched:column number of dbrecord to be checked for">columnToBeFetched</Parameters>
+      <Parameters Desc="            expValue:expected value for session">expValue</Parameters>
+    </function>
+    <function Name="ToCheckClinicalKey" Desc="Description: This function is to check clinicalkey details in DB" />
+    <function Name="ToCheckSessionDetInProcess" Desc="Description: This function is to check session deails in DB for InProcess(Written for columns available only in InProcess)">
+      <Parameters Desc="">columnToBeFetched</Parameters>
+    </function>
+    <function Name="ToCheckPILSUrl" Desc="Description: This function is to check PILS url in Summary/Outcome Screen of Clinician/FTF" />
+    <function Name="ToCheckSignpostStarIcon" Desc="Description: This function is to check Star next to Signpost outcome and select it for Clinician/Call Handler">
+      <Parameters Desc="">signpostOutcome</Parameters>
+    </function>
+    <function Name="ToValidatePreSelectSignpost" Desc="Description: Function to validate the pre-selected signpost when number of suggested signpost is One " />
+    <function Name="SelectSignPost" Desc="Description: This function is to select SignPost for Clinician and CallHandler and check selected signpost is highlighted">
+      <Parameters Desc="          signPost:SignPost text to be selected">signPost</Parameters>
+    </function>
+    <function Name="ToCheckUrgencySelClinician" Desc="Description: This function is to check the urgency selected and its backgound color in SUmmary screen">
+      <Parameters Desc="          urgencySelected:urgencySelected text">urgencySelected</Parameters>
+      <Parameters Desc="          backgroundColor:expected background colour(INDIGO/RED/LIGHTRED/YELLOW/LIGHTYELLOW/GREEN/BLUE)">backgroundColor</Parameters>
+    </function>
+    <function Name="ToCheckSignpost" Desc="Description: This function is to validate suggested signpost and selected signpost in DB">
+      <Parameters Desc="    columnToBeFetched: column detail to be fetched from DB">columnToBeFetched</Parameters>
+      <Parameters Desc="    Value: Expected signpost"> Value</Parameters>
+    </function>
+    <function Name="ToValidateSelectedSignpost" Desc="Description: Function to validate the pre-selected signpost when number of suggested signpost is One ">
+      <Parameters Desc="          SelectedSignpost:Selected Signpost text">SelectedSignpost</Parameters>
+    </function>
+    <function Name="ValPilsURL" Desc="Description: This function is to validat PILs url in Summary Screen of Call Handler/Clinician/FTF">
+      <Parameters Desc="">PILSList</Parameters>
+    </function>
+    <function Name="ToCheckSignpostNegScenario" Desc="Description: This function is to validate suggested signpost and selected signpost in DB" />
+    <function Name="ToCheckNotesSectEnableClinSumm" Desc="Description: This function is to fetch saved notes text of first note" />
+    <function Name="SaveSummaryPDF" Desc="Description: Function to enter file name and Save the Summary report as a PDF document">
+      <Parameters Desc="          filename:PDF File Name">filename</Parameters>
+    </function>
+    <function Name="CreatePDFBackup" Desc="Description: This function is used to backup the existing PDFs of previous run" />
+  </functions>
+  <functions>
+    <function Name="clickWinformsItem" Desc="Description: This function is to click the win forms item">
+      <Parameters Desc="             name:name property value">name</Parameters>
+      <Parameters Desc="             WinFormsControlName:WinFormsControlName property value">WinFormsControlName</Parameters>
+    </function>
+    <function Name="ToValChkBox" Desc="Description: This function is to validate check box">
+      <Parameters Desc="             name:name property value">name</Parameters>
+      <Parameters Desc="             WinFormsControlName:WinFormsControlName property value">WinFormsControlName</Parameters>
+    </function>
+    <function Name="getTextFromWinformsTextBox" Desc="Description: This function is to get text from text box">
+      <Parameters Desc="             name: property value of name ">name</Parameters>
+    </function>
+    <function Name="TochkWinFormsComboboxSelected" Desc="Description: This function is to check combo box has been selected">
+      <Parameters Desc="             name: property value of name ">name</Parameters>
+    </function>
+    <function Name="selectWinFormsCmbBox" Desc="Description: This function to select combo box item">
+      <Parameters Desc="           comboBoxName:value of name property">comboBoxName</Parameters>
+      <Parameters Desc="           itemName:item name needs to validate">itemName</Parameters>
+    </function>
+    <function Name="ToCheckWinFormsButtonEnaborDisab" Desc="Description: This function is to check button enable or disable">
+      <Parameters Desc="             name: property value of name     ">Name</Parameters>
+      <Parameters Desc="             WinFormsControlName: property value of WinFormsControlName ">WinFormsControlName</Parameters>
+    </function>
+    <function Name="ToCheckWinFormsObjEnableorDisable" Desc="Description: This function is to check object enabled or disabled">
+      <Parameters Desc="             name:name property value">name</Parameters>
+      <Parameters Desc="             WPFControlName:WPFControlName property value">WinFormsControlName</Parameters>
+    </function>
+    <function Name="ToValDataExistInCmbBox" Desc="Description: This function to select combo box item">
+      <Parameters Desc="           comboBoxName:Value of name property">comboBoxName</Parameters>
+    </function>
+    <function Name="ToValcmbData" Desc="Description: This function to validate comboBox Data in the alphabatical order" />
+    <function Name="setDataInTestHarness" Desc="Description: This function to set data in the test harness">
+      <Parameters Desc="            Item: Item">Item</Parameters>
+      <Parameters Desc="            val: ">Val</Parameters>
+    </function>
+    <function Name="waitForItemWithTimeForWinForms" Desc="Description: This function is to wait for the object with the defined time" />
+    <function Name="waitforXMLScreen" Desc="Description: This function is wait for the XML Screen" />
+    <function Name="getSessionId" Desc="Description: This function is to get session Id" />
+    <function Name="CompareSessionID" Desc="Description: This function is to get session Id" />
+    <function Name="ToValCheckAndUncheck" Desc="Description: This function to check and uncheck the checkbox">
+      <Parameters Desc="          Name:Name property of the object">Name</Parameters>
+    </function>
+    <function Name="ToValPatientBannerVisible" Desc="Description: This function to validate patient banner visible" />
+    <function Name="ToValAdaondonMsg" Desc="Description: This function to validate abandon messageclose" />
+    <function Name="ToValAuditDescription" Desc="Description: This function to validate the description of audit record created ">
+      <Parameters Desc="            auditSummary:Summary of Audit record">auditSummary</Parameters>
+      <Parameters Desc="            auditDescription:Description of Audit record">auditDescription</Parameters>
+    </function>
+    <function Name="entDemographicsDetTestHarness" Desc="Description: This function to enter demographic details in the test harness">
+      <Parameters Desc="            dob:date of birth(MM/DD/YYYY)">dob</Parameters>
+      <Parameters Desc="            gender:Male/Female">gender</Parameters>
+    </function>
+    <function Name="entDemogDetNewTestHarness" Desc="Description: This function to enter demographic details in the new test harness">
+      <Parameters Desc="            dob:date of birth(MM/DD/YYYY)">dob</Parameters>
+      <Parameters Desc="            gender:Male/Female">gender</Parameters>
+    </function>
+    <function Name="setDataInNewTestHarness" Desc="Description: This function to set data in the new test harness">
+      <Parameters Desc="            Item: Item">Item</Parameters>
+      <Parameters Desc="            val: entered value">Val</Parameters>
+    </function>
+    <function Name="getDetFromNewTestHarness" Desc="Description: This function to get data from the new test harness">
+      <Parameters Desc="            Item: Item">Item</Parameters>
+    </function>
+    <function Name="RandomNumberGen" Desc="Description: This function is to generate random number and return">
+      <Parameters Desc="          MaxNumber:">MaxNumber</Parameters>
+      <Parameters Desc="          MinNumber:">MinNumber</Parameters>
+    </function>
+    <function Name="addAllergy" Desc="Description: This function is to add Allergy under New TestHarness">
+      <Parameters Desc="          allergyList:">allergyList</Parameters>
+      <Parameters Desc="          dateList:">dateList</Parameters>
+      <Parameters Desc="          snomedList:">snomedList</Parameters>
+    </function>
+    <function Name="addMedications" Desc="Description: This function is to add Allergy under New TestHarness">
+      <Parameters Desc="          medicationsList:">medicationsList</Parameters>
+      <Parameters Desc="          dateList:">dateList</Parameters>
+      <Parameters Desc="          snomedList:">snomedList</Parameters>
+    </function>
+    <function Name="ToCheckXMLDetails" Desc="Description: This function is to compare XML details or check for any empty tag">
+      <Parameters Desc="          tagName:Name of tag to be fetched">tagName</Parameters>
+      <Parameters Desc="          expValue:expected value of tag/sub-tag">expValue</Parameters>
+    </function>
+    <function Name="ToSetSessionIDasBlank" Desc="Description: This function is to reset sessionID field in Testharness to blank." />
+    <function Name="SelectAppVersion" Desc="Description: This function to click select application version">
+      <Parameters Desc="          Version:Select application version">value</Parameters>
+    </function>
+    <function Name="selectDOBTypeInProcess" Desc="Description: This function to select DOB Type in InProcess application">
+      <Parameters Desc="          type:Select DOB Type(DOB/NULLDOB/'1/1/0001'/APPROXAGE)">type</Parameters>
+    </function>
+    <function Name="ToCheckOutcomeDetailsInXML" Desc="Description: This function is to compare outcome in XML details" />
+    <function Name="selectGenderMissingInfo" Desc="Description: This function to select patient gender">
+      <Parameters Desc="            gender:Male or female">gender</Parameters>
+    </function>
+    <function Name="enterApproxAge" Desc="Description: This function to select DOB type as approx age and enter age in weeks">
+      <Parameters Desc="            numOfWeeks:Number Of Weeks">numOfWeeks</Parameters>
+    </function>
+    <function Name="GetLogDetInProcess" Desc="Description: This function to return sessionid/status details under Log section for assessment in TestHarness. SessionID is saved in Global variable.">
+      <Parameters Desc="            detailReq:sessionId/status">detailReq</Parameters>
+    </function>
+    <function Name="ChangeDateFormat" Desc="Description: This function to change the date format as per local machine">
+      <Parameters Desc="            datetoenter:date to enter">datetoenter</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="waitforTriageScreen" Desc="Description: This function is wait for the Assessment screen" />
+    <function Name="ToChkTitleOfChangeUrgencytextBox" Desc="Description: This function is to check the title of the change urgency text box" />
+    <function Name="ToChckBacgroundColorOfBannertext" Desc="Description: This function is to check the title of the change urgency text box" />
+    <function Name="ToChcktheTickMarkAgainstUrgency" Desc="Description: This function is to check the tick mark against urgency" />
+    <function Name="ToChcktheQuesAndAnsDisply" Desc="Description: This function is to check the" />
+    <function Name="ToChcktheSelectedUrgency" Desc="Description: This function is to check the tick mark against urgency">
+      <Parameters Desc="">Outcome</Parameters>
+    </function>
+    <function Name="ToChecktheQuesAndAnsDisplay" Desc="Description: This function is to check the question and answer present in triage screen">
+      <Parameters Desc="            Protocol: question set ">Protocol</Parameters>
+      <Parameters Desc="            Ques: Question ">Ques</Parameters>
+      <Parameters Desc="            Ans: Answer         ">Ans</Parameters>
+    </function>
+    <function Name="ToCheckforClinWarn" Desc="Description: This function is check for Clinical Warning section displayed in triage screen for Clinician" />
+    <function Name="ToCheckforClinWarnMessage" Desc="Description: This function is check for Clinical Warning section displayed in triage screen for Clinician">
+      <Parameters Desc="          messages:clinical warning message array">messages</Parameters>
+    </function>
+    <function Name="ToCheckResponseText" Desc="Description: This function is to check ResponseText saved against any response in DB">
+      <Parameters Desc="          responseText:Response Text entered">responseText</Parameters>
+    </function>
+    <function Name="SelectUrgency" Desc="Description: This function is to check ResponseText saved against any response in DB">
+      <Parameters Desc="          changeType:Increase/Decrease/Recommend">changeType</Parameters>
+      <Parameters Desc="          urgency:Emergency/Now/within 2-6-24 hours/routine appointment/self care"> urgency</Parameters>
+    </function>
+    <function Name="SelUrgChangeReason" Desc="Description: This function to Select reason to change in urgency">
+      <Parameters Desc="          reason:urgency change reason">reason</Parameters>
+    </function>
+  </functions>
+  <functions>
+    <function Name="waitforUrgencyAdminscreen" Desc="Description: This function is wait for the Urgency Admin screen" />
+    <function Name="expandCollapseUrgencyGrid" Desc="Description: This function is to expand urgency grid in the Urgency Admin screen">
+      <Parameters Desc="          urgency:urgency grid to be expanded(Immediate / Urgent / ...)">urgency</Parameters>
+    </function>
+    <function Name="ValidateUrgencyMssgTitle" Desc="Description: This function is to expand urgency grid in the Urgency Admin screen">
+      <Parameters Desc="          Urgency:urgency grid to be expanded(Immediate / Urgent / ...)">Urgency</Parameters>
+    </function>
+    <function Name="UpdateUrgencyMessage" Desc="Description: This function is to edit the Urgency message for any Urgency Type">
+      <Parameters Desc="          urgency:urgency grid to be expanded(Immediate / Urgent / ...)">urgency</Parameters>
+      <Parameters Desc="          heading:Heading of Urgency Message(Call handler Message/Face to Face Examination Banner message/Urgency Message/.....)">heading</Parameters>
+      <Parameters Desc="          updatedValue:updated message">updatedValue</Parameters>
+    </function>
+    <function Name="CheckReverttoDefault" Desc="Description: This function is to check for Revert to Default button in the Urgency Admin screen">
+      <Parameters Desc="          urgency:urgency grid to be expanded(Immediate / Urgent / ...)">urgency</Parameters>
+      <Parameters Desc="          revert:blank/click">revert</Parameters>
+    </function>
+  </functions>
+</root>

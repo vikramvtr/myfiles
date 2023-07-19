@@ -1,0 +1,297 @@
+﻿//USEUNIT CommonFunctions
+//USEUNIT PageObjects
+//USEUNIT DBFunctions
+
+/*===============================================================================
+Description: This function is wait for the Assessment screen
+Parameters: 
+Return Value: 
+=================================================================================*/
+function waitforTriageScreen()
+{
+ return waitForItemWithTime(btn_WPFButton,"Continue to summary screen",2 )
+}
+
+/*===============================================================================
+Description: This function is to check the title of the change urgency text box
+Parameters: 
+Return Value: 
+=================================================================================*/
+function ToChkTitleOfChangeUrgencytextBox()
+{
+    Process = GetProcess()
+    var TextBox = Process.FindChild(["Name"],["WPFObject(\"ThisControl\")"],100)
+    if(TextBox.Exists)
+    {
+        var Title = TextBox.Title.OleValue
+        if (Title == "Please type your reason for change of urgency below")
+        {
+          return true
+        } 
+        else
+        {
+          return false
+        } 
+    } 
+    return false
+} 
+
+/*===============================================================================
+Description: This function is to check the title of the change urgency text box
+Parameters:  color: Color to check
+Return Value: true/false
+=================================================================================*/
+function ToChckBacgroundColorOfBannertext()
+{
+    Process = GetProcess()
+    obj = Process.FindChild(["Name"],["WPFObject(\"TextBlock\", \"Based on the answers completed Odyssey recommends face to face assessment within * hour*\", 1)"],100)
+    obj = obj.parent
+    var B = obj.Background.Color.B
+    var G = obj.Background.Color.G
+    var R = obj.Background.Color.R
+  
+    if (B==0 && G==0 && R==204)
+    {
+      return true
+    } 
+    else
+    {
+      return false
+    } 
+} 
+/*===============================================================================
+Description: This function is to check the tick mark against urgency
+Parameters:  color: Color to check
+Return Value: true/false
+=================================================================================*/
+function ToChcktheTickMarkAgainstUrgency()
+{
+    Process = GetProcess()
+    obj = Process.FindChild(["Name"],["WPFObject(\"TextBlock\", \"Recommend within 2 hours\", 1)"],100)
+    obj = obj.parent.parent
+    obj1 = obj.FindChild(["Name"],["WPFObject(\"Path\", \"\", 1)"],100)
+    if (obj1.Visible == true)
+    {
+      return true
+    } 
+    else
+    {
+      return false
+    } 
+}
+
+/*===============================================================================
+Description: This function is to check the
+Parameters:  color: Color to check
+Return Value: true/false
+=================================================================================*/
+function ToChcktheQuesAndAnsDisply()
+{
+    Process = GetProcess()
+    obj = Process.FindChild(["Name","WPFControlText"],["WPFObject(\"ListViewItem\", \"\", 1)","Elbow Injury"],100)
+    var quest = obj.Content.Questions.Item(0).Summary.OleValue
+    var Ans = obj.Content.AnsweredLevel
+    if (quest == "Sensation" && Ans == "1")
+    {
+      return true
+    } 
+    else
+    {
+      return false
+    } 
+}
+
+/*===============================================================================
+Description: This function is to check the tick mark against urgency
+Parameters:  Outcome: outcome to check(e.g. Recommend Emergency)
+Return Value: true/false
+=================================================================================*/
+
+function ToChcktheSelectedUrgency(Outcome)
+{
+    Process = GetProcess()
+    var SelectedOutcome = Process.FindChild(["Name","IsVisible"],["WPFObject(\"Path\", \"\", 1)","True"],100)
+    var ParentObj = SelectedOutcome.parent.parent
+    var ExpectedOutcome = ParentObj.Findchild(["WPFControlText"],[Outcome],100)
+    if(ExpectedOutcome.Exists && ExpectedOutcome.VisibleOnScreen)
+    {
+      return true
+      }
+    else
+    {
+      return false
+    }
+}
+/*===============================================================================
+Description: This function is to check the question and answer present in triage screen
+Parameters: 
+            Protocol: question set 
+            Ques: Question 
+            Ans: Answer         
+Return Value: true/false
+=================================================================================*/
+function ToChecktheQuesAndAnsDisplay(Protocol,Ques,Ans)
+{
+  Process = GetProcess()
+  var quesGrid = Process.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"ListView\", \"\", *)","True"],100)
+  var protList = quesGrid.FindAllChildren(["Name","VisibleOnScreen"],["WPFObject(\"ListViewItem\", \"\", *)","True"],1).toArray();
+  if(protList.length>0)
+  {
+//    var status=false;
+    var i;
+    for(i=0;i<protList.length;i++)
+    {
+      if(aqString.ToUpper(protList[i].WPFControlText)==aqString.ToUpper(Protocol))
+      {
+        var quesList = protList[i].FindAllChildren(["Name","VisibleOnScreen"],["WPFObject(\"ListViewItem\", \"\", *)","True"],1).toArray();
+        for(var j=0;j<quesList.length;j++)
+        {
+          currQues = quesList[j].DataContext.Summary.OleValue;
+          if(aqString.ToUpper(currQues)==aqString.ToUpper(Ques))
+          {
+            actAnswer = quesList[j].FindChild(["Name"],["WPFObject(\"TextBlock\", \"*\", 1)"],10)
+            if(aqString.ToUpper(actAnswer.WPFControlText)==aqString.ToUpper(Ans))
+            {
+              return true
+            }
+            else
+            {
+              return false
+            }       
+          }
+        }
+      }
+    }
+  }
+}
+
+/*===============================================================================
+Description: This function is check for Clinical Warning section displayed in triage screen for Clinician
+Parameters: 
+Return Value: true/false
+=================================================================================*/
+function ToCheckforClinWarn()
+{
+    return ToFindObjToValidate(["Name"], [obj_ClinicalWarning])
+}
+/*===============================================================================
+Description: This function is check for Clinical Warning section displayed in triage screen for Clinician
+Parameters: 
+          messages:clinical warning message array
+Return Value: true/false
+=================================================================================*/
+function ToCheckforClinWarnMessage(messages)
+{
+    var messageArr = messages.split(",");
+    var clinWarnSectionObj = ToFindObj(["Name"], [obj_ClinicalWarning])
+    var clinWarnDetObj = clinWarnSectionObj.FindChild(["Name"],["WPFObject(\"TextBlock\", \"*\", 2)"],10);
+    var clinWarnMessgObj = clinWarnSectionObj.FindChild(["Name"],["WPFObject(\"ListView\", \"\", 1)"],10);
+    if(clinWarnMessgObj.Exists && clinWarnMessgObj.wItemCount == messageArr.length)
+    {
+        var status;
+        for(i=0;i<messageArr.length;i++)
+        {
+            status = false;
+            expMessg = aqString.ToUpper(messageArr[i]);
+            for(j=0;j<clinWarnMessgObj.wItemCount;j++)
+            {
+                actMessg = aqString.Trim(aqString.ToUpper(clinWarnMessgObj.Items.Item(j).AlertMessage.OleValue))
+                if(expMessg == actMessg)
+                {
+                    status = true;
+                    break;
+                }
+            }
+            if(status == false)
+            {
+                Log.Message(expMessg+" is not found in the Clinical Warning section");
+                return false;
+            }
+        }
+        Log.Message("All the Clinical Warning messages found");
+        if(clinWarnDetObj.WPFControlText == "Symptom combination may occur with:")
+        {
+            return true;
+        }
+        else
+        {
+            Log.Message("Message header is not showing in Clinical Warning section as NB Symptom combination may occur with:")
+            return false;
+        }
+    }
+    else
+    {
+        Log.Message("Number of clinical warning message is not matching");
+        return false;
+    }
+}
+/*===============================================================================
+Description: This function is to check ResponseText saved against any response in DB
+Parameters: 
+          responseText:Response Text entered
+Return Value: true/false
+=================================================================================*/
+function ToCheckResponseText(responseText)
+{
+  var dbRecord
+  dbRecord = GetLastEntryFromSession()
+  var sessionID=dbRecord[0][0]
+  sessionID = aqString.Replace(aqString.Replace(sessionID,"{",""),"}","")
+  
+  var  dbRecord1=GetClinicalKeyFromResponse(sessionID)
+  for(var i=0;i<dbRecord1.length;i++)
+  {
+      if(dbRecord1[i][3]==null || dbRecord1[i][3]=="")
+      {
+        continue;
+      }
+      else if(aqString.ToUpper(dbRecord1[i][3])==aqString.ToUpper(responseText))
+      {
+        return true;
+      }  
+  }
+  return false;
+}
+
+/*===============================================================================
+Description: This function is to check ResponseText saved against any response in DB
+Parameters: 
+          changeType:Increase/Decrease/Recommend
+          urgency:Emergency/Now/within 2-6-24 hours/routine appointment/self care
+Return Value: true/false
+=================================================================================*/
+function SelectUrgency(changeType, urgency)
+{
+    if(changeType=="Increase" || changeType=="Decrease")
+    {
+        nameValue = "WPFObject(\"TextBlock\", \""+changeType+" to "+urgency+"\", *)"
+        WPFControlTextValue = changeType+" to "+urgency
+        clickItem(nameValue, WPFControlTextValue)
+    }
+    else
+    {
+        nameValue = "WPFObject(\"TextBlock\", \""+changeType+" "+urgency+"\", *)"
+        WPFControlTextValue = changeType+" "+urgency
+        clickItem(nameValue, WPFControlTextValue)   
+    }
+}
+
+/*====================================================================================
+Description: This function to Select reason to change in urgency
+Parameters: 
+          reason:urgency change reason
+Return Value: True/False
+=====================================================================================*/
+function SelUrgChangeReason(reason)
+{
+   var obj_UrgencyChangeReasons = ToFindObj(["Name"],[cmb_UrgencyChangeReasons])
+   for(i=0;i<obj_UrgencyChangeReasons.Items.Count;i++)
+   {
+       if(aqString.ToUpper(obj_UrgencyChangeReasons.Items.item(i).OleValue) == aqString.ToUpper(reason))
+       { 
+           obj_UrgencyChangeReasons.ClickItem(i)
+           return true
+       } 
+   } 
+   return false
+}

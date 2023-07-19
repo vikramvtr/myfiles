@@ -1,0 +1,801 @@
+﻿//USEUNIT PageObjects
+
+/*===============================================================================
+Description: This function is to delay execution
+Parameters:
+          sec:Seconds to wait
+Return Value: 
+=================================================================================*/
+function delayExecution(sec) 
+{
+    var delaymin = sec * 1000
+    Delay(delaymin)
+}
+
+function test()
+{
+  process = GetProcess()
+} 
+/*===============================================================================
+Description: This function is to get the process
+Parameters: 
+Return Value: 
+=================================================================================*/
+
+function GetProcess(Application)
+{
+  
+  Sys.Refresh()
+  if ((aqString.ToUpper(Application)=="STANDALONE")||(Application==undefined))
+  {
+    return Sys.Process("Odyssey.eCover.App")
+  }
+  else if (aqString.ToUpper(Application)=="INPROCESS")
+  {
+    return Sys.Process("Odyssey.InProcess.TestHarness.Main")
+  } 
+}
+
+/*===============================================================================
+Description: This function is to wait for the object
+Parameters:             
+             proArr:Property name in the array
+             propValueArr:property value in the array
+Return Value: 
+=================================================================================*/
+//waitForInformationMessage(["ControlText","ObjectType"],["Company/Contact","TextView"])
+function waitForInformationMessage(proArr, propValueArr){
+
+    // function to get the current time
+    var d = new Date();
+    var startTime = d.getTime();
+
+    // loops for 2 mins if object does not exist
+    do {
+        var d = new Date();
+        var endTime = d.getTime();
+        Process = GetProcess()
+        if (Process.Exists) {
+            var currentItem = Process.FindChild(proArr, propValueArr, 100);
+            if (currentItem.Exists && currentItem.VisibleOnScreen) {
+                break;
+            }
+        }
+    } while ((endTime - startTime) <= 180000)
+
+
+    if (Process.Exists) {
+          //delayExecution(2)
+
+        if (currentItem.VisibleOnScreen)
+        {
+            Log.Message("Object is found...Exiting waitForItem")
+            return true;
+        }
+        else {
+            Log.Error("Object not visible on screen...Exiting waitForItem")
+        }
+    }
+    Log.Error("Object not found...Exiting waitForItem")
+}
+/*===============================================================================
+Description: This function is to set text
+Parameters:    
+             txt:text to set in the text box         
+             name:name property value
+             wpfControlName:wpfControlName property value OR
+             obj:Object
+Return Value: 
+=================================================================================*/
+function setText(txt,name,wpfControlName,obj)
+{
+   if(!obj=="")
+   {
+      if((obj.Exists)&&(obj.Enabled))
+      if (aqObject.IsSupported(obj,"Clear"))
+      {
+        obj.Clear()
+      }
+      obj.Click()
+      obj.Keys(txt)
+   }
+   else
+   {   
+     Process = GetProcess()
+     var SetTxtObj= Process.FindChild(["Name","WPFControlName"], [name,wpfControlName], 100)
+     if(SetTxtObj.Exists && SetTxtObj.Enabled)
+     { 
+        if (aqObject.IsSupported(SetTxtObj,"Clear"))
+        {
+          SetTxtObj.Clear()
+        }
+              
+        SetTxtObj.Keys(txt)
+     }
+      else 
+     {
+
+        Log.Warning("Set text failed")
+        throw "Set text failed"
+      
+     }
+   }
+}
+
+
+/*===============================================================================
+Description: This function is to wait for the object with the defined time
+Parameters:             
+             name: name property value
+             wpfControlText: wpfControlText property value 
+             minutes: Minutes to wait for the object
+Return Value: 
+=================================================================================*/
+function waitForItemWithTime(name, wpfControlText, minutes) {
+
+    var d = new Date();
+    var startTime = d.getTime();
+    MilSeconds=minutes*60000
+
+    do {
+        var d = new Date();
+        var endTime = d.getTime();
+        Process = GetProcess()
+        var currentItem = Process.FindChild(["Name", "WPFControlText"], [name, wpfControlText], 100);
+        if ((currentItem.Exists)&&(currentItem.Enabled)&&(currentItem.VisibleOnScreen)) {
+            break;
+        }
+
+    } while ((endTime - startTime) <= MilSeconds)
+
+    if (currentItem.Exists) {
+
+        if (currentItem.VisibleOnScreen) {
+            Log.Message(wpfControlText+" Object is found...Exiting waitForItem")
+            return true;
+        }
+        else {
+
+            Log.Error(wpfControlText+" Object not visible on screen...Exiting waitForItem")
+        }
+    }
+    Log.Error("Object not found...Exiting waitForItem")
+}
+
+
+/*===============================================================================
+Description: This function is to find the object
+Parameters:             
+             proArr: Property name in the array
+             propValueArr: property value in the array
+Return Value: 
+=================================================================================*/
+function ToFindObj(proArr, propValueArr)
+{
+  Process = GetProcess()
+  if (Process.Exists) 
+  {
+      var currentItem = Process.FindChild(proArr, propValueArr, 100);
+      if (currentItem.Exists && currentItem.VisibleOnScreen) 
+      {
+        return currentItem
+      }
+      else
+      {
+        Log.Error("Object not found")
+      }
+  }
+}
+
+/*===============================================================================
+Description: This function is to wait for the object returns true or false
+Parameters:             
+             proArr: Property name in the array
+             propValueArr: property value in the array
+Return Value: 
+=================================================================================*/
+function waitForInformationMessageTrueOrFalse(proArr, propValueArr)
+{
+
+    // function to get the current time
+    var d = new Date();
+    var startTime = d.getTime();
+
+    // loops for 2 mins if object does not exist
+    do {
+        var d = new Date();
+        var endTime = d.getTime();
+        Process = GetProcess()
+        if (Process.Exists) {
+            var currentItem = Process.FindChild(proArr, propValueArr, 100);
+            if (currentItem.Exists && currentItem.VisibleOnScreen) 
+            {
+                Log.Message("Object is found...Exiting waitForItem")
+                return true;
+            }
+        }
+    } while ((endTime - startTime) <= 10000)
+    Log.Message("Object not found...Exiting waitForItem")
+    return false
+}
+/*===============================================================================
+Description: This function to close the application
+Parameters: 
+            gender:Male or female
+Return Value: 
+=================================================================================*/
+function closeApplication()
+{
+  Process = GetProcess()
+//  TestedApps.Odyssey_eCover_App.Terminate()
+  Process.Close()
+  Delay(2000)
+}
+
+/*===============================================================================
+Description: This function is to launch the application
+Parameters:             
+  ApplicationToTest: Standalone or Inprocess
+Return Value: NA
+=================================================================================*/
+function LaunchApplication(ApplicationToTest)
+{
+  if(aqString.ToUpper(ApplicationToTest) == "STANDALONE")
+  {
+    if(!Sys.WaitProcess("Odyssey.eCover.App").Exists)
+    {
+//      TestedApps.Odyssey_eCover_App.Run();
+      TestedApps.Odyssey_3_10_Standalone.Run()
+      waitForInformationMessage(["Name"],[Wnd_MainWindow])
+      Sys.Process("Odyssey.eCover.App").WPFObject("HwndSource: MainWindow").Maximize()
+    }
+  }
+  else if(aqString.ToUpper(ApplicationToTest) == "INPROCESS")
+  {
+    if(!Sys.WaitProcess("Odyssey.InProcess.TestHarness.Main").Exists)
+    {
+      TestedApps.Odyssey_3_10_InProcess.Run()
+      waitForInformationMessage(["Name"],[Wnd_TestHarness])
+      Sys.Process("Odyssey.InProcess.TestHarness.Main").WinFormsObject("Master").Maximize()
+//    SetupTestHarness();
+    }
+  }
+}
+/*===============================================================================
+Description: This function is to check button enable or disable
+Parameters:             
+             wpfControlText: property value of wpfControlText 
+Return Value: 
+=================================================================================*/
+function ToCheckButtonEnaborDisab(wpfControlText)
+{
+   Process = GetProcess()
+
+    var btn= Process.FindChild(["Name", "WPFControlText"], [btn_WPFButton, wpfControlText], 100)
+   if(btn.Exists && btn.Enabled)
+   {
+      Log.Message(wpfControlText+" Button is enable")
+      return true
+   }
+    else 
+    {
+      Log.Message(wpfControlText+" Button is disable")
+      return false
+          
+    }
+}
+
+/*===============================================================================
+Description: This function is to check lable present in the page
+Parameters:             
+             wpfControlText: property value of wpfControlText 
+Return Value: 
+=================================================================================*/
+function ToCheckLablePresent(wpfControlText)
+{
+   Process = GetProcess()
+   var label= Process.FindChild(["WPFControlText"], [wpfControlText], 100)
+   if(label.Exists && label.VisibleOnScreen)
+   {
+      Log.Message(wpfControlText+" Label is present in the screen")
+      return true
+   }
+    else 
+    {
+      Log.Message(wpfControlText+" Label is not present in the screen")
+      return false
+          
+    }
+  
+}
+
+/*===============================================================================
+Description: This function is to check the text box presenting on screen
+Parameters:     
+             name: value of Name property       
+             wpfControlText: property value of wpfControlText 
+Return Value: 
+=================================================================================*/
+function ToCheckSearchBoxPresent(name,wpfControlText)
+{
+   Process = GetProcess()
+   var searchbox= Process.FindChild(["Name"], [name], 100)
+   if(searchbox.Exists && searchbox.Enabled)
+   {
+      Log.Message(wpfControlText+" is presenting and enabled")
+      return true
+   }
+    else 
+   {
+      Log.Message(wpfControlText+" is not presenting/enabled")
+      return false
+          
+   }
+}
+  
+/*===============================================================================
+Description: This function is to select Combo box with item name
+Parameters:             
+             comboBoxName: property value of name 
+             itemName: Name of the item to select
+Return Value: 
+=================================================================================*/
+function selectComboBoxItem(comboBoxName,itemName)
+{
+  var Process = GetProcess()
+  var comboBoxObj=  Process.FindChild(["ClrClassName","Name"],["ComboBox",comboBoxName],50);
+  if(comboBoxObj.Exists)
+   {
+     for(i=0;i<comboBoxObj.Items.Count;i++)
+     {
+       if(comboBoxObj.Items.Item(i)==itemName)
+       {
+         comboBoxObj.ClickItem(itemName)
+         return true
+         break;
+       }
+     
+     }
+   }
+   
+   else
+   {
+     Log.Message("Combo box object is not found")
+   }
+}
+ 
+/*===============================================================================
+Description: This function is to select Combo box with index value
+Parameters:             
+             comboBoxName: property value of name 
+             itemName: Name of the item to select
+             obj:object to pass
+Return Value: 
+=================================================================================*/
+function selectComboBoxByIndex(comboBoxName,itemName,obj)
+{
+  var Process = GetProcess()
+  if ((comboBoxName!==null)&&(comboBoxName!==""))
+  {
+  var comboBoxObj=  Process.FindChild(["ClrClassName","Name"],["ComboBox",comboBoxName],50);
+  if(comboBoxObj.Exists)
+   {
+     for(i=0;i<comboBoxObj.Items.Count;i++)
+     {
+        var dta = comboBoxObj.Items.Item(i).Type
+        if (dta!=undefined)
+        {
+           if(comboBoxObj.Items.Item(i).Type.OleValue == itemName)
+           {
+             comboBoxObj.ClickItem(i)
+             return true
+             break;
+           }
+        }
+        else 
+        {
+        
+          if(comboBoxObj.Items.Item(i).Description.OleValue == itemName)
+           {
+             comboBoxObj.ClickItem(i)
+             return true
+             break;
+           }
+        } 
+      }
+   }
+}
+   
+   else
+   {
+   
+    if(obj!==undefined)
+   {
+     for(i=0;i<obj.Items.Count;i++)
+     {
+        var dta = obj.Items.Item(i).Type
+        if (dta!=undefined)
+        {
+           if(obj.Items.Item(i).Type.OleValue == itemName)
+           {
+             obj.ClickItem(i)
+             return true
+             break;
+           }
+        }
+        else 
+        {
+         if(obj.Items.Item(i).Description!=undefined)
+         {
+          if(obj.Items.Item(i).Description.OleValue == itemName)
+           {
+             obj.ClickItem(i)
+             return true
+             break;
+           }
+          }
+          else
+          {
+          if (obj.Items.Item(i).Text!=undefined)
+          {
+            if (obj.Items.Item(i).Text.OleValue == itemName)
+            {
+               obj.ClickItem(i)
+               return true
+               break;
+            } 
+          }
+          else
+          {
+          if (obj.Items.Item(i).QueueUrgency!=undefined)
+          {          
+            if (obj.Items.Item(i).QueueUrgency.OleValue == itemName)
+            {
+               obj.ClickItem(i)
+               return true
+               break;
+            } 
+          }
+          else
+          {
+            if (obj.Items.Item(i).OleValue == itemName)
+            {
+               obj.ClickItem(i)
+               return true
+               break;
+            } 
+          } 
+          } 
+          } 
+        
+        } 
+      }
+     
+   }
+}
+}
+/*===============================================================================
+Description: This function is to get text from text box
+Parameters:             
+             name: property value of name 
+             wpfControlName: property value of wpfControlName 
+Return Value: 
+=================================================================================*/
+function getTextFromTextBox(name,wpfControlName)
+{
+   
+  var obj = ToFindObj(["Name","WPFControlName"],[name,wpfControlName])
+  return obj.wText
+ 
+}
+
+/*===============================================================================
+Description: This function is to check combo box has been selected
+Parameters:             
+             name: property value of name 
+             wpfControlText: property value of wpfControlText 
+Return Value: 
+=================================================================================*/
+function TochkComboboxSelected(name,wpfControlText)
+{
+  Process = GetProcess()
+  var obj = Process.FindChild(["Name","WPFControlText"],[name,wpfControlText],100)
+  return obj.IsSelected
+ 
+}
+
+/*===============================================================================
+Description: This function is to expand the item
+Parameters:      
+             name:name property value
+             wpfControlText:wpfControlText property value
+Return Value: 
+=================================================================================*/
+function ExpandItem(name,wpfControlText)
+{
+   Process = GetProcess()
+    var clickingItem = Process.FindChild(["Name", "WPFControlText"], [name, wpfControlText], 100)
+    
+    if(clickingItem.Exists && clickingItem.Enabled)
+    {
+      clickingItem.Expand()
+    }
+    else 
+    {
+
+      Log.Warning(wpfControlText +"Click action failed in clickItem function")
+      throw "Click action failed in clickItem function"
+      
+    }
+}
+
+/*===============================================================================
+Description: This function is to Collapse the item
+Parameters:      
+             name:name property value
+             wpfControlText:wpfControlText property value
+Return Value: 
+=================================================================================*/
+function CollapseItem(name,wpfControlText)
+{
+   Process = GetProcess()
+    var clickingItem = Process.FindChild(["Name", "WPFControlText"], [name, wpfControlText], 100)
+    
+    if(clickingItem.Exists && clickingItem.Enabled)
+    {
+      clickingItem.Collapse()
+    }
+    else 
+    {
+
+      Log.Warning(wpfControlText +"Click action failed in clickItem function")
+      throw "Click action failed in clickItem function"
+      
+    }
+}
+
+/*===============================================================================
+Description: This function is to click the item
+Parameters:      
+             name:name property value
+             wpfControlText:wpfControlText property value
+Return Value: 
+=================================================================================*/
+function clickItem(name,wpfControlText)
+{
+    Process = GetProcess()
+    var clickingItem = Process.FindChild(["Name","WPFControlText","VisibleOnScreen"], [name, wpfControlText,true], 100)
+    
+    if(clickingItem.Exists && clickingItem.Enabled)
+    {
+      clickingItem.Click()
+    }
+    else 
+    {
+
+      Log.Warning(wpfControlText +"Click action failed in clickItem function")
+      throw "Click action failed in clickItem function"
+      
+    }
+}
+
+/*===============================================================================
+Description: This function is to check object enabled or disabled
+Parameters:      
+             name:name property value
+             WPFControlName:WPFControlName property value
+             WPFControlText:WPFControlText property value
+Return Value: 
+=================================================================================*/
+function ToCheckObjEnableorDisable(name,WPFControlName,WPFControlText)
+{
+    var Process = GetProcess()
+    if((WPFControlText!="")&&(WPFControlText!=null)&&(WPFControlText!=undefined))
+    {
+     var obj= Process.FindChild(["Name", "WPFControlText"], [name, WPFControlText], 100)
+    }
+    else
+    {
+      var obj= Process.FindChild(["Name", "WPFControlName"], [name, WPFControlName], 100)
+    } 
+   if(obj.Exists && obj.Enabled && obj.VisibleOnScreen)
+   {
+      Log.Message(WPFControlName+" object is enable")
+      return true
+   }
+    else 
+    {
+      Log.Message(WPFControlName+" object is disable")
+      return false
+          
+    }
+}
+
+/*===============================================================================
+Description: This function is to find the object to validate
+Parameters:             
+             proArr: Property name in the array
+             propValueArr: property value in the array
+Return Value: 
+=================================================================================*/
+function ToFindObjToValidate(proArr, propValueArr)
+{
+  Process = GetProcess()
+  if (Process.Exists) 
+  {
+      var currentItem = Process.FindChild(proArr, propValueArr, 100);
+      if (currentItem.Exists && currentItem.VisibleOnScreen) 
+      {
+        return true
+      }
+      else
+      {
+        return false
+      }
+  }
+}
+
+
+/*===============================================================================
+Description: This function to check and uncheck the checkbox
+Parameters: 
+          Name:Name property of the object
+          Action:Check or Uncheck
+Return Value: true/false
+=================================================================================*/ 
+function ToCheckAndUncheck(Name,Action)
+{
+  var process = GetProcess()
+  var obj = process.FindChild(["Name"],[Name],100)
+  if(obj.Exists)
+  {
+    if(aqString.ToUpper(Action)=="CHECK")
+    {
+       obj.ClickButton(cbChecked);
+    }
+    else
+    {
+       obj.ClickButton(cbUnchecked); 
+    } 
+    
+   } 
+} 
+
+/*===============================================================================
+Description: This function to validate ToolTip
+Parameters: 
+          obj1:Object
+          ToolTip:ToolTip content
+Return Value: true/false
+=================================================================================*/ 
+function ToValidateTipTool(obj1,ToolTip)
+{
+  if (obj1.ToolTip.OleValue!=undefined)
+  {
+    if (obj1.ToolTip.OleValue==ToolTip)
+    {
+      return true
+    } 
+    else
+    {
+      return false
+    } 
+  }
+  else
+  {
+    if (obj1.ToolTip.Text.OleValue==ToolTip)
+    {
+      return true
+    } 
+    else
+    {
+      return false
+    } 
+  } 
+} 
+
+/*===============================================================================
+Description: This function to do drag operation
+Parameters: 
+          Name:
+          wpfControlName:
+          wpfControlText:
+          X1:
+          X2:
+          Y1:
+          Y2:
+Return Value: true/false
+=================================================================================*/
+function Drag(Name,wpfControlName,wpfControlText,X1,X2,Y1,Y2)
+{
+  var process = GetProcess()
+  var obj = process.FindChild(["Name","WPFControlName","WPFControlText"],[Name,wpfControlName,wpfControlText],100)
+  obj.Drag(X1, X2, Y1, Y2);
+  
+}
+
+/*===============================================================================
+Description: This function to do right click on object for the specific coordinates
+Parameters: 
+          Name:
+          wpfControlName:
+          wpfControlText:
+          x:
+          y:
+Return Value:
+=================================================================================*/
+function RightClick(Name,wpfControlName,wpfControlText,x,y)
+{
+  var process = GetProcess()
+  var obj = process.FindChild(["Name","WPFControlName","WPFControlText","VisibleOnScreen"],[Name,wpfControlName,wpfControlText,true],100)
+  if (x!="")
+  {
+  obj.ClickR(x,y)
+  }
+  else
+  {
+  obj.ClickR()
+  } 
+} 
+
+/*===============================================================================
+Description: This function is used to get system date and time in the required format
+Parameters:
+   format:  format specifier
+Return Value: NA
+===============================================================================*/
+function getSystemDateTime(format)
+{
+  value =aqDateTime.Now()
+  dateTime = aqConvert.DateTimeToFormatStr(value, format);
+  return dateTime
+} 
+
+
+/*===============================================================================
+Description: This function is used to enter backspace
+Parameters:
+   obj:  
+   num:
+Return Value: NA
+===============================================================================*/
+function ToEnterBackSpace(obj,num)
+{
+  obj.Click()
+  for (i=0;i<num;i++)
+  {
+    
+    obj.keys("[BS]")
+  } 
+} 
+ 
+/*===============================================================================
+Description: This function is to double the item
+Parameters:      
+             name:name property value
+             wpfControlText:wpfControlText property value
+Return Value: 
+=================================================================================*/
+function DblclickItem(name,wpfControlText)
+{
+    Sys.Refresh()
+    Process = GetProcess()
+    var clickingItem = Process.FindChild(["Name","WPFControlText","Exists"], [name, wpfControlText,true], 100)
+    
+    if(clickingItem.Exists)
+    {
+      if (wpfControlText == "Test automation reason")
+      {
+        clickingItem = clickingItem.parent.parent.parent
+      } 
+      clickingItem.DblClick()
+    }
+    else 
+    {
+
+      Log.Warning(wpfControlText +"Click action failed in clickItem function")
+      throw "Click action failed in clickItem function"
+      
+    }
+}
+

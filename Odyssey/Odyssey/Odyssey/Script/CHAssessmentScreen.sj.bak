@@ -1,0 +1,225 @@
+﻿//USEUNIT CommonFunctions
+//USEUNIT PageObjects
+
+
+/*===============================================================================
+Description: This function is to validate warning pop up
+Parameters: 
+Return Value: true/false
+=================================================================================*/
+function ToChkWarnPopUpVisible()
+{
+ 
+ return ToFindObjToValidate(["Name"],["WPFObject(\"Overlay\", \"Are you sure you want to complete the call?\", 1)"])
+} 
+/*===============================================================================
+Description: This function is to validate warning pop up
+Parameters: 
+Return Value: true/false
+=================================================================================*/
+function ToChkReturnToCallBtnInWarnPopup()
+{
+ 
+ return ToCheckObjEnableorDisable("WPFObject(\"Button\", \"Return to call\", 1)","","Return to call")
+} 
+
+/*===============================================================================
+Description: This function is to validate warning pop up
+Parameters: 
+Return Value: true/false
+=================================================================================*/
+function ToChkPassToClinBtnInWarnPopup()
+{
+ 
+ return ToCheckObjEnableorDisable("WPFObject(\"Button\", \"Pass to Clinician\", 2)","","Pass to Clinician")
+} 
+
+/*===============================================================================
+Description: This function is for to answer Call handler basic ques
+Parameters:  
+Return Value: 
+=================================================================================*/
+function AnsCHbasicQues()
+{
+  var process = GetProcess()
+  var QuestionList = process.FindChild(["Name"],["WPFObject(\"HistoryListControl\")"],100)
+  var QuesCountInList = QuestionList.ChildCount
+  for (i=1;i<QuesCountInList;i++)
+  {
+    var Ques = QuestionList.FindChild(["Name"],["WPFObject(\"ListBoxItem\", \"\"," +i+")"],100)
+    if (Ques.DataContext.ClrClassName == 'TeleQuestion')
+    {
+      var AnsList = Ques.FindChild(["Name"],["WPFObject(\"AnswerList\")"],100)
+       if(AnsList.DataContext.HasResponse == false)
+      {
+      
+        AnsList.ClickItem(0)
+      } 
+      
+    }
+    else if((Ques.DataContext.ClrClassName == 'MultiAnswerQuestion')) 
+    {
+       
+    var objAnswer = Ques.FindChild(["Name"],["WPFObject(\"CheckableCombo\")"],100)
+    if(objAnswer.DataContext.HasResponse == false)
+    {
+      objAnswer.DropDown();
+      var answerNo = objAnswer.Items.Item(0);
+      answerNo.IsSelected = true;
+      objAnswer.CloseUp();
+    }
+    Log.Message("Done")
+    } 
+} 
+}
+
+/*===============================================================================
+Description: This function is for to answer Call handler basic ques
+Parameters:  
+Return Value: 
+=================================================================================*/
+function ToChcNotAnsweredAnsInTheDropDown()
+{
+  var result = true
+  var process = GetProcess()
+  var AssmntScrn = process.FindChild(["Name"],["WPFObject(\"CallHandlerAssessment\", \"\", 1)"],100)
+  var ListContrl = process.FindChild(["Name"],["WPFObject(\"HistoryListControl\")"],100)
+  var count = ListContrl.ChildCount
+  
+  for (i=1;i<=count;i++)
+  {
+    var Ques = ListContrl.FindChild(["Name"],["WPFObject(\"ListBoxItem\", \"\"," +i+")"],100)
+   
+    if (Ques.DataContext.ClrClassName == 'TeleQuestion')
+     {
+        var Ansdrpdn = Ques.FindChild(["Name"],["WPFObject(\"AnswerList\")"],100)
+        var NoOfAns = Ansdrpdn.wItemCount
+        for(c=0;c<NoOfAns;c++)
+        {
+          var ans = Ansdrpdn.Items.Item(c).LayText.OleValue
+          if (aqString.ToLower(ans)=="not answered")
+          {
+             result = false
+             return
+          }
+       
+        } 
+     }
+     else if((Ques.DataContext.ClrClassName == 'MultiAnswerQuestion')) 
+     {
+        var Ansdrpdn = Ques.FindChild(["Name"],["WPFObject(\"CheckableCombo\")"],100)
+        var NoOfAns = Ansdrpdn.wItemCount
+         for(d=0;d<NoOfAns;d++)
+        {
+          var ans = Ansdrpdn.Items.Item(d).LayText.OleValue
+          if (aqString.ToLower(ans)=="not answered")
+          {
+             result = false
+             return
+          }
+       
+        } 
+        
+     } 
+     
+  } 
+  if (result == true)
+     {
+       return true
+     } 
+     else
+     {
+       return false
+     } 
+} 
+
+
+/*===============================================================================
+Description: This function is to Answer remaining questions
+Parameters:
+Return Value: 
+=================================================================================*/
+function AnsRemainingQues()
+{
+  var process = GetProcess()
+  var QuestionList = process.FindChild(["Name"],["WPFObject(\"HistoryListControl\")"],100)
+  var QuesCountInList = QuestionList.ChildCount
+  for (i=1;i<QuesCountInList;i++)
+  {
+    var Ques = QuestionList.FindChild(["Name"],["WPFObject(\"ListBoxItem\", \"\"," +i+")"],100)
+    if (Ques.DataContext.ClrClassName == 'TeleQuestion')
+    {
+      var AnsList = Ques.FindChild(["Name"],["WPFObject(\"AnswerList\")"],100)
+      if(AnsList.DataContext.HasResponse == false)
+      {
+      
+      AnsList.ClickItem(0)
+      } 
+      
+    }
+    else if((Ques.DataContext.ClrClassName == 'MultiAnswerQuestion')) 
+    {
+       
+    var objAnswer = Ques.FindChild(["Name"],["WPFObject(\"CheckableCombo\")"],100)
+    if(objAnswer.DataContext.HasResponse == false)
+    {
+      objAnswer.DropDown();
+      var answerNo = objAnswer.Items.Item(0);
+      answerNo.IsSelected = true;
+      objAnswer.CloseUp();
+    }
+    }
+    Log.Message("Done")
+    } 
+    if(CheckContinueButtonClickToContinue())
+    {
+     var QuesList = process.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"HistoryListControl\")","True"],100)
+     if(QuesList.Exists)
+     {
+      AnsRemainingQues()
+     }
+    } 
+} 
+
+/*===============================================================================
+Description: This function is to Click continue button
+Parameters:  
+Return Value: 
+=================================================================================*/
+function CheckContinueButtonClickToContinue()
+{
+    var process = GetProcess()
+    var Continue = process.FindChild(["WPFControlText","VisibleOnScreen","Enabled"],["Continue","True","True"],100)
+    if(Continue!=null && Continue!=undefined)
+    {
+      Continue.Click()
+      return true
+    } 
+} 
+
+
+/*===============================================================================
+Description: This function is to select action from drop down
+Parameters:  
+Return Value: 
+=================================================================================*/
+function SelectAction(action)
+{
+  var process = GetProcess()
+  var ActionSelected = process.FindChild(["Name","WPFControlName"],["WPFObject(\"AvailableActions\")","AvailableActions"],100)
+  var count = ActionSelected.wItemCount
+   if(ActionSelected.Exists)
+   {
+     for(i=0;i<Count;i++)
+     { 
+       var item=ActionSelected.Items.Item(i).CallHandlerMessage.OleValue
+       if (aqString.ToLower(item)==aqString.ToLower(action))
+       {
+         ActionSelected.ClickItem(i)
+       } 
+     }
+   }
+} 
+
+
+

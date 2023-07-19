@@ -1,0 +1,973 @@
+﻿//USEUNIT CommonFunctions
+//USEUNIT PageObjects
+//USEUNIT ScreensOf3_13
+//USEUNIT ScreensOf3_12Outcome
+//USEUNIT DBFunctions
+//USEUNIT SummaryScreen
+//USEUNIT ScreensOf3_11
+
+/*===============================================================================
+Description: This function to launch summary screen and check FirstCall selected response in the Summary screen with Short text
+Parameters: 
+          questionSet:Question Set
+          questionText:Question Text
+          answersSelected:Answers Selected
+Return Value:true/false
+=================================================================================*/
+function ToCheckCHSumShortTxt(questionSet,questionText,answersSelected)
+{
+    var process = GetProcess();
+    var summaryOverlay = process.FindChild(["Name"],[obj_AssessmentSummaryOverlay],30)
+    if(summaryOverlay.Exists)
+    {
+        if(!summaryOverlay.VisibleOnScreen)                                             //Make sure that SummaryOverlay window is open
+        {
+            clickItem(btn_ViewSummary,"View Summary");
+            waitForItemWithTime(obj_AssessmentSummaryOverlay,"",1)
+        }
+        ToCheckAndUncheck(chkBx_ShowFullText,"CHECK");                                //Make sure that ShowShortText checkbox is checked
+        var questionSetObjList = summaryOverlay.FindAllChildren(["Name"],["WPFObject(\"RadTabItem\", \"\", *)"],10).toArray();
+        if(questionSetObjList.length>0)
+        {
+            for(i=0;i<questionSetObjList.length;i++)
+            {
+                if(aqString.ToUpper(questionSetObjList[i].WPFControlText) == aqString.ToUpper(questionSet))
+                {
+                    if(!questionSetObjList[i].IsSelected)
+                    {
+                        questionSetObjList[i].Click();
+                        Sys.Refresh();
+                    }
+                    var questionObjList = summaryOverlay.FindAllChildren(["Name"],["WPFObject(\"ListViewItem\", \"\", *)"],10).toArray();
+                    for(j=0;j<questionObjList.length;j++)
+                    {
+                        var questionTextAct = questionObjList[j].DataContext.Summary.OleValue;
+                        if(aqString.ToUpper(questionTextAct) == aqString.ToUpper(questionText))
+                        {
+                            var answersSelectedArr = answersSelected.split(",")
+                            var answersSelectedAct = questionObjList[j].DataContext.Response.LayText.OleValue
+                            if(answersSelectedArr.length==1)
+                            {  
+                                if(aqString.ToUpper(answersSelectedAct) == aqString.ToUpper(answersSelected))
+                                {
+                                    return true;
+                                }
+                                else
+                                {
+                                    Log.Message("Expected answer "+answersSelected+" is not maching with summary answer "+answersSelectedAct)
+                                    return false;
+                                }
+                            }
+                            else
+                            {
+                                var answersSelectedActArr = answersSelectedAct.split(",")
+                                return ToCompareTwoArrays(answersSelectedArr,answersSelectedActArr);
+                            }
+                        }
+                    }
+                    Log.Message("Question "+questionText+" is not available under "+questionSet);
+                    return false;
+                }
+            }
+            Log.Message("Question Set "+questionSet+" is not available in the Summary overlay");
+            return false;
+        }
+    }
+    else
+    {
+        Log.Warning("AssessmentSummary Overlay not available in Summary screen")
+        throw "Validation of AssessmentSummary overlay failed in ToCheckCHSummaryAns function"    
+    }
+}
+/*===============================================================================
+Description: This function to check two arrays values and return result
+Parameters: 
+          firstArr:Question Set
+          SecondArr:Question Text
+Return Value:true/false
+=================================================================================*/
+function ToCompareTwoArrays(firstArr,secondArr)
+{
+    var flag;
+    if(firstArr.length!=secondArr.length)
+    {
+        Log.Message("Response count is different");
+        return false;
+    }
+    else
+    {
+        for(k=0;k<firstArr.length;k++)
+        {
+            flag=false;
+            var firstArrVal = aqString.ToUpper(aqString.Trim(firstArr[k]))
+            for(l=0;l<secondArr.length;l++)
+            {
+                var secondArrVal = aqString.ToUpper(aqString.Trim(secondArr[l]))
+                if(firstArrVal == secondArrVal)
+                {
+                    flag=true;
+                    break;
+                }
+            }
+            if(flag == false)
+            {
+              Log.Message(firstArrVal+" response is not shown in the Summary screen");
+              return false;
+            }
+        }
+        Log.Message("All the responses are shown in the Summary screen");
+        return true;
+    }
+}
+/*===============================================================================
+Description: This function to compare Suggested Urgency of Summary Screen and Overlay as same. Also validate Action Advise colour.
+Parameters: 
+          suggestedUrgency:Suggested Urgency
+          backgroundColor:expected background colour(INDIGO/RED/LIGHTRED/YELLOW/LIGHTYELLOW/GREEN/BLUE)
+Return Value:true/false
+=================================================================================*/
+function ToCheckCHSummActionAdv(suggestedUrgency,backgroundColor)
+{
+    var process = GetProcess()
+    
+    var actAdvObj = process.FindChild(["Name"],[txt_ActionRequired],100)
+    var parentObj = actAdvObj.Parent
+    if(!ToCheckUrgencyColour(parentObj,backgroundColor))
+    {
+        Log.Message("Color of Action Advised for "+suggestedUrgency+" is not "+backgroundColor+" in Summary screen");
+        return false;
+    }
+    var actAdvSummScreen = aqString.ToUpper(actAdvObj.WPFControlText);
+    
+    var summaryOverlay = process.FindChild(["Name"],[obj_AssessmentSummaryOverlay],30)
+    if(summaryOverlay.Exists)
+    {
+        clickItem(btn_ViewSummary,"View Summary");
+        waitForItemWithTime(obj_AssessmentSummaryOverlay,"",1)
+        var obj = summaryOverlay.FindChild(["Name"],["WPFObject(\"Border\", \"\", 3)"],10);
+        var actAdvLabelObj = obj.FindChild(["Name"],["WPFObject(\"TextBlock\", \"*\", 1)"],10);
+        
+        var actAdvSummOverlay = aqString.ToUpper(actAdvLabelObj.WPFControlText);
+        
+        if(actAdvSummScreen == actAdvSummOverlay && ToCheckUrgencyColour(obj,backgroundColor))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }    
+}
+/*===============================================================================
+Description: This function to check Laytext of 1st question in FirstCall Summary screen with selected response
+Parameters: 
+          questionSet:Question Set
+          questionText:Question Text
+          answersSelected:Answers Selected
+Return Value:true/false
+=================================================================================*/
+function ToCheckCHSumLayTxt(questionSet,questionText,answersSelected)
+{
+    var process = GetProcess();
+    var summaryOverlay = process.FindChild(["Name"],[obj_AssessmentSummaryOverlay],30)
+    if(summaryOverlay.Exists)
+    {
+        if(!summaryOverlay.VisibleOnScreen)                                             //Make sure that SummaryOverlay window is open
+        {
+            clickItem(btn_ViewSummary,"View Summary");
+            waitForItemWithTime(obj_AssessmentSummaryOverlay,"",1)
+        }
+        ToCheckAndUncheck(chkBx_ShowFullText,"UNCHECK");                                //Make sure that ShowShortText checkbox is checked/unchecked
+        var questionSetObjList = summaryOverlay.FindAllChildren(["Name"],["WPFObject(\"RadTabItem\", \"\", *)"],10).toArray();
+        if(questionSetObjList.length>0)
+        {
+            for(i=0;i<questionSetObjList.length;i++)
+            {
+                if(aqString.ToUpper(questionSetObjList[i].WPFControlText) == aqString.ToUpper(questionSet))
+                {
+                    if(!questionSetObjList[i].IsSelected)
+                    {
+                        questionSetObjList[i].Click();
+                        Sys.Refresh();
+                    }
+                    var questionObjList = summaryOverlay.FindAllChildren(["Name"],["WPFObject(\"ListViewItem\", \"\", *)"],10).toArray();
+                    for(j=0;j<questionObjList.length;j++)
+                    {
+                        var questionTextAct = questionObjList[j].DataContext.Text.OleValue;
+                        if(aqString.ToUpper(questionTextAct) == aqString.ToUpper(questionText))
+                        {
+                            var answersSelectedArr = answersSelected.split(",")
+                            var answersSelectedAct = questionObjList[j].DataContext.Response.LayText.OleValue
+                            if(answersSelectedArr.length==1)
+                            {  
+                                if(aqString.ToUpper(answersSelectedAct) == aqString.ToUpper(answersSelected))
+                                {
+                                    return true;
+                                }
+                                else
+                                {
+                                    Log.Message("Expected answer "+answersSelected+" is not maching with summary answer "+answersSelectedAct)
+                                    return false;
+                                }
+                            }
+                            else
+                            {
+                                var answersSelectedActArr = answersSelectedAct.split(",")
+                                return ToCompareTwoArrays(answersSelectedArr,answersSelectedActArr);
+                            }
+                        }
+                    }
+                    Log.Message("Question "+questionText+" is not available under "+questionSet);
+                    return false;
+                }
+            }
+            Log.Message("Question Set "+questionSet+" is not available in the Summary overlay");
+            return false;
+        }
+    }
+    else
+    {
+        Log.Warning("AssessmentSummary Overlay not available in Summary screen")
+        throw "Validation of AssessmentSummary overlay failed in ToCheckCHSummaryAns function"    
+    }
+}
+/*===============================================================================
+Description: This function is to accept/decline all the three Care/Worsening/Call Back Advice Overlay
+Parameters: 
+Return Value: 
+=================================================================================*/
+function AcceptDeclineAdvCHSummScr()
+{
+    var process = GetProcess();
+    var careAdviceTab = ToFindObj(["Name"],[btn_CallHandlerTabControl])
+    if(careAdviceTab.VisibleOnScreen)
+    {
+        var counter = careAdviceTab.wTabCount-1;
+        for(i=0;i<counter;i++)
+        {
+            var currTab = careAdviceTab.wTabCaption(i);
+            var adviceTypeObj = careAdviceTab.FindChild(["Name"],["WPFObject(\"TabItem\", \""+currTab+"\", "+(i+1)+")"],20)        
+            if(adviceTypeObj.VisibleOnScreen && adviceTypeObj.Enabled)
+            {
+                careAdviceTab.ClickTab(i);
+                var adviceType = GetCareAdviceType(adviceTypeObj.WPFControlText);
+                var btnName = GetCareAdviceBtnName(adviceType,"Advice Given");
+                var btnObj = process.FindChild(["WPFControlName","VisibleOnScreen"],[btnName,"True"],50)           
+                if(btnObj.Exists)
+                {
+                    var RandomNumber = Math.floor(Math.random() * 2) +1;
+                    if (RandomNumber == 2)
+                    {
+                        clickItem(btn_CareAdviceAccept,"Advice Given")
+                    }
+                    else 
+                    {
+                        clickItem(btn_CareAdviceDecline,"Not Given")
+                    }                
+                }
+            }
+            
+        }
+    }
+}
+/*===============================================================================
+Description: This function is to check status or click button in Care Advice Overlay of Summary screen for Call Handler
+Parameters:
+          adviceType:Care Advice/Worsening Advice/Follow Up Advice/First Aid Advice
+          btnName:Advice Given/Not Given
+          status:enabled/disabled
+Return Value: true/false
+=================================================================================*/
+function AcceptDeclineAdvCHSummByType(adviceType,btnName,status)
+{ 
+    var careAdviceTab = ToFindObj(["Name","VisibleOnScreen"],["WPFObject(\"TabItem\", \""+adviceType+"\", *)","True"])
+    if(careAdviceTab.Exists)
+    {
+        if(!careAdviceTab.IsSelected)
+        {
+            careAdviceTab.Click();
+        }
+        adviceType = GetCareAdviceType(adviceType);
+        btnName = GetCareAdviceBtnName(adviceType,btnName);
+        var btnObj = ToFindObj(["WPFControlName","VisibleOnScreen"],[btnName,"True"])
+        if(status=="")
+        {
+            if(btnObj.Exists && btnObj.Enabled)
+            {
+                btnObj.Click()
+            }
+            else
+            {
+                Log.Warning(btnName +"Click action failed in ClickButtonInCareAdvice function")
+                throw "Click action failed in ClickButtonInCareAdvice function"      
+            }
+        }
+        else
+        {
+            if(btnObj.Exists && btnObj.VisibleOnScreen)
+            {
+                return true
+            }
+            else
+            {
+                return false
+            }
+        }       
+    }
+}
+/*===============================================================================
+Description: This function to check the colour of Action Selected in Summary Screen.
+Parameters: 
+Return Value:true/false
+=================================================================================*/
+function ToCheckActionSelectedColour()
+{ 
+    var process=GetProcess();
+    var availableActionsObj = process.FindChild(["Name"],[cmb_AvailableActions],50);
+    
+    if(availableActionsObj.Exists && availableActionsObj.VisibleOnScreen)
+    {
+        availableActionsObj.Click();
+        var obj = process.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"NonLogicalAdornerDecorator\", \"\", 1)","True"],50)
+        var actionSelectedObjList = obj.FindAllChildren(["Name","VisibleOnScreen"],["WPFObject(\"TextBlock\", \"*\", 1)","True"],50).toArray();
+        for(i=0;i<actionSelectedObjList.length;i++)
+        {
+            var status = false;
+            switch(actionSelectedObjList[i].WPFControlText)
+            {
+                case lbl_CallHandlerAdvice:
+                    status = ToCheckUrgencyColour(actionSelectedObjList[i].Parent,"BLUE");
+                    break;
+                case lbl_RoutGPAppoint:
+                    status = ToCheckUrgencyColour(actionSelectedObjList[i].Parent,"GREEN");
+                    break;
+                case lbl_F2FApp24Hrs:
+                    status = ToCheckUrgencyColour(actionSelectedObjList[i].Parent,"LIGHTYELLOW");
+                    break;
+                case lbl_F2FApp6Hrs:
+                    status = ToCheckUrgencyColour(actionSelectedObjList[i].Parent,"YELLOW");
+                    break;
+                case lbl_1HrGPCallBack:
+                    status = ToCheckUrgencyColour(actionSelectedObjList[i].Parent,"LIGHTRED");
+                    break;
+                case lbl_20MinGPCallBack:
+                    status = ToCheckUrgencyColour(actionSelectedObjList[i].Parent,"RED");
+                    break;
+                case lbl_CHTransferToAmbulance:
+                    status = ToCheckUrgencyColour(actionSelectedObjList[i].Parent,"INDIGO");
+                    break;
+            }
+            if(status == false)
+            {
+                Log.Message("Colour of "+actionSelectedObjList[i].WPFControlText+" action is not matching");
+                availableActionsObj.Click();
+                return false;
+            }
+        }
+        Log.Message("All Actions has proper colours under Action selected");
+        availableActionsObj.Click();
+        return true;
+    }
+}
+/*===============================================================================
+Description: This function to return the Advice(Only 1st line) under Care/Worsening/Call Back Advice tabs of Call Handler SUmmary screen.
+Parameters: 
+          adviceType:Care Advice/Worsening Advice/FOLLOW UP Advice/First Aid Advice
+Return Value:adviceText
+=================================================================================*/
+function ToFetchCHAdviceTxt(adviceType)
+{ 
+    var careAdviceTab = ToFindObj(["Name","VisibleOnScreen"],["WPFObject(\"TabItem\", \""+adviceType+"\", *)","True"])
+    if(careAdviceTab.Exists)
+    {
+        if(!careAdviceTab.IsSelected)
+        {
+            careAdviceTab.Click();
+        }
+        
+        if(adviceType == "Care Advice")
+        {
+            adviceType = "CareText";
+        }
+        else if(adviceType == "Follow up Advice" || adviceType == "First Aid Advice")
+        {
+            adviceType = GetCareAdviceType(adviceType);
+        }
+        else
+        {
+            adviceType = aqString.Concat(GetCareAdviceType(adviceType),"Text");
+        }
+        var adviceTextObj = ToFindObj(["WPFControlName","VisibleOnScreen"],[adviceType,"True"]);
+        var obj = adviceTextObj.FindChild(["Name"],["WPFObject(\"Paragraph\", \"\", 1)"],20);
+        if(obj.Exists)
+        {
+            Log.Message(obj.WPFControlText+" is displayed as "+adviceType);
+            return obj.WPFControlText;
+        }
+    } 
+}
+/*===============================================================================
+Description: This function to validate the audit record created for Clinical Warning Configuration change made in Admin screen
+Enabled/Disabled for Clinical Warning. SNOMEDCODE|TYPE|URGENCY (Type is add or revert)
+Parameters:
+            status:Enabled/Disabled/SNOMEDDetails
+Return Value: true/false
+=================================================================================*/ 
+function ToValClinWarnConfigAudit(status)
+{ 
+    var  dbRecord1=GetLastAuditEntryWithoutSession();
+    if(dbRecord1.length>0)
+    { 
+        var summary = aqString.ToUpper(aqString.Trim(dbRecord1[0][2]));
+        var category = aqString.ToUpper(aqString.Trim(dbRecord1[0][1]))
+    
+        if(summary=="EDITCLINICALWARNING" && category=="EDITCLINICALWARNING")
+        {
+            var flag = false;
+            status = aqString.ToLower(aqString.Trim(status))
+            if(status == "enabled" && aqString.Trim(dbRecord1[0][3]) == "The display of Clinical Warning is "+status+".")
+            {
+                flag = true;
+            }
+            else if(status == "disabled" && aqString.Trim(dbRecord1[0][3]) == "The display of Clinical Warning is "+status+".")
+            {
+                flag = true;
+            }
+            return flag;
+        }
+        if((summary=="ADDURGENCYSNOMED" && category=="ADDURGENCYSNOMED") || (summary=="REVERTURGENCYSNOMED" && category=="REVERTURGENCYSNOMED"))
+        {
+            var SNOMEDDetailsArr = status.split(",")
+            var SNOMED = SNOMEDDetailsArr[0];
+            var changeType = aqString.ToLower(SNOMEDDetailsArr[1]);
+            var urgency = aqString.ToUpper(SNOMEDDetailsArr[2]);
+        
+            var flag = false;
+
+            if(changeType == "add" && aqString.Trim(dbRecord1[0][3]) == "Snomed code for urgency code "+urgency+" is added as "+SNOMED+" by Abhinav.Kumar (Administrator)")
+            {
+                flag = true;
+            }
+            else if(changeType == "revert" && aqString.Trim(dbRecord1[0][3]) == "Snomed code for urgency code "+urgency+" reverted to default from "+SNOMED+" by Abhinav.Kumar (Administrator)")
+            {
+                flag = true;
+            }
+            return flag;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    else
+    {
+        Log.Warning("Audit record is not created")
+        throw "Audit record is not created"    
+    }
+} 
+/*===============================================================================
+Description: This function to validate the audit record created after viewing Clinical Warning messages by clinician
+Parameters:
+            messages:clinical warning messages
+Return Value: true/false
+=================================================================================*/ 
+function ToValClinWarnViewAudit(messages)
+{ 
+    var dbRecord
+    dbRecord = GetLastEntryFromSession()
+    var sessionID=dbRecord[0][0]
+    sessionID = aqString.Replace(aqString.Replace(sessionID,"{",""),"}","")
+  
+    var  dbRecord1=GetLastEntryFromAudit(sessionID);
+    if(dbRecord1.length>0)
+    {
+        if(aqString.ToUpper(aqString.Trim(dbRecord1[0][2]))=="CLINICAL WARNING VIEWED" && aqString.ToUpper(aqString.Trim(dbRecord1[0][1]))=="CLINICAL WARNING")
+        {
+            var user = aqString.Trim(dbRecord1[0][4]);
+            var description = aqString.Trim(dbRecord1[0][3]);
+            var str = user+" viewed clinical warning ";
+            var actMessg = aqString.Replace(description,str,"");
+            var actMessgArr = actMessg.split(",");
+            var expMessgArr = messages.split(",");
+            return ToCompareTwoArrays(expMessgArr,actMessgArr);
+        }
+        else
+        {
+            return false;
+        }
+    }
+    else
+    {
+        Log.Warning("Audit record is not created")
+        throw "Audit record is not created"    
+    }
+}
+/*===============================================================================
+Description: This function is to click on PILs tab and check PILs url in Summary Screen of Call Handler
+Parameters: 
+Return Value: true/false
+=================================================================================*/
+function ToCheckPILSUrlCallHandler()
+{
+    var pilsTab = ToFindObj(["Name","VisibleOnScreen"],["WPFObject(\"TabItem\", \"Patient Information Leaflets\", *)","True"])
+    if(pilsTab.Exists)
+    {
+        if(!pilsTab.IsSelected)
+        {
+            pilsTab.Click();
+        }
+    }
+    var parentObj = pilsTab.Parent;
+    var PILSList = parentObj.FindAllChildren(["Name"],["WPFObject(\"ExternalHyperlink\", \"\", 1)"],100).toArray();
+    if(PILSList.length>0)
+    {
+        return ValPilsURL(PILSList);
+    }
+    else
+    {
+        Log.Message("No PILS available for the assessment")
+        return true;
+    }
+}
+/*===============================================================================
+Description: This function is to check/uncheck modules under Email configuration of Admin Configuration
+Parameters: 
+          module:list of module(FaceToFace/FirstCall/Reception/TeleAssess)
+          status:Check/Uncheck
+Return Value:
+=================================================================================*/
+function CheckUncheckEmailModule(module,status)
+{
+    var featureSetting=0;
+    var  moduleListArray =  module.split("|");
+    for(i=0; i<moduleListArray.length; i++)
+    {
+        if(aqString.ToUpper(status)=="CHECK")
+        {
+            switch(aqString.ToUpper(moduleListArray[i]))
+            {
+                case "FIRSTCALL":
+                  featureSetting=featureSetting+16;
+                  break;
+                case "TELEASSESS":
+                  featureSetting=featureSetting+2;
+            }      
+        }      
+    }
+
+    UpdateEmailConfigModule(featureSetting);
+}
+/*===============================================================================
+Description: This function is to set Subject and Message body under Email configuration of Admin Configuration
+Parameters: 
+          subject:subject text
+          messageBody:message body text
+Return Value:
+=================================================================================*/
+function SetDetEmailModule(subject,messageBody)
+{
+    if(subject != "")
+    {
+        setText(subject,txt_EmailSubject,"EmailSubject","");
+    }
+    if(messageBody != "")
+    {
+        setText(messageBody,txt_EmailBody,"EmailBody","");
+    }
+}
+/*===============================================================================
+Description: This function to validate the audit record created for change made for Email Subject/Message in Admin screen
+Parameters:
+            changeType:Subject/Message
+            text:new text entered
+Return Value: true/false
+=================================================================================*/ 
+function ToValEmailConfigAudit(changeType,text)
+{ 
+    var  dbRecord1=GetLastAuditEntryWithoutSession();
+    if(dbRecord1.length>0)
+    {
+        var expSummary = "EMAIL "+aqString.ToUpper(changeType)+" UPDATED";
+        var expCategory = "EMAIL"+aqString.ToUpper(changeType);
+        if(aqString.ToUpper(aqString.Trim(dbRecord1[0][2]))==expSummary && aqString.ToUpper(aqString.Trim(dbRecord1[0][1]))==expCategory)
+        {
+            expDescContent = "to "+text;
+            if(aqString.Find(dbRecord1[0][3],expDescContent)!=-1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            return false;
+        }          
+    }
+    else
+    {
+        Log.Warning("Audit record is not created")
+        throw "Audit record is not created"    
+    }
+} 
+/*===============================================================================
+Description: This function to validate the audit record created after clickin on Send Email for Care Advice by call handler
+Parameters:
+            mailId:email id of recipient
+            protocols:protocols list
+            pils:pils list
+Return Value: true/false
+=================================================================================*/ 
+function ToCheckEmailAdviceAudit(mailId,protocols,pils)
+{ 
+
+//    Care advice email sent successfully to ash@jhsg.co with care advice details for Pregnancy?,Vaginal Bleed.
+//    Care advice email sent successfully to ash@hsg.com with care advice details for Pregnancy?,Vaginal Bleed and PIL details for Cervical Screening Test, Diet and Lifestyle during Pregnancy. 
+    var dbRecord
+    dbRecord = GetLastEntryFromSession()
+    var sessionID=dbRecord[0][0]
+    sessionID = aqString.Replace(aqString.Replace(sessionID,"{",""),"}","")
+  
+    var  dbRecord1=GetLastEntryFromAudit(sessionID);
+    if(dbRecord1.length>0)
+    {
+        if(aqString.ToUpper(aqString.Trim(dbRecord1[0][2]))=="EMAILSENTSUCCESS" && aqString.ToUpper(aqString.Trim(dbRecord1[0][1]))=="EMAILSENTSUCCESS")
+        {
+            var actAuditDesc = dbRecord1[0][3];
+            var auditDescList;
+            var pilsValidation, protocolsValidation, mailValidation=false;
+
+            auditDescList = actAuditDesc.split(" and PIL details for ");
+            
+            if(auditDescList.length>1 && pils!="")
+            {
+                var actPilsArr = aqString.Replace(auditDescList[1],".","").split(",");
+                var expPilsArr = aqString.Replace(pils,".","").split(",");
+                pilsValidation = ToCompareTwoArrays(expPilsArr,actPilsArr);  
+            }
+            else if(auditDescList.length>1 && pils=="")
+            {
+                pilsValidation=false;
+            }
+            else if(auditDescList.length==1 && pils=="")
+            {
+                pilsValidation=true;
+            }
+
+            auditDescList1 = auditDescList[0].split("care advice details for ");
+            
+            if(auditDescList1.length>1 && protocols!="")
+            {
+                var actProtocolsArr = aqString.Replace(auditDescList1[1],".","").split(",");
+                var expProtocolsArr = aqString.Replace(protocols,".","").split(",");
+                protocolsValidation = ToCompareTwoArrays(expProtocolsArr,actProtocolsArr);  
+            }
+            else if(auditDescList1.length>1 && protocols=="")
+            {
+                protocolsValidation=false;
+            }
+            else if(auditDescList1.length==1 && pils=="")
+            {
+                protocolsValidation=true;
+            }
+                       
+            if(aqString.Find(auditDescList1[0], mailId)!=-1)
+            {
+                mailValidation=true;
+            }
+            
+            if(mailValidation && protocolsValidation && pilsValidation)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            return false;
+        }
+    }
+    else
+    {
+        Log.Warning("Audit record is not created")
+        throw "Audit record is not created"    
+    }
+}
+/*===============================================================================
+Description: This function is wait for the Email Advice overlay
+Parameters: 
+Return Value: 
+=================================================================================*/
+function waitforEmailAdviceOverlay()
+{
+    return waitForItemWithTime(obj_EmailAdviceOverlay,"",2)
+}
+/*===============================================================================
+Description: This function to select the protocol in Email Advice overlay
+Parameters:
+            protocol:protocolName/All
+Return Value:
+=================================================================================*/ 
+function SelectProtocolforEmail(protocol)
+{
+    var careAdviceListObj = ToFindObj(["Name"],[list_CareAdviceList]);
+    var checkBoxObj;
+    if(aqString.ToUpper(protocol)=="ALL")
+    {
+        checkBoxObj = careAdviceListObj.FindChild(["Name","WPFControlName","Enabled"],[chkBx_SelectAll,"ckbxSelectAll","True"],10)
+    }
+    else
+    {
+        var obj = careAdviceListObj.FindChild(["WPFControlText","VisibleOnScreen"],[protocol,"True"],10)
+        if(obj.Exists)
+        {
+            var parent = obj.Parent.Parent;
+            checkBoxObj = parent.FindChild(["Name","Enabled"],["WPFObject(\"CheckBox\", \"\", 1)","True"],10)
+        }
+    }
+    
+    if(checkBoxObj.Exists)
+    {
+        checkBoxObj.ClickButton(cbChecked);
+    }
+    else
+    {
+        Log.Warning("Check action failed in SelectProtocolforEmail function")
+        throw "Check action failed in SelectProtocolforEmail function"      
+    }
+}
+/*===============================================================================
+Description: This function to select the pils in Email Advice overlay
+Parameters:
+            pils:pilsName/All
+Return Value:
+=================================================================================*/ 
+function SelectPilsforEmail(pils)
+{
+    var pilsListObj = ToFindObj(["Name"],[list_PILSList]);
+    var checkBoxObj;
+    if(aqString.ToUpper(pils)=="ALL")
+    {
+        checkBoxObj = pilsListObj.FindChild(["Name","WPFControlName","Enabled"],[chkBx_ckbxPilsSelectAll,"ckbxPilsSelectAll","True"],10)
+    }
+    else
+    {
+        var obj = pilsListObj.FindChild(["WPFControlText","VisibleOnScreen"],[pils,"True"],10)
+        if(obj.Exists)
+        {
+            var parent = obj.Parent.Parent;
+            checkBoxObj = parent.FindChild(["Name","Enabled"],["WPFObject(\"CheckBox\", \"\", 1)","True"],10)
+        }
+    }   
+    if(checkBoxObj.Exists)
+    {
+        checkBoxObj.ClickButton(cbChecked);
+    }
+    else
+    {
+        Log.Warning("Check action failed in SelectPilsforEmail function")
+        throw "Check action failed in SelectPilsforEmail function"      
+    }
+}
+/*===============================================================================
+Description: This function to launch summary screen and check FirstCall selected response in the Summary screen with Short text
+Parameters: 
+Return Value:true/false
+=================================================================================*/
+function ToComparePilsCountCH()
+{
+    var countOfPilsUnderTab,countOfPilsEmailAdvice;
+    var process = GetProcess();
+    var emailOverlay = process.FindChild(["Name"],[obj_EmailAdviceOverlay],50)
+    if(emailOverlay.Exists)
+    {
+        if(emailOverlay.VisibleOnScreen)                                             //Make sure that SummaryOverlay window is open
+        {
+            clickItem(btn_ReturnToCall,"Return to call");
+            waitforSummaryScreen3_11();
+            //waitForItemWithTime(obj_AssessmentSummaryOverlay,"",1)
+        }
+    }
+    var pilsTab = ToFindObj(["Name","VisibleOnScreen"],["WPFObject(\"TabItem\", \"Patient Information Leaflets\", *)","True"])
+    if(pilsTab.Exists)
+    {
+        if(!pilsTab.IsSelected)
+        {
+            pilsTab.Click();
+        }
+    }
+    var parentObj = pilsTab.Parent;
+    var PILSList = parentObj.FindAllChildren(["Name"],["WPFObject(\"ExternalHyperlink\", \"\", 1)"],100).toArray();
+    if(PILSList.length>0)
+    {
+        countOfPilsUnderTab = PILSList.length;
+    }
+    else
+    {
+        countOfPilsUnderTab = 0;
+        Log.Message("No PILS available for the assessment")
+    }
+    clickItem(btn_EmailAdvice,"Email Advice");
+    waitForItemWithTime(obj_EmailAdviceOverlay,"",1)
+    var pilsListObj = process.FindChild(["Name"],[list_PILSList],50);
+    PILSList = pilsListObj.FindAllChildren(["Name"],["WPFObject(\"ListViewItem\", \"\", *)"],10).toArray();
+    if(PILSList.length>0)
+    {
+        countOfPilsEmailAdvice = PILSList.length;
+    }
+    else
+    {
+        countOfPilsEmailAdvice = 0;
+        Log.Message("No PILS available for the assessment under Email Advice");
+    }
+    if(countOfPilsUnderTab == countOfPilsEmailAdvice)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+/*===============================================================================
+Description: This function is to clear text from the Patient Email TextBox
+Parameters: 
+          number : number of times back space required
+Return Value: 
+=================================================================================*/
+function ClearPatientEmailTextBox(number)
+{
+    var process = GetProcess()
+    var txt_EmailObj = process.FindChild(["Name","VisibleOnScreen"],[txt_Email,"True"],50)
+    if(txt_EmailObj.Exists)
+    {
+        if(txt_EmailObj.Enabled)
+        {  
+            ToEnterBackSpace(txt_EmailObj,number)
+        }
+    }
+}
+/*===============================================================================
+Description: This function is to return the title of Overlay displayed 
+Parameters: 
+          name: name property value
+Return Value: Overlay title
+=================================================================================*/
+function GetTitleOfOverlay(name)
+{
+    var obj = ToFindObj(["Name"], [name])
+    return obj.TitleText;
+}
+   /*====================================================================================
+Description: This function is to check the selected items from the single select combobox in assessment screen
+Parameters: 
+          Ques:Short question text
+          selectedAnswer:SelectedItem/Blank
+          value:Temperature/Weight
+Return Value: True/False
+=====================================================================================*/
+function ToCheckSelectedConvAnswerCallhandler(Ques,selectedAnswer,value)
+{
+    var process = GetProcess();
+    var j=0, k;
+    var quesList = process.FindChild(["Name"],["WPFObject(\"HistoryListControl\")"],100)
+    var count = quesList.ChildCount
+    var flag=false
+    for(i=1;i<count;i++)
+    {
+        var quesObj = quesList.FindChild(["Name"],["WPFObject(\"ListBoxItem\", \"\", "+i+")"],100)
+        ques = quesObj.DataContext.Text.OleValue;
+        Log.Message(ques)
+        var AnswerList=quesObj.FindChild(["Name"],["WPFObject(\"AnswerList\")"],100)
+        var controlPresenter=AnswerList.FindChild(["Name"],["WPFObject(\"ContentPresenter\", \"\", 1)"])
+        if(value=='Temperature')
+        {
+            for(k=0;k<AnswerList.DataContext.Answers.Count;k++)
+            {
+                j++
+                if(aqString.ToUpper(AnswerList.DataContext.Answers.Item(k).TextWithTemperatureConversion.OleValue)==aqString.ToUpper(selectedAnswer))
+                {
+                    return true
+                }
+            }
+        } 
+        else
+        {
+            for(k=0;k<AnswerList.DataContext.Answers.Count;k++)
+            {
+                j++
+                if(aqString.ToUpper(AnswerList.DataContext.Answers.Item(k).TextWithWeightConversion.OleValue)==aqString.ToUpper(selectedAnswer))
+                {
+                    return true
+                }
+            }
+        }   
+    }
+}
+
+/*===============================================================================
+Description: This function to validate the audit record created for change in clinical content version in Admin screen
+Parameters:
+            oldversion:
+            newversion:
+Return Value: true/false
+=================================================================================*/ 
+function ToValClinicalContentAudit(oldversion, newversion)
+{ 
+    var  dbRecord1=GetLastAuditEntryWithoutSession();
+    if(dbRecord1.length>0)
+    {
+      
+        var summary = aqString.ToUpper(aqString.Trim(dbRecord1[0][2]));
+        var category = aqString.ToUpper(aqString.Trim(dbRecord1[0][1]))
+    
+        if(summary=="EDITCLINICALWARNING" && category=="EDITCLINICALWARNING")
+        {
+            var flag = false;
+            status = aqString.ToLower(aqString.Trim(status))
+            if(status == "enabled" && aqString.Trim(dbRecord1[0][3]) == "The display of Clinical Warning is "+status+".")
+            {
+                flag = true;
+            }
+            else if(status == "disabled" && aqString.Trim(dbRecord1[0][3]) == "The display of Clinical Warning is "+status+".")
+            {
+                flag = true;
+            }
+            return flag;
+        }
+        if((summary=="ADDURGENCYSNOMED" && category=="ADDURGENCYSNOMED") || (summary=="REVERTURGENCYSNOMED" && category=="REVERTURGENCYSNOMED"))
+        {
+            var SNOMEDDetailsArr = status.split(",")
+            var SNOMED = SNOMEDDetailsArr[0];
+            var changeType = aqString.ToLower(SNOMEDDetailsArr[1]);
+            var urgency = aqString.ToUpper(SNOMEDDetailsArr[2]);
+        
+            var flag = false;
+
+            if(changeType == "add" && aqString.Trim(dbRecord1[0][3]) == "Snomed code for urgency code "+urgency+" is added as "+SNOMED+" by Abhinav.Kumar (Administrator)")
+            {
+                flag = true;
+            }
+            else if(changeType == "revert" && aqString.Trim(dbRecord1[0][3]) == "Snomed code for urgency code "+urgency+" reverted to default from "+SNOMED+" by Abhinav.Kumar (Administrator)")
+            {
+                flag = true;
+            }
+            return flag;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    else
+    {
+        Log.Warning("Audit record is not created")
+        throw "Audit record is not created"    
+    }
+} 

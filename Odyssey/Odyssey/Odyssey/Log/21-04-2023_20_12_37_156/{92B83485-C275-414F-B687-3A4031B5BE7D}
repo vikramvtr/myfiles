@@ -1,0 +1,1803 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 22">
+			<Prp name="id" type="I" value="42"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;_Search&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8428390046"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 26">
+			<Prp name="id" type="I" value="48"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="waitforPresentingScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8428970139"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 46">
+			<Prp name="id" type="I" value="79"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Loading... Label is not present in the screen"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.843235787"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="368"/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="line no" type="I" value="268"/>
+			<Prp name="stacktext" type="S" value=""/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="Module : Standalone310Clinician"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8421468287"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="line no" type="I" value="81"/>
+		</Node>
+		<Node name="message 40">
+			<Prp name="id" type="I" value="70"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="DeletePatientsFromTheQueue()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431287037"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 23">
+			<Prp name="id" type="I" value="44"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Use this patient Button is enable"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8428741319"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="338"/>
+		</Node>
+		<Node name="message 73">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="102"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="object top" type="I" value="420"/>
+					<Prp name="object left" type="I" value="777"/>
+					<Prp name="object bottom" type="I" value="479"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1337"/>
+					<Prp name="datetime" type="D" value="45037.6140934838"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage36.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;PatientSearchControl&quot;).WPFObject(&quot;mainGrid&quot;).WPFObject(&quot;AddAnonymousPatient&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;approxAgeControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ApproximateAge&quot;)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="83"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="'78' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;SearchElementsControl&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;PatientSearchControl&quot;).WPFObject(&quot;mainGrid&quot;).WPFObject(&quot;AddAnonymousPatient&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;approxAgeControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ApproximateAge&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8432613194"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="102"/>
+		</Node>
+		<Node name="message 58">
+			<Prp name="id" type="I" value="100"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Pain severity&quot;,&quot;9-10: Worst ever&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8434073264"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 19">
+			<Prp name="id" type="I" value="26"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="enterNewPatientDet(&quot;55&quot;,&quot;Male&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8425640509"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="message" type="S" value="DECLARE @DomainId uniqueidentifier&#xA;DECLARE @ClosedStatus uniqueidentifier&#xA;&#xA;SET @DomainId = (select id from dbo.Domain where Description = 'EnglishStandaloneENAU')&#xA;SET @ClosedStatus = (SELECT id FROM Status where Description = 'Closed')&#xA;&#xA;(SELECT * FROM Session &#xA;INNER JOIN SessionStatus on Session.Id = SessionStatus.SessionId &#xA;WHERE Session.DomainId = @DomainId &#xA;AND StatusId in (SELECT id FROM Status where Description IN ('Open', 'Interrupted', 'Suspended', 'Waiting', 'Reception','Paused')))&#xA;&#xA;UPDATE SessionStatus SET StatusId = @ClosedStatus WHERE SessionStatus.SessionId in &#xA;(SELECT id FROM Session &#xA;INNER JOIN SessionStatus on Session.Id = SessionStatus.SessionId &#xA;WHERE Session.DomainId = @DomainId &#xA;AND StatusId in (SELECT id FROM Status where Description IN ('Open', 'Interrupted', 'Suspended', 'Waiting', 'Reception','Paused')))"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8421555903"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+		</Node>
+		<Node name="message 84">
+			<Prp name="id" type="I" value="109"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value="Possible reasons:&#xA; - An error or warning occurred during the test run. See the preceding log entries to locate and identify the error.&#xA; - The test run was stopped manually.&#xA; - The test run was terminated as a result of the Runner.Halt method call."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Script execution was interrupted."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value="Picture1.png"/>
+			<Prp name="date" type="D" value="45037.8435646296"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="line no" type="I" value="268"/>
+			<Prp name="stack end" type="I" value="0"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="DeletePersonDetailFromDB()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8422519444"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 49">
+			<Prp name="id" type="I" value="84"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="selectGender(&quot;Male&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8432627546"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 70">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="102"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="object top" type="I" value="497"/>
+					<Prp name="object left" type="I" value="1265"/>
+					<Prp name="object bottom" type="I" value="523"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1556"/>
+					<Prp name="datetime" type="D" value="45037.6139946296"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage33.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_root&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 3).WPFObject(&quot;Password&quot;)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="76"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="'C0rrect' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_root&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 3).WPFObject(&quot;Password&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431640509"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="102"/>
+		</Node>
+		<Node name="message 78">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="135"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="object top" type="I" value="134"/>
+					<Prp name="object left" type="I" value="160"/>
+					<Prp name="object bottom" type="I" value="160"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1027"/>
+					<Prp name="datetime" type="D" value="45037.6141667708"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage41.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="93"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="'Foot Injury' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="7"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.843349213"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="135"/>
+		</Node>
+		<Node name="message 75">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="564"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="43"/>
+					<Prp name="click point y" type="I" value="30"/>
+					<Prp name="object top" type="I" value="20"/>
+					<Prp name="object left" type="I" value="1"/>
+					<Prp name="object bottom" type="I" value="41"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1128"/>
+					<Prp name="datetime" type="D" value="45037.6141127315"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage38.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_PopupRoot.PopupRoot.WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;ComboBoxItem&quot;, &quot;Male&quot;, 2)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="86"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (563, 10) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: PopupRoot&quot;, &quot;&quot;).WPFObject(&quot;PopupRoot&quot;, &quot;&quot;, 1).WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;ComboBoxItem&quot;, &quot;Male&quot;, 2)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="4"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8432801273"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="43"/>
+		</Node>
+		<Node name="message 30">
+			<Prp name="id" type="I" value="54"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="setText(&quot;7566576&quot;,txt_ContactInfo,&quot;ContactInfoTextBox&quot;,&quot;&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8429424884"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 60">
+			<Prp name="id" type="I" value="104"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value="The close command was send to the window with the 'Odyssey' caption. The process displayed a dialog with the 'Warning!' caption.&#xA;&#xA;Tested object:&#xA;Aliases.Odyssey_eCover_App&#xA;(Sys.Process(&quot;Odyssey.eCover.App&quot;))"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The close command was sent to the process &quot;Odyssey.eCover.App&quot;. Failed to wait for the process to close due to an unexpected window."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8435040162"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="238"/>
+		</Node>
+		<Node name="message 71">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="1524"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="584"/>
+					<Prp name="click point y" type="I" value="564"/>
+					<Prp name="object top" type="I" value="547"/>
+					<Prp name="object left" type="I" value="1490"/>
+					<Prp name="object bottom" type="I" value="582"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1559"/>
+					<Prp name="datetime" type="D" value="45037.6140078009"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage34.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Button&quot;, &quot;Login&quot;, 1)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="77"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (34, 17) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_root&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 3).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;Login&quot;, 1)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431755208"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="584"/>
+		</Node>
+		<Node name="message 15">
+			<Prp name="id" type="I" value="19"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8424954861"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+		</Node>
+		<Node name="message 57">
+			<Prp name="id" type="I" value="99"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Switch View Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8434072685"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+		</Node>
+		<Node name="message 67">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="237"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="584"/>
+					<Prp name="click point y" type="I" value="895"/>
+					<Prp name="object top" type="I" value="882"/>
+					<Prp name="object left" type="I" value="152"/>
+					<Prp name="object bottom" type="I" value="909"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="322"/>
+					<Prp name="datetime" type="D" value="45037.613929456"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage30.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;border4&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ThisControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 2).WPFObject(&quot;LinkLabel&quot;, &quot;&quot;, 3).WPFObject(&quot;button&quot;)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="64"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (85, 13) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;border4&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ThisControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 2).WPFObject(&quot;LinkLabel&quot;, &quot;&quot;, 3).WPFObject(&quot;button&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8430972338"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="584"/>
+		</Node>
+		<Node name="message 43">
+			<Prp name="id" type="I" value="73"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Login ID: Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431381366"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="ODY_1438--TestCase for Storing Clinical keys against session information when Clinician work on an assessment."/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8421538889"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="line no" type="I" value="163"/>
+		</Node>
+		<Node name="message 48">
+			<Prp name="id" type="I" value="82"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="setText(&quot;78&quot;,txt_ApproximateAge,&quot;ApproximateAge&quot;,&quot;&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8432502315"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 53">
+			<Prp name="id" type="I" value="91"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="SetTextinPresentingComplaintSearchBox(&quot;Foot Injury&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8433168982"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 59">
+			<Prp name="id" type="I" value="103"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="closeApplication()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.843481713"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 13">
+			<Prp name="id" type="I" value="17"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Loading... Label is not present in the screen"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8424893866"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="368"/>
+		</Node>
+		<Node name="message 64">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="1866"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="584"/>
+					<Prp name="click point y" type="I" value="1016"/>
+					<Prp name="object top" type="I" value="997"/>
+					<Prp name="object left" type="I" value="1818"/>
+					<Prp name="object bottom" type="I" value="1035"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1914"/>
+					<Prp name="datetime" type="D" value="45037.6138095486"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage27.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 3).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 2).WPFObject(&quot;TeleAssessContinueButton&quot;)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="57"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (48, 19) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 3).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 2).WPFObject(&quot;TeleAssessContinueButton&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8429772454"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="584"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="LaunchApplication()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8422531018"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 69">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="102"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="object top" type="I" value="421"/>
+					<Prp name="object left" type="I" value="1265"/>
+					<Prp name="object bottom" type="I" value="447"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1556"/>
+					<Prp name="datetime" type="D" value="45037.6139790278"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage32.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_root&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 3).WPFObject(&quot;LoginID&quot;)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="75"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="'clinician@advanced.enau' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_root&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 3).WPFObject(&quot;LoginID&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431529167"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="102"/>
+		</Node>
+		<Node name="message 32">
+			<Prp name="id" type="I" value="58"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="waitforAssessmentScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8429975347"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 63">
+			<Prp name="id" type="I" value="108"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value="The process ID is 7040."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The application &quot;C:\Users\Vikram.Thippeswamy\Desktop\Odyssey 3.28.appref-ms&quot; started."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8435450116"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="268"/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Odyssey.eCover.App Process is found.....Exiting waitForProcessToStart"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8423322106"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="1134"/>
+		</Node>
+		<Node name="message 80">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="593"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="155"/>
+					<Prp name="click point y" type="I" value="172"/>
+					<Prp name="object top" type="I" value="161"/>
+					<Prp name="object left" type="I" value="162"/>
+					<Prp name="object bottom" type="I" value="183"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1025"/>
+					<Prp name="datetime" type="D" value="45037.6141989236"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage43.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Listbox&quot;, &quot;&quot;, 1).WPFObject(&quot;Bd&quot;).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ItemsPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ListBoxItem&quot;, &quot;&quot;, 1)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="97"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (431, 11) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Listbox&quot;, &quot;&quot;, 1).WPFObject(&quot;Bd&quot;).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ItemsPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ListBoxItem&quot;, &quot;&quot;, 1)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="7"/>
+			<Prp name="message" type="S" value="The window was double-clicked by the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8433786227"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="155"/>
+		</Node>
+		<Node name="message 11">
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="Login(Project.Variables.ClinicianUsername,Project.Variables.ClinicianPassword)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8423529167"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 10">
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8423476273"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="206"/>
+		</Node>
+		<Node name="message 20">
+			<Prp name="id" type="I" value="38"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Save and go back&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8427821991"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 25">
+			<Prp name="id" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Use this patient&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8428747917"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 28">
+			<Prp name="id" type="I" value="50"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="clickItem(btn_PresentComplaint,&quot;Leg / Foot Injury&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8429102083"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 81">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="702"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="92"/>
+					<Prp name="click point y" type="I" value="250"/>
+					<Prp name="object top" type="I" value="239"/>
+					<Prp name="object left" type="I" value="579"/>
+					<Prp name="object bottom" type="I" value="262"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="826"/>
+					<Prp name="datetime" type="D" value="45037.6142669907"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage44.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;border4&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ThisControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 2).WPFObject(&quot;QuestionList&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;questions&quot;).WPFObject(&quot;ListBoxItem&quot;, &quot;&quot;, 6).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;AnswerPresenter&quot;)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="101"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (123, 11) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;border4&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ThisControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 2).WPFObject(&quot;QuestionList&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;questions&quot;).WPFObject(&quot;ListBoxItem&quot;, &quot;&quot;, 6).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;AnswerPresenter&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="6"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8434355671"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="92"/>
+		</Node>
+		<Node name="message 62">
+			<Prp name="id" type="I" value="107"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="LaunchApplication()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8435349421"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 76">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="1035"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="584"/>
+					<Prp name="click point y" type="I" value="539"/>
+					<Prp name="object top" type="I" value="520"/>
+					<Prp name="object left" type="I" value="987"/>
+					<Prp name="object bottom" type="I" value="558"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1083"/>
+					<Prp name="datetime" type="D" value="45037.6141295255"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage39.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.ItemsControl.WPFObject(&quot;Button&quot;, &quot;Continue&quot;, 1)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="88"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (48, 19) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;SearchElementsControl&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;PatientSearchControl&quot;).WPFObject(&quot;mainGrid&quot;).WPFObject(&quot;AddAnonymousPatient&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;ItemsControl&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;Continue&quot;, 1)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8432972454"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="584"/>
+		</Node>
+		<Node name="message 18">
+			<Prp name="id" type="I" value="24"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;_Add new patient&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8425325347"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 21">
+			<Prp name="id" type="I" value="40"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="setText(&quot;Automation&quot;,txt_WaterMarkedTtextBox,&quot;&quot;,&quot;&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8428180903"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 14">
+			<Prp name="id" type="I" value="18"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="waitfordefaultScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8424895023"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 12">
+			<Prp name="id" type="I" value="16"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.842445787"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{6B545B1C-4993-41B3-B55C-0A8F2F20504E}"/>
+			<Prp name="unit 5" type="S" value="{5792F3CE-85C4-4C67-9BDE-BA34914E3961}"/>
+			<Prp name="unit 6" type="S" value="{248FD78C-6EF5-4431-B357-3A62B7B877A8}"/>
+			<Prp name="unit 2" type="S" value="{82D32211-C050-4168-9120-B88783F13D71}"/>
+			<Prp name="unit 1" type="S" value="{54BFC739-356C-4151-8A2D-049306DA3D0D}"/>
+			<Prp name="unit 3" type="S" value="{2CBB81FE-F552-450F-830E-0B36AAC8CE4A}"/>
+			<Prp name="unit 7" type="S" value="{CD6B0E81-E186-486B-906D-1F1B0D7DD6C9}"/>
+			<Prp name="unit 4" type="S" value="{40100E68-8D42-4C0D-9D8E-F1B15EADEAB2}"/>
+		</Node>
+		<Node name="message 42">
+			<Prp name="id" type="I" value="72"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="waitForLoginScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431307639"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="DeletePatientsFromTheQueue()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8421548958"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 74">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="1035"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="39"/>
+					<Prp name="click point y" type="I" value="499"/>
+					<Prp name="object top" type="I" value="483"/>
+					<Prp name="object left" type="I" value="159"/>
+					<Prp name="object bottom" type="I" value="516"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1912"/>
+					<Prp name="datetime" type="D" value="45037.6141054514"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage37.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;PatientSearchControl&quot;).WPFObject(&quot;mainGrid&quot;).WPFObject(&quot;AddAnonymousPatient&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;GenderControl&quot;)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="85"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (876, 16) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;SearchElementsControl&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;PatientSearchControl&quot;).WPFObject(&quot;mainGrid&quot;).WPFObject(&quot;AddAnonymousPatient&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;GenderControl&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="4"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.843273287"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="39"/>
+		</Node>
+		<Node name="message 33">
+			<Prp name="id" type="I" value="59"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Switch View Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8430215509"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+		</Node>
+		<Node name="message 35">
+			<Prp name="id" type="I" value="63"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Pause Assessment&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8430859606"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 72">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="1133"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="584"/>
+					<Prp name="click point y" type="I" value="323"/>
+					<Prp name="object top" type="I" value="305"/>
+					<Prp name="object left" type="I" value="1040"/>
+					<Prp name="object bottom" type="I" value="342"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1226"/>
+					<Prp name="datetime" type="D" value="45037.6140808333"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage35.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;PatientSearchControl&quot;).WPFObject(&quot;mainGrid&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;Use anonymous patient&quot;, 3)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="81"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (93, 18) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;SearchElementsControl&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;PatientSearchControl&quot;).WPFObject(&quot;mainGrid&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;Use anonymous patient&quot;, 3)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8432486574"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="584"/>
+		</Node>
+		<Node name="message 34">
+			<Prp name="id" type="I" value="60"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Pain severity&quot;,&quot;9-10: Worst ever&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8430216088"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 31">
+			<Prp name="id" type="I" value="56"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Continue&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8429561921"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 56">
+			<Prp name="id" type="I" value="98"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="waitforAssessmentScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8433857755"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 24">
+			<Prp name="id" type="I" value="45"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="message" type="S" value="Use this patient button is displaying"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8428741898"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="677"/>
+		</Node>
+		<Node name="message 55">
+			<Prp name="id" type="I" value="96"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="7"/>
+			<Prp name="message" type="S" value="Added presenting complaint :: Foot injury"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8433637269"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="152"/>
+		</Node>
+		<Node name="message 29">
+			<Prp name="id" type="I" value="52"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="clickItem(btn_PresentComplaint,&quot;Foot injury&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8429274074"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 47">
+			<Prp name="id" type="I" value="80"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="clickItem(btn_UseAnonymousPatient,&quot;Use anonymous patient&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8432358449"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Project Variables are assigned successfully"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8421386574"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="245"/>
+		</Node>
+		<Node name="message 50">
+			<Prp name="id" type="I" value="87"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Continue&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8432817245"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 37">
+			<Prp name="id" type="I" value="66"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431114931"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+		</Node>
+		<Node name="message 61">
+			<Prp name="id" type="I" value="106"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="message" type="S" value="Clinical Keys are saved"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8435342824"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="677"/>
+		</Node>
+		<Node name="message 82">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="123"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="97"/>
+					<Prp name="click point y" type="I" value="156"/>
+					<Prp name="object top" type="I" value="146"/>
+					<Prp name="object left" type="I" value="3"/>
+					<Prp name="object bottom" type="I" value="167"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="243"/>
+					<Prp name="datetime" type="D" value="45037.6142807176"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage45.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_PopupRoot.PopupRoot.WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;ComboBoxItem&quot;, &quot;&quot;, 7)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="102"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (120, 10) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: PopupRoot&quot;, &quot;&quot;, 1).WPFObject(&quot;PopupRoot&quot;, &quot;&quot;, 1).WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;ComboBoxItem&quot;, &quot;&quot;, 7)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="6"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8434480787"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="97"/>
+		</Node>
+		<Node name="message 41">
+			<Prp name="id" type="I" value="71"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="message" type="S" value="DECLARE @DomainId uniqueidentifier&#xA;DECLARE @ClosedStatus uniqueidentifier&#xA;&#xA;SET @DomainId = (select id from dbo.Domain where Description = 'EnglishStandaloneENAU')&#xA;SET @ClosedStatus = (SELECT id FROM Status where Description = 'Closed')&#xA;&#xA;(SELECT * FROM Session &#xA;INNER JOIN SessionStatus on Session.Id = SessionStatus.SessionId &#xA;WHERE Session.DomainId = @DomainId &#xA;AND StatusId in (SELECT id FROM Status where Description IN ('Open', 'Interrupted', 'Suspended', 'Waiting', 'Reception','Paused')))&#xA;&#xA;UPDATE SessionStatus SET StatusId = @ClosedStatus WHERE SessionStatus.SessionId in &#xA;(SELECT id FROM Session &#xA;INNER JOIN SessionStatus on Session.Id = SessionStatus.SessionId &#xA;WHERE Session.DomainId = @DomainId &#xA;AND StatusId in (SELECT id FROM Status where Description IN ('Open', 'Interrupted', 'Suspended', 'Waiting', 'Reception','Paused')))"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431289699"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+		</Node>
+		<Node name="message 65">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="697"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="92"/>
+					<Prp name="click point y" type="I" value="286"/>
+					<Prp name="object top" type="I" value="275"/>
+					<Prp name="object left" type="I" value="573"/>
+					<Prp name="object bottom" type="I" value="297"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="821"/>
+					<Prp name="datetime" type="D" value="45037.6138745602"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage28.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;border4&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ThisControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 2).WPFObject(&quot;QuestionList&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;questions&quot;).WPFObject(&quot;ListBoxItem&quot;, &quot;&quot;, 6).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;AnswerPresenter&quot;)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="61"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (124, 11) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;border4&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ThisControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 2).WPFObject(&quot;QuestionList&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;questions&quot;).WPFObject(&quot;ListBoxItem&quot;, &quot;&quot;, 6).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;AnswerPresenter&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="6"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8430428241"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="92"/>
+		</Node>
+		<Node name="message 27">
+			<Prp name="id" type="I" value="49"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Search for a presenting complaint using the search window, or select an item from the list Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8429101389"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+		</Node>
+		<Node name="message 66">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="123"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="97"/>
+					<Prp name="click point y" type="I" value="156"/>
+					<Prp name="object top" type="I" value="146"/>
+					<Prp name="object left" type="I" value="3"/>
+					<Prp name="object bottom" type="I" value="167"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="244"/>
+					<Prp name="datetime" type="D" value="45037.6138854514"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage29.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_PopupRoot.PopupRoot.WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;ComboBoxItem&quot;, &quot;&quot;, 7)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="62"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (120, 10) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: PopupRoot&quot;, &quot;&quot;, 1).WPFObject(&quot;PopupRoot&quot;, &quot;&quot;, 1).WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;ComboBoxItem&quot;, &quot;&quot;, 7)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="6"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8430526852"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="97"/>
+		</Node>
+		<Node name="message 38">
+			<Prp name="id" type="I" value="67"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="LogoutApp()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431116088"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value="The process ID is 6756."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The application &quot;C:\Users\Vikram.Thippeswamy\Desktop\Odyssey 3.28.appref-ms&quot; started."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8422748843"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="268"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 45">
+			<Prp name="id" type="I" value="78"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431961806"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+		</Node>
+		<Node name="message 83">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="260"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="247"/>
+					<Prp name="click point y" type="I" value="130"/>
+					<Prp name="object top" type="I" value="119"/>
+					<Prp name="object left" type="I" value="223"/>
+					<Prp name="object bottom" type="I" value="142"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="298"/>
+					<Prp name="datetime" type="D" value="45037.6143401505"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage46.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.Window(&quot;#32770&quot;, &quot;Warning!&quot;, 1).Window(&quot;Button&quot;, &quot;&amp;Yes&quot;, 1)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="105"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (37, 11) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).Window(&quot;#32770&quot;, &quot;Warning!&quot;, 1).Window(&quot;Button&quot;, &quot;&amp;Yes&quot;, 1)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8435073843"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="247"/>
+		</Node>
+		<Node name="message 51">
+			<Prp name="id" type="I" value="89"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="waitforPresentingScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8433064005"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 44">
+			<Prp name="id" type="I" value="74"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="Login(Project.Variables.ClinicianUsername,Project.Variables.ClinicianPassword)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431381944"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 68">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="76"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="584"/>
+					<Prp name="click point y" type="I" value="125"/>
+					<Prp name="object top" type="I" value="107"/>
+					<Prp name="object left" type="I" value="14"/>
+					<Prp name="object bottom" type="I" value="144"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="138"/>
+					<Prp name="datetime" type="D" value="45037.6139546412"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage31.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Banner&quot;).WPFObject(&quot;CollapsePanel&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;Logout&quot;, 3)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="68"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (62, 18) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;SearchElementsControl&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Banner&quot;).WPFObject(&quot;CollapsePanel&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;Logout&quot;, 3)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431225"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="584"/>
+		</Node>
+		<Node name="message 77">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="593"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="134"/>
+					<Prp name="click point y" type="I" value="147"/>
+					<Prp name="object top" type="I" value="134"/>
+					<Prp name="object left" type="I" value="160"/>
+					<Prp name="object bottom" type="I" value="160"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1027"/>
+					<Prp name="datetime" type="D" value="45037.6141640857"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage40.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="92"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (433, 13) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="7"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8433317708"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="134"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8422520602"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+		</Node>
+		<Node name="message 54">
+			<Prp name="id" type="I" value="95"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="SelctPresComplFrmSrchRes()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8433534954"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 52">
+			<Prp name="id" type="I" value="90"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Search for a presenting complaint using the search window, or select an item from the list Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8433168287"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+		</Node>
+		<Node name="message 39">
+			<Prp name="id" type="I" value="69"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="message" type="S" value="Clinical Keys are saved"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431279977"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="677"/>
+		</Node>
+		<Node name="message 17">
+			<Prp name="id" type="I" value="22"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;_Search&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8425102431"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 79">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="593"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="line #" type="I" value="136"/>
+					<Prp name="click point y" type="I" value="147"/>
+					<Prp name="object top" type="I" value="134"/>
+					<Prp name="object left" type="I" value="160"/>
+					<Prp name="object bottom" type="I" value="160"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1027"/>
+					<Prp name="datetime" type="D" value="45037.6141843866"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="image file name" type="S" value="visImage42.png"/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="94"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (433, 13) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;_control&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="7"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8433520255"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="136"/>
+		</Node>
+		<Node name="message 16">
+			<Prp name="id" type="I" value="20"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="setText(&quot;Automation&quot;,txt_WaterMarkedTtextBox,&quot;&quot;,&quot;&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8424955671"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 36">
+			<Prp name="id" type="I" value="65"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="waitfordefaultScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45037.8431015278"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="stack"/>
+		<Prp name="status" type="I" value="2"/>
+	</Node>
+</Nodes>

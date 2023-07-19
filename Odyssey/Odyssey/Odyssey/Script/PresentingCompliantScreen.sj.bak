@@ -1,0 +1,635 @@
+﻿//USEUNIT CommonFunctions
+//USEUNIT PageObjects
+//USEUNIT TestHarnessScreen
+
+
+/*===============================================================================
+Description: This function is wait for the presenting screen
+Parameters: 
+Return Value: 
+=================================================================================*/
+function waitforPresentingScreen()
+{
+    if(Project.Variables.Process == "INPROCESSNEW" && !ToCheckLablePresent("Search for a presenting complaint using the search window, or select an item from the list"))
+    {
+        ToScrollNewTestHarness("UP");
+    }
+    return waitForItemWithTime(txt_SelectItemFrmListView,"Search for a presenting complaint using the search window, or select an item from the list",2 )
+}
+/*===============================================================================
+Description: This function is wait for the presenting screen
+Parameters: 
+Return Value: 
+=================================================================================*/
+function waitforPresentingScreenForNagtvTst()
+{
+  return waitForInformationMessageTrueOrFalse(["Name","WPFControlText"],[txt_SelectItemFrmListView,"Search for a presenting complaint using the search window, or select an item from the list"] )
+}
+/*===============================================================================
+Description: This function to click check the detail address present 
+Parameters: 
+Return Value: true/false
+=================================================================================*/
+function TocheckDetailAddressLbl()
+{
+    var process = GetProcess()
+    var obj = process.FindChild(["Name"],["WPFObject(\"DetailAddressLabel\")"],100)
+    if (obj.Exists && obj.Enabled)
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+}
+/*===============================================================================
+Description: This function to click check the detail address present 
+Parameters: 
+Return Value: true/false
+=================================================================================*/
+function ToChkAddedAddressFrmBannerDet(Address)
+{
+    var process = GetProcess()
+    var obj = process.FindChild(["Name","AddressType"],["WPFObject(\"addressHeader\")",Address],100)
+    if (obj.Exists)
+    {
+      return true
+    }
+    else
+    {
+      return false
+    }
+}
+/*===============================================================================
+Description: This function to validate the presenting complaint search result
+Parameters: 
+          Option:Startswith or Contains
+          data:data to search
+Return Value: true/false
+=================================================================================*/
+function ToValidatePresCompl(Option,data)
+{
+  var process = GetProcess()
+  var obj = process.FindChild(["Name","WPFControlOrdinalNo"],["WPFObject(\"ItemsPresenter\", \"\", 1)","1"],100)
+  if (obj.ChildCount>0)
+  {
+      var ChildCount = obj.ChildCount 
+      if(aqString.ToUpper(Option)=="STARTSWITH")
+      {
+            var obj = process.FindChild(["Name","WPFControlOrdinalNo"],["WPFObject(\"ScrollViewer\", \"\", 1)","1"],100)
+            var obj1 = obj.FindChild(["Name","ClrClassName","WPFControlOrdinalNo"],["WPFObject(\"ListBoxItem\", \"\", 1)","ListBoxItem",1],100)
+            var text = obj1.WPFControlText
+            var data1 = aqString.SubString(text,0,4)
+            if (aqString.ToUpper(data1)==aqString.ToUpper(data))
+            {
+              return true
+            } 
+            else
+            {
+              return false
+            }        
+      } 
+      else
+      {
+            var obj = process.FindChild(["Name","WPFControlOrdinalNo"],["WPFObject(\"ScrollViewer\", \"\", 1)","1"],100)
+            var obj1 = obj.FindChild(["Name","ClrClassName","WPFControlOrdinalNo"],["WPFObject(\"ListBoxItem\", \"\", 1)","ListBoxItem",1],100)
+            var text = obj1.WPFControlText
+            if (aqString.find(text,data,0,false)!=-1)
+            {
+              return true
+            } 
+            else
+            {
+              return false
+            } 
+     } 
+  } 
+} 
+
+/*===============================================================================
+Description: This function to wait for the search button to enable
+Parameters: 
+Return Value:
+=================================================================================*/
+function waitforSearchButtonToEnable()
+{
+    waitForItemWithTime(btn_WPFButton,"Search",1)
+}
+
+/*===============================================================================
+Description: This function to check the allergies in the list box
+Parameters: 
+          BoxName:Available or Selected
+Return Value: true/false
+=================================================================================*/  
+function SetTextinPresentingComplaintSearchBox(data)
+{
+  var process = GetProcess()
+//  var SearchBtn = process.FindChild(["WPFControlText"],["Search"],100)
+//  var obj3 = SearchBtn.Parent.Parent
+//  var obj = process.FindChild(["Name","WPFControlOrdinalNo","VisibleOnScreen"],["WPFObject(\"Grid\", \"\", 1)","1",true],100)
+  var obj1 = process.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"PresentingComplaintSearchInputBox\")",true],100)
+  if (obj1.Exists)
+  {
+    obj1.Click()
+    obj1.keys(data)
+    obj1.Click()
+  } 
+}
+/*===============================================================================
+Description: This function to Select presenting complaint from the search list
+Parameters: 
+Return Value:
+=================================================================================*/ 
+function SelctPresComplFrmSrchRes()
+{
+    var process = GetProcess()
+    var obj1 = process.Findchild(["Name"],["WPFObject(\"ScrollContentPresenter\", \"\", 1)"],100)
+    var obj = obj1.FindChild(["Name"],["WPFObject(\"ItemsPresenter\", \"\", 1)"],100)
+    if (obj.VisibleOnScreen)
+    {
+        var obj_PresCompl = obj.FindChild(["Name","ClrClassName","WPFControlOrdinalNo"],["WPFObject(\"ListBoxItem\", \"\", 1)","ListBoxItem",1],100)
+        Log.Message("Added presenting complaint :: "+obj_PresCompl.WPFControlText)
+        if(obj_PresCompl.Exists && obj_PresCompl.Enabled)
+        {
+          obj_PresCompl.DblClick()
+        }
+        else
+        {
+          Log.Warning("Click action failed in SelctPresComplFrmSrchRes function")
+          throw "Click action failed in SelctPresComplFrmSrchRes function"
+        }   
+    }
+    else
+    {
+        Log.Message("No presenting complaint is listing after search")
+    } 
+} 
+/*===============================================================================
+Description: This function to Find the presenting complaint which is selected
+Parameters: 
+Return Value:
+=================================================================================*/ 
+function ToChkPresComplCurrentlySeleted(PreComplaint)
+{
+    var process = GetProcess()
+    var PresentingCompText = process.FindChild(["Name"],["WPFObject(\"TextBlock\", \"Presenting complaint currently selected: \", 1)"],100)
+    var PresentingCompTextPar = PresentingCompText.Parent
+    var PresentingComplaintSelected = PresentingCompTextPar.FindChild(["Name"],["WPFObject(\"PCBox\")"],100)
+    PresentingComplaintSelected = PresentingComplaintSelected.WPFControlText
+    PreComplaint = aqString.Trim(PreComplaint)
+    PresentingComplaintSelected = aqString.Trim(PresentingComplaintSelected)
+    if(aqString.ToLower(PreComplaint) == aqString.ToLower(PresentingComplaintSelected))
+    {
+        return true
+    } 
+    else
+    { 
+        return false 
+    } 
+} 
+/*===============================================================================
+Description: This function to check the banner details
+Parameters: 
+             detail: detail need to check
+Return Value: 
+=================================================================================*/
+function CheckBannerDetails(detail)
+{
+    var Process = GetProcess()
+    //var obj = Process.FindChild(["Name"],["WPFObject(\"PatientBanner\")"],100)
+    switch (aqString.ToUpper(detail))
+    {
+    
+      case "NAME":
+          var obj=Process.FindChild(["Name"],[lbl_NameDisplay],100)
+          return (obj.DisplayValue.OleValue)
+       break;
+       
+      case "ADDRESS":
+           var obj=Process.FindChild(["Name"],["WPFObject(\"AddressPreview\")"],100)
+           var address = obj.Text.OleValue
+           address = address.split("\n")
+           var address1 = ""
+           for(i=0; i<address.length; i++)
+           {
+             address[i] = aqString.Replace(address[i],"\r","")
+             address1 = address1+address[i]
+           }
+           
+//           address[0] = aqString.Replace(address[0],"\r","")
+//           address[1] = aqString.Replace(address[1],"\r","")
+//           address[2] = aqString.Replace(address[2],"\r","")
+//           var address1 = address[0]+address[1]+address[2]
+           return address1
+      break;
+      
+      case "ADDRESSDETAILS":
+           var obj=Process.FindChild(["Name"],["WPFObject(\"DetailAddressLabel\")"],100)
+           var address = obj.Address1.OleValue
+           address = address.split("\n")
+           address[0] = aqString.Replace(address[0],"\r","")
+           address[1] = aqString.Replace(address[1],"\r","")
+           address[2] = aqString.Replace(address[2],"\r","")
+           var address1 = address[0]+address[1]+address[2]
+           return address1
+      break;
+      
+      case "AGE":
+      var obj=Process.FindChild(["Name"],[lbl_DOBValue],100)
+          return (obj.Text.OleValue)
+       break;
+  
+      case "GENDER":
+          var obj=Process.FindChild(["Name"],[lbl_GenderValue],100)
+          return (obj.DisplayValue.OleValue)
+       break;
+    
+      case "NHSNUMBER":
+          var obj=Process.FindChild(["Name"],[lbl_NHSNumberValue],100)
+          return (obj.Text.OleValue)
+
+       break;
+      
+      case "ALLERGIES":
+          var obj=Process.FindChild(["Name"],["WPFObject(\"AllergiesControl\")"],100)
+          var item = obj.FindChild(["Name"],["WPFObject(\"TextBlock\", \"animal fur\", 1)"],100)
+          if (item.Exists)
+          {
+            return true
+          }
+          else
+          {
+            return false
+          } 
+
+       break;
+      case "GPDETAILS":
+          var GPDetArr = lbl_GPDetails.split("|")
+          var parentobj = Process.FindChild(["Name"],["WPFObject(\"SubsectionThreeContentPanel\")"],100)
+          var obj_GP = parentobj.FindChild(["Name"],["WPFObject(\"TextBlock\", \""+GPDetArr[0]+"\", 1)"],20)
+          var obj_Practice = parentobj.FindChild(["Name"],["WPFObject(\"TextBlock\", \""+GPDetArr[1]+"\", 2)"],20)
+          var obj_Email = parentobj.FindChild(["Name"],["WPFObject(\"TextBlock\", \""+GPDetArr[2]+"\", 3)"],20)
+          var obj_Phone = parentobj.FindChild(["Name"],["WPFObject(\"TextBlock\", \""+GPDetArr[3]+"\", 4)"],20)
+          if (obj_GP.Exists && obj_Practice.Exists && obj_Email.Exists && obj_Phone.Exists)
+          {
+            return true
+          }
+          else
+          {
+            return false
+          }          
+      break;
+      case "CONTACT":
+          var contactobj = ToFindObj(["Name"], ["WPFObject(\"ContactPreview\")"])
+          return contactobj.WPFControlText
+          break;
+         
+    }
+}
+
+/*===============================================================================
+Description: This function to check the tool tip for banner details
+Parameters: 
+             detail: detail need to check
+Return Value: 
+=================================================================================*/
+function ToCheckToolTipForBannerDet(Det)
+{
+  var process = GetProcess()
+  switch (aqString.ToUpper(Det))
+  {
+    case "NAMEDISPLAY":
+      var obj=process.FindChild(["Name"],[lbl_NameDisplay],100)
+      return ToValidateTipTool(obj,"Click here to open this section of the record")
+    break;
+    
+    case "AGE":
+      var obj=process.FindChild(["Name"],[lbl_DOBValue],100)
+      return ToValidateTipTool(obj,"Click here to open this section of the record")
+    break;
+    
+    case "BORN":
+      var obj=process.FindChild(["Name"],[lbl_DOBLabel],100)
+      return ToValidateTipTool(obj,"Date of Birth")
+    break;
+    
+    case "GENDERLABEL":
+      var obj=process.FindChild(["Name"],[lbl_GenderLabel],100)
+      return ToValidateTipTool(obj,"A person's current Gender. This may be different from a person's Sex which is a person's Gender defined at the point of birth registration")
+    break;
+    
+    case "GENDER":
+      var obj=process.FindChild(["Name"],[lbl_GenderValue],100)
+      return ToValidateTipTool(obj,"Click here to open this section of the record")
+    break;
+    
+     case "NHSNUMBERLABEL":
+      var obj=process.FindChild(["Name"],[lbl_NHSNumberLabel],100)
+      return ToValidateTipTool(obj, lbl_NHSNUMBERLABELToolTip)
+    break;
+    
+    case "NHSNUMBERVALUE":
+      var obj=process.FindChild(["Name"],[lbl_NHSNumberValue],100)
+      return ToValidateTipTool(obj,"Click here to open this section of the record")
+    break;
+    
+    case "SUBSECTION":
+      var obj=process.FindChild(["Name"],["WPFObject(\"SubSectionFiveHeader\")"],100)
+      return ToValidateTipTool(obj,"Click here to expand or collapse")
+    break;
+    
+  }
+  
+} 
+/*===============================================================================
+Description: This function to validate CallType is mandatory
+Parameters: 
+          obj:
+Return Value:
+=================================================================================*/ 
+function ToValMandatoryColor(fieldName)
+{
+  var process = GetProcess()
+  var obj, border;
+  switch(fieldName)
+  {
+    case "CallType" : 
+      obj = process.Findchild(["Name"],["WPFObject(\"SessionTypeComboBox\")"],100)
+      border = obj.parent
+      break;
+    case "CallBackNumber" : 
+      obj = process.Findchild(["Name","VisibleOnScreen"],[txt_ContactInfo,"True"],100)
+      border = obj.parent
+      break;    
+    case "Gender" :
+      obj = process.Findchild(["Name","VisibleOnScreen"],["WPFObject(\"gender\")","True"],100)
+      border = obj.parent
+      break;
+    case "Postcode" :
+      border = process.Findchild(["Name","VisibleOnScreen"],["WPFObject(\"postcode\")","True"],100)
+  }  
+  
+//  if(fieldName == "CallType")
+//  {
+//    var Obj = process.Findchild(["Name"],["WPFObject(\"SessionTypeComboBox\")"],100)
+//  }
+//  if(fieldName == "CallBackNumber")
+//  {
+//    var Obj = process.Findchild(["Name","VisibleOnScreen"],[txt_ContactInfo,"True"],100)
+//  }
+  
+  var B = border.BorderBrush.Color.B
+  var G = border.BorderBrush.Color.G
+  var R = border.BorderBrush.Color.R
+  
+  if (R=="255" && B=="0" && G=="0")
+  {
+    return true
+  } 
+  else
+  {
+    return false
+  } 
+}  
+
+/*===============================================================================
+Description: This function to validate border turns for call type object
+Parameters: 
+          obj:
+Return Value:
+=================================================================================*/ 
+function ToValMandatoryBorderVisible(obj)
+{
+  var process = GetProcess()
+  var border
+  
+  if(obj == "CallType")
+  {
+    var callType = process.Findchild(["Name"],["WPFObject(\"SessionTypeComboBox\")"],100)
+    border = callType.parent
+  }
+  else
+  {
+    var callBackNumber =  process.Findchild(["Name"],[txt_ContactInfo],100) 
+    border = callBackNumber.parent
+  }
+  
+  if (border.BorderThickness.Bottom=="1" && border.BorderThickness.Left=="1" && border.BorderThickness.Right=="1" && border.BorderThickness.Top == "1")
+  {
+    return true
+  } 
+  else
+  {
+    return false
+  } 
+}
+
+/*===============================================================================
+Description: This function to Select presenting complaint from the search list
+Parameters: 
+Return Value:
+=================================================================================*/ 
+function HighlightPresComplFrmSrchRes()
+{
+  var process = GetProcess()
+  var obj1 = process.Findchild(["Name"],["WPFObject(\"ScrollContentPresenter\", \"\", 1)"],100)
+  var obj = obj1.FindChild(["Name"],["WPFObject(\"ItemsPresenter\", \"\", 1)"],100)
+  if (obj.VisibleOnScreen)
+  {
+    var ChildCount = obj.ChildCount 
+    var obj = process.FindChild(["Name","WPFControlOrdinalNo"],["WPFObject(\"ScrollViewer\", \"\", 1)","1"],100)
+    var obj1 = obj.FindChild(["Name","ClrClassName","WPFControlOrdinalNo"],["WPFObject(\"ListBoxItem\", \"\", 1)","ListBoxItem",1],100)
+    SelectedPresCompl = obj1.WPFControlText
+    
+    obj1.Click()
+  }
+  else
+  {
+    Log.Message("No presenting complaint is listing after search")
+  } 
+} 
+
+/*===============================================================================
+Description: This function is to check lable present in the page
+Parameters:             
+             wpfControlText: property value of wpfControlText 
+Return Value: 
+=================================================================================*/
+function ToCheckMandatoryFieldsPresent(wpfControlText)
+{
+//   Process = GetProcess()
+  Sys.Refresh()
+  Process = GetProcess()
+  var missingInfoLableObj = Process.FindChild(["WPFControlText"], ["Missing Information"], 100)
+  var missingInfoGridObj = missingInfoLableObj.parent.parent
+  
+  var label= missingInfoGridObj.FindChild(["WPFControlText"], [wpfControlText], 100)
+   if(label.Exists && label.VisibleOnScreen)
+   {
+      Log.Message(wpfControlText+" Label is present in the screen")
+      return true
+   }
+    else 
+    {
+      Log.Message(wpfControlText+" Label is not present in the screen")
+      return false
+          
+    }
+}
+
+/*===============================================================================
+Description: This function is to validate/compare the search result for presenting complaint
+Parameters:             
+             searchString: Search string entered 
+Return Value: true/false
+=================================================================================*/
+function ToCheckPresCompSearchResult(searchString)
+{
+  var process = GetProcess()
+  var obj1 = process.Findchild(["Name"],["WPFObject(\"ScrollContentPresenter\", \"\", 1)"],100)
+  var obj = obj1.FindChild(["Name"],["WPFObject(\"ItemsPresenter\", \"\", 1)"],100)
+  if (obj.Exists && obj.Enabled)
+  {
+    searchString=aqString.ToLower(searchString)
+    var pattern = "[a-z]*"+searchString+"[a-z]*";
+    var regexPattern = new RegExp(pattern);
+    
+    var ChildCount = obj.ChildCount
+    for(var counter=1; counter<=ChildCount; counter++)
+    {
+      var currPresComplObj = obj.FindChild(["Name","Exists"],["WPFObject(\"ListBoxItem\", \"\", "+counter+")","True"],100)
+      Log.Message("Current Presenting complaint "+currPresComplObj.WPFControlText)
+      currPresCompl = aqString.ToLower(currPresComplObj.WPFControlText)
+      var res = regexPattern.test(currPresCompl)
+      if(res==false)
+      {
+        return false;
+      } 
+    }
+    if(counter>ChildCount)
+    {
+      return true;
+    }
+  }
+  else
+  {
+    Log.Message("No presenting complaint is listing after search")
+    return false;
+  }
+}
+/*===============================================================================
+Description: This function is to validate sorting of the search result of presenting complaint screen
+Parameters:             
+             searchString: Search string entered 
+Return Value: true/false
+=================================================================================*/
+function TOCheckSearchResOrder(searchString)
+{   
+    var len = searchString.length;
+    var process = GetProcess()
+    var obj1 = process.Findchild(["Name"],["WPFObject(\"ScrollContentPresenter\", \"\", 1)"],100)
+    var obj = obj1.FindChild(["Name"],["WPFObject(\"ItemsPresenter\", \"\", 1)"],100)
+    
+    var searResStartsWith = [];
+    var searResRemaining = [];
+    
+    if(obj.ChildCount>0)
+    {
+        for(i=1;i<=obj.ChildCount;i++)
+        {
+            var currComplaintObj = obj.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"ListBoxItem\", \"\", "+i+")","True"],10)
+            var currComplaint = currComplaintObj.WPFControlText;
+            var currCompPartial = currComplaint.slice(0, len);
+            if(aqString.ToUpper(currCompPartial) == aqString.ToUpper(searchString))
+            {
+                searResStartsWith.push(currComplaint);
+            }
+            else
+            {
+                searResRemaining.push(currComplaint);
+            }
+        }
+        
+        var searResStartsWithSorted = searResStartsWith.sort();
+        var searResRemainingSorted = searResRemaining.sort();
+        if(JSON.stringify(searResStartsWithSorted)==JSON.stringify(searResStartsWith) && JSON.stringify(searResRemainingSorted)==JSON.stringify(searResRemaining))
+        {
+            Log.Message("results are sorted alphanumerically"); 
+            return true          
+        }
+        else
+        {
+            Log.Message("results are not sorted alphanumerically");   
+            return false         
+        }
+    }
+    else
+    {
+        Log.Message("No results found for the entered search criteria");
+        return true 
+    }
+}
+
+/*===============================================================================
+Description: This function to check/uncheck First and Third checkbox in Presenting Compliant Screen
+Parameters:  
+          action:CHECK/UNCHECK
+Return Value:
+=================================================================================*/
+function ToCheckFirstThird(action)
+{
+  label_1st3rd = ToFindObj(["WPFControlText"],["Is the caller the patient?"])
+  parentObj = label_1st3rd.Parent
+  var chkBx_1st3rd =  parentObj.FindChild(["Name"],["WPFObject(\"CheckBox\", \"\", 1)"],10)
+  if(chkBx_1st3rd.Exists)
+  {
+    if(aqString.ToUpper(action)=="CHECK")
+    {
+       chkBx_1st3rd.ClickButton(cbChecked);
+    }
+    else
+    {
+       chkBx_1st3rd.ClickButton(cbUnchecked); 
+    } 
+  } 
+}
+
+/*===============================================================================
+Description: This function to check the currently selected Presenting Compliant
+Parameters:  
+          presentingComplaint:Selected Presenting Complaint
+Return Value:
+=================================================================================*/
+function ToCheckPresCompSelected(presentingComplaint)
+{
+    Process = GetProcess()
+    presentingComplaint = aqString.ToUpper(presentingComplaint)
+    if (Process.Exists) 
+    {
+        var obj_presentingComplaint = Process.FindChild(["Name"], [lbl_CurrSelctdPresComplaint], 100);
+        if (obj_presentingComplaint.Exists && obj_presentingComplaint.VisibleOnScreen) 
+        {
+            if(presentingComplaint == aqString.ToUpper(obj_presentingComplaint.WPFControlText))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            if(presentingComplaint == "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }          
+        }
+    }
+}

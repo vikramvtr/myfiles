@@ -1,0 +1,247 @@
+﻿
+/*===============================================================================
+Description: This function to conver any external script to .tcx file.  
+Parameters:N/A
+Return Value: N/A
+===============================================================================*/
+//function PackExtension()
+//{
+//  // The folder that contains the extension's source files:
+//  var SrcFolder = aqEnvironment.GetEnvironmentVariable("ProgressoPath") + "\\Progresso\\Library\\";
+//  // The list of the extension's source files:
+//  var SrcFiles = new Array ("Generic_Functions.vbs", "description.xml");
+//  // The fully-qualified name of the resulting .tcx file:
+//  var ExtensionFileName = SrcFolder + "GenericFunctions.tcx";
+//  Log.Message("Generated")
+//  slPacker.Pack(SrcFiles.join("\r\n"), SrcFolder, ExtensionFileName);
+//}
+
+
+/*===============================================================================
+Description: This function to extract command line argument
+Parameters:
+  arg: argument name passed in the command line
+Return Value: Return the command line value for the passed argument
+===============================================================================*/
+function ProcessCommandLineArgument(arg)
+{
+  var items,i,itemfound,itemVal;
+  for(i = 1; i <= BuiltIn.ParamCount(); i++) 
+  {
+    itemVal = BuiltIn.ParamStr(i);
+  
+    items = itemVal.split("=");
+    if(items.length == 2) 
+    {
+        
+      switch(aqString.ToLower(aqString.Trim(items[0]))) 
+      {
+        case aqString.ToLower(arg):
+          return (aqString.Trim(items[1]));
+          break; 
+      }
+    }
+  }
+}
+
+/*===============================================================================
+Description: function to get values from the xml
+Parameters:NIL
+Return Value:NIL
+Author        : Sachin
+Date : 11/02/2015
+===============================================================================*/
+function getVarValues()
+{
+try
+{
+    var executionCounter = 0
+    var Doc;
+  
+    var filelocation = aqFileSystem.GetFileInfo(ProjectSuite.FileName).ParentFolder.ParentFolder.Path+"Odyssey\\ProjectVariables\\ProjectVariables_Run.xml" 
+    Doc = Sys.OleObject("Msxml2.DOMDocument.6.0");
+    Doc.async = false;
+    Doc.validateOnParse = false;
+    Doc.load(filelocation);
+  
+    var moduleNodes = Doc.selectSingleNode(".//OdysseyProjectVariables")
+
+    for(k = 0; k < moduleNodes.childNodes.length; k++)
+    {
+
+          switch (moduleNodes.childNodes.item(k).tagname) 
+          {                               
+
+                case "solutionPath":
+                  if(Project.Variables.solutionPath=="")
+                  {
+                    Project.Variables.solutionPath = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                 case "ReceptionUsername":
+                  if(Project.Variables.ReceptionUsername=="")
+                  {
+                    Project.Variables.ReceptionUsername = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                
+                case "ReceptionPassword":
+                if(Project.Variables.ReceptionPassword=="")
+                  {
+                    Project.Variables.ReceptionPassword = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                
+                case "ClinicianUsername":
+                  if(Project.Variables.ClinicianUsername=="")
+                  {
+                    Project.Variables.ClinicianUsername = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                
+                case "ClinicianPassword":
+                if(Project.Variables.ClinicianPassword=="")
+                  {
+                    Project.Variables.ClinicianPassword = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                
+                case "AdminUsername":
+                  if(Project.Variables.AdminUsername=="")
+                  {
+                    Project.Variables.AdminUsername = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                
+                case "AdminPassword":
+                if(Project.Variables.AdminPassword=="")
+                  {
+                    Project.Variables.AdminPassword = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                case "CallHandlerUsername":
+                  if(Project.Variables.CallHandlerUsername=="")
+                  {
+                    Project.Variables.CallHandlerUsername = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                
+                case "CallHandlerPassword":
+                if(Project.Variables.CallHandlerPassword=="")
+                  {
+                    Project.Variables.CallHandlerPassword = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                case "Admin2Password":
+                if(Project.Variables.Admin2Password=="")
+                  {
+                    Project.Variables.Admin2Password = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                case "DBServer":
+                if(Project.Variables.DBServer=="")
+                  {
+                    Project.Variables.DBServer = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                case "actRepFilePath":
+                if(Project.Variables.actRepFilePath=="")
+                  {
+                    Project.Variables.actRepFilePath = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                case "expRepFilePath":
+                if(Project.Variables.expRepFilePath=="")
+                  {
+                   Project.Variables.expRepFilePath = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                case "dbUsername":
+                if(Project.Variables.dbUsername=="")
+                  {
+                    Project.Variables.dbUsername = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                case "dbPassword":
+                if(Project.Variables.dbPassword=="")
+                  {
+                    Project.Variables.dbPassword = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                case "dbName":
+                if(Project.Variables.dbName=="")
+                  {
+                    Project.Variables.dbName = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                case "Process":
+                if(Project.Variables.Process=="")
+                  {
+                    Project.Variables.Process = moduleNodes.childNodes.item(k).text     
+                  }
+                break;   
+                 case "FTFUsername":
+                  if(Project.Variables.FTFUsername=="")
+                  {
+                    Project.Variables.FTFUsername = moduleNodes.childNodes.item(k).text
+                  }
+                break;   
+                case "FTFPassword":
+                if(Project.Variables.FTFPassword=="")
+                  {
+                    Project.Variables.FTFPassword = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                case "ClinicalContentVersion":
+                if(Project.Variables.ClinicalContentVersion=="")
+                  {
+                    Project.Variables.ClinicalContentVersion = moduleNodes.childNodes.item(k).text    
+                  }
+                break;                
+                case "ApplicationVersion":
+                if(Project.Variables.ApplicationVersion=="")
+                  {
+                    Project.Variables.ApplicationVersion = moduleNodes.childNodes.item(k).text        
+                  }
+                break; 
+                case "reportingdDbName":
+                if(Project.Variables.reportingdDbName=="")
+                  {
+                    Project.Variables.reportingdDbName = moduleNodes.childNodes.item(k).text
+                  }
+                break; 
+                case "reportingdDbUsername":
+                if(Project.Variables.reportingdDbUsername=="")
+                  {
+                    Project.Variables.reportingdDbUsername = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                case "reportingdDbPassword":
+                if(Project.Variables.reportingdDbPassword=="")
+                  {
+                    Project.Variables.reportingdDbPassword = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+                case "Domain":
+                if(Project.Variables.Domain=="")
+                  {
+                    Project.Variables.Domain = moduleNodes.childNodes.item(k).text
+                  }
+                break;
+
+          }
+           
+    }
+    //Following 3 lines of code assigns solution path to project variables
+//    Project.Variables.solutionPath = aqFileSystem.GetFileInfo(ProjectSuite.FileName).ParentFolder.ParentFolder.Path
+//    strXMLPath = Project.Variables.solutionPath +"\Results\\FirstRunResult\\Consolidated.xml"
+//    path = Project.Variables.solutionPath +"\Results\\FirstRunResult\\Module Results\\Consolidated_"
+    //Following line of code assigns the inputpath to project variable
+    Log.Message("Project Variables are assigned successfully")
+}//try ends
+    catch (error) 
+    {
+            Log.Message(error.description);     
+    }
+}
+

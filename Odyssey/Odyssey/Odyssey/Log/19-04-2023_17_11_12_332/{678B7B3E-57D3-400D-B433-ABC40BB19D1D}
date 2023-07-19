@@ -1,0 +1,2314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 9">
+			<Prp name="id" type="I" value="13"/>
+			<Prp name="date" type="D" value="45035.7163863542"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Admin Summary Label is present in the screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="363"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 40">
+			<Prp name="id" type="I" value="63"/>
+			<Prp name="date" type="D" value="45035.7173535417"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="setText(&quot;7566576&quot;,txt_ContactInfo,&quot;ContactInfoTextBox&quot;,&quot;&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 65">
+			<Prp name="id" type="I" value="119"/>
+			<Prp name="date" type="D" value="45035.7180108218"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Added presenting complaint :: Haemoptysis"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="152"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="10"/>
+		</Node>
+		<Node name="message 29">
+			<Prp name="id" type="I" value="45"/>
+			<Prp name="date" type="D" value="45035.7171559607"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Loading... Label is not present in the screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="368"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 100">
+			<Prp name="id" type="I" value="136"/>
+			<Prp name="date" type="D" value="45035.7182277431"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 94">
+			<Prp name="id" type="I" value="130"/>
+			<Prp name="date" type="D" value="45035.7182207176"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 50">
+			<Prp name="id" type="I" value="78"/>
+			<Prp name="date" type="D" value="45035.7176480556"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="All the responses are shown in the Summary screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="117"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="9"/>
+		</Node>
+		<Node name="message 55">
+			<Prp name="id" type="I" value="87"/>
+			<Prp name="date" type="D" value="45035.7177189931"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Breathlessness presenting complaint display in add question set search result"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="7"/>
+		</Node>
+		<Node name="message 98">
+			<Prp name="id" type="I" value="134"/>
+			<Prp name="date" type="D" value="45035.7182253588"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 68">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4886787731"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage37.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="98"/>
+			<Prp name="date" type="D" value="45035.7178472569"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="date" type="D" value="45035.716244294"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Odyssey.eCover.App Process is found.....Exiting waitForProcessToStart"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="1134"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 15">
+			<Prp name="id" type="I" value="23"/>
+			<Prp name="date" type="D" value="45035.7165729167"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="CollapseItem(btn_SiteSettings,&quot;Site Settings&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 25">
+			<Prp name="id" type="I" value="37"/>
+			<Prp name="date" type="D" value="45035.7169147569"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Odyssey.eCover.App Process is found.....Exiting waitForProcessToStart"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="1134"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="item 13">
+			<Prp name="stacktext" type="S" value="GetDriverTC"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="141"/>
+		</Node>
+		<Node name="message 75">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4887037731"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage44.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="105"/>
+			<Prp name="date" type="D" value="45035.7178729977"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 103">
+			<Prp name="id" type="I" value="139"/>
+			<Prp name="date" type="D" value="45035.7182312037"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 22">
+			<Prp name="id" type="I" value="33"/>
+			<Prp name="date" type="D" value="45035.7167406018"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="The close command was sent to the process &quot;Odyssey.eCover.App&quot;. Failed to wait for the process to close due to an unexpected window."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="The close command was send to the window with the 'Odyssey' caption. The process displayed a dialog with the 'Warning!' caption.&#xA;&#xA;Tested object:&#xA;Aliases.Odyssey_eCover_App&#xA;(Sys.Process(&quot;Odyssey.eCover.App&quot;))"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="238"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="item 15">
+			<Prp name="stacktext" type="S" value="ExecuteDriver"/>
+			<Prp name="unit id" type="I" value="11"/>
+			<Prp name="line no" type="I" value="43"/>
+		</Node>
+		<Node name="message 30">
+			<Prp name="id" type="I" value="46"/>
+			<Prp name="date" type="D" value="45035.7171559607"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="waitfordefaultScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 108">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="119"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="260"/>
+					<Prp name="object bottom" type="I" value="142"/>
+					<Prp name="click point y" type="I" value="130"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.Window(&quot;#32770&quot;, &quot;Warning!&quot;, 1).Window(&quot;Button&quot;, &quot;&amp;Yes&quot;, 1)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="1067"/>
+					<Prp name="datetime" type="D" value="45035.4890228241"/>
+					<Prp name="object right" type="I" value="298"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="223"/>
+					<Prp name="image file name" type="S" value="visImage55.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="125"/>
+			<Prp name="date" type="D" value="45035.7181900347"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value="A click at point (37, 11) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).Window(&quot;#32770&quot;, &quot;Warning!&quot;, 1).Window(&quot;Button&quot;, &quot;&amp;Yes&quot;, 1)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="1067"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 62">
+			<Prp name="id" type="I" value="116"/>
+			<Prp name="date" type="D" value="45035.7179829514"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Add Question set: Haemoptysis"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="1050"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="6"/>
+		</Node>
+		<Node name="message 106">
+			<Prp name="id" type="I" value="142"/>
+			<Prp name="date" type="D" value="45035.7182345486"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="DELETE FROM MessageText&#xA;&#xA;DELETE FROM UrgencyLinkMessage&#xA;&#xA;DELETE FROM [Message]"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 36">
+			<Prp name="id" type="I" value="57"/>
+			<Prp name="date" type="D" value="45035.7172815972"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="waitforPresentingScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 87">
+			<Prp name="id" type="I" value="122"/>
+			<Prp name="date" type="D" value="45035.7181171644"/>
+			<Prp name="picture" type="S" value="Picture1.png"/>
+			<Prp name="message" type="S" value="Object not found"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="stack beginning" type="I" value="5"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="stack end" type="I" value="11"/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="stacktext" type="S" value="ResultLog"/>
+			<Prp name="unit id" type="I" value="7"/>
+			<Prp name="line no" type="I" value="683"/>
+		</Node>
+		<Node name="message 71">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4886894097"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage40.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="101"/>
+			<Prp name="date" type="D" value="45035.7178581366"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 13">
+			<Prp name="id" type="I" value="19"/>
+			<Prp name="date" type="D" value="45035.7164655556"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="SetClinicalWarning(&quot;CHECK&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 2" type="S" value="{2CBB81FE-F552-450F-830E-0B36AAC8CE4A}"/>
+			<Prp name="unit 7" type="S" value="{5792F3CE-85C4-4C67-9BDE-BA34914E3961}"/>
+			<Prp name="unit 9" type="S" value="{A218E30C-E4A6-4EC9-BF39-114E0AECFB04}"/>
+			<Prp name="unit 10" type="S" value="{CD6B0E81-E186-486B-906D-1F1B0D7DD6C9}"/>
+			<Prp name="unit 12" type="S" value="{82D32211-C050-4168-9120-B88783F13D71}"/>
+			<Prp name="unit 3" type="S" value="{5F2B9FE9-7F39-4FDB-84C4-C6780E536694}"/>
+			<Prp name="unit 5" type="S" value="{40100E68-8D42-4C0D-9D8E-F1B15EADEAB2}"/>
+			<Prp name="unit 1" type="S" value="{54BFC739-356C-4151-8A2D-049306DA3D0D}"/>
+			<Prp name="unit 11" type="S" value="{40668410-8609-4C5B-9177-7A3AC72AECCD}"/>
+			<Prp name="unit 6" type="S" value="{248FD78C-6EF5-4431-B357-3A62B7B877A8}"/>
+			<Prp name="unit 0" type="S" value="{6B545B1C-4993-41B3-B55C-0A8F2F20504E}"/>
+			<Prp name="unit 4" type="S" value="{2240AD02-0560-44CB-B85B-E03B5A697EF5}"/>
+			<Prp name="unit 8" type="S" value="{7DA1649C-9E78-4664-8AD8-A35E28B31C3F}"/>
+		</Node>
+		<Node name="message 105">
+			<Prp name="id" type="I" value="141"/>
+			<Prp name="date" type="D" value="45035.7182334259"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 45">
+			<Prp name="id" type="I" value="72"/>
+			<Prp name="date" type="D" value="45035.7175241551"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Clinical Warning Overlay is displaying on linked question set Chest Pain opened automatically"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="7"/>
+		</Node>
+		<Node name="message 96">
+			<Prp name="id" type="I" value="132"/>
+			<Prp name="date" type="D" value="45035.7182227778"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="item 11">
+			<Prp name="stacktext" type="S" value="ExecuteDriver"/>
+			<Prp name="unit id" type="I" value="11"/>
+			<Prp name="line no" type="I" value="43"/>
+		</Node>
+		<Node name="message 24">
+			<Prp name="id" type="I" value="36"/>
+			<Prp name="date" type="D" value="45035.7167793634"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="The application &quot;C:\Users\Vikram.Thippeswamy\Desktop\Odyssey 3.28.appref-ms&quot; started."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="The process ID is 17476."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="268"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 95">
+			<Prp name="id" type="I" value="131"/>
+			<Prp name="date" type="D" value="45035.718221875"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 23">
+			<Prp name="id" type="I" value="35"/>
+			<Prp name="date" type="D" value="45035.7167688079"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="LaunchApplication()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 28">
+			<Prp name="id" type="I" value="44"/>
+			<Prp name="date" type="D" value="45035.7170501505"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="item 1">
+			<Prp name="stacktext" type="S" value="ExecuteTCs"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="185"/>
+		</Node>
+		<Node name="message 20">
+			<Prp name="id" type="I" value="31"/>
+			<Prp name="date" type="D" value="45035.7167177199"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Admin Summary Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 26">
+			<Prp name="id" type="I" value="38"/>
+			<Prp name="date" type="D" value="45035.7169233796"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="206"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 109">
+			<Prp name="id" type="I" value="144"/>
+			<Prp name="date" type="D" value="45035.7183906597"/>
+			<Prp name="picture" type="S" value="Picture2.png"/>
+			<Prp name="message" type="S" value="Script execution was interrupted."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value="Possible reasons:&#xA; - An error or warning occurred during the test run. See the preceding log entries to locate and identify the error.&#xA; - The test run was stopped manually.&#xA; - The test run was terminated as a result of the Runner.Halt method call."/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="stack beginning" type="I" value="16"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="line no" type="I" value="268"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="stack end" type="I" value="16"/>
+		</Node>
+		<Node name="item 10">
+			<Prp name="stacktext" type="S" value="GetModules"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="86"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="date" type="D" value="45035.7161322454"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="ODY_6583--Test case to validate the display clinical warning using static text with 3 threshold values"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="line no" type="I" value="163"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 93">
+			<Prp name="id" type="I" value="129"/>
+			<Prp name="date" type="D" value="45035.7182196875"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="item 5">
+			<Prp name="stacktext" type="S" value="ToFindObj"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="177"/>
+		</Node>
+		<Node name="message 63">
+			<Prp name="id" type="I" value="117"/>
+			<Prp name="date" type="D" value="45035.7179830671"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Haemoptysis presenting complaint display in add question set search result"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="7"/>
+		</Node>
+		<Node name="message 58">
+			<Prp name="id" type="I" value="91"/>
+			<Prp name="date" type="D" value="45035.7177606829"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Close&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 77">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4887129514"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage46.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="107"/>
+			<Prp name="date" type="D" value="45035.7178830903"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="date" type="D" value="45035.7161810185"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="The application &quot;C:\Users\Vikram.Thippeswamy\Desktop\Odyssey 3.28.appref-ms&quot; started."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="The process ID is 23320."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="268"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 34">
+			<Prp name="id" type="I" value="52"/>
+			<Prp name="date" type="D" value="45035.717218125"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="selectGender(&quot;Female&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="item 12">
+			<Prp name="stacktext" type="S" value="ExecuteTCs"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="197"/>
+		</Node>
+		<Node name="message 56">
+			<Prp name="id" type="I" value="88"/>
+			<Prp name="date" type="D" value="45035.717719375"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="SelctPresComplFrmSrchRes()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 107">
+			<Prp name="id" type="I" value="143"/>
+			<Prp name="date" type="D" value="45035.7182596759"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="The application &quot;C:\Users\Vikram.Thippeswamy\Desktop\Odyssey 3.28.appref-ms&quot; started."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value="The process ID is 23132."/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="268"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="item 9">
+			<Prp name="stacktext" type="S" value="GetDriverTC"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="141"/>
+		</Node>
+		<Node name="message 89">
+			<Prp name="id" type="I" value="124"/>
+			<Prp name="date" type="D" value="45035.7181865972"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="The close command was sent to the process &quot;Odyssey.eCover.App&quot;. Failed to wait for the process to close due to an unexpected window."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value="The close command was send to the window with the 'Odyssey' caption. The process displayed a dialog with the 'Warning!' caption.&#xA;&#xA;Tested object:&#xA;Aliases.Odyssey_eCover_App&#xA;(Sys.Process(&quot;Odyssey.eCover.App&quot;))"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="1062"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 84">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="1035"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="368"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="136"/>
+					<Prp name="datetime" type="D" value="45035.4887923611"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage53.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="115"/>
+			<Prp name="date" type="D" value="45035.717959919"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="A click at point (125, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="136"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="10"/>
+		</Node>
+		<Node name="message 35">
+			<Prp name="id" type="I" value="55"/>
+			<Prp name="date" type="D" value="45035.7172529282"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Continue&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 18">
+			<Prp name="id" type="I" value="29"/>
+			<Prp name="date" type="D" value="45035.7166819329"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="waitforAdminSummaryScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 78">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4887180787"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage47.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="108"/>
+			<Prp name="date" type="D" value="45035.7178887963"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="item 8">
+			<Prp name="stacktext" type="S" value="ExecuteTCs"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="185"/>
+		</Node>
+		<Node name="message 72">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4886930903"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage41.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="102"/>
+			<Prp name="date" type="D" value="45035.7178620023"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 102">
+			<Prp name="id" type="I" value="138"/>
+			<Prp name="date" type="D" value="45035.7182299769"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 53">
+			<Prp name="id" type="I" value="82"/>
+			<Prp name="date" type="D" value="45035.7176644676"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="SetTextinPresentingComplaintSearchBox(&quot;Breathlessness&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 19">
+			<Prp name="id" type="I" value="30"/>
+			<Prp name="date" type="D" value="45035.7167051042"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Admin Summary Label is present in the screen"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="363"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 59">
+			<Prp name="id" type="I" value="93"/>
+			<Prp name="date" type="D" value="45035.7177946412"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Add Question Set&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 91">
+			<Prp name="id" type="I" value="127"/>
+			<Prp name="date" type="D" value="45035.7182166551"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 52">
+			<Prp name="id" type="I" value="80"/>
+			<Prp name="date" type="D" value="45035.7176483449"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Add Question Set&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 47">
+			<Prp name="id" type="I" value="74"/>
+			<Prp name="date" type="D" value="45035.7175382639"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="ClinWarnMessage Ruptured aortic aneurysm is displayed in the overlay"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="7"/>
+		</Node>
+		<Node name="message 83">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="135"/>
+					<Prp name="datetime" type="D" value="45035.4887679861"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage52.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="114"/>
+			<Prp name="date" type="D" value="45035.7179571181"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'Haemoptysis' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="135"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="10"/>
+		</Node>
+		<Node name="message 73">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4886969213"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage42.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="103"/>
+			<Prp name="date" type="D" value="45035.7178653472"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 44">
+			<Prp name="id" type="I" value="69"/>
+			<Prp name="date" type="D" value="45035.7174437269"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Site of Pain&quot;,&quot;Lower chest&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 17">
+			<Prp name="id" type="I" value="27"/>
+			<Prp name="date" type="D" value="45035.7166417361"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Return to Admin Summary&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 27">
+			<Prp name="id" type="I" value="40"/>
+			<Prp name="date" type="D" value="45035.7169260301"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Login(Project.Variables.ClinicianUsername,Project.Variables.ClinicianPassword)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 14">
+			<Prp name="id" type="I" value="22"/>
+			<Prp name="date" type="D" value="45035.7165729167"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="The check box is already checked."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ThisControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ItemsControl&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 18).WPFObject(&quot;Expander&quot;, &quot;Site Settings&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;CheckBox&quot;, &quot;&quot;, 5)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="739"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="4"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45035.7161276852"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Project Variables are assigned successfully"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="245"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 51">
+			<Prp name="id" type="I" value="79"/>
+			<Prp name="date" type="D" value="45035.7176480787"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Viewing of Clinical Warning message Ruptured aortic aneurysm is successully audited"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="7"/>
+		</Node>
+		<Node name="message 86">
+			<Prp name="id" type="I" value="121"/>
+			<Prp name="date" type="D" value="45035.7180821296"/>
+			<Prp name="picture" type="S" value="Picture1.png"/>
+			<Prp name="message" type="S" value="Clinical Warning Overlay is not displayed with 3 threshold value on adding question set Breathlessness and Haemoptysis"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="line no" type="I" value="683"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="7"/>
+			<Prp name="stack end" type="I" value="4"/>
+		</Node>
+		<Node name="message 33">
+			<Prp name="id" type="I" value="50"/>
+			<Prp name="date" type="D" value="45035.7171946065"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="setText(&quot;55&quot;,txt_ApproximateAge,&quot;ApproximateAge&quot;,&quot;&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="date" type="D" value="45035.7161304167"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Module : Standalone312Clinician"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="line no" type="I" value="81"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 90">
+			<Prp name="id" type="I" value="126"/>
+			<Prp name="date" type="D" value="45035.7182148032"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="DECLARE @DomainId uniqueidentifier&#xA;DECLARE @ClosedStatus uniqueidentifier&#xA;&#xA;SET @DomainId = (select id from dbo.Domain where Description = 'EnglishStandaloneENAU')&#xA;SET @ClosedStatus = (SELECT id FROM Status where Description = 'Closed')&#xA;&#xA;(SELECT * FROM Session &#xA;INNER JOIN SessionStatus on Session.Id = SessionStatus.SessionId &#xA;WHERE Session.DomainId = @DomainId &#xA;AND StatusId in (SELECT id FROM Status where Description IN ('Open', 'Interrupted', 'Suspended', 'Waiting', 'Reception','Paused')))&#xA;&#xA;UPDATE SessionStatus SET StatusId = @ClosedStatus WHERE SessionStatus.SessionId in &#xA;(SELECT id FROM Session &#xA;INNER JOIN SessionStatus on Session.Id = SessionStatus.SessionId &#xA;WHERE Session.DomainId = @DomainId &#xA;AND StatusId in (SELECT id FROM Status where Description IN ('Open', 'Interrupted', 'Suspended', 'Waiting', 'Reception','Paused')))"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 67">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4886741551"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage36.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="97"/>
+			<Prp name="date" type="D" value="45035.71784375"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 85">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="382"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="1035"/>
+					<Prp name="object bottom" type="I" value="405"/>
+					<Prp name="click point y" type="I" value="393"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Listbox&quot;, &quot;&quot;, 1).WPFObject(&quot;Bd&quot;).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ItemsPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ListBoxItem&quot;, &quot;&quot;, 1)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="155"/>
+					<Prp name="datetime" type="D" value="45035.488847581"/>
+					<Prp name="object right" type="I" value="1159"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="912"/>
+					<Prp name="image file name" type="S" value="visImage54.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="120"/>
+			<Prp name="date" type="D" value="45035.7180275"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was double-clicked by the left mouse button."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="A click at point (123, 11) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Listbox&quot;, &quot;&quot;, 1).WPFObject(&quot;Bd&quot;).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ItemsPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ListBoxItem&quot;, &quot;&quot;, 1)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="155"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="10"/>
+		</Node>
+		<Node name="message 42">
+			<Prp name="id" type="I" value="67"/>
+			<Prp name="date" type="D" value="45035.7174168519"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="waitforAssessmentScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 76">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4887079745"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage45.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="106"/>
+			<Prp name="date" type="D" value="45035.7178779861"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 31">
+			<Prp name="id" type="I" value="47"/>
+			<Prp name="date" type="D" value="45035.7171709491"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="item 16">
+			<Prp name="stacktext" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="268"/>
+		</Node>
+		<Node name="item 6">
+			<Prp name="stacktext" type="S" value="ToCheckforClinWarnMessage"/>
+			<Prp name="unit id" type="I" value="8"/>
+			<Prp name="line no" type="I" value="185"/>
+		</Node>
+		<Node name="message 48">
+			<Prp name="id" type="I" value="75"/>
+			<Prp name="date" type="D" value="45035.7175389815"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="clickItem(btn_Close,&quot;Close&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 64">
+			<Prp name="id" type="I" value="118"/>
+			<Prp name="date" type="D" value="45035.717983831"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="SelctPresComplFrmSrchRes()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 21">
+			<Prp name="id" type="I" value="32"/>
+			<Prp name="date" type="D" value="45035.7167177199"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="closeApplication()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="item 3">
+			<Prp name="stacktext" type="S" value="GetModules"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="86"/>
+		</Node>
+		<Node name="message 97">
+			<Prp name="id" type="I" value="133"/>
+			<Prp name="date" type="D" value="45035.7182239815"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="date" type="D" value="45035.7163630208"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="waitforAdminSummaryScreen()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="item 7">
+			<Prp name="stacktext" type="S" value="ResultLog"/>
+			<Prp name="unit id" type="I" value="7"/>
+			<Prp name="line no" type="I" value="657"/>
+		</Node>
+		<Node name="message 101">
+			<Prp name="id" type="I" value="137"/>
+			<Prp name="date" type="D" value="45035.7182288889"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 88">
+			<Prp name="id" type="I" value="123"/>
+			<Prp name="date" type="D" value="45035.7181182755"/>
+			<Prp name="picture" type="S" value="Picture1.png"/>
+			<Prp name="message" type="S" value="'undefined' is null or not an object"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="stack beginning" type="I" value="12"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="line no" type="I" value="197"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="stack end" type="I" value="15"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="date" type="D" value="45035.7162679167"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="206"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 81">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4887379167"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage50.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="111"/>
+			<Prp name="date" type="D" value="45035.7179054398"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 32">
+			<Prp name="id" type="I" value="48"/>
+			<Prp name="date" type="D" value="45035.7171709491"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="clickItem(btn_UseAnonymousPatient,&quot;Use anonymous patient&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 99">
+			<Prp name="id" type="I" value="135"/>
+			<Prp name="date" type="D" value="45035.7182265741"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 79">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4887238194"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage48.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="109"/>
+			<Prp name="date" type="D" value="45035.7179001273"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 104">
+			<Prp name="id" type="I" value="140"/>
+			<Prp name="date" type="D" value="45035.7182323264"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 49">
+			<Prp name="id" type="I" value="77"/>
+			<Prp name="date" type="D" value="45035.7175747106"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Clinical Warning Icon is displaying on linked question set Chest Pain opened automatically"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="7"/>
+		</Node>
+		<Node name="message 66">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="1035"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="368"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="744"/>
+					<Prp name="datetime" type="D" value="45035.4886713194"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage35.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="96"/>
+			<Prp name="date" type="D" value="45035.7178391435"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="A click at point (125, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="744"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 80">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4887351273"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage49.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="110"/>
+			<Prp name="date" type="D" value="45035.717902963"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="item 4">
+			<Prp name="stacktext" type="S" value="ExecuteDriver"/>
+			<Prp name="unit id" type="I" value="11"/>
+			<Prp name="line no" type="I" value="43"/>
+		</Node>
+		<Node name="message 11">
+			<Prp name="id" type="I" value="15"/>
+			<Prp name="date" type="D" value="45035.7164033912"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="clickItem(btn_ConfigEditor,&quot;Configuration Editors&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="date" type="D" value="45035.7162718056"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="LoginAdmin(Project.Variables.AdminUsername,Project.Variables.AdminPassword)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 12">
+			<Prp name="id" type="I" value="17"/>
+			<Prp name="date" type="D" value="45035.7164501157"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="ExpandItem(btn_SiteSettings,&quot;Site Settings&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="item 14">
+			<Prp name="stacktext" type="S" value="GetModules"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="86"/>
+		</Node>
+		<Node name="message 57">
+			<Prp name="id" type="I" value="89"/>
+			<Prp name="date" type="D" value="45035.7177395602"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Added presenting complaint :: Breathlessness"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="152"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="10"/>
+		</Node>
+		<Node name="message 69">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4886822454"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage38.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="99"/>
+			<Prp name="date" type="D" value="45035.7178509028"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="item 2">
+			<Prp name="stacktext" type="S" value="GetDriverTC"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="141"/>
+		</Node>
+		<Node name="message 61">
+			<Prp name="id" type="I" value="112"/>
+			<Prp name="date" type="D" value="45035.7179070833"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="SetTextinPresentingComplaintSearchBox(&quot;Haemoptysis&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 16">
+			<Prp name="id" type="I" value="25"/>
+			<Prp name="date" type="D" value="45035.7165857523"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Save Changes&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 37">
+			<Prp name="id" type="I" value="58"/>
+			<Prp name="date" type="D" value="45035.7172980903"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Search for a presenting complaint using the search window, or select an item from the list Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 74">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4887002315"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage43.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="104"/>
+			<Prp name="date" type="D" value="45035.717868831"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 54">
+			<Prp name="id" type="I" value="86"/>
+			<Prp name="date" type="D" value="45035.7177189583"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Add Question set: Breathlessness"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="1050"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="6"/>
+		</Node>
+		<Node name="message 60">
+			<Prp name="id" type="I" value="95"/>
+			<Prp name="date" type="D" value="45035.7178192245"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="ClearSearchPresentingTextBox(&quot;15&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 41">
+			<Prp name="id" type="I" value="65"/>
+			<Prp name="date" type="D" value="45035.7173814699"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="clickItem(btn_TeleAssessContinueBtn,&quot;Continue&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 39">
+			<Prp name="id" type="I" value="61"/>
+			<Prp name="date" type="D" value="45035.7173292593"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="clickItem(btn_PresentComplaint,&quot;Abdominal pain&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 46">
+			<Prp name="id" type="I" value="73"/>
+			<Prp name="date" type="D" value="45035.7175381829"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="All the Clinical Warning messages found"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="210"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="8"/>
+		</Node>
+		<Node name="message 82">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="1035"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="368"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="134"/>
+					<Prp name="datetime" type="D" value="45035.4887650231"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage51.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="113"/>
+			<Prp name="date" type="D" value="45035.7179329167"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="A click at point (125, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="134"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="10"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 38">
+			<Prp name="id" type="I" value="59"/>
+			<Prp name="date" type="D" value="45035.7172981597"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="clickItem(btn_PresentComplaint,&quot;Abdomen / Stomach&quot;)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 43">
+			<Prp name="id" type="I" value="68"/>
+			<Prp name="date" type="D" value="45035.717443669"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Switch View Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 92">
+			<Prp name="id" type="I" value="128"/>
+			<Prp name="date" type="D" value="45035.7182184028"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="12"/>
+		</Node>
+		<Node name="message 10">
+			<Prp name="id" type="I" value="14"/>
+			<Prp name="date" type="D" value="45035.7164033912"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Admin Summary Object is found...Exiting waitForItem"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="date" type="D" value="45035.7161327199"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="LaunchApplication()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 70">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object top" type="I" value="356"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="381"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object name" type="S" value="Aliases.Odyssey_eCover_App.HwndSource_MainWindow.MainWindow.DockPanel.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="line #" type="I" value="748"/>
+					<Prp name="datetime" type="D" value="45035.4886858681"/>
+					<Prp name="object right" type="I" value="1161"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="910"/>
+					<Prp name="image file name" type="S" value="visImage39.png"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="100"/>
+			<Prp name="date" type="D" value="45035.7178544213"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="'[BS]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;main&quot;).WPFObject(&quot;AddProtocolOverlay&quot;, &quot;&quot;, 1).WPFObject(&quot;ProtocolSearch&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PresentingComplaintSearchInputBox&quot;)"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="748"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+	</Node>
+</Nodes>

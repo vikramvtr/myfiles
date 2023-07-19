@@ -1,0 +1,1862 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 61">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="363"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="93"/>
+			<Prp name="date" type="D" value="45063.8666746181"/>
+			<Prp name="message" type="S" value="There is 1 matching GP Label is present in the screen"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 79">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="124"/>
+			<Prp name="date" type="D" value="45063.8671598843"/>
+			<Prp name="message" type="S" value="Default screen is displaying after assessment is paused"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 58">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="76"/>
+			<Prp name="date" type="D" value="45063.8662945023"/>
+			<Prp name="message" type="S" value="enterNewPatientDet(&quot;23&quot;,&quot;Male&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 89">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="139"/>
+			<Prp name="date" type="D" value="45063.8674055324"/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Inflammation&quot;,&quot;Not Answered&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 71">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="108"/>
+			<Prp name="date" type="D" value="45063.8668568634"/>
+			<Prp name="message" type="S" value="setText(&quot;7566576&quot;,txt_ContactInfo,&quot;ContactInfoTextBox&quot;,&quot;&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 69">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="104"/>
+			<Prp name="date" type="D" value="45063.8667976157"/>
+			<Prp name="message" type="S" value="clickItem(btn_PresentComplaint,&quot;Leg / Foot Non-injury&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 67">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="102"/>
+			<Prp name="date" type="D" value="45063.866781088"/>
+			<Prp name="message" type="S" value="waitforPresentingScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 52">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="68"/>
+			<Prp name="date" type="D" value="45063.8661590741"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;_Search&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 2" type="S" value="{82D32211-C050-4168-9120-B88783F13D71}"/>
+			<Prp name="unit 5" type="S" value="{5792F3CE-85C4-4C67-9BDE-BA34914E3961}"/>
+			<Prp name="unit 8" type="S" value="{D5A51CB4-CCB3-4D40-A108-583F7BB6C3FD}"/>
+			<Prp name="unit 4" type="S" value="{2240AD02-0560-44CB-B85B-E03B5A697EF5}"/>
+			<Prp name="unit 3" type="S" value="{2CBB81FE-F552-450F-830E-0B36AAC8CE4A}"/>
+			<Prp name="unit 1" type="S" value="{54BFC739-356C-4151-8A2D-049306DA3D0D}"/>
+			<Prp name="unit 6" type="S" value="{40100E68-8D42-4C0D-9D8E-F1B15EADEAB2}"/>
+			<Prp name="unit 0" type="S" value="{6B545B1C-4993-41B3-B55C-0A8F2F20504E}"/>
+			<Prp name="unit 7" type="S" value="{248FD78C-6EF5-4431-B357-3A62B7B877A8}"/>
+			<Prp name="unit 9" type="S" value="{D4B74DD6-D110-40E5-8233-59718AA5E646}"/>
+		</Node>
+		<Node name="message 99">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="157"/>
+			<Prp name="date" type="D" value="45063.8677048611"/>
+			<Prp name="message" type="S" value="Preferred signpost GP Assessment is highlighted again on click in summary screen"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 40">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="50"/>
+			<Prp name="date" type="D" value="45063.8657817593"/>
+			<Prp name="message" type="S" value="closeApplication()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 80">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="125"/>
+			<Prp name="date" type="D" value="45063.8671604861"/>
+			<Prp name="message" type="S" value="LoadingDone()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 21">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="21"/>
+			<Prp name="date" type="D" value="45063.865077581"/>
+			<Prp name="message" type="S" value="LaunchApplication()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 76">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="118"/>
+			<Prp name="date" type="D" value="45063.867046088"/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Inflammation&quot;,&quot;Slightly&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 102">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="161"/>
+			<Prp name="date" type="D" value="45063.867782963"/>
+			<Prp name="message" type="S" value="Default screen is displaying after assessment is completed"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 29">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="33"/>
+			<Prp name="date" type="D" value="45063.8653999769"/>
+			<Prp name="message" type="S" value="clickItem(btn_ConfigEditor,&quot;Configuration Editors&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 98">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="8"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="555"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="156"/>
+			<Prp name="date" type="D" value="45063.8677044444"/>
+			<Prp name="message" type="S" value="GP Assessment SignPost is highlighted upon click"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 36">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="45"/>
+			<Prp name="date" type="D" value="45063.8656729977"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Return to Admin Summary&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 77">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="121"/>
+			<Prp name="date" type="D" value="45063.8671178009"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Pause Assessment&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 90">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="142"/>
+			<Prp name="date" type="D" value="45063.8674723495"/>
+			<Prp name="message" type="S" value="clickItem(btn_PresentComplaint,&quot;Back pain/problem&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 54">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="71"/>
+			<Prp name="date" type="D" value="45063.8662321991"/>
+			<Prp name="message" type="S" value="No match found message is displaying for the patient searched before saving the patient detail"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 87">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="134"/>
+			<Prp name="date" type="D" value="45063.8673305787"/>
+			<Prp name="message" type="S" value="Switch View Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 43">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value="The process ID is 19520."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="268"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="54"/>
+			<Prp name="date" type="D" value="45063.8658591667"/>
+			<Prp name="message" type="S" value="The application &quot;C:\Users\Vikram.Thippeswamy\Desktop\Odyssey 3.28.appref-ms&quot; started."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 30">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="35"/>
+			<Prp name="date" type="D" value="45063.8654678472"/>
+			<Prp name="message" type="S" value="ExpandItem(btn_Signposting,&quot;Signposting&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 113">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="173"/>
+			<Prp name="date" type="D" value="45063.8678524306"/>
+			<Prp name="message" type="S" value="Signpost details for assessment is saved properly in reporting database"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 60">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="91"/>
+			<Prp name="date" type="D" value="45063.8666095833"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Search&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 72">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="110"/>
+			<Prp name="date" type="D" value="45063.8668797338"/>
+			<Prp name="message" type="S" value="clickItem(btn_TeleAssessContinueBtn,&quot;Continue&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 22">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value="The process ID is 27156."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="268"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="22"/>
+			<Prp name="date" type="D" value="45063.8651131481"/>
+			<Prp name="message" type="S" value="The application &quot;C:\Users\Vikram.Thippeswamy\Desktop\Odyssey 3.28.appref-ms&quot; started."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 27">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="363"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="31"/>
+			<Prp name="date" type="D" value="45063.8653743982"/>
+			<Prp name="message" type="S" value="Admin Summary Label is present in the screen"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 39">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="49"/>
+			<Prp name="date" type="D" value="45063.8657817593"/>
+			<Prp name="message" type="S" value="Admin Summary Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="date" type="D" value="45063.8650556597"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 24">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="206"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="24"/>
+			<Prp name="date" type="D" value="45063.8652163542"/>
+			<Prp name="message" type="S" value="Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 44">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="1134"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="55"/>
+			<Prp name="date" type="D" value="45063.8659167708"/>
+			<Prp name="message" type="S" value="Odyssey.eCover.App Process is found.....Exiting waitForProcessToStart"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 17">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="17"/>
+			<Prp name="date" type="D" value="45063.8650702315"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 96">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="153"/>
+			<Prp name="date" type="D" value="45063.8676559722"/>
+			<Prp name="message" type="S" value="waitforSummaryScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 34">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="41"/>
+			<Prp name="date" type="D" value="45063.8655644213"/>
+			<Prp name="message" type="S" value="CollapseItem(btn_Signposting,&quot;Signposting&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="date" type="D" value="45063.8649756944"/>
+			<Prp name="message" type="S" value="DeletePatientsFromTheQueue()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 42">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="53"/>
+			<Prp name="date" type="D" value="45063.8658418866"/>
+			<Prp name="message" type="S" value="LaunchApplication()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 33">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="39"/>
+			<Prp name="date" type="D" value="45063.8655285648"/>
+			<Prp name="message" type="S" value="CheckUncheckSignpost(&quot;FirstCall&quot;,&quot;Check&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 83">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="129"/>
+			<Prp name="date" type="D" value="45063.8672491782"/>
+			<Prp name="message" type="S" value="waitforAcceptPatientScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 109">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="9"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="59"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="169"/>
+			<Prp name="date" type="D" value="45063.8678438194"/>
+			<Prp name="message" type="S" value="###### Session ID ####### :: {C7126BEE-10EF-4614-9EB2-6D3DF4DD59AC}"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 81">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="368"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="126"/>
+			<Prp name="date" type="D" value="45063.8672068056"/>
+			<Prp name="message" type="S" value="Loading... Label is not present in the screen"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 68">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="103"/>
+			<Prp name="date" type="D" value="45063.8667975"/>
+			<Prp name="message" type="S" value="Search for a presenting complaint using the search window, or select an item from the list Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 93">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="149"/>
+			<Prp name="date" type="D" value="45063.8675894444"/>
+			<Prp name="message" type="S" value="waitforTriageScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 103">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="162"/>
+			<Prp name="date" type="D" value="45063.8677836227"/>
+			<Prp name="message" type="S" value="closeApplication()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 84">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="130"/>
+			<Prp name="date" type="D" value="45063.8672670949"/>
+			<Prp name="message" type="S" value="Return to queue Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="date" type="D" value="45063.8650503125"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 107">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="167"/>
+			<Prp name="date" type="D" value="45063.8678401505"/>
+			<Prp name="message" type="S" value="Details for question Bowel problems is saved properly in reporting database for the assessment"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="date" type="D" value="45063.8650522685"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 97">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="154"/>
+			<Prp name="date" type="D" value="45063.8676686458"/>
+			<Prp name="message" type="S" value="Clinical Summary Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 15">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="15"/>
+			<Prp name="date" type="D" value="45063.8650664005"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="date" type="D" value="45063.8650538426"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 110">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="170"/>
+			<Prp name="date" type="D" value="45063.8678443982"/>
+			<Prp name="message" type="S" value="Patient Details is saved properly in reporting database for the assessment"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 56">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="206"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="74"/>
+			<Prp name="date" type="D" value="45063.8662939352"/>
+			<Prp name="message" type="S" value="Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="245"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45063.8649618287"/>
+			<Prp name="message" type="S" value="Project Variables are assigned successfully"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 100">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="158"/>
+			<Prp name="date" type="D" value="45063.8677054282"/>
+			<Prp name="message" type="S" value="clickItem(btn_Complete,&quot;Complete&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 53">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="363"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="70"/>
+			<Prp name="date" type="D" value="45063.8662321991"/>
+			<Prp name="message" type="S" value="No matches for Family name = Automation Label is present in the screen"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 59">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="88"/>
+			<Prp name="date" type="D" value="45063.8665693287"/>
+			<Prp name="message" type="S" value="SetGPName(&quot;Patrick&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 104">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value="The close command was send to the window with the 'Odyssey' caption. The process displayed a dialog with the 'Warning!' caption.&#xA;&#xA;Tested object:&#xA;Aliases.Odyssey_eCover_App&#xA;(Sys.Process(&quot;Odyssey.eCover.App&quot;))"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="238"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="163"/>
+			<Prp name="date" type="D" value="45063.8678056134"/>
+			<Prp name="message" type="S" value="The close command was sent to the process &quot;Odyssey.eCover.App&quot;. Failed to wait for the process to close due to an unexpected window."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 11">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="11"/>
+			<Prp name="date" type="D" value="45063.8650592014"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 51">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="66"/>
+			<Prp name="date" type="D" value="45063.8661378356"/>
+			<Prp name="message" type="S" value="setText(&quot;Automation&quot;,txt_WaterMarkedTtextBox,&quot;&quot;,&quot;&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 25">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="26"/>
+			<Prp name="date" type="D" value="45063.8652212153"/>
+			<Prp name="message" type="S" value="LoginAdmin(Project.Variables.AdminUsername,Project.Variables.AdminPassword)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 95">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="151"/>
+			<Prp name="date" type="D" value="45063.8676200694"/>
+			<Prp name="message" type="S" value="clickItem(btn_Continuetosummaryscreen,&quot;Continue to summary screen&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 112">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="172"/>
+			<Prp name="date" type="D" value="45063.8678498958"/>
+			<Prp name="message" type="S" value="Urgency and outcome details for assessment is saved properly in reporting database"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 85">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="131"/>
+			<Prp name="date" type="D" value="45063.8672671412"/>
+			<Prp name="message" type="S" value="clickItem(btn_AccpetPatient,&quot;Accept patient&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 35">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="43"/>
+			<Prp name="date" type="D" value="45063.8655884028"/>
+			<Prp name="message" type="S" value="SaveAdminConfig()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 82">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="127"/>
+			<Prp name="date" type="D" value="45063.867206875"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Pick Up&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 41">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value="The close command was send to the window with the 'Odyssey' caption. The process displayed a dialog with the 'Warning!' caption.&#xA;&#xA;Tested object:&#xA;Aliases.Odyssey_eCover_App&#xA;(Sys.Process(&quot;Odyssey.eCover.App&quot;))"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="238"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="51"/>
+			<Prp name="date" type="D" value="45063.8658142593"/>
+			<Prp name="message" type="S" value="The close command was sent to the process &quot;Odyssey.eCover.App&quot;. Failed to wait for the process to close due to an unexpected window."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="date" type="D" value="45063.8650498264"/>
+			<Prp name="message" type="S" value="ToDeleteAllthePatients()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 20">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="20"/>
+			<Prp name="date" type="D" value="45063.8650763194"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 14">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="14"/>
+			<Prp name="date" type="D" value="45063.8650647917"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 70">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="106"/>
+			<Prp name="date" type="D" value="45063.8668304167"/>
+			<Prp name="message" type="S" value="clickItem(btn_PresentComplaint,&quot;Leg Pain&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="163"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="date" type="D" value="45063.8649741435"/>
+			<Prp name="message" type="S" value="ODY_10371--StandaloneClinician - Validate that all the details of paused assessment is saved in Reporting Database"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 13">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="13"/>
+			<Prp name="date" type="D" value="45063.8650624769"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 74">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="113"/>
+			<Prp name="date" type="D" value="45063.8669512963"/>
+			<Prp name="message" type="S" value="Switch View Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 38">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="363"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="48"/>
+			<Prp name="date" type="D" value="45063.8657615278"/>
+			<Prp name="message" type="S" value="Admin Summary Label is present in the screen"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 86">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="133"/>
+			<Prp name="date" type="D" value="45063.8673093982"/>
+			<Prp name="message" type="S" value="waitforAssessmentScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 65">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="99"/>
+			<Prp name="date" type="D" value="45063.8667433218"/>
+			<Prp name="message" type="S" value="GP  has been selected from the search list and it is displaying in the Current GP Section"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 10">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="date" type="D" value="45063.8650576736"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 91">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="144"/>
+			<Prp name="date" type="D" value="45063.8674923032"/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Postural Dizzy (new)&quot;,&quot;Mild-able to sit up&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 57">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="75"/>
+			<Prp name="date" type="D" value="45063.8662940509"/>
+			<Prp name="message" type="S" value="Demographic screen is displaying"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 101">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="160"/>
+			<Prp name="date" type="D" value="45063.8677828704"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 62">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="94"/>
+			<Prp name="date" type="D" value="45063.8666747338"/>
+			<Prp name="message" type="S" value="There is one matching GP is displaying in the search results"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 28">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="32"/>
+			<Prp name="date" type="D" value="45063.8653999306"/>
+			<Prp name="message" type="S" value="Admin Summary Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 94">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="150"/>
+			<Prp name="date" type="D" value="45063.8676199769"/>
+			<Prp name="message" type="S" value="Continue to summary screen Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 111">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="171"/>
+			<Prp name="date" type="D" value="45063.8678470139"/>
+			<Prp name="message" type="S" value="Contact Details is saved properly in reporting database for the assessment"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 46">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="58"/>
+			<Prp name="date" type="D" value="45063.8659374884"/>
+			<Prp name="message" type="S" value="Login(Project.Variables.ClinicianUsername,Project.Variables.ClinicianPassword)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 78">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="123"/>
+			<Prp name="date" type="D" value="45063.8671598495"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 64">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="97"/>
+			<Prp name="date" type="D" value="45063.8667000116"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;Use this GP&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 47">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="62"/>
+			<Prp name="date" type="D" value="45063.8660501273"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="date" type="D" value="45063.8649765972"/>
+			<Prp name="message" type="S" value="DECLARE @DomainId uniqueidentifier&#xA;DECLARE @ClosedStatus uniqueidentifier&#xA;&#xA;SET @DomainId = (select id from dbo.Domain where Description = 'EnglishStandaloneENAU')&#xA;SET @ClosedStatus = (SELECT id FROM Status where Description = 'Closed')&#xA;&#xA;(SELECT * FROM Session &#xA;INNER JOIN SessionStatus on Session.Id = SessionStatus.SessionId &#xA;WHERE Session.DomainId = @DomainId &#xA;AND StatusId in (SELECT id FROM Status where Description IN ('Open', 'Interrupted', 'Suspended', 'Waiting', 'Reception','Paused')))&#xA;&#xA;UPDATE SessionStatus SET StatusId = @ClosedStatus WHERE SessionStatus.SessionId in &#xA;(SELECT id FROM Session &#xA;INNER JOIN SessionStatus on Session.Id = SessionStatus.SessionId &#xA;WHERE Session.DomainId = @DomainId &#xA;AND StatusId in (SELECT id FROM Status where Description IN ('Open', 'Interrupted', 'Suspended', 'Waiting', 'Reception','Paused')))"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 106">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="166"/>
+			<Prp name="date" type="D" value="45063.8678377894"/>
+			<Prp name="message" type="S" value="Details for question Other Symptoms as Stiffness is saved properly in reporting database for the assessment"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 31">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="37"/>
+			<Prp name="date" type="D" value="45063.8654925926"/>
+			<Prp name="message" type="S" value="CheckUncheckSignpost(&quot;TeleAssess&quot;,&quot;Check&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 63">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="95"/>
+			<Prp name="date" type="D" value="45063.866675162"/>
+			<Prp name="message" type="S" value="clickItem(lbl_GPName,&quot;Patrick&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="81"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="date" type="D" value="45063.8649689815"/>
+			<Prp name="message" type="S" value="Module : ReportingDBSignpost"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 105">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="165"/>
+			<Prp name="date" type="D" value="45063.8678351273"/>
+			<Prp name="message" type="S" value="Details for question Other Symptoms as Backache is saved properly in reporting database for the assessment"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 75">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="114"/>
+			<Prp name="date" type="D" value="45063.8669513542"/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Other Symptoms&quot;,&quot;Backache&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 45">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="206"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="56"/>
+			<Prp name="date" type="D" value="45063.8659344329"/>
+			<Prp name="message" type="S" value="Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 66">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="100"/>
+			<Prp name="date" type="D" value="45063.8667436574"/>
+			<Prp name="message" type="S" value="clickItem(btn_Saveselectpresentingcomplaint,&quot;Save and select a presenting complaint&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 37">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="47"/>
+			<Prp name="date" type="D" value="45063.8657147222"/>
+			<Prp name="message" type="S" value="waitforAdminSummaryScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 55">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="72"/>
+			<Prp name="date" type="D" value="45063.8662330324"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;_Add new patient&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 88">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="135"/>
+			<Prp name="date" type="D" value="45063.8673306482"/>
+			<Prp name="message" type="S" value="AnsweringQues(&quot;Other Symptoms&quot;,&quot;Stiffness&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 73">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="112"/>
+			<Prp name="date" type="D" value="45063.8669222106"/>
+			<Prp name="message" type="S" value="waitforAssessmentScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 19">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="19"/>
+			<Prp name="date" type="D" value="45063.8650747801"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 50">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="65"/>
+			<Prp name="date" type="D" value="45063.8661378356"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 12">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="date" type="D" value="45063.8650609259"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 18">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="18"/>
+			<Prp name="date" type="D" value="45063.8650722917"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 16">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="16"/>
+			<Prp name="date" type="D" value="45063.8650681944"/>
+			<Prp name="message" type="S" value="Declare @PersonDetId uniqueidentifier&#xA;&#xA;select @PersonDetId = PersonDetailId from [dbo].[PersonDetail] where (Surname LIKE '%Auto%') OR (Forename LIKE '%Test%');&#xA;&#xA;BEGIN TRAN&#xA;&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] NOCHECK CONSTRAINT [FK_PersonGP_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] NOCHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] NOCHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] NOCHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] NOCHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[Address] NOCHECK CONSTRAINT [FK_Address_AddressType]&#xA;&#xA;&#xA;DECLARE @PersonId int&#xA;SELECT @PersonId = PersonId FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;DELETE FROM [dbo].[PersonDetail] WHERE [PersonDetailId]=@PersonDetId&#xA;&#xA;DELETE FROM [dbo].[PersonSession] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[PersonGP] WHERE PersonId = @PersonId&#xA;&#xA;&#xA;DECLARE @ContactId int&#xA;SELECT @ContactId = ContactId FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonContact] WHERE PersonId = @PersonId&#xA;&#xA;DECLARE @AddressId int&#xA;SELECT @AddressId = AddressId FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;DELETE FROM [dbo].[PersonAddress] WHERE PersonId = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Person] WHERE Id = @PersonId&#xA;&#xA;DELETE FROM [dbo].[Address] WHERE Id = @AddressId&#xA;&#xA;DELETE FROM [dbo].[ContactInfo] WHERE Id = @ContactId&#xA;&#xA;ALTER TABLE [dbo].[Address] CHECK CONSTRAINT [FK_Address_AddressType]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Ethnicity]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_GPStatus]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Prefix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Suffix]&#xA;ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [FK_Person_Title]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Address]&#xA;ALTER TABLE [dbo].[PersonAddress] CHECK CONSTRAINT [FK_PersonAddress_Person]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactInfo]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_ContactType]&#xA;ALTER TABLE [dbo].[PersonContact] CHECK CONSTRAINT [FK_PersonContact_Person]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Ethnicity]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Gender]&#xA;ALTER TABLE [dbo].[PersonDetail] CHECK CONSTRAINT [FK_PersonDetail_Person]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_GP]&#xA;ALTER TABLE [dbo].[PersonGP] CHECK CONSTRAINT [FK_PersonGP_Person]&#xA;COMMIT"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 32">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="4"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Sys.Process(&quot;Odyssey.eCover.App&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;OdysseyMainGrid&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ThisControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ItemsControl&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 17).WPFObject(&quot;Expander&quot;, &quot;Signposting&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ListBox&quot;, &quot;&quot;, 1).WPFObject(&quot;ListBoxItem&quot;, &quot;&quot;, 3).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;CheckBox&quot;, &quot;&quot;, 1)"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="1044"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="38"/>
+			<Prp name="date" type="D" value="45063.8655284259"/>
+			<Prp name="message" type="S" value="The check box is already checked."/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 48">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="368"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="63"/>
+			<Prp name="date" type="D" value="45063.8661223611"/>
+			<Prp name="message" type="S" value="Loading... Label is not present in the screen"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 26">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="30"/>
+			<Prp name="date" type="D" value="45063.8653405324"/>
+			<Prp name="message" type="S" value="waitforAdminSummaryScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 92">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="147"/>
+			<Prp name="date" type="D" value="45063.8675604977"/>
+			<Prp name="message" type="S" value="clickItem(btn_Continue,&quot;Continue&quot;)"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 49">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="64"/>
+			<Prp name="date" type="D" value="45063.8661223611"/>
+			<Prp name="message" type="S" value="waitfordefaultScreen()"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 23">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="1134"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="23"/>
+			<Prp name="date" type="D" value="45063.8651880093"/>
+			<Prp name="message" type="S" value="Odyssey.eCover.App Process is found.....Exiting waitForProcessToStart"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 108">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="168"/>
+			<Prp name="date" type="D" value="45063.8678422801"/>
+			<Prp name="message" type="S" value="Conent Details for assessment is saved properly in reporting database"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="child data"/>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

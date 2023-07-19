@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 31">
+			<Prp name="id" type="I" value="43"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Object is found...Exiting waitForItem"/>
+			<Prp name="date" type="D" value="45034.5327989699"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="206"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 47">
+			<Prp name="id" type="I" value="63"/>
+			<Prp name="unit id" type="I" value="4"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Error border is not shown for Postcode"/>
+			<Prp name="date" type="D" value="45034.5329703356"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="115"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="id" type="I" value="13"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="date" type="D" value="45034.5322886111"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 39">
+			<Prp name="id" type="I" value="53"/>
+			<Prp name="unit id" type="I" value="4"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Error border is shown for patientNumber"/>
+			<Prp name="date" type="D" value="45034.5328756597"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="110"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 34">
+			<Prp name="id" type="I" value="46"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="NHS text box not highlighting in red color when entering valid NHS number 1111111"/>
+			<Prp name="date" type="D" value="45034.5328120718"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 16">
+			<Prp name="id" type="I" value="22"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="NHS text box highlighting in red color when entering invalid data"/>
+			<Prp name="date" type="D" value="45034.5325118634"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 20">
+			<Prp name="id" type="I" value="28"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="MRN text box not highlighting in red color when entering valid NHS number"/>
+			<Prp name="date" type="D" value="45034.5326005208"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 29">
+			<Prp name="id" type="I" value="39"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;_Search&quot;)"/>
+			<Prp name="date" type="D" value="45034.5326845833"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="ODY_1079--Test case to check Invalid entries in to NHS number field."/>
+			<Prp name="date" type="D" value="45034.5318508681"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="163"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 10">
+			<Prp name="id" type="I" value="14"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Loading... Label is not present in the screen"/>
+			<Prp name="date" type="D" value="45034.5323783796"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="368"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 17">
+			<Prp name="id" type="I" value="23"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="setText(&quot;111111112&quot;,txt_NHSNumber,&quot;patientNumber&quot;,&quot;&quot;)"/>
+			<Prp name="date" type="D" value="45034.5325122338"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 12">
+			<Prp name="id" type="I" value="16"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Refresh queue Object is found...Exiting waitForItem"/>
+			<Prp name="date" type="D" value="45034.5323960417"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="147"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 26">
+			<Prp name="id" type="I" value="35"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="setText(&quot;A99 9AA&quot;,txt_PostCode,&quot;postcode&quot;,&quot;&quot;)"/>
+			<Prp name="date" type="D" value="45034.5326458218"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 41">
+			<Prp name="id" type="I" value="55"/>
+			<Prp name="unit id" type="I" value="4"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Error border is shown for Postcode"/>
+			<Prp name="date" type="D" value="45034.5328948727"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="110"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 43">
+			<Prp name="id" type="I" value="57"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="setText(&quot;35001&quot;,txt_PostCode,&quot;postcode&quot;,&quot;&quot;)"/>
+			<Prp name="date" type="D" value="45034.5328955903"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 40">
+			<Prp name="id" type="I" value="54"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="MRN text box highlighting in red color remaning same when entering other invalid entry"/>
+			<Prp name="date" type="D" value="45034.5328757292"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 30">
+			<Prp name="id" type="I" value="41"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="clickItem(btn_WPFButton,&quot;_Add new patient&quot;)"/>
+			<Prp name="date" type="D" value="45034.5327328125"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 48">
+			<Prp name="id" type="I" value="64"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Red border is not highlighted for Postcode field with valid entry under Advanced Search"/>
+			<Prp name="date" type="D" value="45034.5329703704"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 25">
+			<Prp name="id" type="I" value="34"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Red border highlighted for invalid value in Postcode field under Advanced Search"/>
+			<Prp name="date" type="D" value="45034.5326449884"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 1" type="S" value="{54BFC739-356C-4151-8A2D-049306DA3D0D}"/>
+			<Prp name="unit 3" type="S" value="{5792F3CE-85C4-4C67-9BDE-BA34914E3961}"/>
+			<Prp name="unit 2" type="S" value="{2CBB81FE-F552-450F-830E-0B36AAC8CE4A}"/>
+			<Prp name="unit 0" type="S" value="{6B545B1C-4993-41B3-B55C-0A8F2F20504E}"/>
+			<Prp name="unit 4" type="S" value="{DEB01F46-8710-4CEE-992B-836D3ABD3E2E}"/>
+		</Node>
+		<Node name="message 19">
+			<Prp name="id" type="I" value="26"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="setText(&quot;1111111&quot;,txt_NHSNumber,&quot;patientNumber&quot;,&quot;&quot;)"/>
+			<Prp name="date" type="D" value="45034.5325578356"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 37">
+			<Prp name="id" type="I" value="50"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="MRN text box highlighting in red color when entering invalid format"/>
+			<Prp name="date" type="D" value="45034.532841412"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 35">
+			<Prp name="id" type="I" value="47"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="setText(&quot;111&quot;,txt_NHSNumber,&quot;patientNumber&quot;,&quot;&quot;)"/>
+			<Prp name="date" type="D" value="45034.5328126852"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 14">
+			<Prp name="id" type="I" value="19"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="MRN text box not highlighting in red color when text box is empty"/>
+			<Prp name="date" type="D" value="45034.5324512963"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 13">
+			<Prp name="id" type="I" value="17"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="ExpandItem(lnk_AdvSearchOption,&quot;&quot;)"/>
+			<Prp name="date" type="D" value="45034.5323962269"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 36">
+			<Prp name="id" type="I" value="49"/>
+			<Prp name="unit id" type="I" value="4"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Error border is shown for patientNumber"/>
+			<Prp name="date" type="D" value="45034.5328413079"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="110"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 21">
+			<Prp name="id" type="I" value="29"/>
+			<Prp name="unit id" type="I" value="4"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Error border is not shown for Postcode"/>
+			<Prp name="date" type="D" value="45034.5326111458"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="115"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 42">
+			<Prp name="id" type="I" value="56"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="By default Red border is highlighted for Postcode field with no value under Demographic screen"/>
+			<Prp name="date" type="D" value="45034.5328949074"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 46">
+			<Prp name="id" type="I" value="61"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="setText(&quot;A99 9AA&quot;,txt_PostCode,&quot;postcode&quot;,&quot;&quot;)"/>
+			<Prp name="date" type="D" value="45034.5329351736"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 32">
+			<Prp name="id" type="I" value="44"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Demographic screen is displaying"/>
+			<Prp name="date" type="D" value="45034.5327990278"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Odyssey.eCover.App Process is found.....Exiting waitForProcessToStart"/>
+			<Prp name="date" type="D" value="45034.5320531366"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="1134"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="SetConfigSettings(&quot;PostcodeValidation&quot;,&quot;True&quot;)"/>
+			<Prp name="date" type="D" value="45034.5318529167"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 38">
+			<Prp name="id" type="I" value="51"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="setText(&quot;11111112&quot;,txt_NHSNumber,&quot;patientNumber&quot;,&quot;&quot;)"/>
+			<Prp name="date" type="D" value="45034.5328421875"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 24">
+			<Prp name="id" type="I" value="33"/>
+			<Prp name="unit id" type="I" value="4"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Error border is shown for Postcode"/>
+			<Prp name="date" type="D" value="45034.5326449537"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="110"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 18">
+			<Prp name="id" type="I" value="25"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="MRN text box highlighting in red color remaning same when entering other invalid data"/>
+			<Prp name="date" type="D" value="45034.5325572454"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 15">
+			<Prp name="id" type="I" value="20"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="setText(&quot;111&quot;,txt_NHSNumber,&quot;patientNumber&quot;,&quot;&quot;)"/>
+			<Prp name="date" type="D" value="45034.532452662"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Module : Standalone310Clinician"/>
+			<Prp name="date" type="D" value="45034.5318300463"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="81"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 28">
+			<Prp name="id" type="I" value="38"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Red border is not highlighted for Postcode field with valid entry under Advanced Search"/>
+			<Prp name="date" type="D" value="45034.5326837731"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 45">
+			<Prp name="id" type="I" value="60"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Red border highlighted for invalid value in Postcode field under Advanced Search"/>
+			<Prp name="date" type="D" value="45034.5329346643"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Login(Project.Variables.ClinicianUsername,Project.Variables.ClinicianPassword)"/>
+			<Prp name="date" type="D" value="45034.5320928241"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 22">
+			<Prp name="id" type="I" value="30"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="By default Red border is not highlighted for Postcode field with no value under Advanced Search"/>
+			<Prp name="date" type="D" value="45034.5326112037"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="677"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Object is found...Exiting waitForItem"/>
+			<Prp name="date" type="D" value="45034.5320832176"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="206"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 23">
+			<Prp name="id" type="I" value="31"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="setText(&quot;35001&quot;,txt_PostCode,&quot;postcode&quot;,&quot;&quot;)"/>
+			<Prp name="date" type="D" value="45034.5326117014"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 33">
+			<Prp name="id" type="I" value="45"/>
+			<Prp name="unit id" type="I" value="4"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Error border is not shown for patientNumber"/>
+			<Prp name="date" type="D" value="45034.5328120139"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="115"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 50">
+			<Prp name="id" type="I" value="66"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="The close command was send to the window with the 'Odyssey' caption. The process displayed a dialog with the 'Warning!' caption.&#xA;&#xA;Tested object:&#xA;Aliases.Odyssey_eCover_App&#xA;(Sys.Process(&quot;Odyssey.eCover.App&quot;))"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="The close command was sent to the process &quot;Odyssey.eCover.App&quot;. Failed to wait for the process to close due to an unexpected window."/>
+			<Prp name="date" type="D" value="45034.532997338"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="238"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 49">
+			<Prp name="id" type="I" value="65"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="closeApplication()"/>
+			<Prp name="date" type="D" value="45034.5329709375"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="The process ID is 26104."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="The application &quot;C:\Users\Vikram.Thippeswamy\Desktop\Odyssey 3.28.appref-ms&quot; started."/>
+			<Prp name="date" type="D" value="45034.5319549421"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="268"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 44">
+			<Prp name="id" type="I" value="59"/>
+			<Prp name="unit id" type="I" value="4"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Error border is shown for Postcode"/>
+			<Prp name="date" type="D" value="45034.5329346412"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="110"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="LaunchApplication()"/>
+			<Prp name="date" type="D" value="45034.5319274074"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 27">
+			<Prp name="id" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="4"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Error border is not shown for Postcode"/>
+			<Prp name="date" type="D" value="45034.5326836574"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="115"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 51">
+			<Prp name="id" type="I" value="68"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="SetConfigSettings(&quot;PostcodeValidation&quot;,&quot;False&quot;)"/>
+			<Prp name="date" type="D" value="45034.533025081"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Project Variables are assigned successfully"/>
+			<Prp name="date" type="D" value="45034.531817581"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="245"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 11">
+			<Prp name="id" type="I" value="15"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="waitfordefaultScreen()"/>
+			<Prp name="date" type="D" value="45034.5323785417"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

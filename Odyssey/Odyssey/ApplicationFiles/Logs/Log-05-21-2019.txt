@@ -1,0 +1,14 @@
+System.IO.IOException: The process cannot access the file 'C:\AutomationProject\313\313\Odyssey\ApplicationFiles\module_list.xml' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XDocument.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XDocument.Save(String fileName)
+   at TAF.MainWindow.Save1_Click(Object sender, RoutedEventArgs e) in C:\Users\lakshmi.narasimhan\Desktop\TAF\TestAutomationFramework\TestAutomationFramework\MainWindow.xaml.cs:line 1995
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TAF.MainWindow.ListBox_Drop(Object sender, DragEventArgs e) in C:\Users\lakshmi.narasimhan\Desktop\TAF\TestAutomationFramework\TestAutomationFramework\MainWindow.xaml.cs:line 1235
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TAF.MainWindow.ListBox_Drop(Object sender, DragEventArgs e) in C:\Users\lakshmi.narasimhan\Desktop\TAF\TestAutomationFramework\TestAutomationFramework\MainWindow.xaml.cs:line 1235

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="child data"/>
+		<Node name="message 4">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="-- Remove users and passwords&#xA;DECLARE @surname nvarchar(100)&#xA;DECLARE @forename nvarchar(100)&#xA;&#xA;SET @forename = 'Automation'&#xA;SET @surname = 'Test'&#xA;&#xA;&#xA;DECLARE @pwdId uniqueidentifier&#xA;SELECT @pwdId = PasswordId  FROM [user] WHERE [Forename] = @forename and [Surname] = @surname&#xA;&#xA;DELETE FROM [UserLinkClaim] WHERE [UserID] in (SELECT [Id] FROM [User] WHERE [Forename] = @forename and [Surname] = @surname)&#xA;DELETE FROM [UserLinkClinicalContentType] WHERE [UserID] in (SELECT [Id] FROM [User] WHERE [Forename] = @forename and [Surname] = @surname)&#xA;DELETE FROM [UserLocationCulture] WHERE [UserID] in (SELECT [Id] FROM [User] WHERE [Forename] = @forename and [Surname] = @surname)&#xA;&#xA;DELETE FROM [user] WHERE [Forename] = @forename and [Surname] = @surname&#xA;&#xA;DELETE FROM [Password] WHERE [Id] = @pwdId&#xA;"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="date" type="D" value="45037.5485545023"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 1" type="S" value="{54BFC739-356C-4151-8A2D-049306DA3D0D}"/>
+			<Prp name="unit 0" type="S" value="{6B545B1C-4993-41B3-B55C-0A8F2F20504E}"/>
+			<Prp name="unit 2" type="S" value="{82D32211-C050-4168-9120-B88783F13D71}"/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="stacktext" type="S" value=""/>
+			<Prp name="line no" type="I" value="47"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="177"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="DeleteUsersFromAdmin()"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="date" type="D" value="45037.5485538889"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="81"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Module : Standalone310Admin"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="45037.5485478704"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="picture" type="S" value="Picture1.png"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value="Possible reasons:&#xA; - An error or warning occurred during the test run. See the preceding log entries to locate and identify the error.&#xA; - The test run was stopped manually.&#xA; - The test run was terminated as a result of the Runner.Halt method call."/>
+			<Prp name="line no" type="I" value="47"/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Script execution was interrupted."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="date" type="D" value="45037.5486553819"/>
+			<Prp name="stack end" type="I" value="0"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="245"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Project Variables are assigned successfully"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="45037.5485418519"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 2">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="163"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="ODY_12075--Validate that user is restricted from logging into Odyssey if training field not selected in user admin."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="date" type="D" value="45037.5485527431"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+	</Node>
+</Nodes>

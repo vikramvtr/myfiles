@@ -1,0 +1,437 @@
+﻿//USEUNIT PageObjects
+//USEUNIT CommonFunctions
+
+
+
+
+/*===============================================================================
+Description: This function is wait for the login screen
+Parameters: 
+Return Value: 
+=================================================================================*/
+function waitForLoginScreen()
+{
+  waitForInformationMessage(["Name"],[Wnd_MainWindow])
+}
+
+
+/*===============================================================================
+Description: This function is wait for the defualt screen
+Parameters: 
+Return Value: 
+=================================================================================*/
+function waitfordefaultScreen()
+{
+  return waitForItemWithTime(btn_WPFButton,"Refresh queue",3)
+}
+
+/*===============================================================================
+Description: This function is wait for the reception screen
+Parameters: 
+Return Value: 
+=================================================================================*/
+function waitforReceptionscreen()
+{
+  waitForItemWithTime(btn_SaveCalltoQueue,"Save call to queue",2)
+}
+
+/*===============================================================================
+Description: This function is click sign in button and to wait for loading default screen
+Parameters: 
+Return Value: 
+=================================================================================*/
+function clickSignInButton()
+{
+  clickItem(btn_WPFButton,"Sign In")
+  waitfordefaultScreen()
+}
+
+
+/*===============================================================================
+Description: This function to logout app
+Parameters: 
+Return Value: 
+=================================================================================*/
+function LogoutApp()
+{
+  clickItem(btn_ButtonParntObj,"System.Windows.Controls.Button: Logout")
+}
+
+/*===============================================================================
+Description: This function to Lock app
+Parameters: 
+Return Value: 
+=================================================================================*/
+function LockApp()
+{
+  clickItem(btn_WPFButton,"Lock")
+}
+
+
+/*===============================================================================
+Description: This function to Enter LoginID
+Parameters: 
+              username:UserName
+Return Value: 
+=================================================================================*/
+function EnterLogInID(username)
+{
+  setText(username,txt_LoginId,"LoginID","")
+}
+
+/*===============================================================================
+Description: This function to Enter Password
+Parameters: 
+              password:Password
+Return Value: 
+=================================================================================*/
+function EnterPassword(password)
+{
+
+  setText(password,txt_Password,"Password","")
+}
+
+/*===============================================================================
+Description: This function to Add Patients in the queue
+Parameters: 
+Return Value: 
+=================================================================================*/
+function AddPatientsInReception()
+{
+  Process = GetProcess()
+  var obj = Process.FindChild(["Name"],[lbl_QueueIsEmpty],100)
+  if(obj.Exists)
+  {
+    n=11;
+  }
+  else
+  {
+    var obj = Process.FindChild(["Name"],[lbl_QueueCount],100)
+    var txt = obj.WPFControlText
+    txt=txt.split(" ");
+    n=txt[0]
+    n=11-n
+  }
+  if (n!=0)
+  {
+    for (i=1;i<=n;i++)
+    {
+      LoadingDone()
+      clickItem(btn_WPFButton,"Use anonymous patient")
+      setText("54",txt_ApproximateAge,"ApproximateAge","")
+      selectGender("Female")
+      clickItem(btn_WPFButton,"Continue")
+      waitforPresentingScreen()
+      clickItem(btn_PresentComplaint,"Abdomen / Stomach")
+      clickItem(btn_PresentComplaint,"Abdominal injury")
+      setText("7566576",txt_ContactInfo,"ContactInfoTextBox","")
+      clickItem(btn_WPFButton,"Proceed to Odyssey Reception")
+      waitforReceptionscreen()
+      clickItem(btn_SaveCalltoQueue,"Save call to queue")
+    }
+    }
+}
+  
+
+
+/*===============================================================================
+Description: This function to select patient gender
+Parameters: 
+            gender:Male or female
+Return Value: 
+=================================================================================*/
+function selectGender(gender)
+{
+  Process = GetProcess()
+  var Gender = Process.FindChild(["Name"],["WPFObject(\"GenderControl\")"],100)
+  if(!Gender.Exists)
+  {
+    var Gender = Process.FindChild(["Name"],["WPFObject(\"ContentControl\", \"\", 1)"],100)
+  }
+  if (Gender.Exists)
+  {
+    Gender.Click()
+    var obj = Process.FindChild(["ClrClassName","Content"],["ComboBoxItem",gender],100)
+    if(obj.Exists)
+    {
+      obj.Click()
+    }
+  }
+  
+}
+
+
+
+
+
+/*===============================================================================
+Description: This function to login the application
+Parameters: 
+  UserName: username 
+            Password: Password
+            
+Return Value: 
+=================================================================================*/
+function Login(UserName,Password)
+{
+  EnterLogInID(UserName)
+  EnterPassword(Password)
+  clickSignInButton()
+  LoadingDone()
+}
+
+/*===============================================================================
+Description: This function to wait to load the patients in the queue 
+Parameters: 
+Return Value: 
+=================================================================================*/
+function LoadingDone()
+{
+  Process = GetProcess()
+  var d = new Date();
+  var startTime = d.getTime();
+  do
+  {
+    var Status=ToCheckLablePresent("Loading...")
+    var d = new Date();
+    var endTime = d.getTime();
+  if (Status==false)
+    {
+      break
+    }
+  } while((endTime - startTime) <= 180000)
+}
+
+/*===============================================================================
+Description: This function check the email contains current username
+Parameters: 
+             user:Current User Name
+Return Value: 
+=================================================================================*/
+function CheckEmailContainsCurrentUN(User)
+{
+  Process = GetProcess()
+  var obj = Process.FindChild(["Name","Tag"],[txt_EmailTextBox,"Email"],100)
+  var txt = obj.wText
+  if(aqString.ToUpper(User)=="CLINICIAN")
+  {
+    if(txt=="clinician@advanced.engb")
+    {
+      Log.Message("clinician@advanced.engb mail id is showing for clinician User Id")
+      return true
+    
+    }
+    else
+    {
+      Log.Message("clinician@advanced.engb mail id is not showing for clinician User Id")
+      return false
+    }
+  }
+  if(aqString.ToUpper(User)=="RECEPTION")
+  {
+   if(txt=="reception@advanced.engb")
+    {
+      Log.Message("reception@advanced.engb mail id is showing for reception User Id")
+      return true
+    
+    }
+    else
+    {
+      Log.Message("reception@advanced.engb mail id is not showing for reception User Id")
+      return false
+    }
+   }
+}
+
+
+/*===============================================================================
+Description: This function to launch and login and add patients in the queue
+Parameters: 
+Return Value: 
+=================================================================================*/
+function AddPatientsInTheQueue()
+{
+  LaunchApplication("standalone")
+  Login("reception@advanced.engb",Project.Variables.ReceptionPassword)
+  AddPatientsInReception()
+}
+
+
+/*===============================================================================
+Description: This function to check the banner details
+Parameters: 
+             detail: detail need to check
+Return Value: 
+=================================================================================*/
+function CheckBannerDetails(detail)
+{
+var Process = GetProcess()
+//var obj = Process.FindChild(["Name"],["WPFObject(\"PatientBanner\")"],100)
+switch (aqString.ToUpper(detail))
+    {
+    
+      case "NAME":
+          var obj=Process.FindChild(["Name"],["WPFObject(\"NameLabel\")"],100)
+          return (obj.DisplayValue.OleValue)
+       break;
+
+      case "AGE":
+      var obj=Process.FindChild(["Name"],["WPFObject(\"DOBValue\")"],100)
+          return (obj.Text.OleValue)
+       break;
+  
+      case "GENDER":
+          var obj=Process.FindChild(["Name"],["WPFObject(\"GenderValue\")"],100)
+          return (obj.DisplayValue.OleValue)
+       break;
+    
+      case "NHSNUMBER":
+          var obj=Process.FindChild(["Name"],["WPFObject(\"IdentifierValue\")"],100)
+          return (obj.Text.OleValue)
+
+       break;
+      
+      case "ALLERGIES":
+          var obj=Process.FindChild(["Name"],["WPFObject(\"AllergiesControl\")"],100)
+          var item = obj.FindChild(["Name"],["WPFObject(\"TextBlock\", \"animal fur\", 1)"],100)
+          if (item.Exists)
+          {
+            return true
+          }
+          else
+          {
+            return false
+          } 
+
+       break;
+    }
+ 
+}
+
+
+/*===============================================================================
+Description: This function to fetch the Address details from the search
+Parameters: 
+Return Value: 
+=================================================================================*/
+function ToCheckAddressLablePresent()
+{
+  Process = GetProcess()
+   var obj= Process.FindChild(["Name"], ["WPFObject(\"AddressLabel\", \"\", 1)"], 100)
+   return obj.DataContext.DisplayForCurrentLocation.OleValue
+   
+}
+
+
+/*===============================================================================
+Description: This function to validate the items in the Combo Box of address details
+Parameters: 
+           comboBoxName:value of name property
+           itemName:item name needs to validate
+Return Value: true/false
+=================================================================================*/
+function chkComboBoxItem(comboBoxName,itemName)
+{
+  var Process = GetProcess()
+  var comboBoxObj=  Process.FindChild(["ClrClassName","Name"],["ComboBox",comboBoxName],50);
+  if(comboBoxObj.Exists)
+   {
+     for(i=0;i<comboBoxObj.Items.Count;i++)
+     {
+       if (comboBoxObj.ItemContainerGenerator.Items.Item(i).OleValue==undefined)
+       {
+          if(comboBoxObj.ItemContainerGenerator.Items.Item(i).Type.OleValue==itemName)
+          {
+            return true
+            break;
+          }
+       }
+       else
+       {
+          if(comboBoxObj.ItemContainerGenerator.Items.Item(i).OleValue==itemName)
+          {
+            return true
+            break;
+          }
+         
+       } 
+            
+     }
+   }
+   
+   else
+   {
+     return false
+   }
+}
+
+
+/*===============================================================================
+Description: This function to click Undo changes button in addresses
+Parameters: 
+Return Value: true/false
+=================================================================================*/
+function clickUndoCHangesInAddress()
+{
+var process = GetProcess()
+var AddressEditorControl=  Process.FindChild(["ClrClassName","Name"],["AddressEditor",btn_AddreessEditControl],100);
+var btn = AddressEditorControl.FindChild(["Name","WPFControlText"],[btn_WPFButton,"Undo changes"],100);
+btn.click()
+}
+
+
+/*===============================================================================
+Description: This function to check the allergies in the list box
+Parameters: 
+          BoxName:Available or Selected
+Return Value: true/false
+=================================================================================*/
+function chkAllergies(BoxName)
+{
+  var process = GetProcess()
+  if (aqString.ToUpper(BoxName)=="AVAILABLE")
+  {
+     var obj = process.FindChild(["Name"],["WPFObject(\"ListBox\", \"\", 1)"],100);
+  }
+  else
+  {
+     var obj = process.FindChild(["Name"],["WPFObject(\"ListBox\", \"\", 3)"],100);
+     
+  } 
+  
+    if(obj.Exists)
+    {
+     var item = obj.FindChild(["Name"],["WPFObject(\"TextBlock\", \"animal fur\", 1)"],100);
+     if (item.Exists)
+     {
+        item.Click()
+        return true
+     }
+     else
+     {
+        return false
+     }
+    } 
+  } 
+
+  
+AddPatientsInRec(NumbOfPatients)
+{
+  n=NumbOfPatients
+  for (i=1;i<=n;i++)
+    {
+      LoadingDone()
+      clickItem(btn_WPFButton,"Use anonymous patient")
+      setText("54",txt_ApproximateAge,"ApproximateAge","")
+      selectGender("Female")
+      clickItem(btn_WPFButton,"Continue")
+      waitforPresentingScreen()
+      clickItem(btn_PresentComplaint,"Abdomen / Stomach")
+      clickItem(btn_PresentComplaint,"Abdominal injury")
+      setText("7566576",txt_ContactInfo,"ContactInfoTextBox","")
+      clickItem(btn_WPFButton,"Proceed to Odyssey Reception")
+      waitforReceptionscreen()
+      clickItem(btn_SaveCalltoQueue,"Save call to queue")
+    }
+} 
+ 

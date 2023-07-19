@@ -1,0 +1,536 @@
+﻿//USEUNIT CommonFunctions
+//USEUNIT PageObjects
+//USEUNIT DBFunctions
+//USEUNIT DefaultScreen
+//USEUNIT LoginScreen
+//USEUNIT CommonActItems_Clinician
+//USEUNIT PresentingCompliantScreen
+//USEUNIT ScreensOf3_11
+//USEUNIT CommonActItems_Reception
+
+/*===============================================================================
+Description: This function is check for Care Advice Overlay in 1st Assessment / 2nd Assessment / Summary screen for Call Handler
+Parameters: 
+Return Value: true/false
+=================================================================================*/
+function checkforCareAdviceOverlay()
+{
+  return ToFindObjToValidate(["Name"],[obj_CareAdviceOverlay])
+}
+
+/*===============================================================================
+Description: This function is to select Patient Outcome for Call Handler
+Parameters: 
+          patientOutcome:patientOutcome value
+Return Value: 
+=================================================================================*/
+function SelectPatientOutcomeCallHandler(patientOutcome)
+{
+  var process = GetProcess()
+  
+  var lbl_outcome = process.FindChild(["Name","VisibleOnScreen"],[lbl_PatientOutcome,"True"],100)
+  if(lbl_outcome.Exists)
+  {
+    var parentObj = lbl_outcome.parent 
+    var cmb_PatientOutcome = parentObj.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"ComboBox\", \"\", *)","True"],10)
+    var isOutcomeSelected = selectComboBoxByIndex("",patientOutcome,cmb_PatientOutcome);
+    selectedOutcome = patientOutcome
+    return isOutcomeSelected;    
+  }
+  else
+  {
+    var SignpostList = Process.FindChild(["Name"],[list_SignpostServiceList],100); 
+    if (SignpostList.Exists && SignpostList.VisibleOnScreen) 
+    {
+      var signPostObj = SignpostList.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"ListBoxItem\", \"\", 1)","True"],100);
+      if (signPostObj.Exists) 
+      {
+        selectedOutcome = signPostObj.WPFControlText //Newly added
+        signPostObj.Click();
+      }          
+    }
+  }
+}
+
+/*===============================================================================
+Description: This function is to click button in Care Advice Overlay for Call Handler
+Parameters: 
+          btnName:Pass to Clinician/End Call/Complete/Return to call
+          status:
+Return Value: true/false
+=================================================================================*/
+function PerformActionInCareAdvice(btnName,status)
+{
+  //var process = GetProcess()
+  
+  var careAdviceOverlay = ToFindObj(["Name"],[obj_CareAdviceOverlay])
+  
+  var btnObj = careAdviceOverlay.FindChild(["Name","VisibleOnScreen","WPFControlText"],["WPFObject(\"Button\", *, *)","True",btnName],20)
+  
+  if(status=="")
+  {
+    if(btnObj.Exists && btnObj.Enabled)
+    {
+      btnObj.Click()
+    }
+    else
+    {
+      Log.Warning(btnName +"Click action failed in ClickButtonInCareAdvice function")
+      throw "Click action failed in ClickButtonInCareAdvice function"      
+    }
+  }
+  else
+  {
+    if(btnObj.Exists && btnObj.Enabled)
+    {
+      return true
+    }
+    else
+    {
+      return false
+    }
+  }
+}
+
+/*===============================================================================
+Description: This function is to accept/decline advice in Care Advice Overlay and Complete/Pass To Clinician
+Parameters: 
+Return Value: 
+=================================================================================*/
+function AcceptDeclineAdviceCallHandler()
+{
+  var careAdviceOverlay = ToFindObj(["Name"],[obj_CareAdviceOverlay])
+  if(careAdviceOverlay.VisibleOnScreen)
+  {
+    var RandomNumber;   
+    if(ToFindObjToValidate(["Name"],[txt_FirstAidAdvice]))
+    {
+      RandomNumber = Math.floor(Math.random() * 2) +1;
+      if (RandomNumber == 2)
+      {
+        clickItem(btn_FirstAidAdviceAccept,"Advice Given")
+      }
+      else 
+      {
+        clickItem(btn_FirstAidAdviceDecline,"Not Given")
+      }
+    }
+    
+    if(ToFindObjToValidate(["Name"],[txt_WorseningAdviceText]))
+    {
+      RandomNumber = Math.floor(Math.random() * 2) +1;
+      if (RandomNumber == 2)
+      {
+        clickItem(btn_WorseningAdviceAccept,"Advice Given")
+      }
+      else 
+      {
+        clickItem(btn_WorseningAdviceDecline,"Not Given")
+      }      
+    }
+    
+    if(ToFindObjToValidate(["Name"],[txt_WorseningStatement]))
+    {
+      RandomNumber = Math.floor(Math.random() * 2) +1;
+      if (RandomNumber == 2)
+      {
+        clickItem(btn_WorseningStatementAccept,"Advice Given")
+      }
+      else 
+      {
+        clickItem(btn_WorseningStatementDecline,"Not Given")
+      }      
+    }
+  }
+}
+
+/*===============================================================================
+Description: This function is to check status or click button in Care Advice Overlay of Summary screen for Call Handler
+Parameters:
+          adviceType:First Aid Advice/Care Advice/Worsening Advice/Worsening Statement 
+          btnName:Advice Given/Not Given
+          status:enabled/disabled
+Return Value: true/false
+=================================================================================*/
+function PerformActionInCareAdviceSummary(adviceType,btnName,status)
+{ 
+  var careAdviceOverlay = ToFindObj(["Name"],[obj_CareAdviceOverlay])
+  adviceType = GetCareAdviceType(adviceType)
+  btnName = GetCareAdviceBtnName(adviceType,btnName)
+  
+  var btnObj = careAdviceOverlay.FindChild(["WPFControlName","VisibleOnScreen"],[btnName,"True"],20)
+  
+  if(status=="")
+  {
+    if(btnObj.Exists && btnObj.Enabled)
+    {
+      btnObj.Click()
+    }
+    else
+    {
+      Log.Warning(btnName +"Click action failed in ClickButtonInCareAdvice function")
+      throw "Click action failed in ClickButtonInCareAdvice function"      
+    }
+  }
+  else
+  {
+    if(btnObj.Exists && btnObj.Enabled)
+    {
+      return true
+    }
+    else
+    {
+      return false
+    }
+  }
+}
+/*===============================================================================
+Description: This function return correct care advice type in Care Advice Overlay of Summary screen for Call Handler
+Parameters:
+          adviceType:
+Return Value:
+=================================================================================*/
+function GetCareAdviceType(adviceType)
+{
+  adviceType = aqString.ToUpper(adviceType)
+  
+  switch(adviceType)
+  {
+    case "FIRST AID ADVICE":
+      return "FirstAidAdvice";
+      break;
+    case "CARE ADVICE":
+      return "CareAdvice";
+      break;
+    case "WORSENING ADVICE":
+      return "WorseningAdvice"
+      break;
+    case "FOLLOW UP ADVICE":
+      return "WorseningStatement"
+      break;
+    case "WORSENING STATEMENT":
+      return "WorseningStatement"
+      break;    
+  }
+}
+/*===============================================================================
+Description: This function return correct care advice button in Care Advice Overlay of Summary screen for Call Handler
+Parameters:
+          adviceType:
+          btnName:
+Return Value:
+=================================================================================*/
+function GetCareAdviceBtnName(adviceType,btnName)
+{
+  btnName = aqString.ToUpper(btnName)
+  
+  switch(btnName)
+  {
+    case "ADVICE GIVEN":
+      return adviceType+"Accept";
+      break;
+    case "NOT GIVEN":
+      return adviceType+"Decline"
+      break;
+  }
+}
+/*===============================================================================
+Description: This function is to check FirstAidAdvice/AmbulancePreparation text in Advice Overlay for Call Handler
+Parameters:
+          advice:FirstAidAdvice/AmbulancePreparation
+Return Value:true/false
+=================================================================================*/
+function ToCheckFirstAidAdvice(advice)
+{
+  var parentObj = ToFindObj(["Name"],[txt_FirstAidAdvice],100);
+  var firstAidAdviceObj = parentObj.FindChild(["WPFControlText"],[advice],10)
+  if(firstAidAdviceObj.Exists)
+  {
+      Log.Message(advice+" FirstAid advice matched")
+      return true;
+  }
+  else
+  {
+      return false;      
+  }
+}
+
+/*===============================================================================
+Description: This function is to check clinicalkey details in DB
+Parameters: 
+          adviceTypes:Care Advice|Worsening Advice|Worsening Statement|First Aid Advice
+          adviceValues:1|0|1 (1 for delivered and 0 for declined)
+Return Value: true/false
+=================================================================================*/
+function ToCheckAdviceAcceptanceDB(adviceTypes,adviceValues)
+{
+  var dbRecord
+  dbRecord = GetLastSessionAdviceAcceptance()
+  
+  var adviceTypesArr = adviceTypes.split(",")
+  var adviceValuesArr = adviceValues.split(",")
+  var match=false;
+  
+  for(var i=0;i<adviceTypesArr.length;i++)
+  {
+    switch(aqString.ToUpper(adviceTypesArr[i]))
+    {
+      case "WORSENING STATEMENT":
+        if(dbRecord[0][9]==adviceValuesArr[i])
+        {
+          match=true;
+        }
+        else
+        {
+          return false;
+        }
+        break;
+      case "WORSENING ADVICE":
+        if(dbRecord[0][6]==adviceValuesArr[i])
+        {
+          match=true;
+        }
+        else
+        {
+          return false;
+        } 
+        break;
+      case "CARE ADVICE":
+        if(dbRecord[0][3]==adviceValuesArr[i])
+        {
+          match=true;
+        }
+        else
+        {
+          return false;
+        } 
+        break;
+      case "FIRST AID ADVICE":
+        if(dbRecord[0][15]==adviceValuesArr[i])
+        {
+          match=true;
+        }
+        else
+        {
+          return false;
+        } 
+        break;           
+    }  
+  }
+  return match;
+}
+
+/*===============================================================================
+Description: This function is to validate patient outcome in DB
+Parameters: 
+    columnToBeFetched: column detail to be fetched from DB
+    Value: Expected Outcome name
+Return Value: true/false
+=================================================================================*/
+function ToCheckPatientOutcome(columnToBeFetched, Value)
+{
+  var dbRecord
+  dbRecord = GetCHOutcomeIDSession()
+  var CallHandlerOutcomeId=dbRecord[0][1]
+  var columnToBeFetched1 = aqString.ToUpper(columnToBeFetched)
+  var expValue1 = aqString.ToUpper(Value)
+  var dbRecord1=GetOutcomeFromResponse(CallHandlerOutcomeId)
+   switch(columnToBeFetched1)
+  {
+    case "DESCRIPTION":
+      if(Value == "")
+        {
+          if(dbRecord1[0][1] == null || dbRecord1[0][1] == "")
+          {
+            return true
+          }
+          else
+          {
+            return false
+          }   
+        }
+        else
+        {
+          if(expValue1 == aqString.ToUpper(dbRecord1[0][1]))
+          {
+            return true
+          }
+          else
+          {
+            return false          
+          }
+        } 
+  }  
+}
+/*===============================================================================
+Description: This function to Check relation type 
+Parameters:  
+Return Value: 
+=================================================================================*/
+function CheckRelationType()
+{
+  //var process = GetProcess()
+  var process = GetProcess()
+  ExpandItem(btn_SessionBannerExpander,"No details provided")
+  
+  var CheckBox=process.FindChild(["Name"],["WPFObject(\"CheckBox\", \"Caller is not patient\", 1)"],20)
+  CheckBox.click()
+}
+/*===============================================================================
+Description: This function is select relationship type
+Parameters: 
+          relationshipType:
+Return Value: 
+=================================================================================*/
+function SelectRelationshipType(relationshipType)
+{
+    process = GetProcess()
+    var obj = process.FindChild(["Name","WPFControlName"],["WPFObject(\"RelationshipCombo\")","RelationshipCombo"],100)
+    var count = obj.wItemCount
+    if(obj.Exists)
+    {
+        for(i=0;i<count;i++)
+        {
+            var obj2=obj.Items.Item(i).Text.OleValue
+            if (aqString.ToLower(obj2) == aqString.ToLower(relationshipType))
+            {
+                obj.ClickItem(i)
+                return true
+            }
+        }
+        return false
+    }
+}
+
+/*===============================================================================
+Description: This function is to validate select relationship type
+Parameters: 
+          relationshipType:
+Return Value: 
+=================================================================================*/
+function ToValSelectedRelationshipType(relationshipType)
+{
+    process = GetProcess()
+    var obj = process.FindChild(["Name","WPFControlName"],["WPFObject(\"RelationshipCombo\")","RelationshipCombo"],100)
+    var count = obj.wItemCount
+    for(i=0;i<count;i++)
+    {
+        var obj2=obj.Items.Item(i).Text.OleValue
+        if (aqString.ToLower(obj2)==aqString.ToLower(relationshipType))
+        {
+            return true
+        }
+    }
+    return false
+}
+
+/*===============================================================================
+Description: This function is to check Patient Outcome/SignPost is enable or disabled for Call Handler
+Parameters: 
+Return Value: true/false
+=================================================================================*/
+function ValPatientOutcomeEnableDisable()
+{
+  var process = GetProcess()
+  var lbl_outcome = process.FindChild(["Name","VisibleOnScreen"],[lbl_PatientOutcome,"True"],100)
+  if(lbl_outcome.Exists)
+  {
+    var parentObj = lbl_outcome.parent 
+    var cmb_PatientOutcome = parentObj.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"ComboBox\", \"\", *)","True"],10)
+    return cmb_PatientOutcome.IsEnabled;
+  }
+  else
+  {
+    var SignpostList = Process.FindChild(["Name"],[list_SignpostServiceList],100); 
+    if (SignpostList.Exists && SignpostList.VisibleOnScreen) 
+    {
+      var signPostObj = SignpostList.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"ListBoxItem\", \"\", 1)","True"],100);
+      if (signPostObj.Exists) 
+      {
+        return signPostObj.IsEnabled;
+      }          
+    }
+  }
+}
+/*===============================================================================
+Description: This function is to check Patient Outcome/SignPost is enable or disabled for Call Handler
+Parameters: 
+          outcome:
+Return Value: true/false
+=================================================================================*/
+function ValSelectedPatientOutcome(outcome)
+{
+  //var process = GetProcess()
+  var lbl_outcome = ToFindObj(["Name","VisibleOnScreen"],[lbl_PatientOutcome,"True"])
+  var parentObj = lbl_outcome.parent 
+  var cmb_PatientOutcome = parentObj.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"ComboBox\", \"\", *)","True"],10)
+  
+  if(aqString.ToUpper(outcome) == aqString.ToUpper(cmb_PatientOutcome.wText))
+      return true;
+  else
+      return false;
+}
+
+/*===============================================================================
+Description: This function to Add number of Patients in the queue
+Parameters: 
+           NumOfPatients:NumOfPatients
+Return Value: 
+=================================================================================*/ 
+function AddNumOfPatientsInTheQueue(NumOfPatients)
+{
+    LaunchApplication()
+       
+    if(locationType=="AUS" || locationType=="NZ")
+    {     
+        Login(Project.Variables.ReceptionUsername,Project.Variables.ReceptionPassword)
+    }
+    else
+        Login(Project.Variables.CallHandlerUsername,Project.Variables.CallHandlerPassword)
+    
+    for (i=0;i<NumOfPatients;i++)
+    {
+        waitfordefaultScreen()
+        LoadingDone()
+        clickItem(btn_UseAnonymousPatient,"Use anonymous patient")
+        setText("54",txt_ApproximateAge,"ApproximateAge","")
+        selectGender("Female")
+        clickItem(btn_Continue,"Continue")
+        waitforPresentingScreen()
+        clickItem(btn_PresentComplaint,"Abdomen / Stomach")
+        clickItem(btn_PresentComplaint,"Abdominal injury")
+        setText("7566576",txt_ContactInfo,"ContactInfoTextBox","")
+        
+        if(locationType=="AUS" || locationType=="NZ")
+        {  
+            clickItem(btn_WPFButton,"Proceed to Odyssey Reception")
+            waitforReceptionscreen()
+            clickItem(btn_SaveCalltoQueue,"Save call to queue")
+        }
+        else
+        {
+            clickItem(btn_TeleAssessContinueBtn,"Continue")
+            waitForCallHandlerAssmntScreen()
+            clickItem(btn_PassToClinician,"Pass to Clinician")
+            clickItem(btn_Continue,"Continue")
+            AcceptDeclineAdviceCallHandler()
+            SelectPatientOutcomeCallHandler("Test Outcome")
+            PerformActionInCareAdvice("Pass to Clinician","")            
+        }
+    }
+    LogoutApp();
+} 
+
+/*===============================================================================
+Description: This function to enter Name when caller is not patient 
+Parameters:  
+          name:
+Return Value: 
+=================================================================================*/
+function EnterCallerName(name)
+{
+  lbl_caller = ToFindObj(["Name"],["WPFObject(\"CallerNameLabel\")"])
+  obj_parent = lbl_caller.Parent
+  txt_caller = obj_parent.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"TextBox\", \"\", 1)","True"],5)
+  setText(name,"","",txt_caller)
+}

@@ -1,0 +1,67 @@
+﻿//USEUNIT CommonFunctions
+//USEUNIT PageObjects
+//USEUNIT ScreensOf3_12TreatmentPlan
+
+/*===============================================================================
+Description: This function is wait for the FTF History screen
+Parameters: 
+Return Value: 
+=================================================================================*/
+function waitforFTFExaminationScreen()
+{
+ return waitForItemWithTime(btn_AddExamination,"Add Examination",3)
+}
+
+/*===============================================================================
+Description: This function to check for font color of exam under Show Findings
+Parameters: 
+          examType:Type of exam
+          examName:Name of exam(blank for range)
+          finding:examination value
+          expColor:color of exam
+Return Value: true/false
+=================================================================================*/
+function ToValidateExamwFindingColor(examType,examName,finding,expColor)
+{
+  var findingsTable = ToFindObj(["Name"],["WPFObject(\"ExaminationFindingsTable\", \"\", 1)"]);
+  var examinationObj = findingsTable.FindChild(["ClrClassName","WPFControlText","VisibleOnScreen"],["TextBlock",examType+"*"+examName+"*","True"],100)
+  var findingObj=findingsTable.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"TextBlock\", \""+finding+"*\", 1)","True"],20)
+  
+  if(examinationObj.Exists && findingObj.Exists)
+  {
+    var examinationColorMatch = ToCheckActionColour(examinationObj,expColor);
+    var findingColorMatch = ToCheckActionColour(findingObj,expColor);
+    
+    if(examinationColorMatch && findingColorMatch)
+      return true;
+    else
+      return false;
+  }
+}
+
+/*===============================================================================
+Description: This function is written to check for the hamburger button shown under Examination tab
+Parameters:
+Return Value:true/false
+=================================================================================*/
+function ToValHamburgerBtn()
+{
+    obj_AddExamination = ToFindObj(["Name"],[btn_AddExamination]);
+    parentObj = obj_AddExamination.Parent
+    obj_Hamburger = parentObj.FindChild(["Name","VisibleOnScreen"],["WPFObject(\"Button\", \"\", 2)","True"],10)
+    
+    if(obj_Hamburger.Exists && obj_Hamburger.IsEnabled)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+function test()
+{
+    Log.Message(Sys.Desktop.Height)
+    Log.Message(Sys.Desktop.Width)
+}
